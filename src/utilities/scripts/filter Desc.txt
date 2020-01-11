@@ -1,0 +1,226 @@
+<div id="toursWrapper">
+    <form novalidate id="filters" name="filters" class="col" method="GET" action="#!" enctype="text/plain">
+        <div class="row containerStyle">
+            <div class="inputWrapper select">
+                <input type="hidden" id="sortHidden" name="sortHidden">
+                <input type="text" id="sort" name="sort" class="style1 validate" required readonly>
+                <label for="sort">
+                    <i class="fas fa-sort icon"></i>
+                    <p>مرتب سازی بر اساس</p>
+                </label>
+                <i class="fas fa-angle-down arrow center-y"></i>
+                <span class="line"></span>
+                <ul>
+                    <li data-value="discount">بیشترین تخفیف</li>
+                    <li data-value="lowestPrice">کمترین قیمت</li>
+                    <li data-value="highestPrice">بیشترین قیمت</li>
+                </ul>
+            </div>
+        </div>     
+        <div class="row containerStyle">
+            <div class="mobileFixFlexFixer">
+                <div class="filtersWrapper" id="currFilters">
+                    <div class="top">
+                        <h4>فیلتر های انتخابی</h4>
+                        <button id="clearFilters" type="button" class="btn small pulse">پاک کردن همه</button>
+                    </div>
+                    <div class="bottom"></div>
+                </div>
+                <div class="filtersWrapper" id="inOutDate">
+                    <h4>تاریخ رفت/برگشت</h4>
+                    <div class="inputs">
+                        <div class="inputWrapper text">
+                            <input type="text" id="inDate" name="inDate" class="style1 labelHandler validate">
+                            <label for="inDate">
+                                <i class="fas fa-calendar icon"></i>
+                                <p>تاریخ رفت</p>
+                            </label>
+                            <span class="line"></span>
+                        </div>
+                        <div class="inputWrapper text">
+                            <input type="text" id="outDate" name="outDate" class="style1 labelHandler validate">
+                            <label for="outDate">
+                                <i class="fas fa-calendar icon"></i>
+                                <p>تاریخ برگشت</p>
+                            </label>
+                            <span class="line"></span>
+                            
+                        </div>
+                    </div>              
+                </div>
+                <div class="filtersWrapper inputWrapper range" id="priceRanger">
+                    <input type="hidden" class="min">
+                    <input type="hidden" class="max">
+                    <h4>بازه ی قیمت</h4>
+                    <div class="ranger" data-min="50000" data-max="5000000" data-step="100000"></div>
+                    <p class="text"></p>
+                </div>
+                <div class="filtersWrapper" id="starsFilter">
+                    <div class="withCollapse">
+                        <div class="mainCategory">
+                            <div class="inputWrapper checkboxes">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="allStars" name="allStars" class="style1" value="allStars">
+                                    <label for="allStars">
+                                        <span class="rect">
+                                            <i class="fas fa-check center-xy"></i>
+                                        </span>
+                                        <div class="content" data-currFilter="تمام هتل ها">
+                                            <p>ستاره هتل</p>
+                                        </div>                   
+                                    </label>
+                                </div>
+                            </div>
+                            <i class="fas fa-angle-down collapseTrigger"></i>
+                        </div>
+                        <div class="collapse">
+                            <div class="inputWrapper checkboxes">
+                                <div class="checkbox subCategory">
+                                    <input type="checkbox" id="star1" name="star1" class="style1" value="star1">
+                                    <label for="star1">
+                                        <span class="rect">
+                                            <i class="fas fa-check center-xy"></i>
+                                        </span>
+                                        <div class="content" data-currFilter="۱ستاره">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="checkbox subCategory">
+                                    <input type="checkbox" id="star2" name="star2" class="style1" value="star2">
+                                    <label for="star2">
+                                        <span class="rect">
+                                            <i class="fas fa-check center-xy"></i>
+                                        </span>
+                                        <div class="content" data-currFilter="۲ستاره">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </label>
+                                </div>                           
+                                <div class="checkbox subCategory">
+                                    <input type="checkbox" id="star3" name="star3" class="style1" value="star3">
+                                    <label for="star3">
+                                        <span class="rect">
+                                            <i class="fas fa-check center-xy"></i>
+                                        </span>
+                                        <div class="content" data-currFilter="۳ستاره">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </label>
+                                </div>                                    
+                                <div class="checkbox subCategory">
+                                    <input type="checkbox" id="star4" name="star4" class="style1" value="star4">
+                                    <label for="star4">
+                                        <span class="rect">
+                                            <i class="fas fa-check center-xy"></i>
+                                        </span>
+                                        <div class="content" data-currFilter="۴ستاره">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </label>
+                                </div>                               
+                                <div class="checkbox subCategory">
+                                    <input type="checkbox" id="star5" name="star5" class="style1" value="star5">
+                                    <label for="star5">
+                                        <span class="rect">
+                                            <i class="fas fa-check center-xy"></i>
+                                        </span>
+                                        <div class="content" data-currFilter="۵ستاره">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </label>
+                                </div>                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtersWrapper" id="vehicleType">
+                    <div class="withCollapse">
+                        <div class="mainCategory">
+                            <div class="inputWrapper checkboxes">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="allVehicles" name="allVehicles" class="style1" value="allVehicles">
+                                    <label for="allVehicles">
+                                        <span class="rect">
+                                            <i class="fas fa-check center-xy"></i>
+                                        </span>
+                                        <div class="content" data-currFilter="تمام وسایل نقلیه">
+                                            <p>وسیله نقلیه</p>
+                                        </div>       
+                                    </label>
+                                </div>
+                            </div>
+                            <i class="fas fa-angle-down collapseTrigger"></i>
+                        </div>
+                        <div class="collapse">
+                            <div class="inputWrapper checkboxes">
+                                <div class="checkbox subCategory">
+                                    <input type="checkbox" id="landVehicle" name="landVehicle" class="style1" value="landVehicle">
+                                    <label for="landVehicle">
+                                        <span class="rect">
+                                            <i class="fas fa-check center-xy"></i>
+                                        </span>
+                                        <div class="content" data-currFilter="زمینی">
+                                            <i class="fas fa-car-alt"></i>
+                                            <p>زمینی</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="checkbox subCategory">
+                                    <input type="checkbox" id="railVehicle" name="railVehicle" class="style1" value="railVehicle">
+                                    <label for="railVehicle">
+                                        <span class="rect">
+                                            <i class="fas fa-check center-xy"></i>
+                                        </span>
+                                        <div class="content" data-currFilter="ریلی">
+                                            <i class="fas fa-subway"></i>
+                                            <p>ریلی</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="checkbox subCategory">
+                                    <input type="checkbox" id="airVehicle" name="airVehicle" class="style1" value="airVehicle">
+                                    <label for="airVehicle">
+                                        <span class="rect">
+                                            <i class="fas fa-check center-xy"></i>
+                                        </span>
+                                        <div class="content" data-currFilter="هوایی">
+                                            <i class="fas fa-plane"></i>
+                                            <p>هوایی</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                                                        
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+        </div>
+    </form>
+    <div class="col">
+        <div class="row containerStyle" id="displayStyles">
+            <p>نمایش بصورت</p>
+            <div class="icons">
+                <i class="withTooltip fas fa-grip-horizontal" data-tooltip="افقی">
+                    <span class="tooltip"></span>
+                </i>
+                <i class="withTooltip fas fa-grip-vertical" data-tooltip="عمودی">
+                    <span class="tooltip"></span>
+                </i>
+            </div>
+        </div>
+        <div class="row containerStyle" id="tours">
+        </div>
+    </div>
+</div>

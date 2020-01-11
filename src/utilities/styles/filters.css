@@ -1,0 +1,1437 @@
+#toursWrapper {
+  width: 95%;
+  height: auto;
+  margin: 2em auto 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#toursWrapper .col {
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#toursWrapper .col:nth-child(1) {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 30em;
+}
+
+#toursWrapper .col:nth-child(2) {
+  width: 100%;
+  margin-right: 3em;
+}
+
+#toursWrapper .col .row {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0;
+  padding: 0;
+}
+
+#toursWrapper .col .row:nth-child(1) {
+  padding: 1.5em;
+  height: 6em;
+}
+
+#toursWrapper .col .row:nth-child(2) {
+  margin-top: 3em;
+}
+
+#toursWrapper #displayStyles {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+
+#toursWrapper #displayStyles p {
+  font-size: 1.6em;
+  color: #2d2d31;
+}
+
+#toursWrapper #displayStyles .icons {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#toursWrapper #displayStyles .icons .withTooltip {
+  width: 4em;
+  height: 3em;
+  margin-right: 1.5em;
+  position: relative;
+  background-color: #e0e0e4;
+  color: #2295a6;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+  cursor: pointer;
+}
+
+#toursWrapper #displayStyles .icons .withTooltip:hover {
+  color: white;
+  background-color: #2295a6;
+}
+
+#toursWrapper #displayStyles .icons .withTooltip::before {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+     -moz-transform: translate(50%, -50%);
+      -ms-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  font-size: 2em;
+}
+
+form#filters .inputWrapper.select {
+  width: 100%;
+  position: relative;
+}
+
+form#filters .inputWrapper.select input {
+  width: 100%;
+  height: 100%;
+  line-height: 4em;
+  padding: 0 0.75em;
+  color: #2d2d31;
+  font-size: 1.6em;
+  cursor: pointer;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+form#filters .inputWrapper.select input::-webkit-input-placeholder {
+  font-size: 1.6em;
+  color: #90909b;
+}
+
+form#filters .inputWrapper.select input:-moz-placeholder {
+  font-size: 1.6em;
+  color: #90909b;
+}
+
+form#filters .inputWrapper.select input::-moz-placeholder {
+  font-size: 1.6em;
+  color: #90909b;
+}
+
+form#filters .inputWrapper.select input:-ms-input-placeholder {
+  font-size: 1.6em;
+  color: #90909b;
+}
+
+form#filters .inputWrapper.select input::-ms-input-placeholder {
+  font-size: 1.6em;
+  color: #90909b;
+}
+
+form#filters .inputWrapper.select input::placeholder {
+  font-size: 1.6em;
+  color: #90909b;
+}
+
+form#filters .inputWrapper.select input.style1 {
+  border: none;
+  border-bottom: 1.2px solid #d3d3d7;
+}
+
+form#filters .inputWrapper.select input.style1:focus ~ label {
+  font-size: 8px;
+  color: #2295a6;
+  right: 0;
+  bottom: -webkit-calc(100% + .5em);
+  bottom: -moz-calc(100% + .5em);
+  bottom: calc(100% + .5em);
+}
+
+form#filters .inputWrapper.select input.style1:focus ~ .arrow {
+  color: #2295a6;
+}
+
+form#filters .inputWrapper.select input.style1:focus ~ .line {
+  width: 100%;
+}
+
+form#filters .inputWrapper.select input.style1:focus ~ ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+form#filters .inputWrapper.select input.style2 {
+  border: 1.2px solid #d3d3d7;
+  border-radius: 3em;
+}
+
+form#filters .inputWrapper.select input.style2:focus {
+  border: 1.2px solid #2295a6;
+}
+
+form#filters .inputWrapper.select input.style2:focus ~ label {
+  font-size: 8px;
+  color: #2295a6;
+  right: 0;
+  bottom: -webkit-calc(100% + 1.5em);
+  bottom: -moz-calc(100% + 1.5em);
+  bottom: calc(100% + 1.5em);
+}
+
+form#filters .inputWrapper.select input.style2:focus ~ .arrow {
+  color: #2295a6;
+}
+
+form#filters .inputWrapper.select input.style2:focus ~ .line {
+  width: 0%;
+}
+
+form#filters .inputWrapper.select input.style2:focus ~ ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+form#filters .inputWrapper.select input.style1.error ~ label {
+  color: #ea6161;
+}
+
+form#filters .inputWrapper.select input.style1.error ~ .arrow {
+  color: #ea6161;
+}
+
+form#filters .inputWrapper.select input.style1.error ~ .line {
+  width: 100%;
+  background-color: #ea6161;
+}
+
+form#filters .inputWrapper.select input.style2.error {
+  border: 1.2px solid #ea6161;
+}
+
+form#filters .inputWrapper.select input.style2.error ~ label {
+  color: #ea6161;
+}
+
+form#filters .inputWrapper.select input.style2.error ~ .arrow {
+  color: #ea6161;
+}
+
+form#filters .inputWrapper.select input.style2.error ~ .line {
+  background-color: #ea6161;
+}
+
+form#filters .inputWrapper.select label {
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  color: #c6c6cb;
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+     -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+form#filters .inputWrapper.select label .icon {
+  font-size: 1.6em;
+}
+
+form#filters .inputWrapper.select label p {
+  font-size: 1.5em;
+  -webkit-transform: translateX(-0.3em);
+     -moz-transform: translateX(-0.3em);
+      -ms-transform: translateX(-0.3em);
+          transform: translateX(-0.3em);
+}
+
+form#filters .inputWrapper.select input.style1 ~ label.top {
+  font-size: 8px;
+  right: 0;
+  bottom: -webkit-calc(100% + .5em);
+  bottom: -moz-calc(100% + .5em);
+  bottom: calc(100% + .5em);
+}
+
+form#filters .inputWrapper.select input.style2 ~ label.top {
+  font-size: 8px;
+  right: 0;
+  bottom: -webkit-calc(100% + 1.5em);
+  bottom: -moz-calc(100% + 1.5em);
+  bottom: calc(100% + 1.5em);
+}
+
+form#filters .inputWrapper.select .arrow {
+  cursor: pointer;
+  font-size: 2em;
+  color: #c6c6cb;
+  left: 0;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+form#filters .inputWrapper.select .line {
+  width: 0;
+  height: 1.2px;
+  background-color: #2295a6;
+  position: absolute;
+  right: 0;
+  top: -webkit-calc(100% - .6px);
+  top: -moz-calc(100% - .6px);
+  top: calc(100% - .6px);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+form#filters .inputWrapper.select ul {
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+  width: 100%;
+  max-height: 16em;
+  overflow: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  position: absolute;
+  top: 105%;
+  right: 0;
+  -webkit-box-shadow: 0 0.2em 0.5em 0em rgba(70, 69, 85, 0.3);
+          box-shadow: 0 0.2em 0.5em 0em rgba(70, 69, 85, 0.3);
+}
+
+form#filters .inputWrapper.select ul li {
+  width: 100%;
+  height: 2.5em;
+  line-height: 2.5em;
+  padding: 0 0.75em;
+  font-size: 1.6em;
+  color: #2d2d31;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+  cursor: pointer;
+  background-color: white;
+}
+
+form#filters .inputWrapper.select ul li:hover {
+  background-color: #e6e6e6;
+}
+
+form#filters .inputWrapper.select ul.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+form#filters .inputWrapper.text {
+  width: 90%;
+  height: 4em;
+  margin: 1.5em auto 0 auto;
+  position: relative;
+}
+
+form#filters .inputWrapper.text input {
+  width: 100%;
+  height: 100%;
+  line-height: 4em;
+  padding: 0 0.75em;
+  font-size: 1.6em;
+  color: #2d2d31;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+form#filters .inputWrapper.text input::-webkit-input-placeholder {
+  color: #90909b;
+  font-size: 1.6em;
+}
+
+form#filters .inputWrapper.text input:-moz-placeholder {
+  color: #90909b;
+  font-size: 1.6em;
+}
+
+form#filters .inputWrapper.text input::-moz-placeholder {
+  color: #90909b;
+  font-size: 1.6em;
+}
+
+form#filters .inputWrapper.text input:-ms-input-placeholder {
+  color: #90909b;
+  font-size: 1.6em;
+}
+
+form#filters .inputWrapper.text input::-ms-input-placeholder {
+  color: #90909b;
+  font-size: 1.6em;
+}
+
+form#filters .inputWrapper.text input::placeholder {
+  color: #90909b;
+  font-size: 1.6em;
+}
+
+form#filters .inputWrapper.text input.style1 {
+  border: none;
+  border-bottom: 1.2px solid #d3d3d7;
+}
+
+form#filters .inputWrapper.text input.style1:focus ~ label {
+  color: #2295a6;
+  font-size: 8px;
+  bottom: -webkit-calc(100% + .5em);
+  bottom: -moz-calc(100% + .5em);
+  bottom: calc(100% + .5em);
+  -webkit-transform: translateY(50%);
+     -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  right: 0;
+}
+
+form#filters .inputWrapper.text input.style1:focus ~ .line {
+  width: 100%;
+}
+
+form#filters .inputWrapper.text input.style2 {
+  border: 1.2px solid #d3d3d7;
+  border-radius: 3em;
+}
+
+form#filters .inputWrapper.text input.style2:focus {
+  border: 1.2px solid #2295a6;
+}
+
+form#filters .inputWrapper.text input.style2:focus ~ label {
+  color: #2295a6;
+  font-size: 8px;
+  bottom: -webkit-calc(100% + 1.5em);
+  bottom: -moz-calc(100% + 1.5em);
+  bottom: calc(100% + 1.5em);
+  -webkit-transform: translateY(50%);
+     -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  right: 0.75em;
+}
+
+form#filters .inputWrapper.text input.style2:focus ~ .line {
+  width: 0%;
+}
+
+form#filters .inputWrapper.text input.style1.error {
+  border-bottom: 1.2px solid #ea6161;
+}
+
+form#filters .inputWrapper.text input.style1.error ~ label {
+  color: #ea6161;
+}
+
+form#filters .inputWrapper.text input.style1.error ~ .line {
+  background-color: #ea6161;
+}
+
+form#filters .inputWrapper.text input.style2.error {
+  border: 1.2px solid #ea6161;
+}
+
+form#filters .inputWrapper.text input.style2.error ~ label {
+  color: #ea6161;
+}
+
+form#filters .inputWrapper.text label {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 0.75em;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+     -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  color: #c6c6cb;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+form#filters .inputWrapper.text label .icon {
+  font-size: 1.6em;
+}
+
+form#filters .inputWrapper.text label p {
+  font-size: 1.5em;
+  -webkit-transform: translateX(-0.3em);
+     -moz-transform: translateX(-0.3em);
+      -ms-transform: translateX(-0.3em);
+          transform: translateX(-0.3em);
+}
+
+form#filters .inputWrapper.text input.style1 ~ label.top {
+  font-size: 8px;
+  bottom: -webkit-calc(100% + .5em);
+  bottom: -moz-calc(100% + .5em);
+  bottom: calc(100% + .5em);
+  -webkit-transform: translateY(50%);
+     -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  right: 0;
+}
+
+form#filters .inputWrapper.text input.style2 ~ label.top {
+  font-size: 8px;
+  bottom: -webkit-calc(100% + 1.5em);
+  bottom: -moz-calc(100% + 1.5em);
+  bottom: calc(100% + 1.5em);
+  -webkit-transform: translateY(50%);
+     -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  right: 0.75em;
+}
+
+form#filters .inputWrapper.text .line {
+  width: 0%;
+  height: 1.2px;
+  background-color: #2295a6;
+  position: absolute;
+  right: 0;
+  top: -webkit-calc(100% - 1px);
+  top: -moz-calc(100% - 1px);
+  top: calc(100% - 1px);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+form#filters .inputWrapper.text .msg {
+  width: auto;
+  height: auto;
+  border-radius: 3em;
+  padding: 0.75em 1.5em;
+  position: relative;
+  background-color: #ea6161;
+  position: absolute;
+  right: 0;
+  top: 115%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+form#filters .inputWrapper.text .msg p {
+  color: #fbfbfb;
+  font-size: 1.4em;
+}
+
+form#filters .inputWrapper.text .msg i {
+  font-size: 2.4em;
+  color: #ea6161;
+  position: absolute;
+  right: 1.5em;
+  top: -webkit-calc(0% - .6em);
+  top: -moz-calc(0% - .6em);
+  top: calc(0% - .6em);
+}
+
+form#filters .inputWrapper.text .msg.show {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+form#filters .inputWrapper.range#priceRanger .ranger {
+  width: 100%;
+  height: .4em;
+  margin-top: 1.5em;
+}
+
+form#filters .inputWrapper.range#priceRanger .ranger .noUi-connect {
+  background-color: #2295a6;
+}
+
+form#filters .inputWrapper.range#priceRanger .ranger .noUi-connect, form#filters .inputWrapper.range#priceRanger .ranger .noUi-origin {
+  position: relative;
+}
+
+form#filters .inputWrapper.range#priceRanger .ranger .noUi-handle.circle {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: #2295a6;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+}
+
+form#filters .inputWrapper.range#priceRanger .ranger .noUi-handle.circle::before {
+  display: none;
+}
+
+form#filters .inputWrapper.range#priceRanger .ranger .noUi-handle.circle::after {
+  display: none;
+}
+
+form#filters .inputWrapper.range#priceRanger .ranger .noUi-handle.circle:focus {
+  outline: none;
+}
+
+form#filters .inputWrapper.range#priceRanger .ranger .noUi-handle.circle:focus .noUi-tooltip {
+  outline: none;
+}
+
+form#filters .inputWrapper.range#priceRanger .ranger .noUi-handle.right {
+  right: 0%;
+  -webkit-transform: translate(0%, -60%);
+     -moz-transform: translate(0%, -60%);
+      -ms-transform: translate(0%, -60%);
+          transform: translate(0%, -60%);
+  top: 0%;
+}
+
+form#filters .inputWrapper.range#priceRanger .ranger .noUi-handle.left {
+  left: 100%;
+  top: 0%;
+  -webkit-transform: translate(0%, -60%);
+     -moz-transform: translate(0%, -60%);
+      -ms-transform: translate(0%, -60%);
+          transform: translate(0%, -60%);
+}
+
+form#filters .inputWrapper.range#priceRanger .ranger .noUi-tooltip {
+  display: none;
+}
+
+form#filters .inputWrapper.range#priceRanger .ranger .noUi-tooltip.newStyle {
+  font-size: .8em;
+}
+
+form#filters .inputWrapper.range#priceRanger .ranger .noUi-tooltip.right {
+  -webkit-transform: translate(-90%, 0);
+     -moz-transform: translate(-90%, 0);
+      -ms-transform: translate(-90%, 0);
+          transform: translate(-90%, 0);
+}
+
+form#filters .inputWrapper.range#priceRanger .ranger .noUi-tooltip.left {
+  -webkit-transform: translate(0%, 0);
+     -moz-transform: translate(0%, 0);
+      -ms-transform: translate(0%, 0);
+          transform: translate(0%, 0);
+}
+
+form#filters .inputWrapper.range#priceRanger .text {
+  width: 100%;
+  height: auto;
+  margin-top: 0.75em;
+  text-align: center;
+  color: #90909b;
+  font-size: 1.6em;
+}
+
+form#filters .inputWrapper.checkboxes {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+form#filters .inputWrapper.checkboxes .checkbox {
+  width: auto;
+  height: auto;
+  padding-right: 0.75em;
+  margin-top: 1.5em;
+}
+
+form#filters .inputWrapper.checkboxes .checkbox input[type="checkbox"] {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+form#filters .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label .rect {
+  width: 2em;
+  height: 1em;
+  border-radius: 0;
+  border-top: none;
+  border-right: none;
+  border-left: 1.2px solid #2295a6;
+  border-bottom: 1.2px solid #2295a6;
+  -webkit-transform: translateY(-0.3em) rotate(-45deg);
+     -moz-transform: translateY(-0.3em) rotate(-45deg);
+      -ms-transform: translateY(-0.3em) rotate(-45deg);
+          transform: translateY(-0.3em) rotate(-45deg);
+}
+
+form#filters .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label p {
+  color: #2295a6;
+}
+
+form#filters .inputWrapper.checkboxes .checkbox label {
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  line-height: 2.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+form#filters .inputWrapper.checkboxes .checkbox label .rect {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 2.3em;
+  height: 2.3em;
+  border: 1px solid #90909b;
+  position: relative;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+  border-radius: .45em;
+}
+
+form#filters .inputWrapper.checkboxes .checkbox label .rect i {
+  opacity: 0;
+  font-size: 1.6em;
+  color: #fbfbfb;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+form#filters .inputWrapper.checkboxes .checkbox label p.error {
+  color: #ea6161;
+}
+
+form#filters .inputWrapper.checkboxes .checkbox label .content {
+  max-width: -webkit-calc(100% - 1.5em);
+  max-width: -moz-calc(100% - 1.5em);
+  max-width: calc(100% - 1.5em);
+  height: auto;
+  margin-right: .3em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+form#filters .inputWrapper.checkboxes .checkbox label .content p, form#filters .inputWrapper.checkboxes .checkbox label .content i {
+  color: #90909b;
+  margin-right: .3em;
+  font-size: 1.6em;
+}
+
+form#filters .inputWrapper.checkboxes .checkbox label .content .fa-star {
+  color: #ff8865;
+}
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer .filtersWrapper {
+  width: 100%;
+  height: auto;
+  padding: 0.75em;
+  padding-bottom: 3em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer .filtersWrapper:not(:last-child) {
+  border-bottom: 1px solid #d3d3d7;
+}
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer .filtersWrapper h4 {
+  font-size: 1.4em;
+  color: #2d2d31;
+  font-weight: 700;
+}
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer .filtersWrapper .withCollapse {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer .filtersWrapper .withCollapse .mainCategory {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #90909b;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer .filtersWrapper .withCollapse .mainCategory i.collapseTrigger {
+  font-size: 1.6em;
+  color: inherit;
+  padding-right: 1.5em;
+}
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer .filtersWrapper .withCollapse .mainCategory .inputWrapper.checkboxes .checkbox {
+  margin-top: 0;
+  padding-right: 0;
+}
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer .filtersWrapper .withCollapse .collapse {
+  width: 100%;
+  padding-right: 1.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  color: blue;
+  font-size: 9px;
+}
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer #currFilters .top {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer #currFilters .top #clearFilters {
+  font-size: 1.3em;
+  margin-right: 1.5em;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+  color: white;
+  background-color: #2295a6;
+  border: 1.2px solid transparent;
+}
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer #currFilters .top #clearFilters:hover {
+  color: #2295a6;
+  background-color: white;
+  border: 1.2px solid #2295a6;
+}
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer #currFilters .bottom {
+  width: 100%;
+  height: auto;
+  margin-top: 0.75em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer #currFilters .bottom .currFilter {
+  width: auto;
+  height: auto;
+  border-radius: 0.75em;
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+  color: white;
+  background-color: #2295a6;
+  border: 1.2px solid transparent;
+  margin: 0.75em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer #currFilters .bottom .currFilter:hover {
+  color: #2295a6;
+  background-color: white;
+  border: 1.2px solid #2295a6;
+}
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer #currFilters .bottom .currFilter .close {
+  font-size: 1.2em;
+}
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer #currFilters .bottom .currFilter p {
+  font-size: 1.2em;
+  margin-right: .5em;
+}
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer #inOutDate .inputs {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+@media screen and (max-width: 900px) {
+  form#filters {
+    font-size: 8px;
+  }
+  form#filters .inputWrapper.text input.style1:focus ~ label {
+    font-size: 6px;
+  }
+  form#filters .inputWrapper.text input.style2:focus ~ label {
+    font-size: 6px;
+  }
+  form#filters .inputWrapper.text input.style1 ~ label.top {
+    font-size: 6px;
+  }
+  form#filters .inputWrapper.text input.style2 ~ label.top {
+    font-size: 6px;
+  }
+  form#filters .inputWrapper.select input.style1:focus ~ label {
+    font-size: 6px;
+  }
+  form#filters .inputWrapper.select input.style2:focus ~ label {
+    font-size: 6px;
+  }
+  form#filters .inputWrapper.select input.style1 ~ label.top {
+    font-size: 6px;
+  }
+  form#filters .inputWrapper.select input.style2 ~ label.top {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form#filters {
+    font-size: 6px;
+  }
+  form#filters .inputWrapper.text input.style1:focus ~ label {
+    font-size: 4px;
+  }
+  form#filters .inputWrapper.text input.style2:focus ~ label {
+    font-size: 4px;
+  }
+  form#filters .inputWrapper.text input.style1 ~ label.top {
+    font-size: 4px;
+  }
+  form#filters .inputWrapper.text input.style2 ~ label.top {
+    font-size: 4px;
+  }
+  form#filters .inputWrapper.select input.style1:focus ~ label {
+    font-size: 4px;
+  }
+  form#filters .inputWrapper.select input.style2:focus ~ label {
+    font-size: 4px;
+  }
+  form#filters .inputWrapper.select input.style1 ~ label.top {
+    font-size: 4px;
+  }
+  form#filters .inputWrapper.select input.style2 ~ label.top {
+    font-size: 4px;
+  }
+}
+/*# sourceMappingURL=filters.css.map */

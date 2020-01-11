@@ -1,0 +1,743 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+#toursWrapper{
+    width: 95%;
+    height: auto;
+    margin: $sectionsDist auto 0 auto;
+    display: flex;
+    @include flex(row,flex-start,flex-start,nowrap,"") ;
+    .col{
+        &:nth-child(1){
+            flex-shrink: 0;
+            width: 30em;  
+        }
+        &:nth-child(2){
+            width: 100%;
+            margin-right: $dist3;
+        }
+        height: auto;
+        display: flex;
+        @include flex(column,flex-start,flex-start,nowrap,"") ;
+        .row{
+            width: 100%;
+            height: auto;
+            display: flex;
+            margin-top: 0;
+            padding: 0;
+            &:nth-child(1){
+                padding: $dist2;
+                height: 6em;
+            }
+            &:nth-child(2){margin-top: $dist3;}     
+        }       
+    }
+    #displayStyles{
+        display: flex;
+        @include flex(row,flex-start,center,wrap,flex-start) ;
+        p{
+            font-size: $fontM;
+            color: $textDark;
+        }
+        .icons{
+            width: auto;
+            height: auto;
+            display: flex;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            .withTooltip{
+                width: 4em;
+                height: 3em;
+                margin-right: $dist2;
+                position: relative;
+                background-color: lighten($textGrey,30%);
+                color: $primaryColor;
+                transition: all .2s linear;
+                cursor: pointer;
+                &:hover{
+                    color: white;
+                    background-color: $primaryColor;
+                }
+                &::before{
+                    position: absolute;
+                    top: 50%;
+                    right: 50%;
+                    transform: translate(50%,-50%);
+                    font-size: $fontL;
+                }
+
+            }
+        }
+    }
+    #tours{
+        
+    }
+}
+form#filters{
+    .inputWrapper.select {
+        width: 100%;
+        position: relative;
+        input {
+            width: 100%;
+            height: 100%;
+            line-height: 4em;
+            padding: 0 $dist1;
+            color: $darkColor;
+            font-size: $fontM;
+            cursor: pointer;
+            transition: all .2s linear;
+            &::placeholder {
+                font-size: $fontM;
+                color: $textGrey;
+            }
+        }
+        input.style1 {
+            border: none;
+            border-bottom: 1.2px solid lighten($textGrey, 25%);
+            &:focus {
+                ~label {
+                    font-size: 8px;
+                    color: $primaryColor;
+                    right: 0;
+                    bottom: calc(100% + .5em);
+                }
+                ~.arrow {
+                    color: $primaryColor;
+                }
+                ~.line {
+                    width: 100%;
+                }
+                ~ul {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        input.style2 {
+            border: 1.2px solid lighten($textGrey, 25%);
+            border-radius: $dist3;
+
+            &:focus {
+                border: 1.2px solid $primaryColor;
+
+                ~label {
+                    font-size: 8px;
+                    color: $primaryColor;
+                    right: 0;
+                    bottom: calc(100% + 1.5em);
+                }
+
+                ~.arrow {
+                    color: $primaryColor;
+                }
+
+                ~.line {
+                    width: 0%;
+                }
+
+                ~ul {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        input.style1.error {
+            ~label {
+                color: lighten($redColor2, 5%);
+            }
+
+            ~.arrow {
+                color: lighten($redColor2, 5%);
+            }
+
+            ~.line {
+                width: 100%;
+                background-color: lighten($redColor2, 5%);
+            }
+        }
+        input.style2.error {
+            border: 1.2px solid lighten($redColor2, 5%);
+
+            ~label {
+                color: lighten($redColor2, 5%);
+            }
+
+            ~.arrow {
+                color: lighten($redColor2, 5%);
+            }
+
+            ~.line {
+                background-color: lighten($redColor2, 5%);
+            }
+        }
+        label {
+            cursor: pointer;
+            width: auto;
+            height: auto;
+            display: flex;
+            @include flex(row, flex-start, center, nowrap, "");
+            color: lighten($textGrey, 20%);
+            position: absolute;
+            right: 0;
+            bottom: 50%;
+            transform: translateY(50%);
+            transition: all .2s linear;
+            .icon {
+                font-size: $fontM;
+            }
+            p {
+                font-size: $fontM - .1em;
+                transform: translateX(-.3em);
+            }
+        }
+        input.style1 {
+            ~label.top {
+                font-size: 8px;
+                right: 0;
+                bottom: calc(100% + .5em);
+            }
+        }
+        input.style2 {
+            ~label.top {
+                font-size: 8px;
+                right: 0;
+                bottom: calc(100% + 1.5em);
+            }
+        }
+        .arrow {
+            cursor: pointer;
+            font-size: $fontL;
+            color: lighten($textGrey, 20%);
+            left: 0;
+            transition: all .2s linear;
+        }
+        .line {
+            width: 0;
+            height: 1.2px;
+            background-color: $primaryColor;
+            position: absolute;
+            right: 0;
+            top: calc(100% - .6px);
+            transition: all .2s linear;
+        }
+        ul {
+            z-index: 5;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .2s linear;
+            width: 100%;
+            max-height: 16em; //7 * 2.5em(height of each <li>)
+            overflow: auto;
+            display: flex;
+            @include flex(column, flex-start, flex-start, nowrap, "");
+            position: absolute;
+            top: 105%;
+            right: 0;
+            box-shadow: 0 .2em .5em 0em $shadowColor;
+            li {
+                width: 100%;
+                height: 2.5em;
+                line-height: 2.5em;
+                padding: 0 $dist1;
+                font-size: $fontM;
+                color: $darkColor;
+                transition: all .2s linear;
+                cursor: pointer;
+                background-color: white;
+
+                &:hover {
+                    background-color: darken(white, 10%);
+                }
+            }
+        }
+        ul.show {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .inputWrapper.text {
+        width: 90%;
+        height: 4em;
+        margin: $dist2 auto 0 auto;
+        position: relative;
+        input {
+            width: 100%;
+            height: 100%;
+            line-height: 4em;
+            padding: 0 $dist1;
+            font-size: $fontM;
+            color: $darkColor;
+            transition: all .2s linear;
+            &::placeholder {
+                color: $textGrey;
+                font-size: $fontM;
+            }
+        }
+        input.style1 {
+            border: none;
+            border-bottom: 1.2px solid lighten($textGrey, 25%);
+
+            &:focus {
+                ~label {
+                    color: $primaryColor;
+                    font-size: 8px;
+                    bottom: calc(100% + .5em);
+                    transform: translateY(50%);
+                    right: 0;
+                }
+
+                ~.line {
+                    width: 100%;
+                }
+            }
+        }
+
+        input.style2 {
+            border: 1.2px solid lighten($textGrey, 25%);
+            border-radius: $dist3;
+
+            &:focus {
+                border: 1.2px solid $primaryColor;
+
+                ~label {
+                    color: $primaryColor;
+                    font-size: 8px;
+                    bottom: calc(100% + 1.5em);
+                    transform: translateY(50%);
+                    right: $dist1;
+                }
+
+                ~.line {
+                    width: 0%;
+                }
+            }
+        }
+
+        input.style1.error {
+            border-bottom: 1.2px solid lighten($redColor2, 5%);
+
+            ~label {
+                color: lighten($redColor2, 5%);
+            }
+
+            ~.line {
+                background-color: lighten($redColor2, 5%);
+            }
+        }
+
+        input.style2.error {
+            border: 1.2px solid lighten($redColor2, 5%);
+
+            ~label {
+                color: lighten($redColor2, 5%);
+            }
+        }
+
+        label {
+            width: auto;
+            height: auto;
+            position: absolute;
+            right: $dist1;
+            bottom: 50%;
+            transform: translateY(50%);
+            display: flex;
+            @include flex(row, flex-start, center, nowrap, "");
+            color: lighten($textGrey, 20%);
+            transition: all .2s linear;
+
+            .icon {
+                font-size: $fontM;
+            }
+
+            p {
+                font-size: $fontM - .1em;
+                transform: translateX(-.3em);
+            }
+        }
+
+        input.style1 {
+            ~label.top {
+                font-size: 8px;
+                bottom: calc(100% + .5em);
+                transform: translateY(50%);
+                right: 0;
+            }
+        }
+
+        input.style2 {
+            ~label.top {
+                font-size: 8px;
+                bottom: calc(100% + 1.5em);
+                transform: translateY(50%);
+                right: $dist1;
+            }
+        }
+
+        .line {
+            width: 0%;
+            height: 1.2px;
+            background-color: $primaryColor;
+            position: absolute;
+            right: 0;
+            top: calc(100% - 1px);
+            transition: all .2s linear;
+        }
+
+        .msg {
+            width: auto;
+            height: auto;
+            border-radius: $dist3;
+            padding: $dist1 $dist2;
+            position: relative;
+            background-color: lighten($redColor2, 5%);
+            position: absolute;
+            right: 0;
+            top: 115%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .2s linear;
+
+            p {
+                color: $whiteColor2;
+                font-size: $fontM - .2em;
+            }
+
+            i {
+                font-size: $fontXL;
+                color: lighten($redColor2, 5%);
+                position: absolute;
+                right: $dist2;
+                top: calc(0% - .6em);
+            }
+        }
+
+        .msg.show {
+            opacity: 1;
+            visibility: visible;
+            z-index: 2;
+        }
+    }
+    .inputWrapper.range#priceRanger {
+        .ranger {
+            width: 100% ;
+            height: .4em;
+            margin-top: $dist2;
+            .noUi-connect {
+                background-color: $primaryColor;
+            }
+            .noUi-connect, .noUi-origin{position: relative;}
+            .noUi-handle.circle {
+                width: 2em;
+                height: 2em;
+                border-radius: 50%;
+                background-color: $primaryColor;
+                border: none;
+                box-shadow: none;
+                cursor: pointer;
+                &::before {
+                    display: none;
+                }
+                &::after {
+                    display: none;
+                }
+                &:focus {
+                    outline: none;
+                    .noUi-tooltip {
+                        outline: none;
+                    }
+                }
+            }
+            .noUi-handle.right {
+                right: 0%;
+                transform: translate(0%, -60%);
+                top: 0%;
+            }
+            .noUi-handle.left {
+                left: 100%;
+                top: 0%;
+                transform: translate(0%, -60%);
+            }
+            .noUi-tooltip {
+                display: none;
+            }
+            .noUi-tooltip.newStyle {
+                font-size: .8em;
+            }
+            .noUi-tooltip.right {
+                transform: translate(-90%, 0);
+            }
+            .noUi-tooltip.left {
+                transform: translate(0%, 0);
+            }
+        }
+        .text {
+            width: 100%;
+            height: auto;
+            margin-top: $dist1;
+            text-align: center ;
+            color: $textGrey;
+            font-size: $fontM;
+        }
+    }
+    .inputWrapper.checkboxes {
+        width: auto;
+        height: auto;
+        display: flex;
+        @include flex(column, flex-start, flex-start, nowrap, "");
+        .checkbox {
+            width: auto;
+            height: auto;
+            padding-right: $dist1;
+            margin-top: $dist2 ;
+            input[type="checkbox"] {
+                width: 0;
+                height: 0;
+                display: none;
+            }
+            input[type="checkbox"].style1 {
+                &:checked {
+                    ~label {
+                        .rect {
+                            width: 2em;
+                            height: 1em;
+                            border-radius: 0;
+                            border-top: none;
+                            border-right: none;
+                            border-left: 1.2px solid $primaryColor;
+                            border-bottom: 1.2px solid $primaryColor;
+                            transform: translateY(-.3em) rotate(-45deg);
+                        }
+
+                        p {
+                            color: $primaryColor;
+                        }
+                    }
+                }
+            }
+            label {
+                cursor: pointer;
+                width: auto;
+                height: auto;
+                line-height: 2.5em;
+                display: flex;
+                @include flex(row, flex-start, center, nowrap, "");
+                .rect {
+                    flex-shrink: 0;
+                    width: 2.3em;
+                    height: 2.3em;
+                    border: 1px solid $textGrey ;
+                    position: relative;
+                    transition: all .2s linear;
+                    border-radius: .45em;
+
+                    i {
+                        opacity: 0;
+                        font-size: $fontM;
+                        color: $whiteColor2;
+                        transition: all .2s linear;
+                    }
+                }
+                p.error {color: lighten($redColor2,5%);}
+                .content{
+                    max-width: calc(100% - 1.5em);
+                    height: auto;
+                    margin-right: .3em;
+                    display: flex;
+                    @include flex(row,flex-start,center,nowrap,"") ;
+                    p,i{
+                        color: $textGrey;
+                        margin-right: .3em;
+                        font-size: $fontM;
+                    }
+                    .fa-star{color: lighten($orangeColor1,2%);}
+                }
+            }
+        }
+    } 
+    .row{
+        &:nth-child(2){
+            .mobileFixFlexFixer{
+                width: 100%;
+                height: auto;
+                display: flex;
+                @include flex(column,flex-start,flex-start,nowrap,"") ;
+                .filtersWrapper{
+                    width: 100%;
+                    height: auto;
+                    padding: $dist1;
+                    padding-bottom: $dist3;
+                    &:not(:last-child){border-bottom: 1px solid lighten($textGrey,25%);}      
+                    display: flex;
+                    @include flex(column,flex-start,flex-start,nowrap,"") ;
+                    h4{
+                        font-size: $fontM - .2em;
+                        color: $textDark;
+                        font-weight: 700;
+                    }
+                    .withCollapse{
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        @include flex(column,flex-start,flex-start,nowrap,"") ;
+                        .mainCategory{
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            color: $textGrey;
+                            @include flex(row,space-between,center,nowrap,"") ;
+                            i.collapseTrigger{
+                                font-size: $fontM;
+                                color: inherit;
+                                padding-right: $dist2;
+                            }
+                            .inputWrapper.checkboxes {             
+                                .checkbox {
+                                    margin-top: 0 ;
+                                    padding-right: 0;
+                                }
+                            } 
+                        }
+                        .collapse{
+                            width: 100%;
+                            // height: auto;
+                            padding-right: $dist2;
+                            display: flex;
+                            @include flex(column,flex-start,flex-start,nowrap,"") ;
+                            color: blue;
+                            font-size: 9px; 
+                        }
+                    }
+                }
+                #currFilters{
+                    .top{
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        @include flex(row,space-between,center,nowrap,"") ;
+                        #clearFilters{
+                            font-size: $fontS + .1em;
+                            margin-right: $dist2;
+                            white-space: nowrap;
+                            @include swapColor(white,$primaryColor) ;
+                        }                       
+                    }
+                    .bottom{
+                        width: 100%;
+                        height: auto;
+                        margin-top: $dist1;
+                        display: flex;
+                        @include flex(row,flex-start,flex-start,wrap,flex-start) ;
+                        .currFilter{
+                            width: auto;
+                            height: auto;
+                            border-radius: $dist1;
+                            padding: .5em $dist1;
+                            @include swapColor(white,$primaryColor) ;
+                            margin: $dist1 ;
+                            display: flex;
+                            @include flex(row,flex-start,center,nowrap,"") ;
+                            .close{font-size: $fontS;}
+                            p{
+                                font-size: $fontS;
+                                margin-right: .5em;
+                            }
+                        }
+                    }
+                }
+                #inOutDate{
+                    .inputs{
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        margin: 0 auto;
+                        @include flex(column,flex-start,center,nowrap,"") ;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+@include mediaQ(900px){
+    form#filters {
+        font-size: 8px ;
+        .inputWrapper.text {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 6px;}                  
+                }
+            }
+            input.style2 {
+                &:focus {
+                    ~label {font-size: 6px;}
+                }
+            }  
+            input.style1 {
+                ~label.top {font-size: 6px;}
+            }
+    
+            input.style2 {
+                ~label.top {font-size: 6px;}
+            }
+        }
+        .inputWrapper.select {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 6px;}
+                }
+            }
+            input.style2 {       
+                &:focus {    
+                    ~label {font-size: 6px;}               
+                }
+            }         
+            input.style1 {
+                ~label.top {font-size: 6px;}
+            }
+            input.style2 {
+                ~label.top {font-size: 6px;}
+            }                
+        }
+    }
+}
+@include mediaQ(600px){
+    form#filters {
+        font-size: 6px ;
+        .inputWrapper.text {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 4px;}                  
+                }
+            }
+            input.style2 {
+                &:focus {
+                    ~label {font-size: 4px;}
+                }
+            }  
+            input.style1 {
+                ~label.top {font-size: 4px;}
+            }
+    
+            input.style2 {
+                ~label.top {font-size: 4px;}
+            }
+        }
+        .inputWrapper.select {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 4px;}
+                }
+            }
+            input.style2 {       
+                &:focus {    
+                    ~label {font-size: 4px;}               
+                }
+            }         
+            input.style1 {
+                ~label.top {font-size: 4px;}
+            }
+            input.style2 {
+                ~label.top {font-size: 4px;}
+            }                
+        }
+    }
+}
