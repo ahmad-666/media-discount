@@ -54,9 +54,11 @@
     "core-js": "^3.6.3",
     "fontfaceobserver": "^2.1.0",
     "gh-pages": "^2.2.0",
+    "jquery": "^3.4.1",
     "nouislider": "^14.1.1",
     "path-browserify": "^1.0.0",
     "regenerator-runtime": "^0.13.3",
+    "select2": "^4.0.12",
     "wnumb": "^1.2.0"
   }
 }

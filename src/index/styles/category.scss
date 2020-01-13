@@ -1,0 +1,112 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+#category{
+    display: flex;
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    padding: 2em;
+    h4{
+        font-size: $fontL;
+        font-weight: 700;
+        color: $textDark;
+    }
+    .grid{
+        width: 100%;
+        height: auto;
+        display: flex;
+        @include flex(column,flex-start,flex-start,nowrap,"") ;
+        margin-top: 2em;
+        .row{
+            width: 100%;
+            height: auto;
+            display: flex;
+            @include flex(row,flex-start,flex-start,nowrap,"") ;
+            &:not(:first-child){margin-top: 2em;}
+            .innerRow{
+                width: 100%;
+                height: auto;
+                display: flex;
+                @include flex(row,flex-start,flex-start,nowrap,"") ;
+            }
+            .col{
+                width: 50%;
+                height: auto;
+                display: flex;
+                @include flex(column,flex-start,flex-start,nowrap,"") ;
+                &:not(:first-child){margin-right: 2em;}
+            }
+            .category{
+                height: auto;
+                display: flex;
+                @include flex(column,flex-start,flex-start,nowrap,"") ;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+                .txt{
+                    width: 100%;
+                    height: auto;
+                    padding: .2em 0;
+                    display: flex;
+                    @include flex(row,space-between,center,wrap,flex-start) ;
+                    h6{
+                        font-size: $fontM;
+                        color: $textDark;
+                    }
+                    .quantity{
+                        width: auto;
+                        height: auto;
+                        margin-right: $dist1;
+                        display: flex;
+                        @include flex(row,flex-start,center,nowrap,"") ;
+                        p,i{
+                            font-size: $fontM - .2em;
+                            color: $primaryColor;
+                        }
+                        p{margin-right: .3em;}
+                    }
+                }
+            }
+            &:nth-child(1){
+                .col{
+                    &:nth-child(1){
+                        .innerRow{
+                            .category{
+                                width: 50%;
+                                &:nth-child(2){margin-right: 2em;}
+                                img{
+                                    height: 15em;
+                                }
+                            }
+                        }
+                        > .category{
+                            width: 100%;
+                            margin-top: 2em;
+                            img{
+                                height: 20em;
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        .category{
+                            width: 100%;
+                            img{
+                                height: 40em;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(2){
+                .category{
+                    width: 50%;
+                    &:nth-child(2){margin-right: 2em;}
+                    img{
+                        height: 20em;
+                    }
+                }
+            }
+        }
+    }
+}

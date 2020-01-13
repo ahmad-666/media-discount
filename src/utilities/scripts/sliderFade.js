@@ -1,3 +1,4 @@
+import util from '../utilities.js' ;
 function SliderFade(wrapper,timer){
     this.wrapper = wrapper ;
     this.slides = this.wrapper.querySelectorAll('.slide') ;
@@ -32,11 +33,9 @@ SliderFade.prototype.changeSlide = function(e){
     this.slides[this.currIndex].classList.remove('active') ;
     if(e.target == this.nextBth) this.currIndex = this.currIndex+1<=this.slidesNum-1 ? this.currIndex+1 : 0 ;
     else if(e.target == this.prevBtn) this.currIndex = this.currIndex-1>=0 ? this.currIndex-1 : this.slidesNum-1 ;
-    else this.currIndex = getChildIndex(this.dotContainer,e.target) ; //e.target is dot
+    else this.currIndex = util.getChildIndex(this.dotContainer,e.target) ; //e.target is dot
     this.dots[this.currIndex].classList.add('active') ;
     this.slides[this.currIndex].classList.add('active') ;
 }
 //new SliderFade(document.querySelector('.sliderFade'),3000) ;
-export default{
-	SliderFade
-}
+export default SliderFade ;

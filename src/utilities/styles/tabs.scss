@@ -2,7 +2,7 @@
 @import '../../colors.scss' ;
 @import '../../mixins.scss' ;
 .tabs_wrapper{
-    width: 80vw ;
+    width: 75% ;
     height: auto;
     padding: 0 ;
     margin: $sectionsDist auto ;
@@ -20,9 +20,9 @@
             flex-shrink: 0 ;
             width: auto ;
             height: auto;
-            padding: $dist2 $dist4 ;
+            padding: $dist1 $dist2 ;
             cursor: pointer;
-            font-size: $fontM ;
+            font-size: $fontM - .2em ;
             color: $primaryColor ;
             background-color: white;
             transition: all .3s linear ;
