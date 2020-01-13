@@ -10,8 +10,10 @@ function SliderCarousel(wrapper){
     this.offset = this.slides[this.currIndex].offsetWidth+parseFloat(util.getStyle(this.slides[this.currIndex],'margin-right'))+parseFloat(util.getStyle(this.slides[this.currIndex],'margin-left')) ;
     this.viewportSlides = Math.floor(this.slidesWrapper.offsetWidth/this.offset) ;// how many slides are inside this.slidesWrapper at one time   
     if(this.slidesNum>this.viewportSlides){    
-        this.nextBtn.addEventListener('click',this.nextSlide.bind(this)) ;
-        this.prevBtn.addEventListener('click',this.prevSlide.bind(this)) ;
+        this.nextBtn.addEventListener('click',this) ;
+        this.prevBtn.addEventListener('click',this) ;
+        //this.nextBtn.addEventListener('click',this.nextSlide.bind(this)) ;
+        //this.prevBtn.addEventListener('click',this.prevSlide.bind(this)) ;
     }
     window.addEventListener('resize',this.update.bind(this)) ;
 }
@@ -39,6 +41,32 @@ SliderCarousel.prototype.moveSlider = function(dir){
         else movement = -1*((this.slidesNum*this.offset) - this.slidesWrapper.offsetWidth) ;
     }
     this.slidesWrapper.style.right = `${movement}px` ;
+}
+SliderCarousel.prototype.handleEvent = function(e){
+    if(e.currentTarget == this.nextBtn){
+        this.currIndex = this.currIndex+1<=this.slidesNum-this.viewportSlides ? this.currIndex+1 : 0 ;
+        this.moveSlider('forward') ; 
+    }
+    else if(e.currentTarget == this.prevBtn){
+        this.currIndex = this.currIndex-1>=0 ? this.currIndex-1 : this.slidesNum-this.viewportSlides ;
+        this.moveSlider('backward') ; 
+    }
+}
+SliderCarousel.prototype.destroy = function(){
+    this.slidesWrapper.style.right = `0px` ;
+    this.nextBtn.removeEventListener('click',this) ;
+    this.prevBtn.removeEventListener('click',this) ;
+    window.removeEventListener('resize',this.update.bind(this)) ;
+    this.wrapper = null ;
+    this.slidesWrapper = null ;
+    this.slides = null ;
+    this.nextBtn = null ;
+    this.prevBtn = null ;
+    this.slidesNum = null ;
+    this.currIndex = null ;
+    this.offsetX = null ;
+    this.sliderOffsetX = null ;
+    this.offset = null ;   
 }
 //new SliderCarousel(document.querySelector('.sliderCarousel')) ;
 export default SliderCarousel

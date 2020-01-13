@@ -10,6 +10,7 @@ import '../index/styles/topSlider.scss' ;
 import '../index/styles/dummy.scss' ;
 import '../index/styles/category.scss' 
 import '../index/styles/carousel.scss';
+import '../index/styles/cards.scss' ;
 //load scripts
 import '../index/scripts/topMenu.js' ;
 import '../index/scripts/search.js' ;
