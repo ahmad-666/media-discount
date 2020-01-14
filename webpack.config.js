@@ -11,6 +11,21 @@ module.exports = {
     },
     entry: {
         'index' : './src/index/index.js',
+        'about' : './src/about/about.js',
+        'assist' : './src/assist/assist.js',
+        'bookmark' : './src/bookmark/bookmark.js',
+        'changePass' : './src/changePass/changePass.js',
+        'editInfo' : './src/editInfo/editInfo.js',
+        'faq' : './src/faq/faq.js',
+        'forgetPass' : './src/forgetPass/forgetPass.js',
+        'guide' : './src/guide/guide.js',
+        'login' : './src/login/login.js',
+        'medic' : './src/medic/medic.js',
+        'medics' : './src/medics/medics.js',
+        'report' : './src/report/report.js',
+        'resume' : './src/resume/resume.js',
+        'rules' : './src/rules/rules.js',
+        'signup' : './src/signup/signup.js'
     },
     output: {
         filename: '[name].js',
@@ -152,6 +167,96 @@ module.exports = {
             inject: true,
             chunks: ['index'],
             template: './src/index/index.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'about.html' , 
+            inject: true,
+            chunks: ['about'],
+            template: './src/about/about.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'assist.html' , 
+            inject: true,
+            chunks: ['assist'],
+            template: './src/assist/assist.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'bookmark.html' , 
+            inject: true,
+            chunks: ['bookmark'],
+            template: './src/bookmark/bookmark.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'changePass.html' , 
+            inject: true,
+            chunks: ['changePass'],
+            template: './src/changePass/changePass.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'editInfo.html' , 
+            inject: true,
+            chunks: ['editInfo'],
+            template: './src/editInfo/editInfo.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'faq.html' , 
+            inject: true,
+            chunks: ['faq'],
+            template: './src/faq/faq.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'forgetPass.html' , 
+            inject: true,
+            chunks: ['forgetPass'],
+            template: './src/forgetPass/forgetPass.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'guide.html' , 
+            inject: true,
+            chunks: ['guide'],
+            template: './src/guide/guide.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'login.html' , 
+            inject: true,
+            chunks: ['login'],
+            template: './src/login/login.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'medic.html' , 
+            inject: true,
+            chunks: ['medic'],
+            template: './src/medic/medic.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'medics.html' , 
+            inject: true,
+            chunks: ['medics'],
+            template: './src/medics/medics.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'report.html' , 
+            inject: true,
+            chunks: ['report'],
+            template: './src/report/report.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'resume.html' , 
+            inject: true,
+            chunks: ['resume'],
+            template: './src/resume/resume.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'rules.html' , 
+            inject: true,
+            chunks: ['rules'],
+            template: './src/rules/rules.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'signup.html' , 
+            inject: true,
+            chunks: ['signup'],
+            template: './src/signup/signup.html' 
         }),
         new CleanWebpackPlugin()
     ]
