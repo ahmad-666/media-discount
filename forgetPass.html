@@ -1,1 +1,50 @@
-<script type="text/javascript" src="forgetPass.js"></script>
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <meta name='description' content='سایت زیبایی' />
+    <meta name='keywords' content='beauty,discount,زیبایی,تخفیف' />
+    <meta name='author' content='rad7 devs' />
+    <title>سایت زیبایی</title>
+    <link rel='icon' href='./assets/imgs/logo.png' type='image/png' />
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='زیبایی' />
+    <meta property='og:description' content='سایت زیبایی' />
+    <meta property='og:site_name' content='beauty' />
+    <meta property='og:url' content='https://something.com/' />
+    <meta property='og:image' content='./assets/imgs/logo.png' type='image/png' />
+    <meta property='og:locale' content='fa_IR' />
+    <meta name='twitter:card' content='summery' />
+    <meta name='twitter:title' content='زیبایی' />
+    <meta name='twitter:description' content='سایت زیبایی' />
+    <meta name='twitter:image' content='./assets/imgs/logo.png' type='image/png' />
+<link href="forgetPass.css" rel="stylesheet"></head>
+<body class="bg">
+    <form novalidate id="forgetPassword" name="forgetPassword" class="validate containerStyle" method="GET" action="#!" enctype="text/plain">
+        <a href="index.html" class="title">
+            <img src="assets/imgs/logo.png" alt="logoImg">
+        </a>
+        <h4>فراموشی رمز عبور</h4>
+        <div class="inputWrapper text">
+            <input type="number" id="mobile" name="mobile" class="style1 labelHandler validate" pattern="/d{11}" required>
+            <label for="mobile">
+                <i class="fas fa-envelope icon"></i>
+                <p>شماره موبایل</p>
+            </label>
+            <span class="line"></span>
+            <div class="msg">
+                <p>شماره موبایل صحیح(شروع با ۰۹) وارد نمایید</p>
+                <i class="fas fa-caret-up"></i>
+            </div>
+        </div>
+        <button type="submit" class="pulse shadowPrimary">ارسال</button>
+        <a class="login" href="login.html">ورود به حساب کاربری</a>
+    </form>
+<script type="text/javascript" src="forgetPass.js"></script></body>
+
+</html>
+
+
