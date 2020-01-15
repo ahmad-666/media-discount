@@ -12,7 +12,6 @@ module.exports = {
     entry: {
         'index' : './src/index/index.js',
         'about' : './src/about/about.js',
-        'assist' : './src/assist/assist.js',
         'bookmark' : './src/bookmark/bookmark.js',
         'changePass' : './src/changePass/changePass.js',
         'editInfo' : './src/editInfo/editInfo.js',
@@ -173,12 +172,6 @@ module.exports = {
             inject: true,
             chunks: ['about'],
             template: './src/about/about.html' 
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'assist.html' , 
-            inject: true,
-            chunks: ['assist'],
-            template: './src/assist/assist.html' 
         }),
         new HtmlWebpackPlugin({
             filename: 'bookmark.html' , 

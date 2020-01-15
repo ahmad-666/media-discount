@@ -6,6 +6,12 @@ document.querySelector('#topMenu .right .city .title').addEventListener('click',
     target.classList.toggle('show') ;
     docHandler(target,[]) ;
 })
+document.querySelector('#topMenu .left #lang .title').addEventListener('click',e=>{
+    e.stopPropagation() ;
+    let target = e.currentTarget.parentElement.querySelector('ul') ;
+    target.classList.toggle('show') ;
+    docHandler(target,[]) ;
+})
 document.querySelector('#topMenu .left #more .title').addEventListener('click',e=>{
     e.stopPropagation() ;
     let target = e.currentTarget.parentElement.querySelector('ul') ;

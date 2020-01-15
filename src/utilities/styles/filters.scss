@@ -493,18 +493,16 @@ form#filters{
                 height: 0;
                 display: none;
             }
-            input[type="checkbox"].style1 {
+            input[type="checkbox"].style2 {
                 &:checked {
                     ~label {
                         .rect {
-                            width: 2em;
-                            height: 1em;
-                            border-radius: 0;
-                            border-top: none;
-                            border-right: none;
-                            border-left: 1.2px solid $primaryColor;
-                            border-bottom: 1.2px solid $primaryColor;
-                            transform: translateY(-.3em) rotate(-45deg);
+                            border: 1px solid transparent;
+                            background-color: $primaryColor;
+
+                            i {
+                                opacity: 1;
+                            }
                         }
 
                         p {
