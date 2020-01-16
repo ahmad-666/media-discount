@@ -51,7 +51,7 @@
             padding: $dist1 ;
         }
         .content.active{
-            display: block ;
+            display: flex ;
             animation: fadeIn .3s linear forwards;
         }
         @keyframes fadeIn {

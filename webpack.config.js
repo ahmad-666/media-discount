@@ -24,7 +24,9 @@ module.exports = {
         'report' : './src/report/report.js',
         'resume' : './src/resume/resume.js',
         'rules' : './src/rules/rules.js',
-        'signup' : './src/signup/signup.js'
+        'signup' : './src/signup/signup.js',
+        'article' : './src/article/article.js',
+        'articles' : './src/articles/articles.js',
     },
     output: {
         filename: '[name].js',
@@ -250,6 +252,18 @@ module.exports = {
             inject: true,
             chunks: ['signup'],
             template: './src/signup/signup.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'article.html' , 
+            inject: true,
+            chunks: ['article'],
+            template: './src/article/article.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'articles.html' , 
+            inject: true,
+            chunks: ['articles'],
+            template: './src/articles/articles.html' 
         }),
         new CleanWebpackPlugin()
     ]
