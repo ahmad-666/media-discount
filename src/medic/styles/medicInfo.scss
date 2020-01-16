@@ -58,11 +58,11 @@
                     top: 105%;
                     right: 0;
                 }
-                .toast.show{animation: toast 3s linear 0s 1 forwards ;}
+                .toast.show{animation: toast 1.5s linear 0s 1 forwards ;}
                 @keyframes toast {
                     0%{opacity: 0;visibility: hidden;}
-                    25%{opacity: 1;visibility: visible;}
-                    75%{opacity: 1;visibility: visible;}
+                    15%{opacity: 1;visibility: visible;}
+                    85%{opacity: 1;visibility: visible;}
                     100%{opacity: 0;visibility: hidden;}
                 }
                 
