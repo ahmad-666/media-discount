@@ -7885,6 +7885,868 @@ form#signup {
   form#signup {
     font-size: 6px; } }
 
+form#userComment {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: "";
+      align-content: ""; }
+  form#userComment .row {
+    width: auto;
+    height: auto;
+    margin-top: 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+        align-content: flex-start; }
+    form#userComment .row .inputWrapper.text {
+      width: 25em;
+      height: 4em;
+      position: relative; }
+      form#userComment .row .inputWrapper.text:not(:first-child) {
+        margin-right: 3em; }
+      form#userComment .row .inputWrapper.text input {
+        width: 100%;
+        height: 100%;
+        line-height: 4em;
+        padding: 0 0.75em;
+        font-size: 1.6em;
+        color: #2d2d31;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+        form#userComment .row .inputWrapper.text input::-webkit-input-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#userComment .row .inputWrapper.text input::-moz-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#userComment .row .inputWrapper.text input:-ms-input-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#userComment .row .inputWrapper.text input::-ms-input-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#userComment .row .inputWrapper.text input::placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+      form#userComment .row .inputWrapper.text input.style1 {
+        border: none;
+        border-bottom: 1.2px solid #d3d3d7; }
+        form#userComment .row .inputWrapper.text input.style1:focus ~ label {
+          color: #00897b;
+          font-size: 8px;
+          bottom: calc(100% + .5em);
+          -webkit-transform: translateY(50%);
+              -ms-transform: translateY(50%);
+               -o-transform: translateY(50%);
+                  transform: translateY(50%);
+          right: 0; }
+        form#userComment .row .inputWrapper.text input.style1:focus ~ .line {
+          width: 100%; }
+      form#userComment .row .inputWrapper.text input.style2 {
+        border: 1.2px solid #d3d3d7;
+        border-radius: 3em; }
+        form#userComment .row .inputWrapper.text input.style2:focus {
+          border: 1.2px solid #00897b; }
+          form#userComment .row .inputWrapper.text input.style2:focus ~ label {
+            color: #00897b;
+            font-size: 8px;
+            bottom: calc(100% + 1.5em);
+            -webkit-transform: translateY(50%);
+                -ms-transform: translateY(50%);
+                 -o-transform: translateY(50%);
+                    transform: translateY(50%);
+            right: 0.75em; }
+          form#userComment .row .inputWrapper.text input.style2:focus ~ .line {
+            width: 0%; }
+      form#userComment .row .inputWrapper.text input.style1.error {
+        border-bottom: 1.2px solid #ea6161; }
+        form#userComment .row .inputWrapper.text input.style1.error ~ label {
+          color: #ea6161; }
+        form#userComment .row .inputWrapper.text input.style1.error ~ .line {
+          background-color: #ea6161; }
+      form#userComment .row .inputWrapper.text input.style2.error {
+        border: 1.2px solid #ea6161; }
+        form#userComment .row .inputWrapper.text input.style2.error ~ label {
+          color: #ea6161; }
+      form#userComment .row .inputWrapper.text label {
+        width: auto;
+        height: auto;
+        position: absolute;
+        right: 0.75em;
+        bottom: 50%;
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+             -o-transform: translateY(50%);
+                transform: translateY(50%);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -ms-flex-line-pack: "";
+            align-content: "";
+        color: #c6c6cb;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+        form#userComment .row .inputWrapper.text label .icon {
+          font-size: 1.6em; }
+        form#userComment .row .inputWrapper.text label p {
+          font-size: 1.5em;
+          -webkit-transform: translateX(-0.3em);
+              -ms-transform: translateX(-0.3em);
+               -o-transform: translateX(-0.3em);
+                  transform: translateX(-0.3em); }
+      form#userComment .row .inputWrapper.text input.style1 ~ label.top {
+        font-size: 8px;
+        bottom: calc(100% + .5em);
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+             -o-transform: translateY(50%);
+                transform: translateY(50%);
+        right: 0; }
+      form#userComment .row .inputWrapper.text input.style2 ~ label.top {
+        font-size: 8px;
+        bottom: calc(100% + 1.5em);
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+             -o-transform: translateY(50%);
+                transform: translateY(50%);
+        right: 0.75em; }
+      form#userComment .row .inputWrapper.text .line {
+        width: 0%;
+        height: 1.2px;
+        background-color: #00897b;
+        position: absolute;
+        right: 0;
+        top: calc(100% - 1px);
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+      form#userComment .row .inputWrapper.text .msg {
+        width: auto;
+        height: auto;
+        border-radius: 3em;
+        padding: 0.75em 1.5em;
+        position: relative;
+        background-color: #ea6161;
+        position: absolute;
+        right: 0;
+        top: 115%;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+        form#userComment .row .inputWrapper.text .msg p {
+          color: #fbfbfb;
+          font-size: 1.4em; }
+        form#userComment .row .inputWrapper.text .msg i {
+          font-size: 2.4em;
+          color: #ea6161;
+          position: absolute;
+          right: 1.5em;
+          top: calc(0% - .6em); }
+      form#userComment .row .inputWrapper.text .msg.show {
+        opacity: 1;
+        visibility: visible;
+        z-index: 2; }
+  form#userComment .inputWrapper.textarea {
+    width: 53em;
+    height: auto;
+    position: relative;
+    margin-top: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    form#userComment .inputWrapper.textarea textarea {
+      width: 100%;
+      font-size: 1.6em;
+      color: #2d2d31;
+      padding: 0.75em;
+      line-height: 1.5em;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear;
+      resize: none; }
+      form#userComment .inputWrapper.textarea textarea::-webkit-input-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form#userComment .inputWrapper.textarea textarea::-moz-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form#userComment .inputWrapper.textarea textarea:-ms-input-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form#userComment .inputWrapper.textarea textarea::-ms-input-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form#userComment .inputWrapper.textarea textarea::placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+    form#userComment .inputWrapper.textarea textarea.style1 {
+      height: 8em;
+      border: 1.2px solid #d3d3d7;
+      border-radius: 1.5em; }
+      form#userComment .inputWrapper.textarea textarea.style1 ~ label {
+        bottom: 100%;
+        -webkit-transform: translateY(150%);
+            -ms-transform: translateY(150%);
+             -o-transform: translateY(150%);
+                transform: translateY(150%); }
+      form#userComment .inputWrapper.textarea textarea.style1:focus {
+        border: 1.2px solid #00897b; }
+        form#userComment .inputWrapper.textarea textarea.style1:focus ~ label {
+          font-size: 8px;
+          right: 0.75em;
+          color: #00897b;
+          bottom: calc(100% + .5em);
+          -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+               -o-transform: translateY(0);
+                  transform: translateY(0); }
+    form#userComment .inputWrapper.textarea textarea.style2 {
+      overflow: hidden;
+      border: none;
+      border-bottom: 1.2px solid #d3d3d7; }
+      form#userComment .inputWrapper.textarea textarea.style2 ~ label {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+             -o-transform: translateY(-50%);
+                transform: translateY(-50%); }
+      form#userComment .inputWrapper.textarea textarea.style2:focus {
+        border-bottom: 1.2px solid #00897b; }
+        form#userComment .inputWrapper.textarea textarea.style2:focus ~ label {
+          font-size: 8px;
+          right: 0;
+          color: #00897b;
+          top: 0;
+          -webkit-transform: translateY(-100%);
+              -ms-transform: translateY(-100%);
+               -o-transform: translateY(-100%);
+                  transform: translateY(-100%); }
+        form#userComment .inputWrapper.textarea textarea.style2:focus ~ .line {
+          width: 100%; }
+    form#userComment .inputWrapper.textarea textarea.style1.error {
+      border: 1.2px solid #ea6161; }
+      form#userComment .inputWrapper.textarea textarea.style1.error ~ label {
+        color: #ea6161; }
+    form#userComment .inputWrapper.textarea textarea.style2.error {
+      border-bottom: 1.2px solid #ea6161; }
+      form#userComment .inputWrapper.textarea textarea.style2.error ~ label {
+        color: #ea6161; }
+    form#userComment .inputWrapper.textarea textarea.style1 ~ label.top {
+      font-size: 8px;
+      bottom: calc(100% + 2em);
+      -webkit-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+           -o-transform: translateY(50%);
+              transform: translateY(50%);
+      right: 0; }
+    form#userComment .inputWrapper.textarea textarea.style2 ~ label.top {
+      font-size: 8px;
+      top: 0;
+      -webkit-transform: translateY(-100%);
+          -ms-transform: translateY(-100%);
+           -o-transform: translateY(-100%);
+              transform: translateY(-100%);
+      right: 0; }
+    form#userComment .inputWrapper.textarea label {
+      width: auto;
+      height: auto;
+      position: absolute;
+      right: 0.75em;
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: "";
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear;
+      color: #c6c6cb; }
+      form#userComment .inputWrapper.textarea label i {
+        font-size: 1.6em; }
+      form#userComment .inputWrapper.textarea label p {
+        font-size: 1.5em;
+        -webkit-transform: translateX(-0.3em);
+            -ms-transform: translateX(-0.3em);
+             -o-transform: translateX(-0.3em);
+                transform: translateX(-0.3em); }
+    form#userComment .inputWrapper.textarea .line {
+      width: 0%;
+      height: 1.2px;
+      background-color: #00897b;
+      position: absolute;
+      right: 0;
+      top: calc(100% - .6px);
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+  form#userComment button[type="submit"] {
+    width: auto;
+    height: auto;
+    padding: 0.5em 1.7em;
+    margin: 1.5em auto 0 auto;
+    border-radius: 3em;
+    font-size: 1.6em;
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    color: #fbfbfb;
+    background-color: #00897b;
+    border: 1.2px solid transparent; }
+    form#userComment button[type="submit"]:hover {
+      color: #00897b;
+      background-color: #fbfbfb;
+      border: 1.2px solid #00897b; }
+
+@media screen and (max-width: 900px) {
+  form#userComment {
+    font-size: 8px; }
+    form#userComment .row .inputWrapper.text input.style1:focus ~ label {
+      font-size: 6px; }
+    form#userComment .row .inputWrapper.text input.style2:focus ~ label {
+      font-size: 6px; }
+    form#userComment .row .inputWrapper.text input.style1 ~ label.top {
+      font-size: 6px; }
+    form#userComment .row .inputWrapper.text input.style2 ~ label.top {
+      font-size: 6px; }
+    form#userComment .inputWrapper.textarea textarea.style1:focus ~ label {
+      font-size: 6px; }
+    form#userComment .inputWrapper.textarea textarea.style2:focus ~ label {
+      font-size: 6px; }
+    form#userComment .inputWrapper.textarea textarea.style1 ~ label.top {
+      font-size: 6px; }
+    form#userComment .inputWrapper.textarea textarea.style2 ~ label.top {
+      font-size: 6px; } }
+
+@media screen and (max-width: 600px) {
+  form#userComment {
+    font-size: 6px; }
+    form#userComment .row .inputWrapper.text input.style1:focus ~ label {
+      font-size: 4px; }
+    form#userComment .row .inputWrapper.text input.style2:focus ~ label {
+      font-size: 4px; }
+    form#userComment .row .inputWrapper.text input.style1 ~ label.top {
+      font-size: 4px; }
+    form#userComment .row .inputWrapper.text input.style2 ~ label.top {
+      font-size: 4px; }
+    form#userComment .inputWrapper.textarea textarea.style1:focus ~ label {
+      font-size: 4px; }
+    form#userComment .inputWrapper.textarea textarea.style2:focus ~ label {
+      font-size: 4px; }
+    form#userComment .inputWrapper.textarea textarea.style1 ~ label.top {
+      font-size: 4px; }
+    form#userComment .inputWrapper.textarea textarea.style2 ~ label.top {
+      font-size: 4px; } }
+
+@media screen and (max-width: 360px) {
+  form#userComment {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#userComment .row {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+      width: 100%; }
+      form#userComment .row .inputWrapper.text {
+        width: 90%;
+        height: 4em;
+        position: relative; }
+        form#userComment .row .inputWrapper.text:not(:first-child) {
+          margin-right: 0;
+          margin-top: 3em; }
+    form#userComment .inputWrapper.textarea {
+      width: 90%; } }
+
+form.reply {
+  width: auto;
+  height: auto;
+  margin-top: -0.75em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: "";
+      align-content: ""; }
+  form.reply .inputWrapper.textarea {
+    width: 53em;
+    height: auto;
+    position: relative;
+    margin-top: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    form.reply .inputWrapper.textarea textarea {
+      width: 100%;
+      font-size: 1.6em;
+      color: #2d2d31;
+      padding: 0.75em;
+      line-height: 1.5em;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear;
+      resize: none; }
+      form.reply .inputWrapper.textarea textarea::-webkit-input-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form.reply .inputWrapper.textarea textarea::-moz-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form.reply .inputWrapper.textarea textarea:-ms-input-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form.reply .inputWrapper.textarea textarea::-ms-input-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form.reply .inputWrapper.textarea textarea::placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+    form.reply .inputWrapper.textarea textarea.style1 {
+      height: 8em;
+      border: 1.2px solid #d3d3d7;
+      border-radius: 1.5em; }
+      form.reply .inputWrapper.textarea textarea.style1 ~ label {
+        bottom: 100%;
+        -webkit-transform: translateY(150%);
+            -ms-transform: translateY(150%);
+             -o-transform: translateY(150%);
+                transform: translateY(150%); }
+      form.reply .inputWrapper.textarea textarea.style1:focus {
+        border: 1.2px solid #00897b; }
+        form.reply .inputWrapper.textarea textarea.style1:focus ~ label {
+          font-size: 8px;
+          right: 0.75em;
+          color: #00897b;
+          bottom: calc(100% + .5em);
+          -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+               -o-transform: translateY(0);
+                  transform: translateY(0); }
+    form.reply .inputWrapper.textarea textarea.style2 {
+      overflow: hidden;
+      border: none;
+      border-bottom: 1.2px solid #d3d3d7; }
+      form.reply .inputWrapper.textarea textarea.style2 ~ label {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+             -o-transform: translateY(-50%);
+                transform: translateY(-50%); }
+      form.reply .inputWrapper.textarea textarea.style2:focus {
+        border-bottom: 1.2px solid #00897b; }
+        form.reply .inputWrapper.textarea textarea.style2:focus ~ label {
+          font-size: 8px;
+          right: 0;
+          color: #00897b;
+          top: 0;
+          -webkit-transform: translateY(-100%);
+              -ms-transform: translateY(-100%);
+               -o-transform: translateY(-100%);
+                  transform: translateY(-100%); }
+        form.reply .inputWrapper.textarea textarea.style2:focus ~ .line {
+          width: 100%; }
+    form.reply .inputWrapper.textarea textarea.style1.error {
+      border: 1.2px solid #ea6161; }
+      form.reply .inputWrapper.textarea textarea.style1.error ~ label {
+        color: #ea6161; }
+    form.reply .inputWrapper.textarea textarea.style2.error {
+      border-bottom: 1.2px solid #ea6161; }
+      form.reply .inputWrapper.textarea textarea.style2.error ~ label {
+        color: #ea6161; }
+    form.reply .inputWrapper.textarea textarea.style1 ~ label.top {
+      font-size: 8px;
+      bottom: calc(100% + 2em);
+      -webkit-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+           -o-transform: translateY(50%);
+              transform: translateY(50%);
+      right: 0; }
+    form.reply .inputWrapper.textarea textarea.style2 ~ label.top {
+      font-size: 8px;
+      top: 0;
+      -webkit-transform: translateY(-100%);
+          -ms-transform: translateY(-100%);
+           -o-transform: translateY(-100%);
+              transform: translateY(-100%);
+      right: 0; }
+    form.reply .inputWrapper.textarea label {
+      width: auto;
+      height: auto;
+      position: absolute;
+      right: 0.75em;
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: "";
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear;
+      color: #d3d3d7; }
+      form.reply .inputWrapper.textarea label i {
+        font-size: 1.6em; }
+      form.reply .inputWrapper.textarea label p {
+        font-size: 1.5em;
+        -webkit-transform: translateX(-0.3em);
+            -ms-transform: translateX(-0.3em);
+             -o-transform: translateX(-0.3em);
+                transform: translateX(-0.3em); }
+    form.reply .inputWrapper.textarea .line {
+      width: 0%;
+      height: 1.2px;
+      background-color: #00897b;
+      position: absolute;
+      right: 0;
+      top: calc(100% - .6px);
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+  form.reply button[type="submit"] {
+    width: auto;
+    height: auto;
+    padding: 0.5em 1.7em;
+    margin: 0.75em auto;
+    border-radius: 3em;
+    font-size: 1.6em;
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    color: #fbfbfb;
+    background-color: #00897b;
+    border: 1.2px solid transparent; }
+    form.reply button[type="submit"]:hover {
+      color: #00897b;
+      background-color: #fbfbfb;
+      border: 1.2px solid #00897b; }
+
+@media screen and (max-width: 900px) {
+  form.reply {
+    font-size: 8px; }
+    form.reply .inputWrapper.text input.style1:focus ~ label {
+      font-size: 6px; }
+    form.reply .inputWrapper.text input.style2:focus ~ label {
+      font-size: 6px; }
+    form.reply .inputWrapper.text input.style1 ~ label.top {
+      font-size: 6px; }
+    form.reply .inputWrapper.text input.style2 ~ label.top {
+      font-size: 6px; }
+    form.reply .inputWrapper.textarea textarea.style1:focus ~ label {
+      font-size: 6px; }
+    form.reply .inputWrapper.textarea textarea.style2:focus ~ label {
+      font-size: 6px; }
+    form.reply .inputWrapper.textarea textarea.style1 ~ label.top {
+      font-size: 6px; }
+    form.reply .inputWrapper.textarea textarea.style2 ~ label.top {
+      font-size: 6px; } }
+
+@media screen and (max-width: 600px) {
+  form.reply {
+    font-size: 6px; }
+    form.reply .inputWrapper.text input.style1:focus ~ label {
+      font-size: 4px; }
+    form.reply .inputWrapper.text input.style2:focus ~ label {
+      font-size: 4px; }
+    form.reply .inputWrapper.text input.style1 ~ label.top {
+      font-size: 4px; }
+    form.reply .inputWrapper.text input.style2 ~ label.top {
+      font-size: 4px; }
+    form.reply .inputWrapper.textarea textarea.style1:focus ~ label {
+      font-size: 4px; }
+    form.reply .inputWrapper.textarea textarea.style2:focus ~ label {
+      font-size: 4px; }
+    form.reply .inputWrapper.textarea textarea.style1 ~ label.top {
+      font-size: 4px; }
+    form.reply .inputWrapper.textarea textarea.style2 ~ label.top {
+      font-size: 4px; } }
+
+@media screen and (max-width: 400px) {
+  form.reply {
+    width: 100%; }
+    form.reply .inputWrapper.textarea {
+      width: 90%; } }
+
+form#discount {
+  width: 100%;
+  height: auto;
+  margin-top: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: "";
+      align-content: ""; }
+  form#discount .number {
+    width: auto;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#discount .number label {
+      font-size: 1.4em;
+      color: #90909b; }
+    form#discount .number select {
+      width: 6em;
+      height: 2em;
+      margin-right: 0.75em;
+      border-radius: 0.75em;
+      border: 1px solid #00897b; }
+      form#discount .number select option {
+        color: #00897b;
+        font-size: 1.2em;
+        padding: .3em; }
+  form#discount .reserve {
+    width: auto;
+    height: auto;
+    margin-right: 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#discount .reserve button[type="submit"] {
+      white-space: nowrap;
+      font-size: 1.4em;
+      cursor: pointer;
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear;
+      color: white;
+      background-color: #00897b;
+      border: 1.2px solid transparent;
+      padding: 0.3em 1.05em; }
+      form#discount .reserve button[type="submit"]:hover {
+        color: #00897b;
+        background-color: white;
+        border: 1.2px solid #00897b; }
+    form#discount .reserve .inputWrapper.checkboxes {
+      width: auto;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: "";
+      margin-top: 0; }
+      form#discount .reserve .inputWrapper.checkboxes .checkbox {
+        width: 100%;
+        height: 100%;
+        padding-right: 0.75em;
+        margin-top: 0.75em; }
+        form#discount .reserve .inputWrapper.checkboxes .checkbox input[type="checkbox"] {
+          width: 0;
+          height: 0;
+          display: none; }
+        form#discount .reserve .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect {
+          border: 1px solid transparent;
+          background-color: #00897b; }
+          form#discount .reserve .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i {
+            opacity: 1; }
+        form#discount .reserve .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p {
+          color: #00897b; }
+        form#discount .reserve .inputWrapper.checkboxes .checkbox label {
+          cursor: pointer;
+          width: 100%;
+          height: 100%;
+          line-height: 2.5em;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+          -ms-flex-line-pack: "";
+              align-content: ""; }
+          form#discount .reserve .inputWrapper.checkboxes .checkbox label .rect {
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
+            width: 2em;
+            height: 2em;
+            border: 1px solid #696975;
+            position: relative;
+            -webkit-transition: all .2s linear;
+            -o-transition: all .2s linear;
+            transition: all .2s linear;
+            border-radius: .45em; }
+            form#discount .reserve .inputWrapper.checkboxes .checkbox label .rect i {
+              opacity: 0;
+              font-size: 1.6em;
+              color: #fbfbfb;
+              -webkit-transition: all .2s linear;
+              -o-transition: all .2s linear;
+              transition: all .2s linear; }
+          form#discount .reserve .inputWrapper.checkboxes .checkbox label p {
+            max-width: auto;
+            font-size: 1.4em;
+            color: #696975;
+            margin-right: .3em;
+            -webkit-transition: all .2s linear;
+            -o-transition: all .2s linear;
+            transition: all .2s linear; }
+          form#discount .reserve .inputWrapper.checkboxes .checkbox label p.error {
+            color: #ea6161; }
+
 @font-face {
   font-family: iranSans;
   src: url(assets/fonts/iransans.ttf); }
