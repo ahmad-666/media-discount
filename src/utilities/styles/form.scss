@@ -2855,9 +2855,37 @@ form#editInfo{
         @include swapColor(white,$primaryColor) ;
         font-size: $fontM;
     }
+    .allWrapper{
+        width: 100%;
+        height: auto;
+        display: flex;
+        @include flex(row,flex-start,flex-start,nowrap,"") ;
+        .img{
+            flex-shrink: 0;
+            width: 12em;
+            height: auto;
+            display: flex;
+            @include flex(column,flex-start,center,nowrap,"") ;
+            img{
+                width: 10em;
+                height: 10em;
+                border-radius: 50%;
+            }
+            input[type="file"]{display: none;}
+            label{
+                cursor: pointer;
+                i{
+                    display: inline-block;
+                    font-size: $fontXL;
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
     .inputs{
         width: 100%;
         height: auto;
+        margin-right: $dist2;
         display: flex;
         @include flex(row,flex-start,flex-start,wrap,flex-start) ;
         .inputWrapper.text {
