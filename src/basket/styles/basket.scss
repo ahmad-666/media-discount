@@ -1,0 +1,334 @@
+@import '../../variables.scss' ;
+@import '../../mixins.scss' ;
+@import '../../colors.scss' ;
+#discounts{
+    padding: $dist2;
+    display: flex;
+    @include flex(column,flex-start,center,nowrap,"") ;
+    h4{
+        font-size: $fontL;
+        font-weight: 700;
+        color: $primaryColor;
+    }
+    .medics{
+        width: 100%;
+        height: auto;
+        margin-top: $dist2;
+        display: flex;
+        @include flex(column,flex-start,flex-start,nowrap,"") ;
+        .medic{
+            width: 100%;
+            height: auto;
+            display: flex;
+            @include flex(row,flex-start,flex-start,nowrap,"") ;
+            padding: $dist2 $dist1;
+            border-bottom: 1px solid lighten($textGrey,15%);
+            background-color: transparent;
+            transition: all .2s linear;
+            &:hover{
+                background-color: lighten($textGrey,34%);
+            }
+            .col{
+                &:nth-child(1){
+                    flex-shrink: 0;
+                    width: 25em;
+                    height: auto;
+                    display: flex;
+                    @include flex(column,flex-start,center,nowrap,"") ;
+                    a{
+                        width: 100%;
+                        height: 15em;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: $dist2;
+                        }
+                    }
+                    form{
+                        width: 100%;
+                        height: auto;
+                        margin-top: $dist1;
+                        display: flex;
+                        @include flex(column,flex-start,center,nowrap,"") ;
+                        .quantity{
+                            width: auto;
+                            height: auto;
+                            display: flex;
+                            @include flex(row,flex-start,center,nowrap,"") ;
+                            label{
+                                font-size: $fontM - .1em;
+                                color:  darken($textGrey,10%);
+                            }
+                            .inputWrapper.numberHandler {
+                                width: auto;
+                                height: auto;
+                                margin-right: $dist1;
+                                // position: relative ;
+                                display: flex;
+                                @include flex(row, space-around, center, nowrap, "");
+                                .increase,
+                                .decrease,
+                                input {
+                                    margin-right: $dist1;
+                                    &:first-child {
+                                        margin-right: 0;
+                                    }
+                                }
+                        
+                                .increase,
+                                .decrease {
+                                    font-size: $fontM - .2em;
+                                    cursor: pointer;
+                                    color: $primaryColor;
+                                    // color: darken($textGrey,15%) ;      
+                                }      
+                                input {
+                                    width: 2em;
+                                    height: 2em;
+                                    text-align: center;
+                                    line-height: 2em;
+                                    color: $darkColor;
+                                    font-size: $fontM;
+                                    border: 1.2px solid lighten($textGrey, 20%);
+                        
+                                }      
+                                input.error {
+                                    border: 1.2px solid lighten($redColor2, 5%);
+                                }
+                            }
+                        }
+                        .inputWrapper.checkboxes {
+                            width: auto;
+                            height: auto;
+                            display: flex;
+                            @include flex(column, flex-start, flex-start, nowrap, "");
+                            margin-top: $dist1;
+                            .checkbox {
+                                width: 100%;
+                                height: 100%;
+                                padding-right: 0;
+                                margin-top: 0 ;
+                                input[type="checkbox"] {
+                                    width: 0;
+                                    height: 0;
+                                    display: none;
+                                }
+                                input[type="checkbox"].style2 {
+                                    &:checked {
+                                        ~label {
+                                            .rect {
+                                                border: 1px solid transparent;
+                                                background-color: $primaryColor;
+                    
+                                                i {
+                                                    opacity: 1;
+                                                }
+                                            }
+                    
+                                            p {
+                                                color: $primaryColor;
+                                            }
+                                        }
+                                    }
+                                }    
+                                label {
+                                    cursor: pointer;
+                                    width: 100%;
+                                    height: 100%;
+                                    line-height: 2.5em;
+                                    display: flex;
+                                    @include flex(row, flex-start, center, nowrap, "");
+                    
+                                    .rect {
+                                        flex-shrink: 0;
+                                        width: 2.1em;
+                                        height: 2.1em;
+                                        border: 1px solid darken($textGrey, 15%);
+                                        position: relative;
+                                        transition: all .2s linear;
+                                        border-radius: .45em;
+                    
+                                        i {
+                                            opacity: 0;
+                                            font-size: $fontM;
+                                            color: $whiteColor2;
+                                            transition: all .2s linear;
+                                        }
+                                    }
+                    
+                                    p {
+                                        max-width: auto;
+                                        font-size: $fontM - .2em;
+                                        color: darken($textGrey, 15%);
+                                        margin-right: .3em;
+                                        transition: all .2s linear;
+                                    }
+                                    p.error {color: lighten($redColor2,5%);}
+                                }
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    width: 100%;
+                    height: auto;
+                    margin-right: $dist2;
+                    display: flex;
+                    @include flex(column,flex-start,flex-start,nowrap,"") ;
+                    h4{
+                        font-size: $fontM + .2em;
+                        font-weight: 700;
+                        color: $primaryColor;
+                    }
+                    .icons{
+                        width: auto;
+                        height: auto;
+                        display: flex;
+                        @include flex(row,flex-start,flex-start,wrap,flex-start) ;
+                        margin-right: -$dist1;
+                        margin-top: .5em;
+                        .icon{
+                            width: auto;
+                            height: auto;
+                            margin: $dist1;
+                            display: flex; 
+                            @include flex(row,flex-start,center,nowrap,"") ;
+                            i{
+                                font-size: $fontS;
+                                color: $primaryColor;
+                            }
+                            p{
+                                font-size: $fontM - .2em;
+                                color: $textGrey;
+                                margin-right: .3em;
+                            }
+                        }
+                    }
+                    .score{
+                        width: auto;
+                        height: auto;
+                        margin-top: 0;
+                        display: flex;
+                        margin-top: $dist1;
+                        @include flex(row,flex-start,center,nowrap,"") ;
+                        i{
+                            font-size: $fontS + .2em;
+                            color: $primaryColor;
+                            margin-right: .1em;
+                        }
+                        i.notActive{color: lighten($textGrey,15%);}
+                        p{
+                            margin-right: .2em;
+                            font-size: $fontS + .2em;
+                            color: $textGrey;
+                        }
+                    }
+                    .priceWrapper{
+                        width: auto;
+                        height: auto;
+                        margin-top: $dist1;
+                        display: flex;
+                        @include flex(row,flex-start,center,nowrap,"") ;
+                        p{
+                            font-size: $fontM;
+                            color: $primaryColor ;
+                        }
+                        .price{
+                            width: auto;
+                            height: auto;
+                            margin-right: $dist2;
+                            display: flex;
+                            @include flex(row,flex-start,center,nowrap,"") ;
+                            .prices{
+                                width: auto;
+                                height: auto;
+                                display: flex;
+                                @include flex(column,flex-start,flex-start,nowrap,"") ;
+                                p{
+                                    &:nth-child(1){
+                                        font-size: $fontM ;
+                                        color: lighten($textGrey,15%) ;
+                                        text-decoration: line-through ;
+
+                                    }
+                                    &:nth-child(2){
+                                        font-size: $fontL; 
+                                        color: $primaryColor;
+                                    }
+                                }                            
+                            }
+                            .discount{
+                                width: auto;
+                                height: auto;
+                                padding: .3em $dist1;
+                                font-size: $fontS + .2em;
+                                color: white;
+                                background-color: $primaryColor;
+                                border-radius: $dist1;
+                                margin-right: $dist2;
+                            }
+                        }
+                    }
+                    .sumPrice{
+                        width: auto;
+                        height: auto;
+                        margin-top: $dist1;
+                        display: flex;
+                        @include flex(row,flex-start,center,nowrap,"") ;
+                        p{
+                            &:nth-child(1){
+                                font-size: $fontM ;
+                                color: $primaryColor;
+                            }
+                            &:nth-child(2){
+                                font-size: $fontL;
+                                color: $primaryColor ;
+                                margin-right: $dist1;
+                            }
+                        }
+                    }
+                }
+            }
+            .remove{
+                width: auto;
+                height: auto;
+                margin-right: $dist2;
+                font-size: $fontXL;
+                cursor: pointer;
+                color: $textGrey;
+                &:hover{color: lighten($redColor2,5%);}
+            }
+        }
+        .medic.remove{display: none;}
+    }
+    .final{
+        width: 100%;
+        height: auto;
+        margin-top: $dist3 ;
+        display: flex;
+        @include flex(row,space-between,center,wrap,flex-start) ;
+        .price{
+            width: auto;
+            height: auto;
+            display: flex;
+            @include flex(column,flex-start,flex-start,nowrap,"") ;
+            p{
+                &:nth-child(1){
+                    font-size: $fontM;
+                    color: $textGrey;
+                }
+                &:nth-child(2){
+                    font-size: $fontXL - .2em;
+                    font-weight: 700;
+                    color: $primaryColor;
+                }
+            }
+        }
+        a{
+            @include swapColor(white,$primaryColor) ;
+            padding: .3em $dist2;
+            font-size: $fontM + .2em;
+        }
+    }
+}

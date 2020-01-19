@@ -27,6 +27,8 @@ module.exports = {
         'signup' : './src/signup/signup.js',
         'article' : './src/article/article.js',
         'articles' : './src/articles/articles.js',
+        'comments' : './src/comments/comments.js',
+        'basket' : './src/basket/basket.js',
     },
     output: {
         filename: '[name].js',
@@ -264,6 +266,18 @@ module.exports = {
             inject: true,
             chunks: ['articles'],
             template: './src/articles/articles.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'comments.html' , 
+            inject: true,
+            chunks: ['comments'],
+            template: './src/comments/comments.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'basket.html' , 
+            inject: true,
+            chunks: ['basket'],
+            template: './src/basket/basket.html' 
         }),
         new CleanWebpackPlugin()
     ]

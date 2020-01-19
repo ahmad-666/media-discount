@@ -1,0 +1,173 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+#menuTrigger{
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 50%;
+    position: fixed; 
+    top: 50%;
+    transform: translate(50%,-50%);
+    right: 2.5%;
+    @include swapColor(white,$primaryColor) ;
+    cursor: pointer;
+    transition: all .3s linear;
+    z-index: 11;
+    &::before{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%,-50%);
+        font-size: $fontL;
+    }
+}
+#menuTrigger.move{
+    right: calc(22em + 2.5%);
+}
+#blackFilter{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    z-index: -1;
+    transition: z-index 0s linear , background-color .3s linear ;
+}
+#blackFilter.show{
+    z-index: 10;
+    background-color: rgba(30,30,30,.85);
+}
+#menu{
+    width: 22em;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -25em;
+    transition: all .3s linear;
+    z-index: 11;
+    display: flex;
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    background-color: white;
+    box-shadow: -1em .5em 2.5em .3em rgba(70,70,70,.7);
+    .top{
+        width: 100%;
+        height: auto;
+        padding: $dist1;
+        display: flex;
+        @include flex(column,flex-start,center,nowrap,"") ;
+        padding-bottom: $dist2;
+        border-bottom: 1px solid $primaryColor;
+        img{
+            width: 8em;
+            height: 8em;
+            border-radius: 50%;
+        }    
+        p{
+            font-size: $fontM - .2em;
+            color: $primaryColor;
+            font-weight: 700;
+        }
+        .row{
+            width: 100%;
+            height: auto;
+            margin-top: $dist1;
+            display: flex;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            .exit{
+                width: auto;
+                height: auto;
+                margin-right: auto;
+                display: flex;
+                @include flex(row,flex-start,center,nowrap,"") ;
+                p,i{
+                    font-size: $fontM;
+                    color: lighten($redColor2,5%);
+                    &:nth-child(2){margin-right: .3em;}
+                }
+                i{
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+
+    }
+    ul{
+        width: 100%;
+        max-height: 75vh;
+        overflow: auto;
+        display: flex;
+        @include flex(column,flex-start,flex-start,nowrap,"") ;
+        li{
+            width: 100%;
+            height: auto;
+            padding: $dist1;
+            &:not(:last-child){border-bottom: 1px solid lighten($textGrey,15%);}
+            transition: all .3s linear;
+            background-color: transparent;
+            &:nth-child(1){
+                a{
+                    i{color: $blueColor1;}
+                }
+            }
+            &:nth-child(2){
+                a{
+                    i{color: lighten($redColor2,5%);}
+                }
+            }
+            &:nth-child(3){
+                a{
+                    i{color: $primaryColor;}
+                }
+            }
+            &:nth-child(4){
+                a{
+                    i{color: $purpleColor2;}
+                }
+            }
+            &:nth-child(5){
+                a{
+                    i{color: $orangeColor1;}
+                }
+            }
+            &:nth-child(6){
+                a{
+                    i{color: $purpleColor1;}
+                }
+            }
+            &:nth-child(7){
+                a{
+                    i{color: $primaryColor;}
+                }
+            }
+            &:nth-child(8){
+                a{
+                    i{color: $primaryColor;}
+                }
+            }
+            &:hover{
+                background-color: $primaryColor;
+                a{
+                    i,p{color: white !important ;}
+                }
+            }
+            a{
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                @include flex(row,flex-start,center,nowrap,"") ;
+                i{
+                    width: $fontS;
+                    font-size: $fontS + .1em;
+                }
+                p{
+                    margin-right: .3em;
+                    font-size: $fontM - .1em;
+                    color: $textDark;
+                }
+            }
+        }
+    }
+}
+#menu.show{right: 0;}

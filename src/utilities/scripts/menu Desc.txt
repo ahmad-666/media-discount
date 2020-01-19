@@ -1,0 +1,52 @@
+<i class="fas fa-bars" id="menuTrigger"></i>
+    <div id="menu">
+        <div class="top">
+            <img src="../assets/icons/profile.png" alt="profileAlt">
+            <p>نام حساب کاربری</p>
+            <div class="row">
+                <a href="#!" class="exit">
+                    <p>خروج</p>
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="editInfo">
+                    <i class="fas fa-edit"></i>
+                    <p>ویرایش مشخصات</p>
+                </a>
+            </li>
+            <li>
+                <a href="changePass.html">
+                    <i class="fas fa-lock"></i>
+                    <p>تغییر رمز عبور</p>
+                </a>
+            </li>
+            <li>
+                <a href="basket.html">
+                    <i class="fas fa-shopping-basket"></i>
+                    <p>سبد خرید</p>
+                </a>
+            </li>
+            <li>
+                <a href="resume.html">
+                    <i class="fas fa-tags"></i>
+                    <p>سوابق خریدها</p>
+                </a>
+            </li>
+            <li>
+                <a href="comments.html">
+                    <i class="fas fa-comment-dots"></i>
+                    <p>نظرات</p>
+                </a>
+            </li>
+            <li>
+                <a href="bookmarks.html">
+                    <i class="fas fa-bookmark"></i>
+                    <p>مورد علاقه ها</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="blackFilter"></div>
