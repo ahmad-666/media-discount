@@ -12,7 +12,7 @@ module.exports = {
     entry: {
         'index' : './src/index/index.js',
         'about' : './src/about/about.js',
-        'bookmark' : './src/bookmark/bookmark.js',
+        'bookmarks' : './src/bookmarks/bookmarks.js',
         'changePass' : './src/changePass/changePass.js',
         'editInfo' : './src/editInfo/editInfo.js',
         'faq' : './src/faq/faq.js',
@@ -27,8 +27,8 @@ module.exports = {
         'signup' : './src/signup/signup.js',
         'article' : './src/article/article.js',
         'articles' : './src/articles/articles.js',
-        'comments' : './src/comments/comments.js',
         'basket' : './src/basket/basket.js',
+        'final' : './src/final/final.js',
     },
     output: {
         filename: '[name].js',
@@ -178,10 +178,10 @@ module.exports = {
             template: './src/about/about.html' 
         }),
         new HtmlWebpackPlugin({
-            filename: 'bookmark.html' , 
+            filename: 'bookmarks.html' , 
             inject: true,
-            chunks: ['bookmark'],
-            template: './src/bookmark/bookmark.html' 
+            chunks: ['bookmarks'],
+            template: './src/bookmarks/bookmarks.html' 
         }),
         new HtmlWebpackPlugin({
             filename: 'changePass.html' , 
@@ -268,16 +268,16 @@ module.exports = {
             template: './src/articles/articles.html' 
         }),
         new HtmlWebpackPlugin({
-            filename: 'comments.html' , 
-            inject: true,
-            chunks: ['comments'],
-            template: './src/comments/comments.html' 
-        }),
-        new HtmlWebpackPlugin({
             filename: 'basket.html' , 
             inject: true,
             chunks: ['basket'],
             template: './src/basket/basket.html' 
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'final.html' , 
+            inject: true,
+            chunks: ['final'],
+            template: './src/final/final.html' 
         }),
         new CleanWebpackPlugin()
     ]

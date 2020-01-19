@@ -1,0 +1,33 @@
+@import '../../variables.scss' ;
+@import '../../mixins.scss' ;
+@import '../../colors.scss' ;
+#final{
+    display: flex;
+    @include flex(column,flex-start,center,nowrap,"") ;
+    h4{
+        font-size: $fontL;
+        font-weight: 700;
+        color: $primaryColor;
+    }
+    .trackCode{
+        width: auto;
+        height: auto;
+        padding: $dist2;
+        display: flex;
+        @include flex(row,flex-start,center,nowrap,"") ;
+        border-radius: $dist2;
+        margin-top: $dist1;
+        background-color: $primaryColor;
+        p{
+            margin-top: 0;
+            font-size: $fontM;
+            color: white;
+            &:not(:first-child){margin-right: $dist2;}
+        }
+    }
+    p{
+        margin-top: $dist1;
+        font-size: $fontM;
+        color: $textGrey;
+    }
+}

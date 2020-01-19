@@ -55,6 +55,14 @@ input[type=number] {-moz-appearance:textfield;}
     display: flex;
     @include flex(column,flex-start,flex-start,nowrap,"") ;
 }
+.select2-results__option{
+    font-size: $fontM;
+    color: $textDark ;
+}
+.select2-results__option.alert{
+    font-size: $fontM ;
+    color: $textDark ;
+}
 // #blackFilter{
 //     opacity: 0;
 //     visibility: hidden;

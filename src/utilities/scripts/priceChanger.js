@@ -27,6 +27,11 @@ class PriceMonitor{
     updatePrice(price){
         this.finalPrice = price ;
         this.finalPriceElm.textContent = `${this.finalPrice}${this.append}` ;
+        let final = 0 ;
+        if(this.others) this.others.forEach(other=>final+=parseFloat(other.finalPrice)) ;
+        final+=parseFloat(this.finalPrice) ;
+        this.finalBasketPrice.textContent = `${final}${this.append}` ;
+
     }
     removeItem(e){
         this.monitor.classList.add('remove') ;

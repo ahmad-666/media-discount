@@ -1,0 +1,123 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+#resume{
+    display: flex;
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    h4{
+       font-size: $fontL;
+       color: $textDark;
+       font-weight: 700;
+    }
+    table{
+        width: 100%;
+        height: auto;
+        margin-top: $dist2;
+        display: flex;
+        @include flex(column,flex-start,flex-start,nowrap,"") ;
+        overflow: auto;
+        thead,tbody{
+            width: 100%;
+            height: auto;
+            display: flex;
+            @include flex(column,flex-start,flex-start,nowrap,"") ;
+            tr{
+                min-width: 100%;
+                height: auto;
+                padding: $dist1;
+                display: flex;
+                @include flex(row,space-around,flex-start,nowrap,"") ;
+                th,td{
+                    flex-shrink: 0;
+                    height: auto;
+                }
+                th.clinic,td.clinic{
+                    width: 20em;
+                }
+                th.date,td.date{
+                    width: 12em;
+                }
+                th.quantity,td.quantity{
+                    width: 10em;
+                }
+                th.price,td.price{
+                    width: 20em;
+                }
+                th.discount,td.discount{
+                    width: 15em;
+                }
+                th.state,td.state{
+                    width: 15em;
+                }
+            }
+        }
+        thead{
+            tr{
+                background-color: $primaryColor;
+                color: white;
+                th{
+                    h4{
+                        font-size: $fontM + .1em;
+                        font-weight: 700;
+                        color: inherit;
+                    }
+                }
+            }
+        }
+        tbody{
+            tr{
+                &:nth-child(even){background-color: lighten($textGrey,35%);}
+                td{
+                    text-align: center; 
+                }
+                td.clinic{
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        font-size: $fontM;
+                        color: $textDark;
+                        &:hover{
+                            color: $primaryColor;
+                        }
+                    }
+                }          
+                td.date,td.quantity,td.discount{
+                    p{
+                        font-size: $fontM;
+                        color: $textDark;
+                    }
+                }          
+                td.price{
+                    display: flex;
+                    @include flex(column,flex-start,center,nowrap,"") ;
+                    p{
+                        &:nth-child(1){
+                            font-size: $fontM;
+                            color: $textDark;
+                        }
+                        &:nth-child(2){
+                            font-size: $fontM - .15em;
+                            color: lighten($textGrey,0%);
+                        }
+                    }
+                }          
+                td.state{
+                    p{
+                        width: auto;
+                        height: auto;
+                        border-radius: $dist1;
+                        padding: .3em $dist1 ;
+                        white-space: nowrap;
+                        color: white;
+                        font-size: $fontM ;
+                    }
+                    p.process{background-color: lighten($orangeColor1,5%);}
+                    p.success{background-color: $primaryColor}
+                    p.expire{background-color: lighten($redColor2,5%);}
+               
+                }           
+            }
+        }
+    }
+}

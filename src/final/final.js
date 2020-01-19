@@ -7,7 +7,7 @@ import '../index/styles/header.scss' ;
 import '../index/styles/leftFix.scss' ;
 import '../index/styles/smooth.scss' ;
 import '../basket/styles/menu.scss' ;
-import '../resume/styles/resume.scss' ;
+import '../final/styles/final.scss' ;
 import '../index/styles/footer.scss' ;
 //load scripts
 import '../index/scripts/topMenu.js' ;

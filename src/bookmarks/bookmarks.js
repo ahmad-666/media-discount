@@ -7,11 +7,12 @@ import '../index/styles/header.scss' ;
 import '../index/styles/leftFix.scss' ;
 import '../index/styles/smooth.scss' ;
 import '../basket/styles/menu.scss' ;
-import '../resume/styles/resume.scss' ;
+import '../bookmarks/styles/bookmarks.scss' ;
 import '../index/styles/footer.scss' ;
 //load scripts
 import '../index/scripts/topMenu.js' ;
 import '../index/scripts/smooth.js' ;
 import '../basket/scripts/menu.js' ;
+import '../bookmarks/scripts/bookmarks.js' ;
 //load videos
 
