@@ -123,3 +123,103 @@
         }
     }
 }
+@include resizeTablet('#category') ;
+@include resizeMobile('#category') ;
+@include mediaQ(650px){
+    #category{
+        .grid{
+            .row{
+                &:nth-child(1){
+                    .col{
+                        &:nth-child(1){
+                            .innerRow{
+                                @include flex(column,flex-start,flex-start,nowrap,"") ;
+                                .category{
+                                    width: 100%;
+                                    &:nth-child(2){
+                                        margin-top: 2em;
+                                        margin-right: 0em;
+                                    }
+                                    .img{
+                                        height: 20em;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(2){
+                            .category{
+                                .img{
+                                    height: 70em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include mediaQ(550px){
+    #category{
+        .grid{
+            .row{
+                @include flex(column,flex-start,flex-start,nowrap,"") ;
+                &:not(:first-child){margin-top: 1em;}
+                .innerRow{
+                    @include flex(column,flex-start,flex-start,nowrap,"") ;
+                }
+                .col{
+                    width: 100%;
+                    @include flex(column,flex-start,flex-start,nowrap,"") ;
+                }
+                &:nth-child(1){
+                    .col{
+                        &:nth-child(1){
+                            .innerRow{
+                                .category{
+                                    width: 100%;
+                                    &:nth-child(2){
+                                        margin-top: 1em;
+                                        margin-right: 0em;
+                                    }
+                                    .img{
+                                        height: 20em;
+                                    }
+                                }
+                            }
+                            > .category{
+                                width: 100%;
+                                margin-top: 1em;
+                                .img{
+                                    height: 20em;
+                                }
+                            }
+                        }
+                        &:nth-child(2){
+                            margin-right: 0;
+                            margin-top: 1em;
+                            .category{
+                                width: 100%;
+                                .img{
+                                    height: 20em;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    .category{
+                        width: 100%;
+                        &:nth-child(2){
+                            margin-top: 1em;
+                            margin-right: 0em;
+                        }
+                        .img{
+                            height: 20em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

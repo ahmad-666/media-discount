@@ -171,3 +171,25 @@
     }
 }
 #menu.show{right: 0;}
+@include resizeTablet('#menuTrigger') ;
+@include resizeMobile('#menuTrigger') ;
+@include resizeTablet('#menu') ;
+@include resizeMobile('#menu') ;
+@include mediaQ(550px){
+    #menuTrigger{
+        transform: translate(50%,-50%);
+        right: 3.5%;
+    }
+    #menuTrigger.move{
+        right: calc(22em + 3.5%);
+    }
+}
+@include mediaQ(400px){
+    #menuTrigger{
+        transform: translate(50%,-50%);
+        right: 5%;
+    }
+    #menuTrigger.move{
+        right: calc(22em + 5%);
+    }
+}

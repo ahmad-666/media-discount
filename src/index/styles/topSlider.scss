@@ -44,3 +44,19 @@
         margin-top: 0;
     }
 }
+@include resizeTablet('#sliderCategory') ;
+@include resizeMobile('#sliderCategory') ;
+@include mediaQ(420px){
+    #sliderCategory{
+        height: 40em;
+        ul{
+            width: 16em;
+            li{
+                width: 100%;
+            }
+        }
+        .sliderFade{
+            margin-right: 0;
+        }
+    }
+}

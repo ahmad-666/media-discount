@@ -18,3 +18,5 @@
         font-size: $fontM;
     }
 }
+@include resizeTablet('#guide') ;
+@include resizeMobile('#guide') ;

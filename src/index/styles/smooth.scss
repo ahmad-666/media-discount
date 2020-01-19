@@ -22,3 +22,8 @@
         font-size: $fontXL;
     }
 }
+@include resizeTablet('#smooth') ;
+@include resizeMobile('#smooth') ;
+@include mediaQ(550px){
+    #smooth{font-size: 4px;}
+}

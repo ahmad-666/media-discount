@@ -249,6 +249,48 @@ form#searchForm{
         }
     }
 }
+@include mediaQ(850px){
+    form#searchForm{
+        width: 100%;
+        height: auto;
+        padding: $dist2 $dist2;
+        .inputWrapper.text {
+            width: 20em;
+            height: 3.5em;
+            margin: $dist2;
+        } 
+        .select2{
+            width: 12em ;
+            margin-right: $dist2; 
+        }
+        .select2-container--default .select2-selection--single{
+            height: 2.5em;
+        }
+        button[type="submit"]{
+            margin-right: $dist2;
+        }
+    }
+}
+@include mediaQ(420px){
+    form#searchForm{
+        @include flex(column,flex-start,center,nowrap,"") ;
+        padding: $dist2;
+        .inputWrapper.text {
+            width: 80%;
+            height: 3.5em;
+            margin: 0;
+        }
+        .select2{
+            width: 80%;
+            margin-right: 0;  
+            margin-top: $dist1;  
+        }
+        button[type="submit"]{
+            margin-right: 0;
+            margin-top: $dist2;
+        }
+    }
+}
 form#filters{
     .inputWrapper.select {
         width: 100%;
@@ -681,6 +723,9 @@ form#filters{
             }                
         }
     }
+    form#filters .inputWrapper.checkboxes .checkbox label .content p{
+        font-size: $fontM - .2em;
+    }
 }
 @include mediaQ(600px){
     form#filters {
@@ -703,6 +748,12 @@ form#filters{
                 ~label.top {font-size: 4px;}
             }                
         }
+    }
+    form#filters .mainCategory .inputWrapper.checkboxes .checkbox label .content p{
+        font-size: $fontL;
+    }
+    form#filters .subCategory .inputWrapper.checkboxes .checkbox label .content p{
+        font-size: $fontS  ;
     }
 }
 form#report{
@@ -1401,6 +1452,54 @@ form#login{
 }
 @include resizeTablet('form#login') ;
 @include resizeMobile('form#login') ;
+@include mediaQ(1000px){
+    form#login {
+        font-size: 8px ;
+        .inputWrapper.text {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 6px;}                  
+                }
+            }
+            input.style2 {
+                &:focus {
+                    ~label {font-size: 6px;}
+                }
+            }  
+            input.style1 {
+                ~label.top {font-size: 6px;}
+            }
+    
+            input.style2 {
+                ~label.top {font-size: 6px;}
+            }
+        }
+    }
+}
+@include mediaQ(600px){
+    form#login {
+        font-size: 6px ;
+        .inputWrapper.text {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 4px;}                  
+                }
+            }
+            input.style2 {
+                &:focus {
+                    ~label {font-size: 4px;}
+                }
+            }  
+            input.style1 {
+                ~label.top {font-size: 4px;}
+            }
+    
+            input.style2 {
+                ~label.top {font-size: 4px;}
+            }
+        }
+    }
+}
 form#forgetPassword{
     width: 40em;
     height: auto;
@@ -1609,6 +1708,54 @@ form#forgetPassword{
 }
 @include resizeTablet('form#forgetPassword') ;
 @include resizeMobile('form#forgetPassword') ;
+@include mediaQ(1000px){
+    form#forgetPassword {
+        font-size: 8px ;
+        .inputWrapper.text {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 6px;}                  
+                }
+            }
+            input.style2 {
+                &:focus {
+                    ~label {font-size: 6px;}
+                }
+            }  
+            input.style1 {
+                ~label.top {font-size: 6px;}
+            }
+    
+            input.style2 {
+                ~label.top {font-size: 6px;}
+            }
+        }
+    }
+}
+@include mediaQ(600px){
+    form#forgetPassword {
+        font-size: 6px ;
+        .inputWrapper.text {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 4px;}                  
+                }
+            }
+            input.style2 {
+                &:focus {
+                    ~label {font-size: 4px;}
+                }
+            }  
+            input.style1 {
+                ~label.top {font-size: 4px;}
+            }
+    
+            input.style2 {
+                ~label.top {font-size: 4px;}
+            }
+        }
+    }
+}
 form#checkCode{
     width: 40em;
     height: auto;
@@ -1817,6 +1964,54 @@ form#checkCode{
 }
 @include resizeTablet('form#checkCode') ;
 @include resizeMobile('form#checkCode') ;
+@include mediaQ(1000px){
+    form#checkCode {
+        font-size: 8px ;
+        .inputWrapper.text {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 6px;}                  
+                }
+            }
+            input.style2 {
+                &:focus {
+                    ~label {font-size: 6px;}
+                }
+            }  
+            input.style1 {
+                ~label.top {font-size: 6px;}
+            }
+    
+            input.style2 {
+                ~label.top {font-size: 6px;}
+            }
+        }
+    }
+}
+@include mediaQ(600px){
+    form#checkCode {
+        font-size: 6px ;
+        .inputWrapper.text {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 4px;}                  
+                }
+            }
+            input.style2 {
+                &:focus {
+                    ~label {font-size: 4px;}
+                }
+            }  
+            input.style1 {
+                ~label.top {font-size: 4px;}
+            }
+    
+            input.style2 {
+                ~label.top {font-size: 4px;}
+            }
+        }
+    }
+}
 form#signup {
     width: 40em;
     height: auto;
@@ -2092,6 +2287,54 @@ form#signup {
 }
 @include resizeTablet('form#signup') ;
 @include resizeMobile('form#signup') ;
+@include mediaQ(1000px){
+    form#signup {
+        font-size: 8px ;
+        .inputWrapper.text {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 6px;}                  
+                }
+            }
+            input.style2 {
+                &:focus {
+                    ~label {font-size: 6px;}
+                }
+            }  
+            input.style1 {
+                ~label.top {font-size: 6px;}
+            }
+    
+            input.style2 {
+                ~label.top {font-size: 6px;}
+            }
+        }
+    }
+}
+@include mediaQ(600px){
+    form#signup {
+        font-size: 6px ;
+        .inputWrapper.text {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 4px;}                  
+                }
+            }
+            input.style2 {
+                &:focus {
+                    ~label {font-size: 4px;}
+                }
+            }  
+            input.style1 {
+                ~label.top {font-size: 4px;}
+            }
+    
+            input.style2 {
+                ~label.top {font-size: 4px;}
+            }
+        }
+    }
+}
 form#userComment{
     width: auto;
     display: flex;
@@ -2843,6 +3086,24 @@ form#discount{
         }
     }
 }
+@include mediaQ(750px){
+    form#discount{
+        .number{
+            select{
+                width: 5em;
+                height: 1.5em;
+                margin-right: $dist1;
+                border-radius: $dist1;
+                border: 1px solid $primaryColor ;
+                option{
+                    color: $primaryColor ;
+                    font-size: 10px;
+                    padding: .3em;
+                }
+            }
+        }
+    } 
+}
 form#editInfo{
     display: flex;
     @include flex(column,flex-start,center,nowrap,"") ;
@@ -3170,6 +3431,77 @@ form#editInfo{
     
             input.style2 {
                 ~label.top {font-size: 4px;}
+            }
+        }
+    }
+}
+@include resizeTablet('form#editInfo') ;
+@include resizeMobile('form#editInfo') ;
+@include mediaQ(1100px){
+    form#editInfo{
+        .allWrapper{
+            @include flex(row,flex-start,flex-start,nowrap,"") ;
+            .img{
+                width: 12em;
+                img{
+                    width: 10em;
+                    height: 10em;
+                }
+            }
+        }
+        .inputs{
+            margin-right: $dist2;
+            .inputWrapper.text {
+                width: calc((100% - (3 * 3em)) / 3);
+            }
+            .select2{
+                width: calc((100% - (3 * 3em)) / 3);
+            }
+        }
+    }
+}
+@include mediaQ(550px){
+    form#editInfo{
+        .allWrapper{
+            @include flex(column,flex-start,center,nowrap,"") ;
+            .img{
+                width: 12em;
+                img{
+                    width: 10em;
+                    height: 10em;
+                }
+            }
+        }
+        .inputs{
+            margin-right: $dist2;
+            .inputWrapper.text {
+                width: calc((100% - (3 * 3em)) / 3);
+            }
+            .select2{
+                width: calc((100% - (3 * 3em)) / 3);
+            }
+        }
+    }
+}
+@include mediaQ(450px){
+    form#editInfo{
+        .allWrapper{
+            @include flex(column,flex-start,center,nowrap,"") ;
+            .img{
+                width: 12em;
+                img{
+                    width: 10em;
+                    height: 10em;
+                }
+            }
+        }
+        .inputs{
+            margin-right: $dist2;
+            .inputWrapper.text {
+                width: calc((100% - (2 * 3em)) / 2);
+            }
+            .select2{
+                width: calc((100% - (2 * 3em)) / 2);
             }
         }
     }

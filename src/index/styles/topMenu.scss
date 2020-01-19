@@ -242,3 +242,57 @@
         }
     }
 }
+@include resizeTablet('#topMenu') ;
+@include resizeMobile('#topMenu') ;
+@include mediaQ(500px){
+    #topMenu{
+        .right{
+            .logo{
+                margin-right: $dist1;
+                h1{
+                    margin-right: .15em;
+                }
+            }
+            .city{
+                margin-right: $dist2;
+                .title{
+                    margin-right: $dist1;
+                    i{margin-right: .15em;}
+                }
+                ul{
+                    width: 20em;
+                }       
+            }
+        }
+        .left{
+            margin-right: $dist1;
+            #login{
+                padding: .5em .8em;
+                border-radius: .6em;
+                p{
+                    margin-right: .15em;
+                }
+            }
+            #lang{
+                margin-right: $dist2;
+                margin-left: $dist1;
+                .title{
+                    i{margin-right: .15em;}
+                }
+            }
+            #more{
+                margin-right: $dist2;
+                margin-left: $dist1;
+                .title{
+                    i{margin-right: .15em;}
+                }
+                ul{
+                    width: 25em;
+                }
+            }
+        }
+    }
+}
+@include mediaQ(450px){
+    #topMenu{font-size: 4px;}
+}

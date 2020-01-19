@@ -24,3 +24,25 @@
         margin-top: 0;
     }
 }
+@include resizeTablet('#medicWrapper') ;
+@include resizeMobile('#medicWrapper') ;
+@include mediaQ(750px){
+    #medicWrapper{
+        @include flex(column-reverse,flex-start,center,nowrap,"") ;
+        #medic{
+            width: 100%;
+            height: auto;
+            display: flex;
+            @include flex(column,flex-start,flex-start,nowrap,"") ;
+            margin-top: $dist2;
+        }
+        #sidebar{
+            flex-shrink: 0;
+            width: 35em;
+            height: auto;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 0;
+        }
+    }
+}

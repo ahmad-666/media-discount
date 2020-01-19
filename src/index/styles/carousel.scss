@@ -164,3 +164,77 @@
         }
     }
 }
+@include resizeTablet("#sliders") ;
+@include resizeMobile("#sliders") ;
+@include mediaQ(1200px){
+    #sliders{
+        .sliderCarousel{
+            .helper{
+                .slides{
+                    .slide{
+                        width: calc((100% - (4 * 1.5em)) / 4);
+                        height: 33em;
+                    }
+                }
+            }
+        }
+    }
+}
+@include mediaQ(850px){
+    #sliders{
+        .sliderCarousel{
+            .helper{
+                .slides{
+                    .slide{
+                        width: calc((100% - (3 * 1.5em)) / 3);
+                        height: 35em;
+                    }
+                }
+            }
+        }
+    }
+}
+@include mediaQ(650px){
+    #sliders{
+        .sliderCarousel{
+            .helper{
+                overflow: auto;
+                .btn{display: none;}
+                .slides{
+                    .slide{
+                        width: calc((100% - (3 * 1.5em)) / 3);
+                        height: 35em;
+                    }
+                }
+            }
+        }
+    }
+}
+@include mediaQ(550px){
+    #sliders{
+        .sliderCarousel{
+            .helper{
+                .slides{
+                    .slide{
+                        width: calc((100% - (2 * 1.5em)) / 2);
+                        height: 35em;
+                    }
+                }
+            }
+        }
+    }
+}
+@include mediaQ(380px){
+    #sliders{
+        .sliderCarousel{
+            .helper{
+                .slides{
+                    .slide{
+                        width: 65%;
+                        height: 35em;
+                    }
+                }
+            }
+        }
+    }
+}

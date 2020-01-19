@@ -177,7 +177,7 @@
                     display: flex;
                     @include flex(column,flex-start,flex-start,nowrap,"") ;
                     h4{
-                        font-size: $fontM + .2em;
+                        font-size: $fontM ;
                         font-weight: 700;
                         color: $primaryColor;
                     }
@@ -213,7 +213,7 @@
                         margin-top: $dist1;
                         @include flex(row,flex-start,center,nowrap,"") ;
                         i{
-                            font-size: $fontS + .2em;
+                            font-size: $fontS ;
                             color: $primaryColor;
                             margin-right: .1em;
                         }
@@ -247,13 +247,13 @@
                                 @include flex(column,flex-start,flex-start,nowrap,"") ;
                                 p{
                                     &:nth-child(1){
-                                        font-size: $fontM ;
+                                        font-size: $fontM - .2em ;
                                         color: lighten($textGrey,15%) ;
                                         text-decoration: line-through ;
 
                                     }
                                     &:nth-child(2){
-                                        font-size: $fontL; 
+                                        font-size: $fontM; 
                                         color: $primaryColor;
                                     }
                                 }                            
@@ -282,7 +282,7 @@
                                 color: $primaryColor;
                             }
                             &:nth-child(2){
-                                font-size: $fontL;
+                                font-size: $fontM;
                                 color: $primaryColor ;
                                 margin-right: $dist1;
                             }
@@ -329,6 +329,31 @@
             @include swapColor(white,$primaryColor) ;
             padding: .3em $dist2;
             font-size: $fontM + .2em;
+        }
+    }
+}
+@include resizeTablet('#discounts') ;
+@include resizeMobile('#discounts') ;
+@include mediaQ(500px){
+    #discounts{
+        .medics{
+            .medic{
+                @include flex(column,flex-start,center,nowrap,"") ;
+                .col{
+                    &:nth-child(1){
+                        width: 95%;
+                        a{
+                            width: 100%;
+                            height: 24em;
+                        }
+                    }
+                    &:nth-child(2){
+                        height: auto;
+                        margin-right: 0;
+                        margin-top: $dist2;
+                    }
+                }
+            }
         }
     }
 }

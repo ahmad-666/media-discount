@@ -219,7 +219,7 @@
     </div>
     <main>
         <form novalidate id="filters" name="filters" class="col" method="GET" action="#!" enctype="text/plain">
-            <div class="row containerStyle">
+            <div class="row containerStyle" id="sortWrapper">
                 <div class="inputWrapper select">
                     <input type="hidden" id="sortHidden" name="sortHidden">
                     <input type="text" id="sort" name="sort" class="style1 validate" required readonly>
@@ -236,7 +236,7 @@
                     </ul>
                 </div>
             </div>     
-            <div class="row containerStyle">
+            <div class="row containerStyle" id="filterWrapper">
                 <div class="mobileFixFlexFixer">
                     <div class="filtersWrapper" id="currFilters">
                         <div class="top">
@@ -765,6 +765,17 @@
             </div>
         </div>
     </main>
+    <div id="blackFilter"></div>
+    <div id="mobileFilterSort">
+        <div id="mobileFilter">
+            <i class="fas fa-filter"></i>
+            <p>فیلترها</p>
+        </div>
+        <div id="mobileSort">
+            <i class="fas fa-sort-amount-up-alt"></i>
+            <p>مرتب سازی</p>
+        </div>
+    </div>
     <footer>
         <div class="top">
             <div class="row">

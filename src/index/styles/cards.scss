@@ -172,3 +172,25 @@
         }
     }
 }
+@include resizeTablet('.cardsWrapper') ;
+@include resizeMobile('.cardsWrapper') ;
+@include mediaQ(1150px){
+    .cardsWrapper{
+        .cards{
+            .card{
+                width: calc((100% - (2 * 1.5em)) / 2);
+                height: 22em;
+            }
+        }
+    }
+}
+@include mediaQ(550px){
+    .cardsWrapper{
+        .cards{
+            .card{
+                width: 100%;
+                height: 22em;
+            }
+        }
+    }
+}

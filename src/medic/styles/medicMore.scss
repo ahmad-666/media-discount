@@ -125,3 +125,24 @@
     
     }
 }
+@include mediaQ(450px){
+    #medicMore{
+        .tabs_wrapper{
+            .contents{
+                #tab1{
+                    #features{
+                        @include flex(column,flex-start,flex-start,nowrap,"") ;
+                        .left{
+                           margin-top: $dist2;
+                           margin-right: 0;
+                        }
+    
+                    }  
+                        
+                }
+              
+            }
+        
+        }
+    }
+}

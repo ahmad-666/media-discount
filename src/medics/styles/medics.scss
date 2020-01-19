@@ -199,3 +199,125 @@ main{
         }
     }
 }
+#blackFilter{
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    transition: background-color .3s linear,z-index 0s linear ;
+}
+#blackFilter.show{
+    background-color: rgba(30,30,30,.8);
+    z-index: 10;
+}
+#mobileFilterSort{
+    z-index: 11;
+    display: none;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 -.5em 1em -.2em $shadowColor;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    @include flex(row,flex-start,flex-start,nowrap,"");
+    #mobileFilter,#mobileSort{
+        width: 100%;
+        height: 100%;
+        padding: $dist2;
+        display: flex;
+        @include flex(row,center,center,nowrap,"") ;
+        cursor: pointer;
+        @include swapColor($primaryColor,white) ;
+        &:hover{border: none;}
+        &:first-child{border-left: 2px solid $primaryColor;}
+        i,p{font-size: $fontL;}
+        p{
+            margin-right: .3em;
+            font-weight: 700;
+        }
+    }
+}
+@include resizeTablet('main') ;
+@include resizeMobile('main') ;
+@include resizeTablet('#mobileFilterSort') ;
+@include resizeMobile('#mobileFilterSort') ;
+@include mediaQ(1200px){
+    main{
+        #medics{
+            .medicsWrapper{
+                .medic{
+                    width: calc((100% - (2 * 3em)) / 2);
+                    height: 31em;
+                }
+            }
+        }
+    }
+}
+@include mediaQ(750px){
+    main{
+        form#filters{
+            width: 0;
+            .row#sortWrapper{
+                display: none;
+            }
+            .row#filterWrapper{
+                display: none;
+            }
+            .row#sortWrapper.show,.row#filterWrapper.show{
+                display: flex;
+                animation: fadeIn .3s linear forwards;
+                z-index: 11;
+                position: fixed;
+                top: 50%;
+                right: 50%;
+                transform: translate(50%,-50%);
+            }
+            .row#filterWrapper.show{width: 45em;}
+            .row#sortWrapper.show{width: auto;}
+            @keyframes fadeIn {
+                from{opacity: 0;}
+                to{opacity: 1;}
+            }
+        }
+        .col{
+            &:nth-child(2){margin-right: 0;}
+        }
+        #medics{
+            margin-right: 0;
+            .medicsWrapper{
+                .medic{
+                    width: calc((100% - (3 * 3em)) / 3);
+                    height: 31em;
+                }
+            }
+        }
+    }
+    #mobileFilterSort{display: flex;}
+}
+@include mediaQ(550px){
+    main{
+        #medics{
+            .medicsWrapper{
+                .medic{
+                    width: calc((100% - (2 * 3em)) / 2);
+                    height: 31em;
+                }
+            }
+        }
+    }
+}
+@include mediaQ(380px){
+    main{
+        #medics{
+            .medicsWrapper{
+                .medic{
+                    width: 100%;
+                    height: 31em;
+                }
+            }
+        }
+    }
+}

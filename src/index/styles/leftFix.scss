@@ -62,3 +62,8 @@
         }     
     }
 }
+@include resizeTablet('#leftFix') ;
+@include resizeMobile('#leftFix') ;
+@include mediaQ(550px){
+    #leftFix{font-size: 4px;}
+}
