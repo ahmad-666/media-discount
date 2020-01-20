@@ -183,3 +183,35 @@
         }
     }
 }
+@include resizeTablet('#bookmarks') ;
+@include resizeMobile('#bookmarks') ;
+@include mediaQ(1200px){
+    #bookmarks{
+        .medicsWrapper{
+            .medic{
+                width: calc((100% - (3 * 3em)) / 3);
+                height: 38.5em;
+            }
+        }
+    }
+}
+@include mediaQ(750px){
+    #bookmarks{
+        .medicsWrapper{
+            .medic{
+                width: calc((100% - (2 * 3em)) / 2);
+                height: 38.5em;
+            }
+        }
+    }
+}
+@include mediaQ(450px){
+    #bookmarks{
+        .medicsWrapper{
+            .medic{
+                width: 100%;
+                height: 38.5em;
+            }
+        }
+    }
+}

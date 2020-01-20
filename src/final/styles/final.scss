@@ -31,3 +31,5 @@
         color: $textGrey;
     }
 }
+@include resizeTablet('#final') ;
+@include resizeMobile('#final') ;

@@ -3741,4 +3741,23 @@ form#changePass{
         }
     }
 }
-
+@include resizeTablet('form#changePass') ;
+@include resizeMobile('form#changePass') ;
+@include mediaQ(550px){
+    form#changePass{
+        .inputs{
+            .inputWrapper.text {
+                width: calc((100% - (3 * 3em)) / 3);
+            }
+        }
+    }
+}
+@include mediaQ(400px){
+    form#changePass{
+        .inputs{
+            .inputWrapper.text {
+                width: calc((100% - (2 * 3em)) / 2);
+            }
+        }
+    }
+}
