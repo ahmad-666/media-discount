@@ -5368,6 +5368,138 @@ ul.scrollSpyList.fix {
     display: -ms-flexbox;
     display: flex; }
 
+table.tableResp {
+  width: 100%;
+  height: auto;
+  margin-top: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: "";
+      align-content: "";
+  overflow: auto; }
+  table.tableResp thead, table.tableResp tbody {
+    min-width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    table.tableResp thead tr, table.tableResp tbody tr {
+      width: 100%;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: "";
+      padding: 0.75em; }
+      table.tableResp thead tr th, table.tableResp thead tr td, table.tableResp tbody tr th, table.tableResp tbody tr td {
+        height: auto;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
+        table.tableResp thead tr th:not(:first-child), table.tableResp thead tr td:not(:first-child), table.tableResp tbody tr th:not(:first-child), table.tableResp tbody tr td:not(:first-child) {
+          margin-right: 1.5em; }
+      table.tableResp thead tr th.col1, table.tableResp thead tr td.col1, table.tableResp tbody tr th.col1, table.tableResp tbody tr td.col1 {
+        width: 18em; }
+      table.tableResp thead tr th.col2, table.tableResp thead tr td.col2, table.tableResp tbody tr th.col2, table.tableResp tbody tr td.col2 {
+        width: 10em; }
+      table.tableResp thead tr th.col3, table.tableResp thead tr td.col3, table.tableResp tbody tr th.col3, table.tableResp tbody tr td.col3 {
+        width: 8em; }
+      table.tableResp thead tr th.col4, table.tableResp thead tr td.col4, table.tableResp tbody tr th.col4, table.tableResp tbody tr td.col4 {
+        width: 18em; }
+      table.tableResp thead tr th.col5, table.tableResp thead tr td.col5, table.tableResp tbody tr th.col5, table.tableResp tbody tr td.col5 {
+        width: 12em; }
+      table.tableResp thead tr th.col6, table.tableResp thead tr td.col6, table.tableResp tbody tr th.col6, table.tableResp tbody tr td.col6 {
+        width: 12em; }
+  table.tableResp thead tr {
+    background-color: #00897b; }
+    table.tableResp thead tr th {
+      color: white; }
+      table.tableResp thead tr th h6 {
+        font-size: 1.6em;
+        font-weight: 700;
+        color: inherit; }
+  table.tableResp tbody tr:nth-child(odd) {
+    background-color: white; }
+  table.tableResp tbody tr:nth-child(even) {
+    background-color: #e9e9eb; }
+  table.tableResp tbody tr td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    table.tableResp tbody tr td a, table.tableResp tbody tr td p {
+      font-size: 1.6em;
+      color: #2d2d31; }
+    table.tableResp tbody tr td a:hover {
+      color: #00897b; }
+    table.tableResp tbody tr td p.state {
+      width: auto;
+      height: auto;
+      border-radius: 1.5em;
+      white-space: nowrap;
+      padding: 0.5em 1.05em;
+      font-size: 1.4em;
+      color: #fbfbfb; }
+
+@media screen and (max-width: 1000px) {
+  table.tableResp {
+    font-size: 8px; } }
+
+@media screen and (max-width: 700px) {
+  table.tableResp {
+    font-size: 6px; } }
+
 .collapseTrigger {
   cursor: pointer; }
 
