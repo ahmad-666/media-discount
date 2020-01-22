@@ -600,6 +600,148 @@ ul.scrollSpyList.fix{
     }
     .arrows.show{display: flex ;}
 }
+//table-------------------------------------------
+//table-------------------------------------------
+//table-------------------------------------------
+// <table class="tableResp">
+//     <thead>
+//         <tr>
+//             <th class="col1 th clinic">
+//                 <h6>کلینیک</h6>
+//             </th>
+//             <th class="col2 th date">
+//                 <h6>تاریخ خرید</h6>
+//             </th>
+//             <th class="col3 th quantity">
+//                 <h6>تعداد</h6>
+//             </th>
+//             <th class="col4 th price">
+//                 <h6>قیمت نهایی</h6>
+//             </th>
+//             <th class="col5 th discount">
+//                 <h6>کد تخفیف</h6>
+//             </th>
+//             <th class="col6 th state">
+//                 <h6>وضعیت</h6>
+//             </th>
+//         </tr>
+//     </thead>
+//     <tbody>
+//         <tr>
+//             <td class="col1 td clinic">
+//                 <a href="medic.html">نام کلینیک</a>
+//             </td>
+//             <td class="col2 td date">
+//                 <p>1398/11/11</p>
+//             </td>
+//             <td class="col3 td quantity">
+//                 <p>2</p>
+//             </td>
+//             <td class="col4 td price">
+//                 <p>1.000.000تومان</p>
+//                 <p> (قیمت واحد ۵۰۰.۰۰۰ تومان) </p >
+//             </td>
+//             <td class="col5 td discount">
+//                 <p>12345678</p>
+//             </td>
+//             <td class="col6 td state">
+//                 <p class="state process">در حال پردازش</p>
+//             </td>
+//         </tr>
+//     </tbody>
+// </table>
+table.tableResp{
+    width: 100%;
+    height: auto;
+    margin-top: $dist2;
+    display: flex;
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    overflow: auto;
+    thead,tbody{
+        min-width: 100%;
+        height: auto;
+        display: flex;
+        @include flex(column,flex-start,flex-start,nowrap,"") ;
+        tr{
+            width: 100%;
+            height: auto;
+            display: flex;
+            @include flex(row,space-around,center,nowrap,"") ;
+            padding: $dist1;
+            th,td{
+                height: auto;
+                flex-shrink: 0;
+                &:not(:first-child){margin-right: $dist2;}
+            }
+            th.col1,td.col1{width: 18em;}
+            th.col2,td.col2{width: 10em;}
+            th.col3,td.col3{width: 8em;}
+            th.col4,td.col4{width: 18em;}
+            th.col5,td.col5{width: 12em;}
+            th.col6,td.col6{width: 12em;}
+        }
+    }
+    thead{
+        tr{
+            background-color: $primaryColor;
+            th{
+                color: white ;
+                h6{
+                    font-size: $fontM;
+                    font-weight: 700;
+                    color: inherit ;
+                }
+            }
+        }
+    }
+    tbody{
+        tr{
+            &:nth-child(odd){background-color: white;}
+            &:nth-child(even){background-color: lighten($textGrey,33%);}
+            td{
+                display: flex;
+                @include flex(column,center,center,nowrap,"") ;
+                a,p{
+                    font-size: $fontM;
+                    color: $textDark;
+                }
+                a{
+                    &:hover{color: $primaryColor;}
+                }
+                p.state{
+                    width: auto;
+                    height: auto;
+                    border-radius: $dist2;
+                    white-space: nowrap;
+                    padding: .5em $dist1 + .3em;
+                    font-size: $fontM - .2em ;
+                    color: $textWhite;
+                }
+            }
+        }
+    }
+}
+@include resizeTablet('table.tableResp') ;
+@include resizeMobile('table.tableResp') ;
+// table{
+//     tbody{
+//         tr{
+//             td.col4{
+//                 p{
+//                     &:not(:first-child){
+//                         font-size: $fontM - .2em;
+//                         color: $textGrey;
+//                     }
+//                 }
+//             }
+//             td.col6.state{
+//                 p.state.process{background-color: lighten($orangeColor1,3%);}
+//                 p.state.expire{background-color: lighten($redColor2,5%);}
+//                 p.state.visit{background-color: $primaryColor}
+//             }
+//         }
+//     }
+// }
 //others-------------------------------------------
 //others-------------------------------------------
 //others-------------------------------------------
