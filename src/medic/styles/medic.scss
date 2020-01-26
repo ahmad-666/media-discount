@@ -16,13 +16,6 @@
         display: flex;
         @include flex(column,flex-start,flex-start,nowrap,"") ;
     }
-    #sidebar{
-        flex-shrink: 0;
-        width: 35em;
-        height: auto;
-        margin-right: $sectionsDist;
-        margin-top: 0;
-    }
 }
 @include resizeTablet('#medicWrapper') ;
 @include resizeMobile('#medicWrapper') ;
