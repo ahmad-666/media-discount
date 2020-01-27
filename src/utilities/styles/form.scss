@@ -4,6 +4,7 @@
 form#searchForm{
     width: 100%;
     height: auto;
+    margin-top: 5em;
     padding: $dist2 $dist3;
     background-color: white ;
     border-bottom: 1px solid $primaryColor;
@@ -1151,43 +1152,22 @@ form#report{
         margin-top: $dist2;
     }
 }
-form#login{
-    width: 40em;
+form#loginUser,form#loginAdmin,form#signupUser,form#signupAdmin,form#forgetPassword{
+    width: 100%;
     height: auto;
-    padding: $dist2;
-    margin: 0 ;
-    position: fixed ;
-    top: 50% ;
-    right: 50% ;
-    transform: translate(50%,-50%) ;
     display: flex;
-    @include flex(column, flex-start, center, nowrap, "");
-    .title{
-        width: auto;
-        height: auto;
-        display: flex;
-        @include flex(column,flex-start,center,nowrap,"") ;
-        img{
-            width: 12em ;
-            height: 10em;
-        }
-        p{
-            font-size: $fontM;
-            color: $textGrey;
-        }
-    }
-    h4 {
+    @include flex(column,flex-start,center,nowrap,"") ;
+    h3{
         font-size: $fontL;
-        font-weight: 700;
         color: $primaryColor;
-        margin-top: $dist1;
+        font-weight: 700;
+        margin-top: $dist2;
     }
     .inputWrapper.text {
-        width: 35em;
+        width: 28em;
         height: 4em;
         position: relative;
-        margin-top: $dist2;
-        &:nth-child(4){margin-top: $dist3 ;}
+        margin-top: 2.5em;
         input {
             width: 100%;
             height: 100%;
@@ -1220,12 +1200,11 @@ form#login{
             }
         }
         input.style2 {
+            background-color: lighten($textGrey,40%);
             border: 1.2px solid lighten($textGrey, 25%);
             border-radius: $dist3;
-
             &:focus {
                 border: 1.2px solid $primaryColor;
-
                 ~label {
                     color: $primaryColor;
                     font-size: 8px;
@@ -1233,7 +1212,6 @@ form#login{
                     transform: translateY(50%);
                     right: $dist1;
                 }
-
                 ~.line {
                     width: 0%;
                 }
@@ -1241,9 +1219,11 @@ form#login{
         }
         input.style1.error {
             border-bottom: 1.2px solid lighten($redColor2, 5%);
+
             ~label {
                 color: lighten($redColor2, 5%);
             }
+
             ~.line {
                 background-color: lighten($redColor2, 5%);
             }
@@ -1266,16 +1246,11 @@ form#login{
             @include flex(row, flex-start, center, nowrap, "");
             color: lighten($textGrey, 20%);
             transition: all .2s linear;
-            .isRequire{
-                width: auto;
-                height: auto;
-                color: lighten($redColor2, 0%);
-                font-size: $fontS - .1em; 
-                padding-left: .3em;
-            }
+
             .icon {
                 font-size: $fontM;
             }
+
             p {
                 font-size: $fontM - .1em;
                 transform: translateX(-.3em);
@@ -1319,10 +1294,12 @@ form#login{
             opacity: 0;
             visibility: hidden;
             transition: all .2s linear;
+
             p {
                 color: $whiteColor2;
                 font-size: $fontM - .2em;
             }
+
             i {
                 font-size: $fontXL;
                 color: lighten($redColor2, 5%);
@@ -1336,18 +1313,73 @@ form#login{
             visibility: visible;
             z-index: 2;
         }
+        .forgetPass{
+            display: block;
+            font-size: $fontS;
+            color: $primaryColor;
+            margin-top: $dist1;
+            visibility: visible;
+        }
+    }
+    select{
+        font-size: $fontM;
+        color: $primaryColor;
+        margin-top: 2.5em;
+        border-radius: $dist2;
+        transform: translateX(50%);
+        option{
+            color: $textGrey;
+        }
+    }
+    .select2{
+        width: 17em ;
+        font-size: $fontM ;
+        margin-top: 1.5em;
+        option{
+            color: darken($textGrey,10%) ;
+            font-size: $fontM ;
+        }    
+    }
+    .select2-container--default .select2-selection--single{
+        border-radius: $dist3 ;
+        border: 1.2px solid lighten($textGrey,25%) ;
+        height: 2.5em;
+        outline: none  ;
+        .select2-selection__rendered{line-height: 2.5em ;}
+        .select2-selection__arrow{@include center-y ;}
+    }
+    button[type="submit"]{
+        @include swapColor(white,$primaryColor) ;
+        cursor: pointer;
+        margin-top: $dist2 ;
+        padding: .4em $dist3;
+    }
+    .loginRoute{
+        font-size: $fontM;
+        color: $primaryColor;
+        margin-top: $dist1;
+        position: relative;
+        &::before{
+            content: '';
+            width: 100%;
+            height: 1px ;
+            background-color: $primaryColor;
+            position: absolute;
+            right: 0;
+            top: 102% ;
+        }
     }
     .inputWrapper.checkboxes {
         width: auto;
         height: auto;
         display: flex;
-        @include flex(column, flex-start, flex-start, nowrap, "");
-        margin-top: 0;
+        transform: translateX(25%);
+        @include flex(column, flex-start, center, nowrap, "");
+        margin-top: 1.5em;
         .checkbox {
             width: auto;
             height: auto;
-            padding-right: $dist1;
-            margin-top: $dist2 ;
+            padding-right: 0;
             input[type="checkbox"] {
                 width: 0;
                 height: 0;
@@ -1373,7 +1405,6 @@ form#login{
                     }
                 }
             }
-
             input[type="checkbox"].style2 {
                 &:checked {
                     ~label {
@@ -1392,7 +1423,6 @@ form#login{
                     }
                 }
             }
-
             label {
                 cursor: pointer;
                 width: 100%;
@@ -1400,16 +1430,14 @@ form#login{
                 line-height: 2.5em;
                 display: flex;
                 @include flex(row, flex-start, center, nowrap, "");
-
                 .rect {
                     flex-shrink: 0;
-                    width: 2em;
-                    height: 2em;
+                    width: 2.3em;
+                    height: 2.3em;
                     border: 1px solid darken($textGrey, 15%);
                     position: relative;
                     transition: all .2s linear;
                     border-radius: .45em;
-
                     i {
                         opacity: 0;
                         font-size: $fontM;
@@ -1417,248 +1445,57 @@ form#login{
                         transition: all .2s linear;
                     }
                 }
-
                 p {
-                    width: auto;
-                    font-size: $fontS + .2em;
-                    color: lighten($textGrey, 0%);
+                    max-width: auto;
+                    font-size: $fontM;
+                    color: darken($textGrey, 15%);
                     margin-right: .3em;
                     transition: all .2s linear;
                 }
+                p.error {color: lighten($redColor2,5%);}
+            }
+        }
+        > p {
+            margin-top: .2em;
+            font-size: $fontM - .2em;
+            margin-right: 4em;
+            color: $textDark;
+            
+            a{
+                color: $blueColor1;
+                font-weight: 700;
             }
         }
     }
-    button[type="submit"] {
-        width: auto;
+    .inputWrapper.file{
+        width: 28em;
         height: auto;
-        padding: .3em $dist2 + .5em;
-        margin: $dist3 auto 0 auto;
-        border-radius: $dist3;
-        font-size: $fontL;
-        @include swapColor($textWhite,$primaryColor) ;
-    }
-    a.rememberPassword{
-        font-size: $fontS + .1em;
-        color: lighten($textGrey,0%) ;
-        position: absolute ;
-        right: 0 ;
-        top: 140% ;
-    }
-    a.signup{
-        font-size: $fontM ;
-        color: lighten($textGrey,0%) ;
-        margin-top: $dist2 ;
-    }
-}
-@include resizeTablet('form#login') ;
-@include resizeMobile('form#login') ;
-@include mediaQ(1000px){
-    form#login {
-        font-size: 8px ;
-        .inputWrapper.text {
-            input.style1 {
-                &:focus {
-                    ~label {font-size: 6px;}                  
-                }
-            }
-            input.style2 {
-                &:focus {
-                    ~label {font-size: 6px;}
-                }
-            }  
-            input.style1 {
-                ~label.top {font-size: 6px;}
-            }
-    
-            input.style2 {
-                ~label.top {font-size: 6px;}
-            }
-        }
-    }
-}
-@include mediaQ(600px){
-    form#login {
-        font-size: 6px ;
-        .inputWrapper.text {
-            input.style1 {
-                &:focus {
-                    ~label {font-size: 4px;}                  
-                }
-            }
-            input.style2 {
-                &:focus {
-                    ~label {font-size: 4px;}
-                }
-            }  
-            input.style1 {
-                ~label.top {font-size: 4px;}
-            }
-    
-            input.style2 {
-                ~label.top {font-size: 4px;}
-            }
-        }
-    }
-}
-form#forgetPassword{
-    width: 40em;
-    height: auto;
-    padding: $dist2;
-    margin: 0 ;
-    position: fixed ;
-    top: 50% ;
-    right: 50% ;
-    transform: translate(50%,-50%) ;
-    display: flex;
-    @include flex(column, flex-start, center, nowrap, "");
-    .title{
-        width: auto;
-        height: auto;
-        display: flex;
-        @include flex(column,flex-start,center,nowrap,"") ;
-        img{
-            width: 12em ;
-            height: 10em;
-        }
-        p{
-            font-size: $fontM;
-            color: $textGrey;
-        }
-    }
-    h4 {
-        font-size: $fontL;
-        font-weight: 700;
-        color: $primaryColor;
-    }
-    .inputWrapper.text {
-        width: 35em;
-        height: 4em;
+        margin-top: 1.5em;
         position: relative;
-        margin-top: $dist2;
-        input {
-            width: 100%;
-            height: 100%;
-            line-height: 4em;
-            padding: 0 $dist1;
-            font-size: $fontM;
-            color: $darkColor;
-            transition: all .2s linear;
-            &::placeholder {
-                color: $textGrey;
-                font-size: $fontM;
-            }
-        }
-        input.style1 {
-            border: none;
-            border-bottom: 1.2px solid lighten($textGrey, 25%);
-
-            &:focus {
-                ~label {
-                    color: $primaryColor;
-                    font-size: 8px;
-                    bottom: calc(100% + .5em);
-                    transform: translateY(50%);
-                    right: 0;
-                }
-
-                ~.line {
-                    width: 100%;
-                }
-            }
-        }
-        input.style2 {
-            border: 1.2px solid lighten($textGrey, 25%);
-            border-radius: $dist3;
-
-            &:focus {
-                border: 1.2px solid $primaryColor;
-
-                ~label {
-                    color: $primaryColor;
-                    font-size: 8px;
-                    bottom: calc(100% + 1.5em);
-                    transform: translateY(50%);
-                    right: $dist1;
-                }
-
-                ~.line {
-                    width: 0%;
-                }
-            }
-        }
-        input.style1.error {
-            border-bottom: 1.2px solid lighten($redColor2, 5%);
-            ~label {
-                color: lighten($redColor2, 5%);
-            }
-            ~.line {
-                background-color: lighten($redColor2, 5%);
-            }
-        }
-        input.style2.error {
-            border: 1.2px solid lighten($redColor2, 5%);
-
-            ~label {
-                color: lighten($redColor2, 5%);
-            }
-        }
-        label {
+        input[type="file"]{display: none;}
+        label{
             width: auto;
             height: auto;
-            position: absolute;
-            right: $dist1;
-            bottom: 50%;
-            transform: translateY(50%);
             display: flex;
-            @include flex(row, flex-start, center, nowrap, "");
-            color: lighten($textGrey, 20%);
-            transition: all .2s linear;
-            .isRequire{
-                width: auto;
-                height: auto;
-                color: lighten($redColor2, 0%);
-                font-size: $fontS - .1em; 
-                padding-left: .3em;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            p{
+                &:nth-child(1){
+                    flex-shrink: 0;
+                    color: white;
+                    background-color: $primaryColor ;
+                    cursor: pointer;
+                }
+                &:nth-child(2){
+                    font-size: $fontM - .2em;
+                    color: $primaryColor ;
+                    margin-right: .5em;}        
             }
-            .icon {
-                font-size: $fontM;
-            }
-            p {
-                font-size: $fontM - .1em;
-                transform: translateX(-.3em);
-            }
-        }
-        input.style1 {
-            ~label.top {
-                font-size: 8px;
-                bottom: calc(100% + .5em);
-                transform: translateY(50%);
-                right: 0;
-            }
-        }
-        input.style2 {
-            ~label.top {
-                font-size: 8px;
-                bottom: calc(100% + 1.5em);
-                transform: translateY(50%);
-                right: $dist1;
-            }
-        }
-        .line {
-            width: 0%;
-            height: 1.2px;
-            background-color: $primaryColor;
-            position: absolute;
-            right: 0;
-            top: calc(100% - .6px);
-            transition: all .2s linear;
         }
         .msg {
             width: auto;
             height: auto;
             border-radius: $dist3;
             padding: $dist1 $dist2;
-            position: relative;
             background-color: lighten($redColor2, 5%);
             position: absolute;
             right: 0;
@@ -1670,6 +1507,7 @@ form#forgetPassword{
                 color: $whiteColor2;
                 font-size: $fontM - .2em;
             }
+
             i {
                 font-size: $fontXL;
                 color: lighten($redColor2, 5%);
@@ -1682,34 +1520,64 @@ form#forgetPassword{
             opacity: 1;
             visibility: visible;
             z-index: 2;
-        }
-        .rememberPassword{
-            font-size: $fontS ;
-            color: lighten($textGrey,10%) ;
-            position: absolute ;
-            right: 0 ;
-            top: 140% ;
-        }
+        }   
     }
-    button[type="submit"] {
+    .inputWrapper.toggle {
         width: auto;
         height: auto;
-        padding: .3em $dist2 + .5em;
-        margin-top: $dist2 ;
-        border-radius: $dist3;
-        font-size: $fontL;
-        @include swapColor($textWhite,$primaryColor) ;
-    }
-    a.login{
-        font-size: $fontS + .2em ;
-        color: $textGrey ;
-        margin-top: $dist2 ;
+        margin-top: 1.5em;
+        transform: translateX(50%);
+        display: flex;
+        @include flex(row, flex-start, center, nowrap, "");
+        .toggleText,
+        .switch {
+            margin-right: $dist1;
+            &:first-child {
+                margin-right: 0;
+            }
+        }
+
+        .toggleText {
+            font-size: $fontM;
+            color: lighten($textGrey, 30%);
+            transition: all .2s linear;
+        }
+
+        .toggleText.active {
+            color: darken($textGrey, 30%);
+        }
+
+        .switch {
+            width: 5em;
+            height: 2em;
+            position: relative;
+            background-color: $primaryColor;
+            border-radius: $dist3;
+            cursor: pointer;
+
+            .circle {
+                width: 1.5em;
+                height: 1.5em;
+                border-radius: 50%;
+                background-color: $whiteColor2;
+                position: absolute;
+                transition: all .2s linear;
+            }
+
+            .circle.left {
+                left: .4em;
+            }
+
+            .circle.right {
+                left: calc(100% - 1.5em - .4em);
+            }
+        }
     }
 }
-@include resizeTablet('form#forgetPassword') ;
-@include resizeMobile('form#forgetPassword') ;
+form#loginAdmin{button[type="submit"]{margin-top: $dist3 ;}}
+form#loginUser{button[type="submit"]{margin-top: $dist3 ;}}
 @include mediaQ(1000px){
-    form#forgetPassword {
+    form#loginUser,form#loginAdmin,form#signupUser,form#signupAdmin,form#forgetPassword {
         font-size: 8px ;
         .inputWrapper.text {
             input.style1 {
@@ -1730,10 +1598,46 @@ form#forgetPassword{
                 ~label.top {font-size: 6px;}
             }
         }
+        .inputWrapper.select {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 6px;}
+                }
+            }
+            input.style2 {       
+                &:focus {    
+                    ~label {font-size: 6px;}               
+                }
+            }         
+            input.style1 {
+                ~label.top {font-size: 6px;}
+            }
+            input.style2 {
+                ~label.top {font-size: 6px;}
+            }                
+        }
+        .inputWrapper.textarea {   
+            textarea.style1 {
+                &:focus {    
+                    ~label {font-size: 6px;}
+                }
+            }
+            textarea.style2 {
+                &:focus {    
+                    ~label {font-size: 6px;}
+                }
+            }
+            textarea.style1 {
+                ~label.top {font-size: 6px;}
+            }
+            textarea.style2 {
+                ~label.top {font-size: 6px;}
+            }
+        }
     }
 }
-@include mediaQ(600px){
-    form#forgetPassword {
+@include mediaQ(700px){
+    form#loginUser,form#loginAdmin,form#signupUser,form#signupAdmin,form#forgetPassword {
         font-size: 6px ;
         .inputWrapper.text {
             input.style1 {
@@ -1754,8 +1658,47 @@ form#forgetPassword{
                 ~label.top {font-size: 4px;}
             }
         }
+        .inputWrapper.select {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 4px;}
+                }
+            }
+            input.style2 {       
+                &:focus {    
+                    ~label {font-size: 4px;}               
+                }
+            }         
+            input.style1 {
+                ~label.top {font-size: 4px;}
+            }
+            input.style2 {
+                ~label.top {font-size: 4px;}
+            }                
+        }
+        .inputWrapper.textarea {   
+            textarea.style1 {
+                &:focus {    
+                    ~label {font-size: 4px;}
+                }
+            }
+            textarea.style2 {
+                &:focus {    
+                    ~label {font-size: 4px;}
+                }
+            }
+            textarea.style1 {
+                ~label.top {font-size: 4px;}
+            }
+            textarea.style2 {
+                ~label.top {font-size: 4px;}
+            }
+        }
     }
 }
+@include resizeTablet('form#loginUser,form#loginAdmin,form#signupUser,form#signupAdmin,form#forgetPassword') ;
+@include resizeMobile('form#loginUser,form#loginAdmin,form#signupUser,form#signupAdmin,form#forgetPassword') ;
+
 form#checkCode{
     width: 40em;
     height: auto;
@@ -1990,329 +1933,6 @@ form#checkCode{
 }
 @include mediaQ(600px){
     form#checkCode {
-        font-size: 6px ;
-        .inputWrapper.text {
-            input.style1 {
-                &:focus {
-                    ~label {font-size: 4px;}                  
-                }
-            }
-            input.style2 {
-                &:focus {
-                    ~label {font-size: 4px;}
-                }
-            }  
-            input.style1 {
-                ~label.top {font-size: 4px;}
-            }
-    
-            input.style2 {
-                ~label.top {font-size: 4px;}
-            }
-        }
-    }
-}
-form#signup {
-    width: 40em;
-    height: auto;
-    padding: $dist2;
-    margin: 0 ;
-    position: fixed ;
-    top: 50% ;
-    right: 50% ;
-    transform: translate(50%,-50%) ;
-    display: flex;
-    @include flex(column, flex-start, center, nowrap, "");
-    img{
-        width: 12em ;
-        height: 10em;
-    }
-    h4 {
-        font-size: $fontL;
-        font-weight: 700;
-        color: $primaryColor;
-    }
-    .inputWrapper.text {
-        width: 35em;
-        height: 4em;
-        position: relative;
-        margin-top: $dist2 + .5em;
-        input {
-            width: 100%;
-            height: 100%;
-            line-height: 4em;
-            padding: 0 $dist1;
-            font-size: $fontM;
-            color: $darkColor;
-            transition: all .2s linear;
-            &::placeholder {
-                color: $textGrey;
-                font-size: $fontM;
-            }
-        }
-        input.style1 {
-            border: none;
-            border-bottom: 1.2px solid lighten($textGrey, 25%);
-
-            &:focus {
-                ~label {
-                    color: $primaryColor;
-                    font-size: 8px;
-                    bottom: calc(100% + .5em);
-                    transform: translateY(50%);
-                    right: 0;
-                }
-
-                ~.line {
-                    width: 100%;
-                }
-            }
-        }
-        input.style2 {
-            border: 1.2px solid lighten($textGrey, 25%);
-            border-radius: $dist3;
-
-            &:focus {
-                border: 1.2px solid $primaryColor;
-
-                ~label {
-                    color: $primaryColor;
-                    font-size: 8px;
-                    bottom: calc(100% + 1.5em);
-                    transform: translateY(50%);
-                    right: $dist1;
-                }
-
-                ~.line {
-                    width: 0%;
-                }
-            }
-        }
-        input.style1.error {
-            border-bottom: 1.2px solid lighten($redColor2, 5%);
-            ~label {
-                color: lighten($redColor2, 5%);
-            }
-            ~.line {
-                background-color: lighten($redColor2, 5%);
-            }
-        }
-        input.style2.error {
-            border: 1.2px solid lighten($redColor2, 5%);
-
-            ~label {
-                color: lighten($redColor2, 5%);
-            }
-        }
-        label {
-            width: auto;
-            height: auto;
-            position: absolute;
-            right: $dist1;
-            bottom: 50%;
-            transform: translateY(50%);
-            display: flex;
-            @include flex(row, flex-start, center, nowrap, "");
-            color: lighten($textGrey, 20%);
-            transition: all .2s linear;
-            .icon {
-                font-size: $fontM;
-            }
-            p {
-                font-size: $fontM - .1em;
-                transform: translateX(-.3em);
-            }
-        }
-        input.style1 {
-            ~label.top {
-                font-size: 8px;
-                bottom: calc(100% + .5em);
-                transform: translateY(50%);
-                right: 0;
-            }
-        }
-        input.style2 {
-            ~label.top {
-                font-size: 8px;
-                bottom: calc(100% + 1.5em);
-                transform: translateY(50%);
-                right: $dist1;
-            }
-        }
-        .line {
-            width: 0%;
-            height: 1.2px;
-            background-color: $primaryColor;
-            position: absolute;
-            right: 0;
-            top: calc(100% - 1px);
-            transition: all .2s linear;
-        }
-        .msg {
-            width: auto;
-            height: auto;
-            border-radius: $dist3;
-            padding: $dist1 $dist2;
-            position: relative;
-            background-color: lighten($redColor2, 5%);
-            position: absolute;
-            right: 0;
-            top: 115%;
-            opacity: 0;
-            visibility: hidden;
-            transition: all .2s linear;
-            p {
-                color: $whiteColor2;
-                font-size: $fontM - .2em;
-            }
-            i {
-                font-size: $fontXL;
-                color: lighten($redColor2, 5%);
-                position: absolute;
-                right: $dist2;
-                top: calc(0% - .6em);
-            }
-        }
-        .msg.show {
-            opacity: 1;
-            visibility: visible;
-            z-index: 2;
-        }
-    }
-    .inputWrapper.checkboxes {
-        width: auto;
-        height: auto;
-        display: flex;
-        @include flex(column, flex-start, flex-start, nowrap, "");
-        margin-top: 0;
-        .checkbox {
-            width: auto;
-            height: auto;
-            padding-right: $dist1;
-            margin-top: $dist2 ;
-            input[type="checkbox"] {
-                width: 0;
-                height: 0;
-                display: none;
-            }
-            input[type="checkbox"].style1 {
-                &:checked {
-                    ~label {
-                        .rect {
-                            width: 2em;
-                            height: 1em;
-                            border-radius: 0;
-                            border-top: none;
-                            border-right: none;
-                            border-left: 1.2px solid $primaryColor;
-                            border-bottom: 1.2px solid $primaryColor;
-                            transform: translateY(-.3em) rotate(-45deg);
-                        }
-
-                        p {
-                            color: $primaryColor;
-                        }
-                    }
-                }
-            }
-
-            input[type="checkbox"].style2 {
-                &:checked {
-                    ~label {
-                        .rect {
-                            border: 1px solid transparent;
-                            background-color: $primaryColor;
-
-                            i {
-                                opacity: 1;
-                            }
-                        }
-
-                        p {
-                            color: $primaryColor;
-                        }
-                    }
-                }
-            }
-
-            label {
-                cursor: pointer;
-                width: 100%;
-                height: 100%;
-                line-height: 2.5em;
-                display: flex;
-                @include flex(row, flex-start, center, nowrap, "");
-
-                .rect {
-                    flex-shrink: 0;
-                    width: 2em;
-                    height: 2em;
-                    border: 1px solid darken($textGrey, 15%);
-                    position: relative;
-                    transition: all .2s linear;
-                    border-radius: .45em;
-
-                    i {
-                        opacity: 0;
-                        font-size: $fontM;
-                        color: $whiteColor2;
-                        transition: all .2s linear;
-                    }
-                }
-
-                p {
-                    width: auto;
-                    font-size: $fontS + .2em;
-                    color: lighten($textGrey, 0%);
-                    margin-right: .3em;
-                    transition: all .2s linear;
-                }
-            }
-        }
-    }
-    button[type="submit"] {
-        width: auto;
-        height: auto;
-        padding: .3em $dist2 + .5em;
-        margin-top: $dist2 ;
-        border-radius: $dist3;
-        font-size: $fontL;
-        @include swapColor($textWhite,$primaryColor) ;
-    }
-    a.login{
-        font-size: $fontM ;
-        color: lighten($textGrey,0%) ;
-        margin-top: $dist2 ;
-    }
-}
-@include resizeTablet('form#signup') ;
-@include resizeMobile('form#signup') ;
-@include mediaQ(1000px){
-    form#signup {
-        font-size: 8px ;
-        .inputWrapper.text {
-            input.style1 {
-                &:focus {
-                    ~label {font-size: 6px;}                  
-                }
-            }
-            input.style2 {
-                &:focus {
-                    ~label {font-size: 6px;}
-                }
-            }  
-            input.style1 {
-                ~label.top {font-size: 6px;}
-            }
-    
-            input.style2 {
-                ~label.top {font-size: 6px;}
-            }
-        }
-    }
-}
-@include mediaQ(600px){
-    form#signup {
         font-size: 6px ;
         .inputWrapper.text {
             input.style1 {

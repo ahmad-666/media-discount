@@ -5,33 +5,9 @@
 #medicMore{
     width: 100%;
     margin-top: $sectionsDist;
-    .tabs_wrapper{
-        width: 100% ;
-        display: flex;
-        @include flex(column,flex-start,flex-start,nowrap,"") ;
+    #comments{
         margin-top: 0;
-        .tabs{
-            box-shadow: 0 0 .5em .1em $shadowColor;
-            width: auto ;
-        }
-        .contents{
-            margin-top: 0;         
-            .content{    
-                margin-top: 0;       
-            }
-            #comments{
-                margin-top: 0;
-            }
-            #tab1{
-                @include flex(column,flex-start,flex-start,nowrap,"") ;
-                
-            }
-            @keyframes fadeIn {
-                from{opacity: 0;}
-                to{opacity: 1;}
-            }
-        }
-    
+        padding-top: 0;
     }
 }
 @include mediaQ(450px){

@@ -22,91 +22,235 @@
     <meta name='twitter:description' content='سایت زیبایی' />
     <meta name='twitter:image' content='./assets/imgs/logo.png' type='image/png' />
 </head>
-<body class="bg">
-    <form novalidate id="signup" name="signup" class="validate containerStyle" method="GET" action="#!" enctype="text/plain">
-        <a href="index.html" class="title">
-            <img src="../assets/icons/logo.png" alt="logoImg">
-        </a>
-        <h4>ساخت حساب کاربری</h4>
-        <div class="inputWrapper text">
-            <input type="text" id="name" name="name" class="style1 labelHandler validate" required>
-            <label for="name">
-                <i class="fas fa-user icon"></i>
-                <p>نام و نام خانوادگی</p>
-            </label>
-            <span class="line"></span>
-            <div class="msg">
-                <p>نام و نام خانوادگی خود را وارد نمایید</p>
-                <i class="fas fa-caret-up"></i>
+<body>
+    <div id="signupWrapper">
+        <div class="tabs_wrapper">
+            <ul class="tabs">
+                <li class="tab active" data-target="userTab">ثبت نام کاربر</li>
+                <li class="tab" data-target="adminTab">ثبت نام کلینیک</li>
+            </ul>
+            <div class="contents">
+                <div class="content active" id="userTab">
+                    <a class="logo" href="./index.html">
+                        <img src="../assets/icons/logo.png" alt="logoAlt">
+                        <h4>فانوس زیبایی</h4>
+                    </a> 
+                    <form novalidate id="signupUser" name="signupUser" method="GEt" action="#!" enctype="text/plain">
+                        <div class="inputWrapper text">
+                            <input type="text" id="name" name="name" class="style2 labelHandler validate" required>
+                            <label for="name">
+                                <i class="fas fa-user icon"></i>
+                                <p> نام و نام خانوادگی </p>
+                            </label>
+                            <div class="msg">
+                                <p>نام خود را وارد کنید</p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                        </div>
+                        <div class="inputWrapper text">
+                            <input type="number" id="mobile" name="mobile" class="style2 labelHandler validate" required pattern="\d{11}">
+                            <label for="mobile">
+                                <i class="fas fa-phone icon"></i>
+                                <p>  شماره موبایل</p>
+                            </label>
+                            <div class="msg">
+                                <p>شماره موبایل صحیح(شروع با ۰۹) وارد نمایید</p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                        </div>
+                        <div class="inputWrapper text">
+                            <input type="email" id="email" name="email" class="style2 labelHandler validate" required>
+                            <label for="email">
+                                <i class="fas fa-envelope icon"></i>
+                                <p>پست الکترونیکی</p>
+                            </label>
+                            <span class="line"></span>
+                            <div class="msg">
+                                <p>ایمیل صحیح وارد نمایید</p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                        </div>
+                        <div class="inputWrapper text">
+                            <input type="text" id="bank" name="bank" class="style2 labelHandler validate">
+                            <label for="bank">
+                                <i class="fas fa-credit-card icon"></i>
+                                <p> شماره حساب </p>
+                            </label>
+                            <div class="msg">
+                                <p>شماره حساب خود را وارد کنید</p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                        </div>
+                        <div class="inputWrapper text">
+                            <input type="password" id="password" name="password" class="style2 labelHandler validate" required pattern=".{6,}">
+                            <label for="password">
+                                <i class="fas fa-lock icon"></i>
+                                <p>رمز ورود</p>
+                            </label>
+                            <span class="line"></span>
+                            <div class="msg">
+                                <p>رمز ورود را وارد کنید(حداقل ۶رقم)</p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                        </div>
+                        <div class="inputWrapper text">
+                            <input type="password" id="passwordRepeat" name="passwordRepeat" class="style2 labelHandler validate" required>
+                            <label for="passwordRepeat">
+                                <i class="fas fa-lock icon"></i>
+                                <p>تکرار رمز ورود</p>
+                            </label>
+                            <span class="line"></span>
+                            <div class="msg">
+                                <p>مقدار وارد شده با رمز ورود یکسان نیست</p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                        </div>
+                        <div class="inputWrapper toggle">
+                            <input type="hidden">
+                            <p class="toggleText right" data-value="male">آقا</p>
+                            <div class="switch">
+                                <span class="circle left center-y"></span>
+                            </div>
+                            <p class="toggleText left active" data-value="female">خانوم</p>
+                        </div>
+                        <button type="submit" class="btn mid pulse">ثبت نام</button>        
+                        <a class="loginRoute" href="./login.html">قبلا ثبت نام کرده اید ؟</a>
+                    </form>          
+                </div>
+                <div class="content" id="adminTab">
+                    <a class="logo" href="./index.html">
+                        <img src="../assets/icons/logo.png" alt="logoAlt">
+                        <h4>فانوس زیبایی</h4>
+                    </a> 
+                    <p>
+                    <form novalidate id="signupAdmin" name="signupAdmin" method="GEt" action="#!" enctype="text/plain">       
+                        <div class="inputWrapper text">
+                            <input type="text" id="adminUsername" name="adminUsername" class="style2 labelHandler validate" required>
+                            <label for="adminUsername">
+                                <i class="fas fa-clinic-medical icon"></i>
+                                <p> نام کلینیک </p>
+                            </label>
+                            <div class="msg">
+                                <p>نام کلینیک را وارد کنید</p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                        </div>
+                        <div class="inputWrapper text">
+                            <input type="text" id="adminName" name="adminName" class="style2 labelHandler validate" required>
+                            <label for="adminName">
+                                <i class="fas fa-user-shield icon"></i>
+                                <p> نام مدیر </p>
+                            </label>
+                            <div class="msg">
+                                <p>نام مدیر را وارد کنید</p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                        </div>
+                        <div class="inputWrapper text">
+                            <input type="email" id="adminEmail" name="adminEmail" class="style2 labelHandler validate" required>
+                            <label for="adminEmail">
+                                <i class="fas fa-envelope icon"></i>
+                                <p>پست الکترونیکی</p>
+                            </label>
+                            <span class="line"></span>
+                            <div class="msg">
+                                <p>ایمیل صحیح وارد نمایید</p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                        </div>
+                        <div class="inputWrapper text">
+                            <input type="number" id="adminTel" name="adminTel" class="style2 labelHandler validate" required>
+                            <label for="adminTel">
+                                <i class="fas fa-phone icon"></i>
+                                <p>شماره کلینیک</p>
+                            </label>
+                            <span class="line"></span>
+                            <div class="msg">
+                                <p>شماره کلینیک وارد نمایید</p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                        </div>
+                        <select class="select2 validate" id="citySelect" name="citySelect">
+                            <option></option>
+                            <option value="city1" selected>نام شهر</option>
+                            <option value="city2">نام شهر</option>
+                            <option value="city3">نام شهر</option>
+                            <option value="city4">نام شهر</option>
+                            <option value="city5">نام شهر</option>
+                            <option value="city6">نام شهر</option>
+                            <option value="city7">نام شهر</option>     
+                        </select>
+                        <div class="inputWrapper text">
+                            <input type="text" id="adminAddress" name="adminAddress" class="style2 labelHandler validate" required>
+                            <label for="adminAddress">
+                                <i class="fas fa-map-marker-alt icon"></i>
+                                <p>آدرس</p>
+                            </label>
+                            <span class="line"></span>
+                            <div class="msg">
+                                <p>آدرس شرکت را وارد نمایید</p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                        </div>
+                        <div class="inputWrapper text">
+                            <input type="password" id="adminPassword" name="adminPassword" class="style2 labelHandler validate" required pattern=".{6,}">
+                            <label for="adminPassword">
+                                <i class="fas fa-lock icon"></i>
+                                <p>رمز ورود</p>
+                            </label>
+                            <span class="line"></span>
+                            <div class="msg">
+                                <p>رمز ورود را وارد کنید(حداقل ۶رقم)</p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                        </div>
+                        <div class="inputWrapper text">
+                            <input type="password" id="adminPasswordRepeat" name="adminPasswordRepeat" class="style2 labelHandler validate" required>
+                            <label for="adminPasswordRepeat">
+                                <i class="fas fa-lock icon"></i>
+                                <p>تکرار رمز ورود</p>
+                            </label>
+                            <span class="line"></span>
+                            <div class="msg">
+                                <p>مقدار وارد شده با رمز ورود یکسان نیست</p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                        </div>    
+                        <div class="inputWrapper file">
+                            <input type="file" id="adminFile" name="adminFile" class="validate" accept="image/*" required>
+                            <label for="adminFile">
+                                <p class="btn small">ارسال مجوز</p>
+                                <p class="fileName ellipse"></p>
+                            </label>
+                            <div class="msg">
+                                <p>باید مجوز خود را آپلود کنید</p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                        </div>              
+                        <div class="inputWrapper checkboxes">
+                            <div class="checkbox">
+                                <input type="checkbox" id="adminRulesAgree" name="adminRulesAgree" class="style1 validate" value="adminRulesAgree" required>
+                                <label for="adminRulesAgree">
+                                    <span class="rect">
+                                        <i class="fas fa-check center-xy"></i>
+                                    </span>
+                                    <p class="ellipse">متن قرارداد را خوانده ام</p>
+                                </label>
+                            </div>
+                            <p>
+                                برای مشاهده متن قرار داد
+                                <a href="#!">اینجا</a>
+                                کلیک کنید
+                            </p>
+                        </div>
+                        <button type="submit" class="btn mid pulse">ثبت نام</button>        
+                        <a class="loginRoute" href="./login.html">قبلا ثبت نام کرده اید ؟</a>
+                    </form>  
+                </div>
             </div>
         </div>
-        <div class="inputWrapper text">
-            <input type="email" id="email" name="email" class="style1 labelHandler validate" required>
-            <label for="email">
-                <i class="fas fa-envelope icon"></i>
-                <p>پست الکترونیکی</p>
-            </label>
-            <span class="line"></span>
-            <div class="msg">
-                <p>ایمیل صحیح وارد نمایید</p>
-                <i class="fas fa-caret-up"></i>
-            </div>
-        </div>
-        <div class="inputWrapper text">
-            <input type="number" id="mobile" name="mobile" class="style1 labelHandler validate" required
-                pattern="\d{11}">
-            <label for="mobile">
-                <i class="fas fa-mobile-alt icon"></i>
-                <p>شماره موبایل</p>
-            </label>
-            <span class="line"></span>
-            <div class="msg">
-                <p>شماره موبایل صحیح(شروع با ۰۹) وارد نمایید</p>
-                <i class="fas fa-caret-up"></i>
-            </div>
-        </div>
-        <div class="inputWrapper text">
-            <input type="password" id="password" name="password" class="style1 labelHandler validate" required
-                pattern=".{6,}">
-            <label for="password">
-                <i class="fas fa-lock icon"></i>
-                <p>رمز ورود</p>
-            </label>
-            <span class="line"></span>
-            <div class="msg">
-                <p>رمز ورود را وارد کنید(حداقل ۶رقم)</p>
-                <i class="fas fa-caret-up"></i>
-            </div>
-        </div>
-        <div class="inputWrapper text">
-            <input type="password" id="passwordRepeat" name="passwordRepeat" class="style1 labelHandler validate"
-                required>
-            <label for="passwordRepeat">
-                <i class="fas fa-lock icon"></i>
-                <p>تکرار رمز ورود</p>
-            </label>
-            <span class="line"></span>
-            <div class="msg">
-                <p>مقدار وارد شده با رمز ورود یکسان نیست</p>
-                <i class="fas fa-caret-up"></i>
-            </div>
-        </div>
-        <button type="submit" class="pulse shadowPrimary">ارسال</button>
-        <div class="inputWrapper checkboxes">
-            <div class="checkbox">
-                <input type="checkbox" id="rememberMe" name="rememberMe" class="style2" value="rememberMe">
-                <label for="rememberMe">
-                    <span class="rect">
-                        <i class="fas fa-check center-xy"></i>
-                    </span>
-                    <p>مرا بخاطر بسپار</p>
-                </label>
-            </div>
-        </div>
-        <a class="login" href="login.html">
-            ورود به حساب کاربری
-        </a>
-    </form>
+        <img src="../assets/imgs/slide6.jpg" alt="loginAlt">
+    </div>
 </body>
 
 </html>

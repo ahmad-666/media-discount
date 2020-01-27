@@ -1,7 +1,12 @@
-//copy bellow code to <target>.js file
-import form from '../../utilities/scripts/form.js' ;
+import Form from '../../utilities/scripts/form.js' ;
 let forgetPasswordForm = document.querySelector('form#forgetPassword') ;
-let forgetPasswordSubmit = forgetPasswordForm.querySelector('button[type="submit"]') ;
-let forgetPasswordInputs = forgetPasswordForm.querySelectorAll('.validate') ;
-new form.FormValidate(forgetPasswordForm,forgetPasswordSubmit,forgetPasswordInputs,true,null) ;
-forgetPasswordForm.querySelectorAll('.labelHandler').forEach(labelHandler => new form.LabelHandler(labelHandler))
+let forgetPassword = {
+    elm: forgetPasswordForm,
+    submit: forgetPasswordForm.querySelector('button[type="submit"]'), 
+    inputs: forgetPasswordForm.querySelectorAll('.validate'),
+    send: true ,
+    modal: null 
+}
+new Form.FormValidate(forgetPassword.elm,forgetPassword.submit,
+    forgetPassword.inputs,forgetPassword.send,forgetPassword.modal) ;
+forgetPasswordForm.querySelectorAll('.labelHandler').forEach(label=>new Form.LabelHandler(label)) ;

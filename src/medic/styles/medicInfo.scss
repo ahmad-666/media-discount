@@ -27,83 +27,35 @@
                 font-weight: 700;
                 color: $primaryColor;
             }
-            .bookmark{
-                flex-shrink: 0;
-                width: auto;     
-                height: auto;
-                margin-right: $dist1;
-                display: flex;
-                @include flex(row,flex-start,center,nowrap,"") ;
-                cursor: pointer;
-                color: $textGrey;
-                p{font-size: $fontM - .2em;}
-                &:hover{color: lighten($redColor2,15%);}
-                .likeIcon{
-                    margin-right: .3em;
-                    font-size: $fontL;
-                    transition: all .3s linear;
-                }
-                position: relative;
-                .toast{
-                    opacity: 0;
-                    visibility: hidden;
-                    width: 118%;
-                    height: auto;
-                    border-radius: $dist2 ;
-                    padding: .3em $dist1 + .3em;
-                    background-color: $primaryColor ;
-                    color: white;
-                    font-size: $fontS ;
-                    position: absolute;
-                    top: 105%;
-                    right: 0;
-                }
-                .toast.show{animation: toast 1.5s linear 0s 1 forwards ;}
-                @keyframes toast {
-                    0%{opacity: 0;visibility: hidden;}
-                    15%{opacity: 1;visibility: visible;}
-                    85%{opacity: 1;visibility: visible;}
-                    100%{opacity: 0;visibility: hidden;}
-                }
-                
-            }
-            .bookmark.trigger{
-                color: lighten($redColor2,5%);
-            }
         }
         .icons{
             width: 100%;
             height: auto;
             display: flex;
-            @include flex(column,flex-start,flex-start,nowrap,"") ;
-            margin-right: -$dist2 + .6em;
+            @include flex(row,flex-start,flex-start,wrap,flex-start) ;
             margin-top: $dist1;
-            .row{
-                width: 100%;
+            margin-right: -$dist2;
+            .icon{
+                width: auto;
                 height: auto;
                 display: flex;
                 @include flex(row,flex-start,center,nowrap,"") ;
-                .icon{
-                    width: auto;
-                    height: auto;
-                    display: flex;
-                    @include flex(row,flex-start,center,nowrap,"") ;
-                    margin: $dist1;            
-                    i{
-                        font-size: $fontS + .1em;
-                        color: $primaryColor;
-                    }
-                    p{
-                        margin-right: .3em;
-                        color: $textGrey;
-                        font-size: $fontM - .2em;
-                    }
+                margin: $dist1 $dist2;            
+                i{
+                    font-size: $fontS + .1em;
+                    color: $primaryColor;
+                }
+                p{
+                    margin-right: .3em;
+                    color: $textGrey;
+                    font-size: $fontM - .2em;
                 }
             }
             .score{
-                width: 100%;
+                width: auto ;
                 height: auto;
-                margin-top: $dist2;
+                margin: $dist1 $dist2;
+                margin-top: $dist1 - .2em;
                 display: flex;
                 @include flex(row,flex-start,center,nowrap,"") ;
                 i{
@@ -117,6 +69,130 @@
                     color: $textGrey;
                 }
             }
+           
+        }
+        .bookmark{
+            flex-shrink: 0;
+            width: auto;     
+            height: auto;
+            margin-top: $dist2;
+            display: flex;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            cursor: pointer;
+            color: $textGrey;
+            p{font-size: $fontM - .2em;}
+            &:hover{color: lighten($redColor2,15%);}
+            .likeIcon{
+                margin-right: .3em;
+                font-size: $fontL;
+                transition: all .3s linear;
+            }
+            position: relative;
+            .toast{
+                opacity: 0;
+                visibility: hidden;
+                width: 118%;
+                height: auto;
+                border-radius: $dist2 ;
+                padding: .3em $dist1 + .3em;
+                background-color: $primaryColor ;
+                color: white;
+                font-size: $fontS ;
+                position: absolute;
+                top: 105%;
+                right: 0;
+            }
+            .toast.show{animation: toast 1.5s linear 0s 1 forwards ;}
+            @keyframes toast {
+                0%{opacity: 0;visibility: hidden;}
+                15%{opacity: 1;visibility: visible;}
+                85%{opacity: 1;visibility: visible;}
+                100%{opacity: 0;visibility: hidden;}
+            }
+            
+        }
+        .bookmark.trigger{
+            color: lighten($redColor2,5%);
+        }
+        .share{
+            width: auto;
+            height: auto;
+            margin-top: $dist2;
+            display: flex;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            .title{
+                width: auto;
+                height: auto;
+                display: flex;
+                @include flex(column,flex-start,center,nowrap,"") ;
+                cursor: pointer;
+                i{
+                    width: 4em;
+                    height: 4em;
+                    border-radius: 50%;
+                    position: relative;
+                    background-color: $primaryColor;
+                    &::before{
+                        position: absolute;
+                        top: 50%;
+                        right: 50%;
+                        transform: translate(50%,-50%);
+                        font-size: $fontL;
+                        color: white;
+                    }
+                }
+                p{
+                    font-size: $fontM - .2em;
+                    color: $textGrey;
+                    margin-top: .2em;
+                }
+            }
+            .socials{
+                opacity: 0;
+                visibility: hidden;
+                transition: all .45s linear;
+                width: auto;
+                height: auto;
+                display: flex;
+                @include flex(row,flex-start,center,nowrap,"") ;
+                a{
+                    width: 3.5em;
+                    height: 3.5em;
+                    margin-right: $dist3;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    &:nth-child(1){
+                        i{
+                            background-color: $blueColor1;
+                        }
+                    }
+                    &:nth-child(2){
+                        i{
+                            background-color: $blueColor2;
+                        }
+                    }
+                    &:nth-child(3){
+                        background-color: $primaryColor;
+                    }
+                    i{
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        &::before{
+                            position: absolute;
+                            top: 50%;
+                            right: 50%;
+                            transform: translate(50%,-50%);
+                            color: white;
+                            font-size: $fontM + .2em;
+                        }
+                    }
+                }
+            }
+            .socials.show{
+                opacity: 1;
+                visibility: visible;
+            }
         }
         .desc{
             width: 100%;
@@ -126,12 +202,6 @@
             line-height: $dist2 + .2em;
             color: $textGrey;
             margin-top: $dist2;
-        }
-        video{
-            width: 75%;
-            height: 40em;
-            margin: 0 auto;
-            padding-bottom: $dist2;
         }
         #features{
             width: 100%;

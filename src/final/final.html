@@ -30,38 +30,6 @@
                     <img src="../assets/icons/logo.png" alt="logoAlt">
                     <h1>اسم سایت</h1>
                 </a>
-                <div class="city">
-                    <div class="title">
-                        <p>انتخاب شهر</p>
-                        <i class="fas fa-angle-down"></i>
-                    </div>
-                    <ul class="fadeIn">
-                        <li>
-                            <a href="medics.html">تمام شهرها</a>
-                        </li>
-                        <li>
-                            <a href="medics.html">نام شهر</a>
-                        </li>
-                        <li>
-                            <a href="medics.html">نام شهر</a>
-                        </li>
-                        <li>
-                            <a href="medics.html">نام شهر</a>
-                        </li>
-                        <li>
-                            <a href="medics.html">نام شهر</a>
-                        </li>
-                        <li>
-                            <a href="medics.html">نام شهر</a>
-                        </li>
-                        <li>
-                            <a href="medics.html">نام شهر</a>
-                        </li>
-                        <li>
-                            <a href="medics.html">نام شهر</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
             <div class="left">
                 <a id="login" href="login.html">
@@ -78,34 +46,187 @@
                         <li><a href="#!">عربی</a></li>
                     </ul>
                 </div>
-                <div id="more">
-                    <div class="title">
-                        <p>موارد بیشتر</p>
-                        <i class="fas fa-angle-down"></i>
-                    </div>
-                    <ul class="fadeIn">
-                        <li class="top">
-                            <a href="#!">
-                                <i class="fab fa-telegram-plane"></i>
-                            </a>
-                            <a href="#!">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                            <a href="#!">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#!">
-                                <i class="fab fa-twitter"></i>
-                            </a>                     
-                        </li>
-                        <li><a href="about.html">درباره ما</a></li>
-                        <li><a href="rules.html">قوانین</a></li>
-                        <li><a href="report.html">ثبت شکایات</a></li>
-                    </ul>
+            </div>
+        </div>
+        <form novalidate id="searchForm" name="searchForm" method="GET" action="#!" enctype="text/plain">
+            <div class="inputWrapper text">
+                <input type="text" id="search" name="search" class="style2 labelHandler validate" required>
+                <label for="search">
+                    <i class="fas fa-search icon"></i>
+                    <p>جست و جوی مکان</p>
+                </label>
+                <span class="line"></span>
+                <div class="msg">
+                    <p>مقداری را وارد کنید</p>
+                    <i class="fas fa-caret-up"></i>
+                </div>
+            </div>
+            <select class="select2 validate" id="categorySelect" name="categorySelect">
+                <option></option>
+                <option value="cat1">نام دسته بندی</option>
+                <option value="cat2">نام دسته بندی</option>
+                <option value="cat3">نام دسته بندی</option>
+                <option value="cat4">نام دسته بندی</option>
+                <option value="cat5">نام دسته بندی</option>
+                <option value="cat6">نام دسته بندی</option>
+                <option value="cat7">نام دسته بندی</option>    
+            </select>
+            <select class="select2 validate" id="citySelect" name="citySelect">
+                <option></option>
+                <option value="city1">نام شهر</option>
+                <option value="city2">نام شهر</option>
+                <option value="city3">نام شهر</option>
+                <option value="city4">نام شهر</option>
+                <option value="city5">نام شهر</option>
+                <option value="city6">نام شهر</option>
+                <option value="city7">نام شهر</option>     
+            </select>
+            <button type="submit" class="btn mid pulse">جست و جو</button>
+        </form>
+    </header>
+    <i class="fas fa-bars" id="menuTrigger"></i>
+    <div id="menu">
+        <div class="top">
+            <img src="../assets/icons/profile.png" alt="profileAlt">
+            <p>نام حساب کاربری</p>
+            <a href="#!" id="signOut">
+                <p>خروج</p>
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
+        </div>
+        <ul>
+            <li>
+                <a href="login.html">
+                    <i class="fas fa-user"></i>
+                    <p>ورود / ثبت نام</p>
+                </a>
+            </li>
+            <li class="withCollapse">
+                <div class="collapseTrigger">
+                    <p>انتخاب دسته بندی</p>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="collapse">
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                </div>
+            </li>
+            <li class="withCollapse">
+                <div class="collapseTrigger">
+                    <p>انتخاب  شهر</p>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="collapse">
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="editProfile.html">
+                    <i class="fas fa-edit"></i>
+                    <p> ویرایش حساب کاربری </p>
+                </a>
+            </li>
+            <li>
+                <a href="changePassword.html">
+                    <i class="fas fa-lock"></i>
+                    <p>تغییر رمز ورود</p>
+                </a>
+            </li>
+            <li>
+                <a href="info.html">
+                    <i class="fas fa-info"></i>
+                    <p>وارد کردن اطلاعات ظاهری</p>
+                </a>
+            </li>
+            <li>
+                <a href="bookmarks.html">
+                    <i class="fas fa-bookmark"></i>
+                    <p>مورد علاقه ها</p>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <i class="fas fa-comment-medical"></i>
+                    <p>درباره ما</p>
+                </a>
+            </li>
+            <li>
+                <a href="rules.html">
+                    <i class="fas fa-address-book"></i>
+                    <p>قوانین</p>
+                </a>
+            </li>
+            <li>
+                <a href="report.html">
+                    <i class="fas fa-user-shield"></i>
+                    <p> ثبت شکایت </p>
+                </a>
+            </li>
+        </ul>
+        <div class="bottom">
+            <h6>ارتباط با فانوس زیبایی</h6>
+            <div class="icons">
+                <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>آدرس دفتر فانوس زیبایی</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                    <p>051-38670000</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                    <p>something@gmail.com</p>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+    <div id="blackFilter"></div>
     <ul id="leftFix">
         <li id="homeFix">
             <a href="index.html">
@@ -120,52 +241,7 @@
         </li>
     </ul>
     <i class="fas fa-angle-double-up" id="smooth"></i>
-    <i class="fas fa-bars" id="menuTrigger"></i>
-    <div id="menu">
-        <div class="top">
-            <img src="../assets/icons/profile.png" alt="profileAlt">
-            <p>نام حساب کاربری</p>
-            <div class="row">
-                <a href="#!" class="exit">
-                    <p>خروج</p>
-                    <i class="fas fa-sign-out-alt"></i>
-                </a>
-            </div>
-        </div>
-        <ul>
-            <li>
-                <a href="editInfo">
-                    <i class="fas fa-edit"></i>
-                    <p>ویرایش مشخصات</p>
-                </a>
-            </li>
-            <li>
-                <a href="changePass.html">
-                    <i class="fas fa-lock"></i>
-                    <p>تغییر رمز عبور</p>
-                </a>
-            </li>
-            <li>
-                <a href="basket.html">
-                    <i class="fas fa-shopping-basket"></i>
-                    <p>سبد خرید</p>
-                </a>
-            </li>
-            <li>
-                <a href="resume.html">
-                    <i class="fas fa-tags"></i>
-                    <p>سوابق خریدها</p>
-                </a>
-            </li>
-            <li>
-                <a href="bookmarks.html">
-                    <i class="fas fa-bookmark"></i>
-                    <p>مورد علاقه ها</p>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div id="blackFilter"></div>
+    
     <div id="final" class="containerStyle">
         <h4>پرداخت با موفقیت انجام شد</h4>
         <div class="trackCode">

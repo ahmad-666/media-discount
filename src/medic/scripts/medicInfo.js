@@ -15,3 +15,8 @@ bookmark.addEventListener('click',e=>{
         setTimeout(()=>toast.classList.remove('show'),1500)
     }
 }) 
+let shareTitle = document.querySelector('#medicInfo .right .share .title') ;
+let shareSocials =  document.querySelector('#medicInfo .right .share .socials') ;
+shareTitle.addEventListener('click',e=>{
+    shareSocials.classList.toggle('show') ;
+})

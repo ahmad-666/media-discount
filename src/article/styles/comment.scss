@@ -41,6 +41,11 @@
                 height: auto;
                 display: flex;
                 @include flex(column,flex-start,center,nowrap,"") ;
+                img{
+                    width: 5em;
+                    height: 5em;
+                    border-radius: 50%;
+                }
                 p{
                     font-size: $fontM;
                     color: $textGrey;
@@ -49,20 +54,24 @@
             .content{
                 width: 100%;
                 height: auto;
-                margin-right: $dist2;
+                margin-right: 0;
                 display: flex;
                 @include flex(column,flex-start,flex-start,nowrap,"") ;
                 p{
+                    background-color: lighten($textGrey,36%);
+                    padding: $dist1;
+                    border-radius: $dist2;
                     width: 100% ;
                     height: auto;
                     font-size: $fontM;
-                    color: darken($textGrey,20%);
+                    color: $textDark;
                     line-height: $dist2 + .2em;
                 }
                 .commentAction{
                     width: auto;
                     height: auto;
                     margin-top: 0;
+                    margin-right: $dist2;
                     display: flex;
                     @include flex(row,flex-start,center,nowrap,"") ;
                     .like,.reply{
@@ -78,6 +87,10 @@
                         }
                         p{
                             font-size: $fontM;
+                            color: $textDark;
+                            background-color: transparent;
+                            padding: 0;
+                            border-radius: 0;
                         }
                     }
                     .like{

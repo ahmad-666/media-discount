@@ -7,12 +7,21 @@
     background-color: #263238 ;
     padding: .5em;
     display: flex;
-    @include flex(row,space-between,center,nowrap,"") ;
+    @include flex(row-reverse,space-between,center,nowrap,"") ;
+    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
     .right{
         width: auto;
         height: auto;
         display: flex;
         @include flex(row,flex-start,center,nowrap,"") ;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%,-50%);
         .logo{
             width: auto;
             height: auto;

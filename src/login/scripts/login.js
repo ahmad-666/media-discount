@@ -1,7 +1,26 @@
-//copy bellow code to <target>.js file
-import form from '../../utilities/scripts/form.js' ;
-let loginForm = document.querySelector('form#login') ;
-let loginSubmit = loginForm.querySelector('button[type="submit"]') ;
-let loginInputs = loginForm.querySelectorAll('.validate') ;
-new form.FormValidate(loginForm,loginSubmit,loginInputs,true,null) ;
-loginForm.querySelectorAll('.labelHandler').forEach(labelHandler => new form.LabelHandler(labelHandler))
+import Tabs from '../../utilities/scripts/tabs.js' ;
+import Form from '../../utilities/scripts/form.js' ;
+let tabsWrapper = document.querySelector('#loginWrapper .tabs_wrapper') ;
+new Tabs(tabsWrapper) ;
+let userLoginFormElm = document.querySelector('form#loginUser') ;
+let adminLoginFormElm = document.querySelector('form#loginAdmin') ;
+let userLoginForm = {
+    elm: userLoginFormElm,
+    submit: userLoginFormElm.querySelector('button[type="submit"]'), 
+    inputs: userLoginFormElm.querySelectorAll('.validate'),
+    send: true ,
+    modal: null 
+}
+let adminLoginForm = {
+    elm: adminLoginFormElm,
+    submit: adminLoginFormElm.querySelector('button[type="submit"]'), 
+    inputs: adminLoginFormElm.querySelectorAll('.validate'),
+    send: true ,
+    modal: null 
+}
+new Form.FormValidate(userLoginForm.elm,userLoginForm.submit,
+    userLoginForm.inputs,userLoginForm.send,userLoginForm.modal) ;
+new Form.FormValidate(adminLoginForm.elm,adminLoginForm.submit,
+    adminLoginForm.inputs,adminLoginForm.send,adminLoginForm.modal) ;
+userLoginFormElm.querySelectorAll('.labelHandler').forEach(label=>new Form.LabelHandler(label)) ;
+adminLoginFormElm.querySelectorAll('.labelHandler').forEach(label=>new Form.LabelHandler(label)) ;

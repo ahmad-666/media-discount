@@ -1,7 +1,33 @@
-//copy bellow code to <target>.js file
-import form from '../../utilities/scripts/form.js' ;
-let signupForm = document.querySelector('form#signup') ;
-let signupSubmit = signupForm.querySelector('button[type="submit"]') ;
-let signupInputs = signupForm.querySelectorAll('.validate') ;
-new form.FormValidate(signupForm,signupSubmit,signupInputs,true,null) ;
-signupForm.querySelectorAll('.labelHandler').forEach(labelHandler =>new form.LabelHandler(labelHandler))
+import $ from 'jquery' ;
+import select2 from 'select2' ;
+import Tabs from '../../utilities/scripts/tabs.js' ;
+import Form from '../../utilities/scripts/form.js' ;
+$('.select2#citySelect').select2({
+    placeholder: 'انتخاب شهر'
+});
+let tabsWrapper = document.querySelector('#signupWrapper .tabs_wrapper') ;
+new Tabs(tabsWrapper) ;
+let userSignupFormElm = document.querySelector('form#signupUser') ;
+let adminSignupFormElm = document.querySelector('form#signupAdmin') ;
+let userSignupForm = {
+    elm: userSignupFormElm,
+    submit: userSignupFormElm.querySelector('button[type="submit"]'), 
+    inputs: userSignupFormElm.querySelectorAll('.validate'),
+    send: true ,
+    modal: null 
+}
+let adminSignupForm = {
+    elm: adminSignupFormElm,
+    submit: adminSignupFormElm.querySelector('button[type="submit"]'), 
+    inputs: adminSignupFormElm.querySelectorAll('.validate'),
+    send: true ,
+    modal: null 
+}
+new Form.FormValidate(userSignupForm.elm,userSignupForm.submit,
+    userSignupForm.inputs,userSignupForm.send,userSignupForm.modal) ;
+new Form.FormValidate(adminSignupForm.elm,adminSignupForm.submit,
+    adminSignupForm.inputs,adminSignupForm.send,adminSignupForm.modal) ;
+userSignupFormElm.querySelectorAll('.labelHandler').forEach(label=>new Form.LabelHandler(label)) ;
+adminSignupFormElm.querySelectorAll('.labelHandler').forEach(label=>new Form.LabelHandler(label)) ;
+tabsWrapper.querySelectorAll('.inputWrapper.file').forEach(file=>new Form.FileHandler(file)) ;
+tabsWrapper.querySelectorAll('.inputWrapper.toggle').forEach(toggle=>new Form.Toggle(toggle)) ;
