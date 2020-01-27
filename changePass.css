@@ -5524,6 +5524,7 @@ table.tableResp {
 form#searchForm {
   width: 100%;
   height: auto;
+  margin-top: 5em;
   padding: 1.5em 3em;
   background-color: white;
   border-bottom: 1px solid #00897b;
@@ -6835,18 +6836,9 @@ form#report {
     margin-right: 0;
     margin-top: 1.5em; } }
 
-form#login {
-  width: 40em;
+form#loginUser, form#loginAdmin, form#signupUser, form#signupAdmin, form#forgetPassword {
+  width: 100%;
   height: auto;
-  padding: 1.5em;
-  margin: 0;
-  position: fixed;
-  top: 50%;
-  right: 50%;
-  -webkit-transform: translate(50%, -50%);
-      -ms-transform: translate(50%, -50%);
-       -o-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6864,45 +6856,17 @@ form#login {
       flex-wrap: nowrap;
   -ms-flex-line-pack: "";
       align-content: ""; }
-  form#login .title {
-    width: auto;
-    height: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-line-pack: "";
-        align-content: ""; }
-    form#login .title img {
-      width: 12em;
-      height: 10em; }
-    form#login .title p {
-      font-size: 1.6em;
-      color: #90909b; }
-  form#login h4 {
+  form#loginUser h3, form#loginAdmin h3, form#signupUser h3, form#signupAdmin h3, form#forgetPassword h3 {
     font-size: 2em;
-    font-weight: 700;
     color: #00897b;
-    margin-top: 0.75em; }
-  form#login .inputWrapper.text {
-    width: 35em;
+    font-weight: 700;
+    margin-top: 1.5em; }
+  form#loginUser .inputWrapper.text, form#loginAdmin .inputWrapper.text, form#signupUser .inputWrapper.text, form#signupAdmin .inputWrapper.text, form#forgetPassword .inputWrapper.text {
+    width: 28em;
     height: 4em;
     position: relative;
-    margin-top: 1.5em; }
-    form#login .inputWrapper.text:nth-child(4) {
-      margin-top: 3em; }
-    form#login .inputWrapper.text input {
+    margin-top: 2.5em; }
+    form#loginUser .inputWrapper.text input, form#loginAdmin .inputWrapper.text input, form#signupUser .inputWrapper.text input, form#signupAdmin .inputWrapper.text input, form#forgetPassword .inputWrapper.text input {
       width: 100%;
       height: 100%;
       line-height: 4em;
@@ -6912,25 +6876,25 @@ form#login {
       -webkit-transition: all .2s linear;
       -o-transition: all .2s linear;
       transition: all .2s linear; }
-      form#login .inputWrapper.text input::-webkit-input-placeholder {
+      form#loginUser .inputWrapper.text input::-webkit-input-placeholder, form#loginAdmin .inputWrapper.text input::-webkit-input-placeholder, form#signupUser .inputWrapper.text input::-webkit-input-placeholder, form#signupAdmin .inputWrapper.text input::-webkit-input-placeholder, form#forgetPassword .inputWrapper.text input::-webkit-input-placeholder {
         color: #90909b;
         font-size: 1.6em; }
-      form#login .inputWrapper.text input::-moz-placeholder {
+      form#loginUser .inputWrapper.text input::-moz-placeholder, form#loginAdmin .inputWrapper.text input::-moz-placeholder, form#signupUser .inputWrapper.text input::-moz-placeholder, form#signupAdmin .inputWrapper.text input::-moz-placeholder, form#forgetPassword .inputWrapper.text input::-moz-placeholder {
         color: #90909b;
         font-size: 1.6em; }
-      form#login .inputWrapper.text input:-ms-input-placeholder {
+      form#loginUser .inputWrapper.text input:-ms-input-placeholder, form#loginAdmin .inputWrapper.text input:-ms-input-placeholder, form#signupUser .inputWrapper.text input:-ms-input-placeholder, form#signupAdmin .inputWrapper.text input:-ms-input-placeholder, form#forgetPassword .inputWrapper.text input:-ms-input-placeholder {
         color: #90909b;
         font-size: 1.6em; }
-      form#login .inputWrapper.text input::-ms-input-placeholder {
+      form#loginUser .inputWrapper.text input::-ms-input-placeholder, form#loginAdmin .inputWrapper.text input::-ms-input-placeholder, form#signupUser .inputWrapper.text input::-ms-input-placeholder, form#signupAdmin .inputWrapper.text input::-ms-input-placeholder, form#forgetPassword .inputWrapper.text input::-ms-input-placeholder {
         color: #90909b;
         font-size: 1.6em; }
-      form#login .inputWrapper.text input::placeholder {
+      form#loginUser .inputWrapper.text input::placeholder, form#loginAdmin .inputWrapper.text input::placeholder, form#signupUser .inputWrapper.text input::placeholder, form#signupAdmin .inputWrapper.text input::placeholder, form#forgetPassword .inputWrapper.text input::placeholder {
         color: #90909b;
         font-size: 1.6em; }
-    form#login .inputWrapper.text input.style1 {
+    form#loginUser .inputWrapper.text input.style1, form#loginAdmin .inputWrapper.text input.style1, form#signupUser .inputWrapper.text input.style1, form#signupAdmin .inputWrapper.text input.style1, form#forgetPassword .inputWrapper.text input.style1 {
       border: none;
       border-bottom: 1.2px solid #d3d3d7; }
-      form#login .inputWrapper.text input.style1:focus ~ label {
+      form#loginUser .inputWrapper.text input.style1:focus ~ label, form#loginAdmin .inputWrapper.text input.style1:focus ~ label, form#signupUser .inputWrapper.text input.style1:focus ~ label, form#signupAdmin .inputWrapper.text input.style1:focus ~ label, form#forgetPassword .inputWrapper.text input.style1:focus ~ label {
         color: #00897b;
         font-size: 8px;
         bottom: calc(100% + .5em);
@@ -6939,14 +6903,15 @@ form#login {
              -o-transform: translateY(50%);
                 transform: translateY(50%);
         right: 0; }
-      form#login .inputWrapper.text input.style1:focus ~ .line {
+      form#loginUser .inputWrapper.text input.style1:focus ~ .line, form#loginAdmin .inputWrapper.text input.style1:focus ~ .line, form#signupUser .inputWrapper.text input.style1:focus ~ .line, form#signupAdmin .inputWrapper.text input.style1:focus ~ .line, form#forgetPassword .inputWrapper.text input.style1:focus ~ .line {
         width: 100%; }
-    form#login .inputWrapper.text input.style2 {
+    form#loginUser .inputWrapper.text input.style2, form#loginAdmin .inputWrapper.text input.style2, form#signupUser .inputWrapper.text input.style2, form#signupAdmin .inputWrapper.text input.style2, form#forgetPassword .inputWrapper.text input.style2 {
+      background-color: #fbfbfc;
       border: 1.2px solid #d3d3d7;
       border-radius: 3em; }
-      form#login .inputWrapper.text input.style2:focus {
+      form#loginUser .inputWrapper.text input.style2:focus, form#loginAdmin .inputWrapper.text input.style2:focus, form#signupUser .inputWrapper.text input.style2:focus, form#signupAdmin .inputWrapper.text input.style2:focus, form#forgetPassword .inputWrapper.text input.style2:focus {
         border: 1.2px solid #00897b; }
-        form#login .inputWrapper.text input.style2:focus ~ label {
+        form#loginUser .inputWrapper.text input.style2:focus ~ label, form#loginAdmin .inputWrapper.text input.style2:focus ~ label, form#signupUser .inputWrapper.text input.style2:focus ~ label, form#signupAdmin .inputWrapper.text input.style2:focus ~ label, form#forgetPassword .inputWrapper.text input.style2:focus ~ label {
           color: #00897b;
           font-size: 8px;
           bottom: calc(100% + 1.5em);
@@ -6955,19 +6920,19 @@ form#login {
                -o-transform: translateY(50%);
                   transform: translateY(50%);
           right: 0.75em; }
-        form#login .inputWrapper.text input.style2:focus ~ .line {
+        form#loginUser .inputWrapper.text input.style2:focus ~ .line, form#loginAdmin .inputWrapper.text input.style2:focus ~ .line, form#signupUser .inputWrapper.text input.style2:focus ~ .line, form#signupAdmin .inputWrapper.text input.style2:focus ~ .line, form#forgetPassword .inputWrapper.text input.style2:focus ~ .line {
           width: 0%; }
-    form#login .inputWrapper.text input.style1.error {
+    form#loginUser .inputWrapper.text input.style1.error, form#loginAdmin .inputWrapper.text input.style1.error, form#signupUser .inputWrapper.text input.style1.error, form#signupAdmin .inputWrapper.text input.style1.error, form#forgetPassword .inputWrapper.text input.style1.error {
       border-bottom: 1.2px solid #ea6161; }
-      form#login .inputWrapper.text input.style1.error ~ label {
+      form#loginUser .inputWrapper.text input.style1.error ~ label, form#loginAdmin .inputWrapper.text input.style1.error ~ label, form#signupUser .inputWrapper.text input.style1.error ~ label, form#signupAdmin .inputWrapper.text input.style1.error ~ label, form#forgetPassword .inputWrapper.text input.style1.error ~ label {
         color: #ea6161; }
-      form#login .inputWrapper.text input.style1.error ~ .line {
+      form#loginUser .inputWrapper.text input.style1.error ~ .line, form#loginAdmin .inputWrapper.text input.style1.error ~ .line, form#signupUser .inputWrapper.text input.style1.error ~ .line, form#signupAdmin .inputWrapper.text input.style1.error ~ .line, form#forgetPassword .inputWrapper.text input.style1.error ~ .line {
         background-color: #ea6161; }
-    form#login .inputWrapper.text input.style2.error {
+    form#loginUser .inputWrapper.text input.style2.error, form#loginAdmin .inputWrapper.text input.style2.error, form#signupUser .inputWrapper.text input.style2.error, form#signupAdmin .inputWrapper.text input.style2.error, form#forgetPassword .inputWrapper.text input.style2.error {
       border: 1.2px solid #ea6161; }
-      form#login .inputWrapper.text input.style2.error ~ label {
+      form#loginUser .inputWrapper.text input.style2.error ~ label, form#loginAdmin .inputWrapper.text input.style2.error ~ label, form#signupUser .inputWrapper.text input.style2.error ~ label, form#signupAdmin .inputWrapper.text input.style2.error ~ label, form#forgetPassword .inputWrapper.text input.style2.error ~ label {
         color: #ea6161; }
-    form#login .inputWrapper.text label {
+    form#loginUser .inputWrapper.text label, form#loginAdmin .inputWrapper.text label, form#signupUser .inputWrapper.text label, form#signupAdmin .inputWrapper.text label, form#forgetPassword .inputWrapper.text label {
       width: auto;
       height: auto;
       position: absolute;
@@ -6998,21 +6963,15 @@ form#login {
       -webkit-transition: all .2s linear;
       -o-transition: all .2s linear;
       transition: all .2s linear; }
-      form#login .inputWrapper.text label .isRequire {
-        width: auto;
-        height: auto;
-        color: #e74a4a;
-        font-size: 1.1em;
-        padding-left: .3em; }
-      form#login .inputWrapper.text label .icon {
+      form#loginUser .inputWrapper.text label .icon, form#loginAdmin .inputWrapper.text label .icon, form#signupUser .inputWrapper.text label .icon, form#signupAdmin .inputWrapper.text label .icon, form#forgetPassword .inputWrapper.text label .icon {
         font-size: 1.6em; }
-      form#login .inputWrapper.text label p {
+      form#loginUser .inputWrapper.text label p, form#loginAdmin .inputWrapper.text label p, form#signupUser .inputWrapper.text label p, form#signupAdmin .inputWrapper.text label p, form#forgetPassword .inputWrapper.text label p {
         font-size: 1.5em;
         -webkit-transform: translateX(-0.3em);
             -ms-transform: translateX(-0.3em);
              -o-transform: translateX(-0.3em);
                 transform: translateX(-0.3em); }
-    form#login .inputWrapper.text input.style1 ~ label.top {
+    form#loginUser .inputWrapper.text input.style1 ~ label.top, form#loginAdmin .inputWrapper.text input.style1 ~ label.top, form#signupUser .inputWrapper.text input.style1 ~ label.top, form#signupAdmin .inputWrapper.text input.style1 ~ label.top, form#forgetPassword .inputWrapper.text input.style1 ~ label.top {
       font-size: 8px;
       bottom: calc(100% + .5em);
       -webkit-transform: translateY(50%);
@@ -7020,7 +6979,7 @@ form#login {
            -o-transform: translateY(50%);
               transform: translateY(50%);
       right: 0; }
-    form#login .inputWrapper.text input.style2 ~ label.top {
+    form#loginUser .inputWrapper.text input.style2 ~ label.top, form#loginAdmin .inputWrapper.text input.style2 ~ label.top, form#signupUser .inputWrapper.text input.style2 ~ label.top, form#signupAdmin .inputWrapper.text input.style2 ~ label.top, form#forgetPassword .inputWrapper.text input.style2 ~ label.top {
       font-size: 8px;
       bottom: calc(100% + 1.5em);
       -webkit-transform: translateY(50%);
@@ -7028,7 +6987,7 @@ form#login {
            -o-transform: translateY(50%);
               transform: translateY(50%);
       right: 0.75em; }
-    form#login .inputWrapper.text .line {
+    form#loginUser .inputWrapper.text .line, form#loginAdmin .inputWrapper.text .line, form#signupUser .inputWrapper.text .line, form#signupAdmin .inputWrapper.text .line, form#forgetPassword .inputWrapper.text .line {
       width: 0%;
       height: 1.2px;
       background-color: #00897b;
@@ -7038,7 +6997,7 @@ form#login {
       -webkit-transition: all .2s linear;
       -o-transition: all .2s linear;
       transition: all .2s linear; }
-    form#login .inputWrapper.text .msg {
+    form#loginUser .inputWrapper.text .msg, form#loginAdmin .inputWrapper.text .msg, form#signupUser .inputWrapper.text .msg, form#signupAdmin .inputWrapper.text .msg, form#forgetPassword .inputWrapper.text .msg {
       width: auto;
       height: auto;
       border-radius: 3em;
@@ -7053,25 +7012,95 @@ form#login {
       -webkit-transition: all .2s linear;
       -o-transition: all .2s linear;
       transition: all .2s linear; }
-      form#login .inputWrapper.text .msg p {
+      form#loginUser .inputWrapper.text .msg p, form#loginAdmin .inputWrapper.text .msg p, form#signupUser .inputWrapper.text .msg p, form#signupAdmin .inputWrapper.text .msg p, form#forgetPassword .inputWrapper.text .msg p {
         color: #fbfbfb;
         font-size: 1.4em; }
-      form#login .inputWrapper.text .msg i {
+      form#loginUser .inputWrapper.text .msg i, form#loginAdmin .inputWrapper.text .msg i, form#signupUser .inputWrapper.text .msg i, form#signupAdmin .inputWrapper.text .msg i, form#forgetPassword .inputWrapper.text .msg i {
         font-size: 2.4em;
         color: #ea6161;
         position: absolute;
         right: 1.5em;
         top: calc(0% - .6em); }
-    form#login .inputWrapper.text .msg.show {
+    form#loginUser .inputWrapper.text .msg.show, form#loginAdmin .inputWrapper.text .msg.show, form#signupUser .inputWrapper.text .msg.show, form#signupAdmin .inputWrapper.text .msg.show, form#forgetPassword .inputWrapper.text .msg.show {
       opacity: 1;
       visibility: visible;
       z-index: 2; }
-  form#login .inputWrapper.checkboxes {
+    form#loginUser .inputWrapper.text .forgetPass, form#loginAdmin .inputWrapper.text .forgetPass, form#signupUser .inputWrapper.text .forgetPass, form#signupAdmin .inputWrapper.text .forgetPass, form#forgetPassword .inputWrapper.text .forgetPass {
+      display: block;
+      font-size: 1.2em;
+      color: #00897b;
+      margin-top: 0.75em;
+      visibility: visible; }
+  form#loginUser select, form#loginAdmin select, form#signupUser select, form#signupAdmin select, form#forgetPassword select {
+    font-size: 1.6em;
+    color: #00897b;
+    margin-top: 2.5em;
+    border-radius: 1.5em;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+         -o-transform: translateX(50%);
+            transform: translateX(50%); }
+    form#loginUser select option, form#loginAdmin select option, form#signupUser select option, form#signupAdmin select option, form#forgetPassword select option {
+      color: #90909b; }
+  form#loginUser .select2, form#loginAdmin .select2, form#signupUser .select2, form#signupAdmin .select2, form#forgetPassword .select2 {
+    width: 17em;
+    font-size: 1.6em;
+    margin-top: 1.5em; }
+    form#loginUser .select2 option, form#loginAdmin .select2 option, form#signupUser .select2 option, form#signupAdmin .select2 option, form#forgetPassword .select2 option {
+      color: #767682;
+      font-size: 1.6em; }
+  form#loginUser .select2-container--default .select2-selection--single, form#loginAdmin .select2-container--default .select2-selection--single, form#signupUser .select2-container--default .select2-selection--single, form#signupAdmin .select2-container--default .select2-selection--single, form#forgetPassword .select2-container--default .select2-selection--single {
+    border-radius: 3em;
+    border: 1.2px solid #d3d3d7;
+    height: 2.5em;
+    outline: none; }
+    form#loginUser .select2-container--default .select2-selection--single .select2-selection__rendered, form#loginAdmin .select2-container--default .select2-selection--single .select2-selection__rendered, form#signupUser .select2-container--default .select2-selection--single .select2-selection__rendered, form#signupAdmin .select2-container--default .select2-selection--single .select2-selection__rendered, form#forgetPassword .select2-container--default .select2-selection--single .select2-selection__rendered {
+      line-height: 2.5em; }
+    form#loginUser .select2-container--default .select2-selection--single .select2-selection__arrow, form#loginAdmin .select2-container--default .select2-selection--single .select2-selection__arrow, form#signupUser .select2-container--default .select2-selection--single .select2-selection__arrow, form#signupAdmin .select2-container--default .select2-selection--single .select2-selection__arrow, form#forgetPassword .select2-container--default .select2-selection--single .select2-selection__arrow {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+           -o-transform: translateY(-50%);
+              transform: translateY(-50%); }
+  form#loginUser button[type="submit"], form#loginAdmin button[type="submit"], form#signupUser button[type="submit"], form#signupAdmin button[type="submit"], form#forgetPassword button[type="submit"] {
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    color: white;
+    background-color: #00897b;
+    border: 1.2px solid transparent;
+    cursor: pointer;
+    margin-top: 1.5em;
+    padding: 0.4em 3em; }
+    form#loginUser button[type="submit"]:hover, form#loginAdmin button[type="submit"]:hover, form#signupUser button[type="submit"]:hover, form#signupAdmin button[type="submit"]:hover, form#forgetPassword button[type="submit"]:hover {
+      color: #00897b;
+      background-color: white;
+      border: 1.2px solid #00897b; }
+  form#loginUser .loginRoute, form#loginAdmin .loginRoute, form#signupUser .loginRoute, form#signupAdmin .loginRoute, form#forgetPassword .loginRoute {
+    font-size: 1.6em;
+    color: #00897b;
+    margin-top: 0.75em;
+    position: relative; }
+    form#loginUser .loginRoute::before, form#loginAdmin .loginRoute::before, form#signupUser .loginRoute::before, form#signupAdmin .loginRoute::before, form#forgetPassword .loginRoute::before {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: #00897b;
+      position: absolute;
+      right: 0;
+      top: 102%; }
+  form#loginUser .inputWrapper.checkboxes, form#loginAdmin .inputWrapper.checkboxes, form#signupUser .inputWrapper.checkboxes, form#signupAdmin .inputWrapper.checkboxes, form#forgetPassword .inputWrapper.checkboxes {
     width: auto;
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-transform: translateX(25%);
+        -ms-transform: translateX(25%);
+         -o-transform: translateX(25%);
+            transform: translateX(25%);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -7079,24 +7108,23 @@ form#login {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -ms-flex-line-pack: "";
         align-content: "";
-    margin-top: 0; }
-    form#login .inputWrapper.checkboxes .checkbox {
+    margin-top: 1.5em; }
+    form#loginUser .inputWrapper.checkboxes .checkbox, form#loginAdmin .inputWrapper.checkboxes .checkbox, form#signupUser .inputWrapper.checkboxes .checkbox, form#signupAdmin .inputWrapper.checkboxes .checkbox, form#forgetPassword .inputWrapper.checkboxes .checkbox {
       width: auto;
       height: auto;
-      padding-right: 0.75em;
-      margin-top: 1.5em; }
-      form#login .inputWrapper.checkboxes .checkbox input[type="checkbox"] {
+      padding-right: 0; }
+      form#loginUser .inputWrapper.checkboxes .checkbox input[type="checkbox"], form#loginAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"], form#signupUser .inputWrapper.checkboxes .checkbox input[type="checkbox"], form#signupAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"], form#forgetPassword .inputWrapper.checkboxes .checkbox input[type="checkbox"] {
         width: 0;
         height: 0;
         display: none; }
-      form#login .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label .rect {
+      form#loginUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label .rect, form#loginAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label .rect, form#signupUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label .rect, form#signupAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label .rect, form#forgetPassword .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label .rect {
         width: 2em;
         height: 1em;
         border-radius: 0;
@@ -7108,16 +7136,16 @@ form#login {
             -ms-transform: translateY(-0.3em) rotate(-45deg);
              -o-transform: translateY(-0.3em) rotate(-45deg);
                 transform: translateY(-0.3em) rotate(-45deg); }
-      form#login .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label p {
+      form#loginUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label p, form#loginAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label p, form#signupUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label p, form#signupAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label p, form#forgetPassword .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label p {
         color: #00897b; }
-      form#login .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect {
+      form#loginUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect, form#loginAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect, form#signupUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect, form#signupAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect, form#forgetPassword .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect {
         border: 1px solid transparent;
         background-color: #00897b; }
-        form#login .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i {
+        form#loginUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i, form#loginAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i, form#signupUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i, form#signupAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i, form#forgetPassword .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i {
           opacity: 1; }
-      form#login .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p {
+      form#loginUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p, form#loginAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p, form#signupUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p, form#signupAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p, form#forgetPassword .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p {
         color: #00897b; }
-      form#login .inputWrapper.checkboxes .checkbox label {
+      form#loginUser .inputWrapper.checkboxes .checkbox label, form#loginAdmin .inputWrapper.checkboxes .checkbox label, form#signupUser .inputWrapper.checkboxes .checkbox label, form#signupAdmin .inputWrapper.checkboxes .checkbox label, form#forgetPassword .inputWrapper.checkboxes .checkbox label {
         cursor: pointer;
         width: 100%;
         height: 100%;
@@ -7139,232 +7167,52 @@ form#login {
             flex-wrap: nowrap;
         -ms-flex-line-pack: "";
             align-content: ""; }
-        form#login .inputWrapper.checkboxes .checkbox label .rect {
+        form#loginUser .inputWrapper.checkboxes .checkbox label .rect, form#loginAdmin .inputWrapper.checkboxes .checkbox label .rect, form#signupUser .inputWrapper.checkboxes .checkbox label .rect, form#signupAdmin .inputWrapper.checkboxes .checkbox label .rect, form#forgetPassword .inputWrapper.checkboxes .checkbox label .rect {
           -ms-flex-negative: 0;
               flex-shrink: 0;
-          width: 2em;
-          height: 2em;
+          width: 2.3em;
+          height: 2.3em;
           border: 1px solid #696975;
           position: relative;
           -webkit-transition: all .2s linear;
           -o-transition: all .2s linear;
           transition: all .2s linear;
           border-radius: .45em; }
-          form#login .inputWrapper.checkboxes .checkbox label .rect i {
+          form#loginUser .inputWrapper.checkboxes .checkbox label .rect i, form#loginAdmin .inputWrapper.checkboxes .checkbox label .rect i, form#signupUser .inputWrapper.checkboxes .checkbox label .rect i, form#signupAdmin .inputWrapper.checkboxes .checkbox label .rect i, form#forgetPassword .inputWrapper.checkboxes .checkbox label .rect i {
             opacity: 0;
             font-size: 1.6em;
             color: #fbfbfb;
             -webkit-transition: all .2s linear;
             -o-transition: all .2s linear;
             transition: all .2s linear; }
-        form#login .inputWrapper.checkboxes .checkbox label p {
-          width: auto;
-          font-size: 1.4em;
-          color: #90909b;
+        form#loginUser .inputWrapper.checkboxes .checkbox label p, form#loginAdmin .inputWrapper.checkboxes .checkbox label p, form#signupUser .inputWrapper.checkboxes .checkbox label p, form#signupAdmin .inputWrapper.checkboxes .checkbox label p, form#forgetPassword .inputWrapper.checkboxes .checkbox label p {
+          max-width: auto;
+          font-size: 1.6em;
+          color: #696975;
           margin-right: .3em;
           -webkit-transition: all .2s linear;
           -o-transition: all .2s linear;
           transition: all .2s linear; }
-  form#login button[type="submit"] {
-    width: auto;
+        form#loginUser .inputWrapper.checkboxes .checkbox label p.error, form#loginAdmin .inputWrapper.checkboxes .checkbox label p.error, form#signupUser .inputWrapper.checkboxes .checkbox label p.error, form#signupAdmin .inputWrapper.checkboxes .checkbox label p.error, form#forgetPassword .inputWrapper.checkboxes .checkbox label p.error {
+          color: #ea6161; }
+    form#loginUser .inputWrapper.checkboxes > p, form#loginAdmin .inputWrapper.checkboxes > p, form#signupUser .inputWrapper.checkboxes > p, form#signupAdmin .inputWrapper.checkboxes > p, form#forgetPassword .inputWrapper.checkboxes > p {
+      margin-top: .2em;
+      font-size: 1.4em;
+      margin-right: 4em;
+      color: #2d2d31; }
+      form#loginUser .inputWrapper.checkboxes > p a, form#loginAdmin .inputWrapper.checkboxes > p a, form#signupUser .inputWrapper.checkboxes > p a, form#signupAdmin .inputWrapper.checkboxes > p a, form#forgetPassword .inputWrapper.checkboxes > p a {
+        color: #007FE8;
+        font-weight: 700; }
+  form#loginUser .inputWrapper.file, form#loginAdmin .inputWrapper.file, form#signupUser .inputWrapper.file, form#signupAdmin .inputWrapper.file, form#forgetPassword .inputWrapper.file {
+    width: 28em;
     height: auto;
-    padding: 0.3em 2em;
-    margin: 3em auto 0 auto;
-    border-radius: 3em;
-    font-size: 2em;
-    cursor: pointer;
-    -webkit-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear;
-    color: #fbfbfb;
-    background-color: #00897b;
-    border: 1.2px solid transparent; }
-    form#login button[type="submit"]:hover {
-      color: #00897b;
-      background-color: #fbfbfb;
-      border: 1.2px solid #00897b; }
-  form#login a.rememberPassword {
-    font-size: 1.3em;
-    color: #90909b;
-    position: absolute;
-    right: 0;
-    top: 140%; }
-  form#login a.signup {
-    font-size: 1.6em;
-    color: #90909b;
-    margin-top: 1.5em; }
-
-@media screen and (max-width: 1000px) {
-  form#login {
-    font-size: 8px; } }
-
-@media screen and (max-width: 700px) {
-  form#login {
-    font-size: 6px; } }
-
-@media screen and (max-width: 1000px) {
-  form#login {
-    font-size: 8px; }
-    form#login .inputWrapper.text input.style1:focus ~ label {
-      font-size: 6px; }
-    form#login .inputWrapper.text input.style2:focus ~ label {
-      font-size: 6px; }
-    form#login .inputWrapper.text input.style1 ~ label.top {
-      font-size: 6px; }
-    form#login .inputWrapper.text input.style2 ~ label.top {
-      font-size: 6px; } }
-
-@media screen and (max-width: 600px) {
-  form#login {
-    font-size: 6px; }
-    form#login .inputWrapper.text input.style1:focus ~ label {
-      font-size: 4px; }
-    form#login .inputWrapper.text input.style2:focus ~ label {
-      font-size: 4px; }
-    form#login .inputWrapper.text input.style1 ~ label.top {
-      font-size: 4px; }
-    form#login .inputWrapper.text input.style2 ~ label.top {
-      font-size: 4px; } }
-
-form#forgetPassword {
-  width: 40em;
-  height: auto;
-  padding: 1.5em;
-  margin: 0;
-  position: fixed;
-  top: 50%;
-  right: 50%;
-  -webkit-transform: translate(50%, -50%);
-      -ms-transform: translate(50%, -50%);
-       -o-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-line-pack: "";
-      align-content: ""; }
-  form#forgetPassword .title {
-    width: auto;
-    height: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-line-pack: "";
-        align-content: ""; }
-    form#forgetPassword .title img {
-      width: 12em;
-      height: 10em; }
-    form#forgetPassword .title p {
-      font-size: 1.6em;
-      color: #90909b; }
-  form#forgetPassword h4 {
-    font-size: 2em;
-    font-weight: 700;
-    color: #00897b; }
-  form#forgetPassword .inputWrapper.text {
-    width: 35em;
-    height: 4em;
-    position: relative;
-    margin-top: 1.5em; }
-    form#forgetPassword .inputWrapper.text input {
-      width: 100%;
-      height: 100%;
-      line-height: 4em;
-      padding: 0 0.75em;
-      font-size: 1.6em;
-      color: #2d2d31;
-      -webkit-transition: all .2s linear;
-      -o-transition: all .2s linear;
-      transition: all .2s linear; }
-      form#forgetPassword .inputWrapper.text input::-webkit-input-placeholder {
-        color: #90909b;
-        font-size: 1.6em; }
-      form#forgetPassword .inputWrapper.text input::-moz-placeholder {
-        color: #90909b;
-        font-size: 1.6em; }
-      form#forgetPassword .inputWrapper.text input:-ms-input-placeholder {
-        color: #90909b;
-        font-size: 1.6em; }
-      form#forgetPassword .inputWrapper.text input::-ms-input-placeholder {
-        color: #90909b;
-        font-size: 1.6em; }
-      form#forgetPassword .inputWrapper.text input::placeholder {
-        color: #90909b;
-        font-size: 1.6em; }
-    form#forgetPassword .inputWrapper.text input.style1 {
-      border: none;
-      border-bottom: 1.2px solid #d3d3d7; }
-      form#forgetPassword .inputWrapper.text input.style1:focus ~ label {
-        color: #00897b;
-        font-size: 8px;
-        bottom: calc(100% + .5em);
-        -webkit-transform: translateY(50%);
-            -ms-transform: translateY(50%);
-             -o-transform: translateY(50%);
-                transform: translateY(50%);
-        right: 0; }
-      form#forgetPassword .inputWrapper.text input.style1:focus ~ .line {
-        width: 100%; }
-    form#forgetPassword .inputWrapper.text input.style2 {
-      border: 1.2px solid #d3d3d7;
-      border-radius: 3em; }
-      form#forgetPassword .inputWrapper.text input.style2:focus {
-        border: 1.2px solid #00897b; }
-        form#forgetPassword .inputWrapper.text input.style2:focus ~ label {
-          color: #00897b;
-          font-size: 8px;
-          bottom: calc(100% + 1.5em);
-          -webkit-transform: translateY(50%);
-              -ms-transform: translateY(50%);
-               -o-transform: translateY(50%);
-                  transform: translateY(50%);
-          right: 0.75em; }
-        form#forgetPassword .inputWrapper.text input.style2:focus ~ .line {
-          width: 0%; }
-    form#forgetPassword .inputWrapper.text input.style1.error {
-      border-bottom: 1.2px solid #ea6161; }
-      form#forgetPassword .inputWrapper.text input.style1.error ~ label {
-        color: #ea6161; }
-      form#forgetPassword .inputWrapper.text input.style1.error ~ .line {
-        background-color: #ea6161; }
-    form#forgetPassword .inputWrapper.text input.style2.error {
-      border: 1.2px solid #ea6161; }
-      form#forgetPassword .inputWrapper.text input.style2.error ~ label {
-        color: #ea6161; }
-    form#forgetPassword .inputWrapper.text label {
+    margin-top: 1.5em;
+    position: relative; }
+    form#loginUser .inputWrapper.file input[type="file"], form#loginAdmin .inputWrapper.file input[type="file"], form#signupUser .inputWrapper.file input[type="file"], form#signupAdmin .inputWrapper.file input[type="file"], form#forgetPassword .inputWrapper.file input[type="file"] {
+      display: none; }
+    form#loginUser .inputWrapper.file label, form#loginAdmin .inputWrapper.file label, form#signupUser .inputWrapper.file label, form#signupAdmin .inputWrapper.file label, form#forgetPassword .inputWrapper.file label {
       width: auto;
       height: auto;
-      position: absolute;
-      right: 0.75em;
-      bottom: 50%;
-      -webkit-transform: translateY(50%);
-          -ms-transform: translateY(50%);
-           -o-transform: translateY(50%);
-              transform: translateY(50%);
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -7381,57 +7229,22 @@ form#forgetPassword {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
       -ms-flex-line-pack: "";
-          align-content: "";
-      color: #c6c6cb;
-      -webkit-transition: all .2s linear;
-      -o-transition: all .2s linear;
-      transition: all .2s linear; }
-      form#forgetPassword .inputWrapper.text label .isRequire {
-        width: auto;
-        height: auto;
-        color: #e74a4a;
-        font-size: 1.1em;
-        padding-left: .3em; }
-      form#forgetPassword .inputWrapper.text label .icon {
-        font-size: 1.6em; }
-      form#forgetPassword .inputWrapper.text label p {
-        font-size: 1.5em;
-        -webkit-transform: translateX(-0.3em);
-            -ms-transform: translateX(-0.3em);
-             -o-transform: translateX(-0.3em);
-                transform: translateX(-0.3em); }
-    form#forgetPassword .inputWrapper.text input.style1 ~ label.top {
-      font-size: 8px;
-      bottom: calc(100% + .5em);
-      -webkit-transform: translateY(50%);
-          -ms-transform: translateY(50%);
-           -o-transform: translateY(50%);
-              transform: translateY(50%);
-      right: 0; }
-    form#forgetPassword .inputWrapper.text input.style2 ~ label.top {
-      font-size: 8px;
-      bottom: calc(100% + 1.5em);
-      -webkit-transform: translateY(50%);
-          -ms-transform: translateY(50%);
-           -o-transform: translateY(50%);
-              transform: translateY(50%);
-      right: 0.75em; }
-    form#forgetPassword .inputWrapper.text .line {
-      width: 0%;
-      height: 1.2px;
-      background-color: #00897b;
-      position: absolute;
-      right: 0;
-      top: calc(100% - .6px);
-      -webkit-transition: all .2s linear;
-      -o-transition: all .2s linear;
-      transition: all .2s linear; }
-    form#forgetPassword .inputWrapper.text .msg {
+          align-content: ""; }
+      form#loginUser .inputWrapper.file label p:nth-child(1), form#loginAdmin .inputWrapper.file label p:nth-child(1), form#signupUser .inputWrapper.file label p:nth-child(1), form#signupAdmin .inputWrapper.file label p:nth-child(1), form#forgetPassword .inputWrapper.file label p:nth-child(1) {
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        color: white;
+        background-color: #00897b;
+        cursor: pointer; }
+      form#loginUser .inputWrapper.file label p:nth-child(2), form#loginAdmin .inputWrapper.file label p:nth-child(2), form#signupUser .inputWrapper.file label p:nth-child(2), form#signupAdmin .inputWrapper.file label p:nth-child(2), form#forgetPassword .inputWrapper.file label p:nth-child(2) {
+        font-size: 1.4em;
+        color: #00897b;
+        margin-right: .5em; }
+    form#loginUser .inputWrapper.file .msg, form#loginAdmin .inputWrapper.file .msg, form#signupUser .inputWrapper.file .msg, form#signupAdmin .inputWrapper.file .msg, form#forgetPassword .inputWrapper.file .msg {
       width: auto;
       height: auto;
       border-radius: 3em;
       padding: 0.75em 1.5em;
-      position: relative;
       background-color: #ea6161;
       position: absolute;
       right: 0;
@@ -7441,79 +7254,156 @@ form#forgetPassword {
       -webkit-transition: all .2s linear;
       -o-transition: all .2s linear;
       transition: all .2s linear; }
-      form#forgetPassword .inputWrapper.text .msg p {
+      form#loginUser .inputWrapper.file .msg p, form#loginAdmin .inputWrapper.file .msg p, form#signupUser .inputWrapper.file .msg p, form#signupAdmin .inputWrapper.file .msg p, form#forgetPassword .inputWrapper.file .msg p {
         color: #fbfbfb;
         font-size: 1.4em; }
-      form#forgetPassword .inputWrapper.text .msg i {
+      form#loginUser .inputWrapper.file .msg i, form#loginAdmin .inputWrapper.file .msg i, form#signupUser .inputWrapper.file .msg i, form#signupAdmin .inputWrapper.file .msg i, form#forgetPassword .inputWrapper.file .msg i {
         font-size: 2.4em;
         color: #ea6161;
         position: absolute;
         right: 1.5em;
         top: calc(0% - .6em); }
-    form#forgetPassword .inputWrapper.text .msg.show {
+    form#loginUser .inputWrapper.file .msg.show, form#loginAdmin .inputWrapper.file .msg.show, form#signupUser .inputWrapper.file .msg.show, form#signupAdmin .inputWrapper.file .msg.show, form#forgetPassword .inputWrapper.file .msg.show {
       opacity: 1;
       visibility: visible;
       z-index: 2; }
-    form#forgetPassword .inputWrapper.text .rememberPassword {
-      font-size: 1.2em;
-      color: #ababb3;
-      position: absolute;
-      right: 0;
-      top: 140%; }
-  form#forgetPassword button[type="submit"] {
+  form#loginUser .inputWrapper.toggle, form#loginAdmin .inputWrapper.toggle, form#signupUser .inputWrapper.toggle, form#signupAdmin .inputWrapper.toggle, form#forgetPassword .inputWrapper.toggle {
     width: auto;
     height: auto;
-    padding: 0.3em 2em;
     margin-top: 1.5em;
-    border-radius: 3em;
-    font-size: 2em;
-    cursor: pointer;
-    -webkit-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear;
-    color: #fbfbfb;
-    background-color: #00897b;
-    border: 1.2px solid transparent; }
-    form#forgetPassword button[type="submit"]:hover {
-      color: #00897b;
-      background-color: #fbfbfb;
-      border: 1.2px solid #00897b; }
-  form#forgetPassword a.login {
-    font-size: 1.4em;
-    color: #90909b;
-    margin-top: 1.5em; }
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+         -o-transform: translateX(50%);
+            transform: translateX(50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#loginUser .inputWrapper.toggle .toggleText,
+    form#loginUser .inputWrapper.toggle .switch, form#loginAdmin .inputWrapper.toggle .toggleText,
+    form#loginAdmin .inputWrapper.toggle .switch, form#signupUser .inputWrapper.toggle .toggleText,
+    form#signupUser .inputWrapper.toggle .switch, form#signupAdmin .inputWrapper.toggle .toggleText,
+    form#signupAdmin .inputWrapper.toggle .switch, form#forgetPassword .inputWrapper.toggle .toggleText,
+    form#forgetPassword .inputWrapper.toggle .switch {
+      margin-right: 0.75em; }
+      form#loginUser .inputWrapper.toggle .toggleText:first-child,
+      form#loginUser .inputWrapper.toggle .switch:first-child, form#loginAdmin .inputWrapper.toggle .toggleText:first-child,
+      form#loginAdmin .inputWrapper.toggle .switch:first-child, form#signupUser .inputWrapper.toggle .toggleText:first-child,
+      form#signupUser .inputWrapper.toggle .switch:first-child, form#signupAdmin .inputWrapper.toggle .toggleText:first-child,
+      form#signupAdmin .inputWrapper.toggle .switch:first-child, form#forgetPassword .inputWrapper.toggle .toggleText:first-child,
+      form#forgetPassword .inputWrapper.toggle .switch:first-child {
+        margin-right: 0; }
+    form#loginUser .inputWrapper.toggle .toggleText, form#loginAdmin .inputWrapper.toggle .toggleText, form#signupUser .inputWrapper.toggle .toggleText, form#signupAdmin .inputWrapper.toggle .toggleText, form#forgetPassword .inputWrapper.toggle .toggleText {
+      font-size: 1.6em;
+      color: #e0e0e4;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+    form#loginUser .inputWrapper.toggle .toggleText.active, form#loginAdmin .inputWrapper.toggle .toggleText.active, form#signupUser .inputWrapper.toggle .toggleText.active, form#signupAdmin .inputWrapper.toggle .toggleText.active, form#forgetPassword .inputWrapper.toggle .toggleText.active {
+      color: #45454d; }
+    form#loginUser .inputWrapper.toggle .switch, form#loginAdmin .inputWrapper.toggle .switch, form#signupUser .inputWrapper.toggle .switch, form#signupAdmin .inputWrapper.toggle .switch, form#forgetPassword .inputWrapper.toggle .switch {
+      width: 5em;
+      height: 2em;
+      position: relative;
+      background-color: #00897b;
+      border-radius: 3em;
+      cursor: pointer; }
+      form#loginUser .inputWrapper.toggle .switch .circle, form#loginAdmin .inputWrapper.toggle .switch .circle, form#signupUser .inputWrapper.toggle .switch .circle, form#signupAdmin .inputWrapper.toggle .switch .circle, form#forgetPassword .inputWrapper.toggle .switch .circle {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        background-color: #fbfbfb;
+        position: absolute;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+      form#loginUser .inputWrapper.toggle .switch .circle.left, form#loginAdmin .inputWrapper.toggle .switch .circle.left, form#signupUser .inputWrapper.toggle .switch .circle.left, form#signupAdmin .inputWrapper.toggle .switch .circle.left, form#forgetPassword .inputWrapper.toggle .switch .circle.left {
+        left: .4em; }
+      form#loginUser .inputWrapper.toggle .switch .circle.right, form#loginAdmin .inputWrapper.toggle .switch .circle.right, form#signupUser .inputWrapper.toggle .switch .circle.right, form#signupAdmin .inputWrapper.toggle .switch .circle.right, form#forgetPassword .inputWrapper.toggle .switch .circle.right {
+        left: calc(100% - 1.5em - .4em); }
+
+form#loginAdmin button[type="submit"] {
+  margin-top: 3em; }
+
+form#loginUser button[type="submit"] {
+  margin-top: 3em; }
 
 @media screen and (max-width: 1000px) {
-  form#forgetPassword {
+  form#loginUser, form#loginAdmin, form#signupUser, form#signupAdmin, form#forgetPassword {
+    font-size: 8px; }
+    form#loginUser .inputWrapper.text input.style1:focus ~ label, form#loginAdmin .inputWrapper.text input.style1:focus ~ label, form#signupUser .inputWrapper.text input.style1:focus ~ label, form#signupAdmin .inputWrapper.text input.style1:focus ~ label, form#forgetPassword .inputWrapper.text input.style1:focus ~ label {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.text input.style2:focus ~ label, form#loginAdmin .inputWrapper.text input.style2:focus ~ label, form#signupUser .inputWrapper.text input.style2:focus ~ label, form#signupAdmin .inputWrapper.text input.style2:focus ~ label, form#forgetPassword .inputWrapper.text input.style2:focus ~ label {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.text input.style1 ~ label.top, form#loginAdmin .inputWrapper.text input.style1 ~ label.top, form#signupUser .inputWrapper.text input.style1 ~ label.top, form#signupAdmin .inputWrapper.text input.style1 ~ label.top, form#forgetPassword .inputWrapper.text input.style1 ~ label.top {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.text input.style2 ~ label.top, form#loginAdmin .inputWrapper.text input.style2 ~ label.top, form#signupUser .inputWrapper.text input.style2 ~ label.top, form#signupAdmin .inputWrapper.text input.style2 ~ label.top, form#forgetPassword .inputWrapper.text input.style2 ~ label.top {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.select input.style1:focus ~ label, form#loginAdmin .inputWrapper.select input.style1:focus ~ label, form#signupUser .inputWrapper.select input.style1:focus ~ label, form#signupAdmin .inputWrapper.select input.style1:focus ~ label, form#forgetPassword .inputWrapper.select input.style1:focus ~ label {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.select input.style2:focus ~ label, form#loginAdmin .inputWrapper.select input.style2:focus ~ label, form#signupUser .inputWrapper.select input.style2:focus ~ label, form#signupAdmin .inputWrapper.select input.style2:focus ~ label, form#forgetPassword .inputWrapper.select input.style2:focus ~ label {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.select input.style1 ~ label.top, form#loginAdmin .inputWrapper.select input.style1 ~ label.top, form#signupUser .inputWrapper.select input.style1 ~ label.top, form#signupAdmin .inputWrapper.select input.style1 ~ label.top, form#forgetPassword .inputWrapper.select input.style1 ~ label.top {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.select input.style2 ~ label.top, form#loginAdmin .inputWrapper.select input.style2 ~ label.top, form#signupUser .inputWrapper.select input.style2 ~ label.top, form#signupAdmin .inputWrapper.select input.style2 ~ label.top, form#forgetPassword .inputWrapper.select input.style2 ~ label.top {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.textarea textarea.style1:focus ~ label, form#loginAdmin .inputWrapper.textarea textarea.style1:focus ~ label, form#signupUser .inputWrapper.textarea textarea.style1:focus ~ label, form#signupAdmin .inputWrapper.textarea textarea.style1:focus ~ label, form#forgetPassword .inputWrapper.textarea textarea.style1:focus ~ label {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.textarea textarea.style2:focus ~ label, form#loginAdmin .inputWrapper.textarea textarea.style2:focus ~ label, form#signupUser .inputWrapper.textarea textarea.style2:focus ~ label, form#signupAdmin .inputWrapper.textarea textarea.style2:focus ~ label, form#forgetPassword .inputWrapper.textarea textarea.style2:focus ~ label {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.textarea textarea.style1 ~ label.top, form#loginAdmin .inputWrapper.textarea textarea.style1 ~ label.top, form#signupUser .inputWrapper.textarea textarea.style1 ~ label.top, form#signupAdmin .inputWrapper.textarea textarea.style1 ~ label.top, form#forgetPassword .inputWrapper.textarea textarea.style1 ~ label.top {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.textarea textarea.style2 ~ label.top, form#loginAdmin .inputWrapper.textarea textarea.style2 ~ label.top, form#signupUser .inputWrapper.textarea textarea.style2 ~ label.top, form#signupAdmin .inputWrapper.textarea textarea.style2 ~ label.top, form#forgetPassword .inputWrapper.textarea textarea.style2 ~ label.top {
+      font-size: 6px; } }
+
+@media screen and (max-width: 700px) {
+  form#loginUser, form#loginAdmin, form#signupUser, form#signupAdmin, form#forgetPassword {
+    font-size: 6px; }
+    form#loginUser .inputWrapper.text input.style1:focus ~ label, form#loginAdmin .inputWrapper.text input.style1:focus ~ label, form#signupUser .inputWrapper.text input.style1:focus ~ label, form#signupAdmin .inputWrapper.text input.style1:focus ~ label, form#forgetPassword .inputWrapper.text input.style1:focus ~ label {
+      font-size: 4px; }
+    form#loginUser .inputWrapper.text input.style2:focus ~ label, form#loginAdmin .inputWrapper.text input.style2:focus ~ label, form#signupUser .inputWrapper.text input.style2:focus ~ label, form#signupAdmin .inputWrapper.text input.style2:focus ~ label, form#forgetPassword .inputWrapper.text input.style2:focus ~ label {
+      font-size: 4px; }
+    form#loginUser .inputWrapper.text input.style1 ~ label.top, form#loginAdmin .inputWrapper.text input.style1 ~ label.top, form#signupUser .inputWrapper.text input.style1 ~ label.top, form#signupAdmin .inputWrapper.text input.style1 ~ label.top, form#forgetPassword .inputWrapper.text input.style1 ~ label.top {
+      font-size: 4px; }
+    form#loginUser .inputWrapper.text input.style2 ~ label.top, form#loginAdmin .inputWrapper.text input.style2 ~ label.top, form#signupUser .inputWrapper.text input.style2 ~ label.top, form#signupAdmin .inputWrapper.text input.style2 ~ label.top, form#forgetPassword .inputWrapper.text input.style2 ~ label.top {
+      font-size: 4px; }
+    form#loginUser .inputWrapper.select input.style1:focus ~ label, form#loginAdmin .inputWrapper.select input.style1:focus ~ label, form#signupUser .inputWrapper.select input.style1:focus ~ label, form#signupAdmin .inputWrapper.select input.style1:focus ~ label, form#forgetPassword .inputWrapper.select input.style1:focus ~ label {
+      font-size: 4px; }
+    form#loginUser .inputWrapper.select input.style2:focus ~ label, form#loginAdmin .inputWrapper.select input.style2:focus ~ label, form#signupUser .inputWrapper.select input.style2:focus ~ label, form#signupAdmin .inputWrapper.select input.style2:focus ~ label, form#forgetPassword .inputWrapper.select input.style2:focus ~ label {
+      font-size: 4px; }
+    form#loginUser .inputWrapper.select input.style1 ~ label.top, form#loginAdmin .inputWrapper.select input.style1 ~ label.top, form#signupUser .inputWrapper.select input.style1 ~ label.top, form#signupAdmin .inputWrapper.select input.style1 ~ label.top, form#forgetPassword .inputWrapper.select input.style1 ~ label.top {
+      font-size: 4px; }
+    form#loginUser .inputWrapper.select input.style2 ~ label.top, form#loginAdmin .inputWrapper.select input.style2 ~ label.top, form#signupUser .inputWrapper.select input.style2 ~ label.top, form#signupAdmin .inputWrapper.select input.style2 ~ label.top, form#forgetPassword .inputWrapper.select input.style2 ~ label.top {
+      font-size: 4px; }
+    form#loginUser .inputWrapper.textarea textarea.style1:focus ~ label, form#loginAdmin .inputWrapper.textarea textarea.style1:focus ~ label, form#signupUser .inputWrapper.textarea textarea.style1:focus ~ label, form#signupAdmin .inputWrapper.textarea textarea.style1:focus ~ label, form#forgetPassword .inputWrapper.textarea textarea.style1:focus ~ label {
+      font-size: 4px; }
+    form#loginUser .inputWrapper.textarea textarea.style2:focus ~ label, form#loginAdmin .inputWrapper.textarea textarea.style2:focus ~ label, form#signupUser .inputWrapper.textarea textarea.style2:focus ~ label, form#signupAdmin .inputWrapper.textarea textarea.style2:focus ~ label, form#forgetPassword .inputWrapper.textarea textarea.style2:focus ~ label {
+      font-size: 4px; }
+    form#loginUser .inputWrapper.textarea textarea.style1 ~ label.top, form#loginAdmin .inputWrapper.textarea textarea.style1 ~ label.top, form#signupUser .inputWrapper.textarea textarea.style1 ~ label.top, form#signupAdmin .inputWrapper.textarea textarea.style1 ~ label.top, form#forgetPassword .inputWrapper.textarea textarea.style1 ~ label.top {
+      font-size: 4px; }
+    form#loginUser .inputWrapper.textarea textarea.style2 ~ label.top, form#loginAdmin .inputWrapper.textarea textarea.style2 ~ label.top, form#signupUser .inputWrapper.textarea textarea.style2 ~ label.top, form#signupAdmin .inputWrapper.textarea textarea.style2 ~ label.top, form#forgetPassword .inputWrapper.textarea textarea.style2 ~ label.top {
+      font-size: 4px; } }
+
+@media screen and (max-width: 1000px) {
+  form#loginUser, form#loginAdmin, form#signupUser, form#signupAdmin, form#forgetPassword {
     font-size: 8px; } }
 
 @media screen and (max-width: 700px) {
-  form#forgetPassword {
+  form#loginUser, form#loginAdmin, form#signupUser, form#signupAdmin, form#forgetPassword {
     font-size: 6px; } }
-
-@media screen and (max-width: 1000px) {
-  form#forgetPassword {
-    font-size: 8px; }
-    form#forgetPassword .inputWrapper.text input.style1:focus ~ label {
-      font-size: 6px; }
-    form#forgetPassword .inputWrapper.text input.style2:focus ~ label {
-      font-size: 6px; }
-    form#forgetPassword .inputWrapper.text input.style1 ~ label.top {
-      font-size: 6px; }
-    form#forgetPassword .inputWrapper.text input.style2 ~ label.top {
-      font-size: 6px; } }
-
-@media screen and (max-width: 600px) {
-  form#forgetPassword {
-    font-size: 6px; }
-    form#forgetPassword .inputWrapper.text input.style1:focus ~ label {
-      font-size: 4px; }
-    form#forgetPassword .inputWrapper.text input.style2:focus ~ label {
-      font-size: 4px; }
-    form#forgetPassword .inputWrapper.text input.style1 ~ label.top {
-      font-size: 4px; }
-    form#forgetPassword .inputWrapper.text input.style2 ~ label.top {
-      font-size: 4px; } }
 
 form#checkCode {
   width: 40em;
@@ -7802,359 +7692,6 @@ form#checkCode {
     form#checkCode .inputWrapper.text input.style1 ~ label.top {
       font-size: 4px; }
     form#checkCode .inputWrapper.text input.style2 ~ label.top {
-      font-size: 4px; } }
-
-form#signup {
-  width: 40em;
-  height: auto;
-  padding: 1.5em;
-  margin: 0;
-  position: fixed;
-  top: 50%;
-  right: 50%;
-  -webkit-transform: translate(50%, -50%);
-      -ms-transform: translate(50%, -50%);
-       -o-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-line-pack: "";
-      align-content: ""; }
-  form#signup img {
-    width: 12em;
-    height: 10em; }
-  form#signup h4 {
-    font-size: 2em;
-    font-weight: 700;
-    color: #00897b; }
-  form#signup .inputWrapper.text {
-    width: 35em;
-    height: 4em;
-    position: relative;
-    margin-top: 2em; }
-    form#signup .inputWrapper.text input {
-      width: 100%;
-      height: 100%;
-      line-height: 4em;
-      padding: 0 0.75em;
-      font-size: 1.6em;
-      color: #2d2d31;
-      -webkit-transition: all .2s linear;
-      -o-transition: all .2s linear;
-      transition: all .2s linear; }
-      form#signup .inputWrapper.text input::-webkit-input-placeholder {
-        color: #90909b;
-        font-size: 1.6em; }
-      form#signup .inputWrapper.text input::-moz-placeholder {
-        color: #90909b;
-        font-size: 1.6em; }
-      form#signup .inputWrapper.text input:-ms-input-placeholder {
-        color: #90909b;
-        font-size: 1.6em; }
-      form#signup .inputWrapper.text input::-ms-input-placeholder {
-        color: #90909b;
-        font-size: 1.6em; }
-      form#signup .inputWrapper.text input::placeholder {
-        color: #90909b;
-        font-size: 1.6em; }
-    form#signup .inputWrapper.text input.style1 {
-      border: none;
-      border-bottom: 1.2px solid #d3d3d7; }
-      form#signup .inputWrapper.text input.style1:focus ~ label {
-        color: #00897b;
-        font-size: 8px;
-        bottom: calc(100% + .5em);
-        -webkit-transform: translateY(50%);
-            -ms-transform: translateY(50%);
-             -o-transform: translateY(50%);
-                transform: translateY(50%);
-        right: 0; }
-      form#signup .inputWrapper.text input.style1:focus ~ .line {
-        width: 100%; }
-    form#signup .inputWrapper.text input.style2 {
-      border: 1.2px solid #d3d3d7;
-      border-radius: 3em; }
-      form#signup .inputWrapper.text input.style2:focus {
-        border: 1.2px solid #00897b; }
-        form#signup .inputWrapper.text input.style2:focus ~ label {
-          color: #00897b;
-          font-size: 8px;
-          bottom: calc(100% + 1.5em);
-          -webkit-transform: translateY(50%);
-              -ms-transform: translateY(50%);
-               -o-transform: translateY(50%);
-                  transform: translateY(50%);
-          right: 0.75em; }
-        form#signup .inputWrapper.text input.style2:focus ~ .line {
-          width: 0%; }
-    form#signup .inputWrapper.text input.style1.error {
-      border-bottom: 1.2px solid #ea6161; }
-      form#signup .inputWrapper.text input.style1.error ~ label {
-        color: #ea6161; }
-      form#signup .inputWrapper.text input.style1.error ~ .line {
-        background-color: #ea6161; }
-    form#signup .inputWrapper.text input.style2.error {
-      border: 1.2px solid #ea6161; }
-      form#signup .inputWrapper.text input.style2.error ~ label {
-        color: #ea6161; }
-    form#signup .inputWrapper.text label {
-      width: auto;
-      height: auto;
-      position: absolute;
-      right: 0.75em;
-      bottom: 50%;
-      -webkit-transform: translateY(50%);
-          -ms-transform: translateY(50%);
-           -o-transform: translateY(50%);
-              transform: translateY(50%);
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-      -ms-flex-line-pack: "";
-          align-content: "";
-      color: #c6c6cb;
-      -webkit-transition: all .2s linear;
-      -o-transition: all .2s linear;
-      transition: all .2s linear; }
-      form#signup .inputWrapper.text label .icon {
-        font-size: 1.6em; }
-      form#signup .inputWrapper.text label p {
-        font-size: 1.5em;
-        -webkit-transform: translateX(-0.3em);
-            -ms-transform: translateX(-0.3em);
-             -o-transform: translateX(-0.3em);
-                transform: translateX(-0.3em); }
-    form#signup .inputWrapper.text input.style1 ~ label.top {
-      font-size: 8px;
-      bottom: calc(100% + .5em);
-      -webkit-transform: translateY(50%);
-          -ms-transform: translateY(50%);
-           -o-transform: translateY(50%);
-              transform: translateY(50%);
-      right: 0; }
-    form#signup .inputWrapper.text input.style2 ~ label.top {
-      font-size: 8px;
-      bottom: calc(100% + 1.5em);
-      -webkit-transform: translateY(50%);
-          -ms-transform: translateY(50%);
-           -o-transform: translateY(50%);
-              transform: translateY(50%);
-      right: 0.75em; }
-    form#signup .inputWrapper.text .line {
-      width: 0%;
-      height: 1.2px;
-      background-color: #00897b;
-      position: absolute;
-      right: 0;
-      top: calc(100% - 1px);
-      -webkit-transition: all .2s linear;
-      -o-transition: all .2s linear;
-      transition: all .2s linear; }
-    form#signup .inputWrapper.text .msg {
-      width: auto;
-      height: auto;
-      border-radius: 3em;
-      padding: 0.75em 1.5em;
-      position: relative;
-      background-color: #ea6161;
-      position: absolute;
-      right: 0;
-      top: 115%;
-      opacity: 0;
-      visibility: hidden;
-      -webkit-transition: all .2s linear;
-      -o-transition: all .2s linear;
-      transition: all .2s linear; }
-      form#signup .inputWrapper.text .msg p {
-        color: #fbfbfb;
-        font-size: 1.4em; }
-      form#signup .inputWrapper.text .msg i {
-        font-size: 2.4em;
-        color: #ea6161;
-        position: absolute;
-        right: 1.5em;
-        top: calc(0% - .6em); }
-    form#signup .inputWrapper.text .msg.show {
-      opacity: 1;
-      visibility: visible;
-      z-index: 2; }
-  form#signup .inputWrapper.checkboxes {
-    width: auto;
-    height: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-line-pack: "";
-        align-content: "";
-    margin-top: 0; }
-    form#signup .inputWrapper.checkboxes .checkbox {
-      width: auto;
-      height: auto;
-      padding-right: 0.75em;
-      margin-top: 1.5em; }
-      form#signup .inputWrapper.checkboxes .checkbox input[type="checkbox"] {
-        width: 0;
-        height: 0;
-        display: none; }
-      form#signup .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label .rect {
-        width: 2em;
-        height: 1em;
-        border-radius: 0;
-        border-top: none;
-        border-right: none;
-        border-left: 1.2px solid #00897b;
-        border-bottom: 1.2px solid #00897b;
-        -webkit-transform: translateY(-0.3em) rotate(-45deg);
-            -ms-transform: translateY(-0.3em) rotate(-45deg);
-             -o-transform: translateY(-0.3em) rotate(-45deg);
-                transform: translateY(-0.3em) rotate(-45deg); }
-      form#signup .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label p {
-        color: #00897b; }
-      form#signup .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect {
-        border: 1px solid transparent;
-        background-color: #00897b; }
-        form#signup .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i {
-          opacity: 1; }
-      form#signup .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p {
-        color: #00897b; }
-      form#signup .inputWrapper.checkboxes .checkbox label {
-        cursor: pointer;
-        width: 100%;
-        height: 100%;
-        line-height: 2.5em;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
-        -ms-flex-line-pack: "";
-            align-content: ""; }
-        form#signup .inputWrapper.checkboxes .checkbox label .rect {
-          -ms-flex-negative: 0;
-              flex-shrink: 0;
-          width: 2em;
-          height: 2em;
-          border: 1px solid #696975;
-          position: relative;
-          -webkit-transition: all .2s linear;
-          -o-transition: all .2s linear;
-          transition: all .2s linear;
-          border-radius: .45em; }
-          form#signup .inputWrapper.checkboxes .checkbox label .rect i {
-            opacity: 0;
-            font-size: 1.6em;
-            color: #fbfbfb;
-            -webkit-transition: all .2s linear;
-            -o-transition: all .2s linear;
-            transition: all .2s linear; }
-        form#signup .inputWrapper.checkboxes .checkbox label p {
-          width: auto;
-          font-size: 1.4em;
-          color: #90909b;
-          margin-right: .3em;
-          -webkit-transition: all .2s linear;
-          -o-transition: all .2s linear;
-          transition: all .2s linear; }
-  form#signup button[type="submit"] {
-    width: auto;
-    height: auto;
-    padding: 0.3em 2em;
-    margin-top: 1.5em;
-    border-radius: 3em;
-    font-size: 2em;
-    cursor: pointer;
-    -webkit-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear;
-    color: #fbfbfb;
-    background-color: #00897b;
-    border: 1.2px solid transparent; }
-    form#signup button[type="submit"]:hover {
-      color: #00897b;
-      background-color: #fbfbfb;
-      border: 1.2px solid #00897b; }
-  form#signup a.login {
-    font-size: 1.6em;
-    color: #90909b;
-    margin-top: 1.5em; }
-
-@media screen and (max-width: 1000px) {
-  form#signup {
-    font-size: 8px; } }
-
-@media screen and (max-width: 700px) {
-  form#signup {
-    font-size: 6px; } }
-
-@media screen and (max-width: 1000px) {
-  form#signup {
-    font-size: 8px; }
-    form#signup .inputWrapper.text input.style1:focus ~ label {
-      font-size: 6px; }
-    form#signup .inputWrapper.text input.style2:focus ~ label {
-      font-size: 6px; }
-    form#signup .inputWrapper.text input.style1 ~ label.top {
-      font-size: 6px; }
-    form#signup .inputWrapper.text input.style2 ~ label.top {
-      font-size: 6px; } }
-
-@media screen and (max-width: 600px) {
-  form#signup {
-    font-size: 6px; }
-    form#signup .inputWrapper.text input.style1:focus ~ label {
-      font-size: 4px; }
-    form#signup .inputWrapper.text input.style2:focus ~ label {
-      font-size: 4px; }
-    form#signup .inputWrapper.text input.style1 ~ label.top {
-      font-size: 4px; }
-    form#signup .inputWrapper.text input.style2 ~ label.top {
       font-size: 4px; } }
 
 form#userComment {
@@ -9880,9 +9417,9 @@ input[type=number] {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -9892,7 +9429,12 @@ input[type=number] {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -ms-flex-line-pack: "";
-      align-content: ""; }
+      align-content: "";
+  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10; }
   #topMenu .right {
     width: auto;
     height: auto;
@@ -9912,7 +9454,14 @@ input[type=number] {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -ms-flex-line-pack: "";
-        align-content: ""; }
+        align-content: "";
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    -webkit-transform: translate(50%, -50%);
+        -ms-transform: translate(50%, -50%);
+         -o-transform: translate(50%, -50%);
+            transform: translate(50%, -50%); }
     #topMenu .right .logo {
       width: auto;
       height: auto;
@@ -10372,11 +9921,12 @@ header {
   height: auto;
   position: fixed;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-       -o-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 1.5em;
+  left: 2.5em;
+  -webkit-transform: translate(-25%, -50%);
+      -ms-transform: translate(-25%, -50%);
+       -o-transform: translate(-25%, -50%);
+          transform: translate(-25%, -50%);
+  background-color: #263238;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10394,74 +9944,34 @@ header {
       flex-wrap: nowrap;
   -ms-flex-line-pack: "";
       align-content: "";
-  z-index: 1; }
+  -webkit-box-shadow: 0 0 0.5em 0.1em rgba(70, 69, 85, 0.3);
+          box-shadow: 0 0 0.5em 0.1em rgba(70, 69, 85, 0.3);
+  z-index: 9;
+  border-radius: 3em;
+  overflow: hidden; }
   #leftFix li {
-    width: auto;
-    height: auto;
-    position: relative;
-    -webkit-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear; }
-    #leftFix li:not(:first-child) {
-      margin-top: 2.5em; }
-    #leftFix li:hover {
-      -webkit-transform: scale(1.2);
-          -ms-transform: scale(1.2);
-           -o-transform: scale(1.2);
-              transform: scale(1.2); }
-    #leftFix li a i {
-      font-size: 3em;
-      color: #3f51b5;
-      text-shadow: 0 0 4px #3f51b5; }
-    #leftFix li .badge {
+    width: 100%;
+    height: 6em; }
+    #leftFix li:not(:last-child) {
+      border-bottom: 1px solid white; }
+    #leftFix li a {
       display: inline-block;
-      width: 1em;
-      height: 1em;
-      border-radius: 50%;
-      position: absolute;
-      top: -.4em;
-      right: -.4em;
-      background-color: #ea6161; }
-      #leftFix li .badge::before {
-        content: '';
+      width: 5em;
+      height: 100%;
+      padding: 0.75em;
+      position: relative; }
+      #leftFix li a i {
+        font-size: 2.4em;
+        color: white;
         position: absolute;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
         top: 50%;
         right: 50%;
-        -webkit-animation: wave 2s linear 0s infinite forwards;
-                animation: wave 2s linear 0s infinite forwards;
-        border: 1px solid #ea6161;
-        background-color: transparent; }
-
-@-webkit-keyframes wave {
-  from {
-    -webkit-transform: translate(50%, -50%) scale(0);
-            transform: translate(50%, -50%) scale(0);
-    opacity: 1; }
-  to {
-    -webkit-transform: translate(50%, -50%) scale(2);
-            transform: translate(50%, -50%) scale(2);
-    opacity: .5; } }
-
-@keyframes wave {
-  from {
-    -webkit-transform: translate(50%, -50%) scale(0);
-         -o-transform: translate(50%, -50%) scale(0);
-            transform: translate(50%, -50%) scale(0);
-    opacity: 1; }
-  to {
-    -webkit-transform: translate(50%, -50%) scale(2);
-         -o-transform: translate(50%, -50%) scale(2);
-            transform: translate(50%, -50%) scale(2);
-    opacity: .5; } }
-      #leftFix li .badge::before {
-        -webkit-animation-delay: 0s;
-                animation-delay: 0s; }
-  #leftFix li#homeFix a i {
-    padding-bottom: .1em;
-    border-bottom: 1px solid #3f51b5; }
+        -webkit-transform: translate(50%, -50%);
+            -ms-transform: translate(50%, -50%);
+             -o-transform: translate(50%, -50%);
+                transform: translate(50%, -50%); }
+    #leftFix li:hover a {
+      background-color: #00897b; }
 
 @media screen and (max-width: 1000px) {
   #leftFix {
@@ -10518,13 +10028,6 @@ header {
   width: 4.5em;
   height: 4.5em;
   border-radius: 50%;
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translate(50%, -50%);
-      -ms-transform: translate(50%, -50%);
-       -o-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
-  right: 2.5%;
   cursor: pointer;
   -webkit-transition: all .3s linear;
   -o-transition: all .3s linear;
@@ -10532,9 +10035,16 @@ header {
   color: white;
   background-color: #00897b;
   border: 1.2px solid transparent;
+  position: fixed;
+  top: 50%;
+  right: 2.5vh;
+  -webkit-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+       -o-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
   cursor: pointer;
-  transition: all .3s linear;
-  z-index: 11; }
+  z-index: 10;
+  transition: all .3s linear; }
   #menuTrigger:hover {
     color: #00897b;
     background-color: white;
@@ -10547,10 +10057,12 @@ header {
         -ms-transform: translate(50%, -50%);
          -o-transform: translate(50%, -50%);
             transform: translate(50%, -50%);
-    font-size: 2em; }
+    font-size: 2em;
+    color: inherit; }
 
-#menuTrigger.move {
-  right: calc(22em + 2.5%); }
+#menuTrigger.show {
+  z-index: 11;
+  right: 27em; }
 
 #blackFilter {
   width: 100%;
@@ -10558,26 +10070,30 @@ header {
   position: fixed;
   top: 0;
   right: 0;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
   background-color: transparent;
-  z-index: -1;
-  -webkit-transition: z-index 0s linear , background-color .3s linear;
-  -o-transition: z-index 0s linear , background-color .3s linear;
-  transition: z-index 0s linear , background-color .3s linear; }
+  z-index: -1; }
 
 #blackFilter.show {
-  z-index: 10;
-  background-color: rgba(30, 30, 30, 0.85); }
+  background-color: rgba(25, 25, 25, 0.8);
+  z-index: 10; }
 
 #menu {
-  width: 22em;
+  width: 25em;
   height: 100vh;
+  overflow: auto;
   position: fixed;
   top: 0;
-  right: -25em;
+  right: -28em;
   -webkit-transition: all .3s linear;
   -o-transition: all .3s linear;
   transition: all .3s linear;
   z-index: 11;
+  background-color: white;
+  -webkit-box-sizing: -0.5em 0 0.5em 0.2em rgba(70, 69, 85, 0.3);
+          box-sizing: -0.5em 0 0.5em 0.2em rgba(70, 69, 85, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10594,13 +10110,10 @@ header {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -ms-flex-line-pack: "";
-      align-content: "";
-  background-color: white;
-  -webkit-box-shadow: -1em 0.5em 2.5em 0.3em rgba(70, 70, 70, 0.7);
-          box-shadow: -1em 0.5em 2.5em 0.3em rgba(70, 70, 70, 0.7); }
+      align-content: ""; }
   #menu .top {
     width: 100%;
-    height: auto;
+    height: 20vh;
     padding: 0.75em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10619,17 +10132,15 @@ header {
         flex-wrap: nowrap;
     -ms-flex-line-pack: "";
         align-content: "";
-    padding-bottom: 1.5em;
-    border-bottom: 1px solid #00897b; }
+    border-bottom: 1.5px solid #00897b; }
     #menu .top img {
-      width: 8em;
-      height: 8em;
+      width: 7em;
+      height: 7em;
       border-radius: 50%; }
     #menu .top p {
-      font-size: 1.4em;
-      color: #00897b;
-      font-weight: 700; }
-    #menu .top .row {
+      font-size: 1.6em;
+      color: #2d2d31; }
+    #menu .top #signOut {
       width: 100%;
       height: auto;
       margin-top: 0.75em;
@@ -10640,9 +10151,9 @@ header {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
@@ -10650,40 +10161,18 @@ header {
           flex-wrap: nowrap;
       -ms-flex-line-pack: "";
           align-content: ""; }
-      #menu .top .row .exit {
-        width: auto;
-        height: auto;
-        margin-right: auto;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
-        -ms-flex-line-pack: "";
-            align-content: ""; }
-        #menu .top .row .exit p, #menu .top .row .exit i {
-          font-size: 1.6em;
-          color: #ea6161; }
-          #menu .top .row .exit p:nth-child(2), #menu .top .row .exit i:nth-child(2) {
-            margin-right: .3em; }
-        #menu .top .row .exit i {
-          -webkit-transform: rotate(-180deg);
-              -ms-transform: rotate(-180deg);
-               -o-transform: rotate(-180deg);
-                  transform: rotate(-180deg); }
+      #menu .top #signOut p, #menu .top #signOut i {
+        font-size: 1.6em;
+        color: #ea6161; }
+      #menu .top #signOut i {
+        margin-right: .3em;
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+             -o-transform: rotate(180deg);
+                transform: rotate(180deg); }
   #menu ul {
     width: 100%;
-    max-height: 75vh;
+    height: 60vh;
     overflow: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10701,41 +10190,165 @@ header {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -ms-flex-line-pack: "";
-        align-content: ""; }
+        align-content: "";
+    padding-bottom: 0.75em;
+    border-bottom: 1.5px solid #00897b; }
     #menu ul li {
       width: 100%;
       height: auto;
-      padding: 0.75em;
       -webkit-transition: all .3s linear;
       -o-transition: all .3s linear;
-      transition: all .3s linear;
-      background-color: transparent; }
+      transition: all .3s linear; }
       #menu ul li:not(:last-child) {
-        border-bottom: 1px solid #b8b8bf; }
-      #menu ul li:nth-child(1) a i {
-        color: #007FE8; }
-      #menu ul li:nth-child(2) a i {
-        color: #ea6161; }
-      #menu ul li:nth-child(3) a i {
-        color: #00897b; }
-      #menu ul li:nth-child(4) a i {
-        color: #3f51b5; }
-      #menu ul li:nth-child(5) a i {
-        color: #FF805B; }
-      #menu ul li:nth-child(6) a i {
-        color: #C422A0; }
-      #menu ul li:nth-child(7) a i {
-        color: #00897b; }
-      #menu ul li:nth-child(8) a i {
-        color: #00897b; }
-      #menu ul li:hover {
-        background-color: #00897b; }
-        #menu ul li:hover a i, #menu ul li:hover a p {
-          color: white !important; }
-      #menu ul li a {
-        display: inline-block;
+        border-bottom: 1px solid #c6c6cb; }
+    #menu ul li:not(.withCollapse):hover {
+      background-color: #00897b; }
+      #menu ul li:not(.withCollapse):hover a i, #menu ul li:not(.withCollapse):hover a p {
+        color: white !important; }
+    #menu ul li:not(.withCollapse) a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      padding: 0.95em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: ""; }
+      #menu ul li:not(.withCollapse) a i, #menu ul li:not(.withCollapse) a p {
+        font-size: 1.4em; }
+      #menu ul li:not(.withCollapse) a p {
+        color: #00897b;
+        margin-right: .3em; }
+    #menu ul li:not(.withCollapse):nth-child(1) a i {
+      color: #007FE8; }
+    #menu ul li:not(.withCollapse):nth-child(4) a i {
+      color: #FF805B; }
+    #menu ul li:not(.withCollapse):nth-child(5) a i {
+      color: #ea6161; }
+    #menu ul li:not(.withCollapse):nth-child(6) a i {
+      color: #3f51b5; }
+    #menu ul li:not(.withCollapse):nth-child(7) a i {
+      color: #FF427B; }
+    #menu ul li:not(.withCollapse):nth-child(8) a i {
+      color: #00897b; }
+    #menu ul li:not(.withCollapse):nth-child(9) a i {
+      color: #4a4e60; }
+    #menu ul li:not(.withCollapse):nth-child(10) a i {
+      color: #003DBB; }
+    #menu ul li:not(.withCollapse):nth-child(11) a i {
+      color: #C422A0; }
+    #menu ul li.withCollapse {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: ""; }
+      #menu ul li.withCollapse .collapseTrigger {
         width: 100%;
-        height: 100%;
+        height: auto;
+        padding: 0.75em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -ms-flex-line-pack: "";
+            align-content: "";
+        color: #00897b;
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear; }
+        #menu ul li.withCollapse .collapseTrigger:hover {
+          background-color: #00897b;
+          color: white !important; }
+        #menu ul li.withCollapse .collapseTrigger p, #menu ul li.withCollapse .collapseTrigger i {
+          font-size: 1.4em; }
+        #menu ul li.withCollapse .collapseTrigger i {
+          margin-right: .3em; }
+      #menu ul li.withCollapse .collapse {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -ms-flex-line-pack: "";
+            align-content: ""; }
+        #menu ul li.withCollapse .collapse a {
+          width: 100%;
+          height: auto;
+          padding: 0.75em;
+          color: #2d2d31;
+          font-size: 1.4em;
+          padding-right: 1.5em;
+          -webkit-transition: all .2s linear;
+          -o-transition: all .2s linear;
+          transition: all .2s linear; }
+          #menu ul li.withCollapse .collapse a:not(:last-child) {
+            border-bottom: 1px solid #d3d3d7; }
+          #menu ul li.withCollapse .collapse a:hover {
+            background-color: #e6e6e8; }
+  #menu .bottom {
+    width: 100%;
+    height: 20vh;
+    padding: 0.75em;
+    background-color: #00897b; }
+    #menu .bottom h6 {
+      font-size: 1.6em;
+      color: white;
+      font-weight: 700; }
+    #menu .bottom .icons {
+      width: 100%;
+      height: auto; }
+      #menu .bottom .icons .icon {
+        width: 100%;
+        height: auto;
+        margin-top: 1.05em;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -10753,52 +10366,14 @@ header {
             flex-wrap: nowrap;
         -ms-flex-line-pack: "";
             align-content: ""; }
-        #menu ul li a i {
-          width: 1.2em;
-          font-size: 1.3em; }
-        #menu ul li a p {
-          margin-right: .3em;
-          font-size: 1.5em;
-          color: #2d2d31; }
+        #menu .bottom .icons .icon p, #menu .bottom .icons .icon i {
+          color: white;
+          font-size: 1.4em; }
+        #menu .bottom .icons .icon p {
+          margin-right: .3em; }
 
 #menu.show {
   right: 0; }
-
-@media screen and (max-width: 1000px) {
-  #menuTrigger {
-    font-size: 8px; } }
-
-@media screen and (max-width: 700px) {
-  #menuTrigger {
-    font-size: 6px; } }
-
-@media screen and (max-width: 1000px) {
-  #menu {
-    font-size: 8px; } }
-
-@media screen and (max-width: 700px) {
-  #menu {
-    font-size: 6px; } }
-
-@media screen and (max-width: 550px) {
-  #menuTrigger {
-    -webkit-transform: translate(50%, -50%);
-        -ms-transform: translate(50%, -50%);
-         -o-transform: translate(50%, -50%);
-            transform: translate(50%, -50%);
-    right: 3.5%; }
-  #menuTrigger.move {
-    right: calc(22em + 3.5%); } }
-
-@media screen and (max-width: 400px) {
-  #menuTrigger {
-    -webkit-transform: translate(50%, -50%);
-        -ms-transform: translate(50%, -50%);
-         -o-transform: translate(50%, -50%);
-            transform: translate(50%, -50%);
-    right: 5%; }
-  #menuTrigger.move {
-    right: calc(22em + 5%); } }
 
 footer {
   width: 100%;

@@ -22,27 +22,36 @@
     <meta name='twitter:description' content='سایت زیبایی' />
     <meta name='twitter:image' content='./assets/imgs/logo.png' type='image/png' />
 <link href="forgetPass.css" rel="stylesheet"></head>
-<body class="bg">
-    <form novalidate id="forgetPassword" name="forgetPassword" class="validate containerStyle" method="GET" action="#!" enctype="text/plain">
-        <a href="index.html" class="title">
-            <img src="assets/imgs/logo.png" alt="logoImg">
-        </a>
-        <h4>فراموشی رمز عبور</h4>
-        <div class="inputWrapper text">
-            <input type="number" id="mobile" name="mobile" class="style1 labelHandler validate" pattern="/d{11}" required>
-            <label for="mobile">
-                <i class="fas fa-envelope icon"></i>
-                <p>شماره موبایل</p>
-            </label>
-            <span class="line"></span>
-            <div class="msg">
-                <p>شماره موبایل صحیح(شروع با ۰۹) وارد نمایید</p>
-                <i class="fas fa-caret-up"></i>
+<body>
+    <div id="forgetPasswordWrapper">
+        <div class="tabs_wrapper">
+            <div class="contents">
+                <div class="content active">
+                    <a class="logo" href="./index.html">
+                        <img src="assets/imgs/logo.png" alt="logoAlt">
+                        <h4>فانوس زیبایی</h4>
+                    </a> 
+                    <form novalidate id="forgetPassword" name="forgetPassword" method="GEt" action="#!" enctype="text/plain">
+                        <h3>فراموشی رمز ورود</h3>
+                        <div class="inputWrapper text">
+                            <input type="text" id="emailMobile" name="emailMobile" class="style2 labelHandler validate" required>
+                            <label for="emailMobile">
+                                <i class="fas fa-user icon"></i>
+                                <p>ایمیل یا شماره موبایل</p>
+                            </label>
+                            <div class="msg">
+                                <p> مقدار وارد شده صحیح نیست </p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn mid pulse">ارسال</button>        
+                        <a class="loginRoute" href="./signup.html">ساخت حساب کاربری جدید</a>
+                    </form>          
+                </div>
             </div>
         </div>
-        <button type="submit" class="pulse shadowPrimary">ارسال</button>
-        <a class="login" href="login.html">ورود به حساب کاربری</a>
-    </form>
+        <img src="assets/imgs/slide6.jpg" alt="loginAlt">
+    </div>
 <script type="text/javascript" src="forgetPass.js"></script></body>
 
 </html>
