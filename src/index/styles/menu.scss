@@ -8,8 +8,8 @@
     @include swapColor(white,$primaryColor) ;
     position: fixed;
     top: 50%;
-    right: 2.5vh;
-    transform: translate(0%,-50%);
+    right: 2.8%;
+    transform: translate(50%,-50%);
     cursor: pointer;
     z-index: 10;
     transition: all .3s linear;
@@ -245,4 +245,13 @@
 }
 #menu.show{
     right: 0;
+}
+@include resizeTablet('#menuTrigger') ;
+@include resizeMobile('#menuTrigger') ;
+@include resizeTablet('#menu') ;
+@include resizeMobile('#menu') ;
+@include mediaQ(500px){
+    #menuTrigger{
+        right: 4%;
+    }
 }

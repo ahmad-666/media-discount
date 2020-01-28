@@ -316,17 +316,16 @@
 }
 @include mediaQ(1200px){
     #medicInfo{
-        @include flex(column-reverse,flex-start,center,nowrap,"") ;
-        .right{
-            width: 100%;
-        }
         .left{
-            width: 100%;
             .productSlider{
+                width: 75% ;
+                .curr_wrapper{
+                    height: 40em;
+                }
                 .slider_wrapper{
                     .slider{
                         .slide{
-                            width: calc((100% - (4 * 1.4em)) / 4) ;
+                            width: calc((100% - (6 * 1.4em)) / 6) ;
                         }
                     }
                 }
@@ -334,11 +333,14 @@
         }
     }
 }
-@include mediaQ(750px){
+@include mediaQ(900px){
     #medicInfo{
-        @include flex(column-reverse,flex-start,center,nowrap,"") ;
         .left{
             .productSlider{
+                width: 85% ;
+                .curr_wrapper{
+                    height: 40em;
+                }
                 .slider_wrapper{
                     .slider{
                         .slide{
@@ -350,10 +352,14 @@
         }
     }
 }
-@include mediaQ(480px){
+@include mediaQ(500px){
     #medicInfo{
         .left{
             .productSlider{
+                width: 95% ;
+                .curr_wrapper{
+                    height: 40em;
+                }
                 .slider_wrapper{
                     .slider{
                         .slide{
@@ -363,12 +369,30 @@
                 }
             }
         }
+        .right{
+            #features{
+                @include flex(column,flex-start,flex-start,nowrap,"") ;
+                .right,.left{
+                    width: 100%;    
+                }
+            }  
+            #map{
+                img{
+                    width: 95%;
+                    height: 35em;
+                }
+            }      
+        }
     }
 }
-@include mediaQ(380px){
+@include mediaQ(350px){
     #medicInfo{
         .left{
             .productSlider{
+                width: 95% ;
+                .curr_wrapper{
+                    height: 40em;
+                }
                 .slider_wrapper{
                     .slider{
                         .slide{

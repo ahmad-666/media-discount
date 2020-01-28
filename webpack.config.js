@@ -29,6 +29,7 @@ module.exports = {
         'articles' : './src/articles/articles.js',
         'basket' : './src/basket/basket.js',
         'final' : './src/final/final.js',
+		'info' : './src/info/info.js',
     },
     output: {
         filename: '[name].js',
@@ -278,6 +279,12 @@ module.exports = {
             inject: true,
             chunks: ['final'],
             template: './src/final/final.html' 
+        }),
+		  new HtmlWebpackPlugin({
+            filename: 'info.html' , 
+            inject: true,
+            chunks: ['info'],
+            template: './src/info/info.html' 
         }),
         new CleanWebpackPlugin()
     ]

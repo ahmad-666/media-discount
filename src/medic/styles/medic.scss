@@ -7,7 +7,7 @@
 #medicWrapper{
     width: 90%;
     height: auto;
-    margin: $sectionsDist auto 0 auto  ;
+    margin: $dist2 auto 0 auto  ;
     display: flex;
     @include flex(row,flex-start,flex-start,nowrap,"") ;
     #medic{
@@ -27,7 +27,6 @@
             height: auto;
             display: flex;
             @include flex(column,flex-start,flex-start,nowrap,"") ;
-            margin-top: $dist2;
         }
         #sidebar{
             flex-shrink: 0;
