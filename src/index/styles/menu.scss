@@ -55,7 +55,7 @@
     @include flex(column,flex-start,flex-start,nowrap,"") ;
     .top{
         width: 100%;
-        height: 20vh;
+        height: auto;
         padding: $dist1;
         display: flex;
         @include flex(column,flex-start,center,nowrap,"") ;
@@ -86,128 +86,175 @@
         }
 
     }
-    ul{
-        width: 100% ;
-        height: 60vh;
-        overflow: auto;
+    .links,.info{
+        width: 100%;
+        height: auto;
         display: flex;
         @include flex(column,flex-start,flex-start,nowrap,"") ;
-        padding-bottom: $dist1;
-        border-bottom: 1.5px solid $primaryColor;
-        li{
+        h4{
+            padding-right: $dist1;
             width: 100%;
+            font-size: $fontM;
+            color: $textDark;
+            font-weight: 700;
+            margin-top: $dist1;
+            border-bottom: 1px solid white;
+        }
+        ul{
+            width: 100% ;
             height: auto;
-            &:not(:last-child){border-bottom: 1px solid lighten($textGrey,20%);}
-            transition: all .3s linear;
-        }
-        li:not(.withCollapse){
-            &:hover{
-                background-color: $primaryColor;
-                a{
-                    i,p{
-                        color: white !important;
-                    }
-                }
-            }
-            a{
-                display: inline-block;
-                width: 100%;
-                height: 100%;
-                padding: $dist1 + .2em;
-                display: flex;
-                @include flex(row,flex-start,center,nowrap,"") ;
-                i,p{
-                    font-size: $fontM - .2em;
-                }
-                p{
-                    color: $primaryColor;
-                    margin-right: .3em;
-                }
-                
-            }
-            &:nth-child(1){
-                a{
-                    i{color: $blueColor1;}
-                }
-            }
-            &:nth-child(4){
-                a{
-                    i{color: $orangeColor1;}
-                }
-            }
-            &:nth-child(5){
-                a{
-                    i{color: lighten($redColor2,5%);}
-                }
-            }
-            &:nth-child(6){
-                a{
-                    i{color: $purpleColor2;}
-                }
-            }
-            &:nth-child(7){
-                a{
-                    i{color: $redColor1;}
-                }
-            }
-            &:nth-child(8){
-                a{
-                    i{color: $primaryColor;}
-                }
-            }
-            &:nth-child(9){
-                a{
-                    i{color: $darkBlue;}
-                }
-            }
-            &:nth-child(10){
-                a{
-                    i{color: $blueColor2;}
-                }
-            }
-            &:nth-child(11){
-                a{
-                    i{color: $purpleColor1;}
-                }
-            }
-        }
-        li.withCollapse{
+            overflow: auto;
             display: flex;
             @include flex(column,flex-start,flex-start,nowrap,"") ;
-            .collapseTrigger{
+            padding-bottom: $dist1;
+            border-bottom: 1.5px solid $primaryColor;
+            li{
                 width: 100%;
                 height: auto;
-                padding: $dist1;
-                display: flex;
-                @include flex(row,flex-start,center,nowrap,"") ;
-                color: $primaryColor;
+                &:not(:last-child){border-bottom: 1px solid lighten($textGrey,20%);}
                 transition: all .3s linear;
+            }
+            li:not(.withCollapse){
                 &:hover{
                     background-color: $primaryColor;
-                    color: white !important;
+                    a{
+                        i,p{
+                            color: white !important;
+                        }
+                    }
                 }
-                p,i{
-                    font-size: $fontM - .2em;
-                }
-                i{
-                    margin-right: .3em;
+                a{
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    padding: $dist1 + .2em;
+                    display: flex;
+                    @include flex(row,flex-start,center,nowrap,"") ;
+                    i,p{
+                        font-size: $fontM - .2em;
+                    }
+                    p{
+                        color: $primaryColor;
+                        margin-right: .3em;
+                    }
+                    
                 }
             }
-            .collapse{
-                width: 100%;
+            li.withCollapse{
                 display: flex;
                 @include flex(column,flex-start,flex-start,nowrap,"") ;
-                a{
+                .collapseTrigger{
                     width: 100%;
                     height: auto;
                     padding: $dist1;
-                    color: $textDark;
-                    font-size: $fontM - .2em;
-                    padding-right: $dist2;
-                    transition: all .2s linear;
-                    &:not(:last-child){border-bottom: 1px solid lighten($textGrey,25%);}
+                    display: flex;
+                    @include flex(row,flex-start,center,nowrap,"") ;
+                    color: $primaryColor;
+                    transition: all .3s linear;
                     &:hover{
-                        background-color: lighten($textGrey,32%);
+                        background-color: $primaryColor;
+                        color: white !important;
+                    }
+                    p,i{
+                        font-size: $fontM - .2em;
+                    }
+                    i{
+                        margin-right: .3em;
+                    }
+                }
+                .collapse{
+                    width: 100%;
+                    display: flex;
+                    @include flex(column,flex-start,flex-start,nowrap,"") ;
+                    a{
+                        width: 100%;
+                        height: auto;
+                        padding: $dist1;
+                        color: $textDark;
+                        font-size: $fontM - .2em;
+                        padding-right: $dist2;
+                        transition: all .2s linear;
+                        &:not(:last-child){border-bottom: 1px solid lighten($textGrey,25%);}
+                        &:hover{
+                            background-color: lighten($textGrey,32%);
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    .links{
+        ul{
+            li{
+                a{
+                    i{
+                        width: 2em;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        ul{
+            li{
+                &:nth-child(1){
+                    a{
+                        i{color: $blueColor1;}
+                    }
+                }
+                &:nth-child(2){
+                    a{
+                        i{color: $orangeColor1;}
+                    }
+                }
+                &:nth-child(3){
+                    a{
+                        i{color: lighten($redColor2,5%);}
+                    }
+                }
+                &:nth-child(4){
+                    a{
+                        i{color: $purpleColor2;}
+                    }
+                }
+                &:nth-child(5){
+                    a{
+                        i{color: $redColor1;}
+                    }
+                }
+            }
+        }
+    }
+    .info{
+        ul{
+            li{
+                a{
+                    i{
+                        width: 2em;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        ul{
+            li{
+                &:nth-child(1){
+                    a{
+                        i{color: $primaryColor;}
+                    }
+                }
+                &:nth-child(2){
+                    a{
+                        i{color: $darkBlue;}
+                    }
+                }
+                &:nth-child(3){
+                    a{
+                        i{color: $blueColor2;}
+                    }
+                }
+                &:nth-child(4){
+                    a{
+                        i{color: $purpleColor1;}
                     }
                 }
             }
@@ -215,7 +262,7 @@
     }
     .bottom{
         width: 100%;
-        height: 20vh;
+        height: auto;
         padding: $dist1;
         background-color: $primaryColor;
         h6{

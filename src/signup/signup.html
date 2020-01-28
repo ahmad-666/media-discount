@@ -59,7 +59,7 @@
                             </div>
                         </div>
                         <div class="inputWrapper text">
-                            <input type="email" id="email" name="email" class="style2 labelHandler validate" required>
+                            <input type="email" id="email" name="email" class="style2 labelHandler validate">
                             <label for="email">
                                 <i class="fas fa-envelope icon"></i>
                                 <p>پست الکترونیکی</p>
@@ -71,17 +71,23 @@
                             </div>
                         </div>
                         <div class="inputWrapper text">
-                            <input type="text" id="bank" name="bank" class="style2 labelHandler validate">
+                            <input type="text" id="bank" name="bank" class="style2 labelHandler validate" required>
                             <label for="bank">
                                 <i class="fas fa-credit-card icon"></i>
-                                <p> شماره حساب </p>
+                                <p> شماره کارت </p>
                             </label>
                             <div class="msg">
-                                <p>شماره حساب خود را وارد کنید</p>
+                                <p>شماره کارت خود را وارد کنید</p>
                                 <i class="fas fa-caret-up"></i>
                             </div>
+                            <div class="desc">
+                                <i class="fas fa-info-circle"></i>
+                                <p>
+                                    متن درباره علت وارد کردن شماره کارت
+                                </p>
+                            </div>
                         </div>
-                        <div class="inputWrapper text">
+                        <div class="inputWrapper text someSpace">
                             <input type="password" id="password" name="password" class="style2 labelHandler validate" required pattern=".{6,}">
                             <label for="password">
                                 <i class="fas fa-lock icon"></i>
@@ -162,11 +168,11 @@
                             <input type="number" id="adminTel" name="adminTel" class="style2 labelHandler validate" required>
                             <label for="adminTel">
                                 <i class="fas fa-phone icon"></i>
-                                <p>شماره کلینیک</p>
+                                <p>شماره تماس</p>
                             </label>
                             <span class="line"></span>
                             <div class="msg">
-                                <p>شماره کلینیک وارد نمایید</p>
+                                <p>شماره تماس وارد نمایید</p>
                                 <i class="fas fa-caret-up"></i>
                             </div>
                         </div>

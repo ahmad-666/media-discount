@@ -32,7 +32,7 @@
             width: 100%;
             height: auto;
             display: flex;
-            @include flex(row,flex-start,flex-start,wrap,flex-start) ;
+            @include flex(row,flex-start,center,wrap,flex-start) ;
             margin-top: $dist1;
             margin-right: -$dist2;
             .icon{
@@ -51,25 +51,57 @@
                     font-size: $fontM - .2em;
                 }
             }
-            .score{
-                width: auto ;
+            
+           
+        }
+        .score{
+            width: auto ;
+            height: auto;
+            margin-top: $dist2;
+            display: flex;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            i{
+                font-size: $fontS + .2em;
+                color: #ff8f00  ;
+            }
+            i.notActive{color: lighten($textGrey,15%);}
+            p{
+                margin-right: .2em;
+                font-size: $fontS + .2em;
+                color: $textGrey;
+            }
+        }
+        .emojis{
+            width: auto;
+            height: auto;
+            margin-top: $dist2;
+            display: flex;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            .emoji{
+                &:not(:first-child){margin-right: 2em;}
+                width: auto;
                 height: auto;
-                margin: $dist1 $dist2;
-                margin-top: $dist1 - .2em;
                 display: flex;
-                @include flex(row,flex-start,center,nowrap,"") ;
+                @include flex(column,flex-start,center,nowrap,"") ;
                 i{
-                    font-size: $fontS + .2em;
-                    color: $primaryColor;
-                }
-                i.notActive{color: lighten($textGrey,15%);}
-                p{
-                    margin-right: .2em;
-                    font-size: $fontS + .2em;
+                    font-size: 4em ;
                     color: $textGrey;
                 }
+                p{
+                    font-weight: 700;
+                    margin-top: .2em;
+                    font-size: $fontM;
+                }
+                &:nth-child(1){
+                    p{color: $primaryColor;}
+                }
+                &:nth-child(2){
+                    p{color: $orangeColor1;}
+                }
+                &:nth-child(3){
+                    p{color: lighten($redColor2,5%);}
+                }
             }
-           
         }
         .bookmark{
             flex-shrink: 0;
@@ -112,6 +144,7 @@
             
         }
         .bookmark.trigger{
+            z-index: 2;
             color: lighten($redColor2,5%);
         }
         .share{
@@ -127,8 +160,8 @@
                 @include flex(column,flex-start,center,nowrap,"") ;
                 cursor: pointer;
                 i{
-                    width: 4em;
-                    height: 4em;
+                    width: 5.5em;
+                    height: 5.5em;
                     border-radius: 50%;
                     position: relative;
                     background-color: $primaryColor;
@@ -148,8 +181,8 @@
                 }
             }
             .socials{
-                opacity: 0;
-                visibility: hidden;
+                // opacity: 0;
+                // visibility: hidden;
                 transition: all .45s linear;
                 width: auto;
                 height: auto;
@@ -189,10 +222,10 @@
                     }
                 }
             }
-            .socials.show{
-                opacity: 1;
-                visibility: visible;
-            }
+            // .socials.show{
+            //     opacity: 1;
+            //     visibility: visible;
+            // }
         }
         .desc{
             width: 100%;
@@ -211,20 +244,29 @@
             border-bottom: 1px solid lighten($textGrey,15%);
             border-top: 1px solid lighten($textGrey,15%);
             display: flex;
-            @include flex(row,flex-start,flex-start,nowrap,"") ;
-            .right,.left{
+            @include flex(column,flex-start,flex-start,nowrap,"") ;
+            .right,.left,.last{
                 width: 100%;
                 height: auto;
                 padding: 0 $dist2;
                 display: flex;
                 @include flex(column,flex-start,flex-start,nowrap,"") ;
-                h4{
-                    font-weight: 700;
-                    font-size: $fontL;
+                .collapseTrigger{
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    @include flex(row,flex-start,center,nowrap,"") ;
+                    h4{
+                        font-size: $fontM + .2em;
+                        font-weight: 700;
+                    }
+                    i{
+                        font-size: $fontM + .2em;
+                        margin-right: .3em;
+                    }
                 }
                 ul{
                     width: 100%;
-                    height: auto;
                     margin-top: $dist1;
                     display: flex;
                     @include flex(column,flex-start,flex-start,nowrap,"") ;
@@ -249,8 +291,8 @@
                 }
             }
             .right{
-                h4{
-                    color: lighten($redColor2,5%);
+                .collapseTrigger{
+                    h4,i{color: lighten($redColor2,5%);}
                 }
                 ul{
                     li{
@@ -259,13 +301,24 @@
                 }
             }
             .left{
-                margin-right: $dist2;
-                h4{
-                    color: $primaryColor;
+                margin-top: $dist2;
+                .collapseTrigger{
+                    h4,i{color: $primaryColor;}
                 }
                 ul{
                     li{
                         i{color: $primaryColor;}
+                    }
+                }
+            }
+            .last{
+                margin-top: $dist2;
+                .collapseTrigger{
+                    h4,i{color: $orangeColor1;}
+                }
+                ul{
+                    li{
+                        i{color: $orangeColor1;}
                     }
                 }
             }

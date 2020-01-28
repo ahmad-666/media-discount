@@ -1320,6 +1320,25 @@ form#loginUser,form#loginAdmin,form#signupUser,form#signupAdmin,form#forgetPassw
             margin-top: $dist1;
             visibility: visible;
         }
+        .desc{
+            padding-bottom: $dist3;
+            margin-right: $dist1;
+            margin-top: .1em;
+            display: flex;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            i{
+                font-size: $fontS + .2em;
+                color: $blueColor1 ;
+            }
+            p{
+                margin-right: .2em;
+                font-size: $fontS;
+                color: $textGrey;
+            }
+        }
+    }
+    .someSpace{
+        margin-top: $dist3 + .7em !important;
     }
     select{
         font-size: $fontM;

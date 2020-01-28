@@ -3,6 +3,13 @@
 @import '../../mixins.scss' ;
 @import '../../utilities/styles/sliderCarousel.scss' ;
 #similars{
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    > h4{
+        border-radius: $dist2;
+        padding: .5em 1em;
+        background-color: $primaryColor;
+        color: white;
+    }
     .helper{
         .slides{
             .slide{

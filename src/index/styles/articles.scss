@@ -13,7 +13,7 @@
     .articlesWrapper{
         width: 100%;
         height: auto;
-        margin-top: 2em;
+        // margin-top: 2em;
         display: flex;
         @include flex(row,flex-start,flex-start,wrap,flex-start) ;
         .article{
@@ -21,9 +21,11 @@
             height: 25em;
             position: relative;
             overflow: hidden;
-            &:nth-child(2){margin-right: 2em;}
-            &:nth-child(3){margin-top: 2em;}
-            &:nth-child(4){margin-top: 2em; margin-right: 2em;}
+            &:nth-child(odd){margin-top: 2em;}
+            &:nth-child(even){margin-right: 2em; margin-top: 2em;}
+            // &:nth-child(2){margin-right: 2em;}
+            // &:nth-child(3){margin-top: 2em;}
+            // &:nth-child(4){margin-top: 2em; margin-right: 2em;}
             &:hover{
                 .content{
                     a{
