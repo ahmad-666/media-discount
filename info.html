@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <meta name='description' content='سایت زیبایی' />
+    <meta name='keywords' content='beauty,discount,زیبایی,تخفیف' />
+    <meta name='author' content='rad7 devs' />
+    <title>سایت زیبایی</title>
+    <link rel='icon' href='./assets/imgs/logo.png' type='image/png' />
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='زیبایی' />
+    <meta property='og:description' content='سایت زیبایی' />
+    <meta property='og:site_name' content='beauty' />
+    <meta property='og:url' content='https://something.com/' />
+    <meta property='og:image' content='./assets/imgs/logo.png' type='image/png' />
+    <meta property='og:locale' content='fa_IR' />
+    <meta name='twitter:card' content='summery' />
+    <meta name='twitter:title' content='زیبایی' />
+    <meta name='twitter:description' content='سایت زیبایی' />
+    <meta name='twitter:image' content='./assets/imgs/logo.png' type='image/png' />
+<link href="info.css" rel="stylesheet"></head>
+<body class="bg">
+    <header>
+        <div id="topMenu">
+            <div class="right">
+                <a class="logo" href="index.html">
+                    <img src="assets/imgs/logo.png" alt="logoAlt">
+                    <h1>اسم سایت</h1>
+                </a>
+            </div>
+            <div class="left">
+                <a id="login" href="login.html">
+                    <i class="fas fa-user"></i>
+                    <p>ورود به حساب کاربری</p>
+                </a>
+                <div id="lang">
+                    <div class="title">
+                        <p>فارسی</p>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul class="fadeIn">
+                        <li><a href="#!">فارسی</a></li>
+                        <li><a href="#!">عربی</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <form novalidate id="searchForm" name="searchForm" method="GET" action="#!" enctype="text/plain">
+            <div class="inputWrapper text">
+                <input type="text" id="search" name="search" class="style2 labelHandler validate" required>
+                <label for="search">
+                    <i class="fas fa-search icon"></i>
+                    <p>جست و جوی مکان</p>
+                </label>
+                <span class="line"></span>
+                <div class="msg">
+                    <p>مقداری را وارد کنید</p>
+                    <i class="fas fa-caret-up"></i>
+                </div>
+            </div>
+            <select class="select2 validate" id="categorySelect" name="categorySelect">
+                <option></option>
+                <option value="cat1">نام دسته بندی</option>
+                <option value="cat2">نام دسته بندی</option>
+                <option value="cat3">نام دسته بندی</option>
+                <option value="cat4">نام دسته بندی</option>
+                <option value="cat5">نام دسته بندی</option>
+                <option value="cat6">نام دسته بندی</option>
+                <option value="cat7">نام دسته بندی</option>    
+            </select>
+            <select class="select2 validate" id="citySelect" name="citySelect">
+                <option></option>
+                <option value="city1">نام شهر</option>
+                <option value="city2">نام شهر</option>
+                <option value="city3">نام شهر</option>
+                <option value="city4">نام شهر</option>
+                <option value="city5">نام شهر</option>
+                <option value="city6">نام شهر</option>
+                <option value="city7">نام شهر</option>     
+            </select>
+            <button type="submit" class="btn mid pulse">جست و جو</button>
+        </form>
+    </header>
+    <i class="fas fa-bars" id="menuTrigger"></i>
+    <div id="menu">
+        <div class="top">
+            <img src="assets/imgs/profile.png" alt="profileAlt">
+            <p>نام حساب کاربری</p>
+            <a href="#!" id="signOut">
+                <p>خروج</p>
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
+        </div>
+        <ul>
+            <li>
+                <a href="login.html">
+                    <i class="fas fa-user"></i>
+                    <p>ورود / ثبت نام</p>
+                </a>
+            </li>
+            <li class="withCollapse">
+                <div class="collapseTrigger">
+                    <p>انتخاب دسته بندی</p>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="collapse">
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                </div>
+            </li>
+            <li class="withCollapse">
+                <div class="collapseTrigger">
+                    <p>انتخاب  شهر</p>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="collapse">
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="editInfo.html">
+                    <i class="fas fa-edit"></i>
+                    <p> ویرایش حساب کاربری </p>
+                </a>
+            </li>
+            <li>
+                <a href="changePass.html">
+                    <i class="fas fa-lock"></i>
+                    <p>تغییر رمز ورود</p>
+                </a>
+            </li>
+            <li>
+                <a href="info.html">
+                    <i class="fas fa-info"></i>
+                    <p>وارد کردن اطلاعات ظاهری</p>
+                </a>
+            </li>
+            <li>
+                <a href="bookmarks.html">
+                    <i class="fas fa-bookmark"></i>
+                    <p>مورد علاقه ها</p>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <i class="fas fa-comment-medical"></i>
+                    <p>درباره ما</p>
+                </a>
+            </li>
+            <li>
+                <a href="rules.html">
+                    <i class="fas fa-address-book"></i>
+                    <p>قوانین</p>
+                </a>
+            </li>
+            <li>
+                <a href="faq.html">
+                    <i class="fas fa-question"></i>
+                    <p> سوالات متداول </p>
+                </a>
+            </li>
+            <li>
+                <a href="report.html">
+                    <i class="fas fa-user-shield"></i>
+                    <p> ثبت شکایت </p>
+                </a>
+            </li>
+        </ul>
+        <div class="bottom">
+            <h6>ارتباط با فانوس زیبایی</h6>
+            <div class="icons">
+                <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>آدرس دفتر فانوس زیبایی</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                    <p>051-38670000</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                    <p>something@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="blackFilter"></div>
+    <ul id="leftFix">
+        <li>
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#!">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#!">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#!">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </li>
+    </ul>
+    <i class="fas fa-angle-double-up" id="smooth"></i>
+    <form novalidate id="info" name="info" class="containerStyle" method="GET" action="#!" enctype="text/plain">
+        <h4> 
+            فرم ارزیابی زیبایی و سلامت
+        </h4>
+        <div class="questions">
+            <div class="question">
+                <p class="quest">
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Nihil quo dolore harum 
+                    blanditiis debitis, veritatis minus.
+                </p>
+                <div class="answers inputWrapper radios">
+                    <div class="radio">
+                        <input type="radio" id="q1c1" name="q1" class="style2" value="q1c1">
+                        <label for="q1c1">
+                            <span class="circle">
+                                <span class="fill"></span>
+                            </span>
+                            <p> جواب 1 </p>
+                        </label>
+                    </div>         
+                    <div class="radio">
+                        <input type="radio" id="q1c2" name="q1" class="style2" value="q1c2">
+                        <label for="q1c2">
+                            <span class="circle">
+                                <span class="fill"></span>
+                            </span>
+                            <p> جواب 2 </p>
+                        </label>
+                    </div>         
+                    <div class="radio">
+                        <input type="radio" id="q1c3" name="q1" class="style2" value="q1c3">
+                        <label for="q1c3">
+                            <span class="circle">
+                                <span class="fill"></span>
+                            </span>
+                            <p> جواب 3 </p>
+                        </label>
+                    </div>         
+                    <div class="radio">
+                        <input type="radio" id="q1c4" name="q1" class="style2" value="q1c4">
+                        <label for="q1c4">
+                            <span class="circle">
+                                <span class="fill"></span>
+                            </span>
+                            <p> جواب 4 </p>
+                        </label>
+                    </div>         
+                </div>
+            </div>
+            <div class="question">
+                <p class="quest">
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Nihil quo dolore harum 
+                    blanditiis debitis, veritatis minus.
+                </p  >
+                <div class="answers inputWrapper radios">
+                    <div class="radio">
+                        <input type="radio" id="q2c1" name="q2" class="style2" value="q2c1">
+                        <label for="q2c1">
+                            <span class="circle">
+                                <span class="fill"></span>
+                            </span>
+                            <p> جواب 1 </p>
+                        </label>
+                    </div>         
+                    <div class="radio">
+                        <input type="radio" id="q2c2" name="q2" class="style2" value="q2c2">
+                        <label for="q2c2">
+                            <span class="circle">
+                                <span class="fill"></span>
+                            </span>
+                            <p> جواب 2 </p>
+                        </label>
+                    </div>         
+                    <div class="radio">
+                        <input type="radio" id="q2c3" name="q2" class="style2" value="q2c3">
+                        <label for="q2c3">
+                            <span class="circle">
+                                <span class="fill"></span>
+                            </span>
+                            <p> جواب 3 </p>
+                        </label>
+                    </div>         
+                    <div class="radio">
+                        <input type="radio" id="q2c4" name="q2" class="style2" value="q2c4">
+                        <label for="q2c4">
+                            <span class="circle">
+                                <span class="fill"></span>
+                            </span>
+                            <p> جواب 4 </p>
+                        </label>
+                    </div>         
+                    <div class="radio">
+                        <input type="radio" id="q2c1" name="q2" class="style2" value="q2c1">
+                        <label for="q2c1">
+                            <span class="circle">
+                                <span class="fill"></span>
+                            </span>
+                            <p> جواب 1 </p>
+                        </label>
+                    </div>         
+                    <div class="radio">
+                        <input type="radio" id="q2c2" name="q2" class="style2" value="q2c2">
+                        <label for="q2c2">
+                            <span class="circle">
+                                <span class="fill"></span>
+                            </span>
+                            <p> جواب 2 </p>
+                        </label>
+                    </div>         
+                    <div class="radio">
+                        <input type="radio" id="q2c3" name="q2" class="style2" value="q2c3">
+                        <label for="q2c3">
+                            <span class="circle">
+                                <span class="fill"></span>
+                            </span>
+                            <p> جواب 3 </p>
+                        </label>
+                    </div>         
+                    <div class="radio">
+                        <input type="radio" id="q2c4" name="q2" class="style2" value="q2c4">
+                        <label for="q2c4">
+                            <span class="circle">
+                                <span class="fill"></span>
+                            </span>
+                            <p> جواب 4 </p>
+                        </label>
+                    </div>         
+                </div>
+            </div>
+        </div> 
+        <button type="submit" class="btn mid pulse">ارسال</button>
+    </form> 
+    <footer>
+        <div class="bottom">
+            <div class="logos">
+                <a href="#!">
+                    <img src="assets/imgs/spons.png" alt="sponserAlt">
+                </a>
+                <a href="#!">
+                    <img src="assets/imgs/spons.png" alt="sponserAlt">
+                </a>
+                <a href="#!">
+                    <img src="assets/imgs/spons.png" alt="sponserAlt">
+                </a>
+                <a href="#!">
+                    <img src="assets/imgs/spons.png" alt="sponserAlt">
+                </a>
+                <a href="#!">
+                    <img src="assets/imgs/spons.png" alt="sponserAlt">
+                </a>
+            </div>
+            <p class="desc">
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+            </p>
+        </div>
+    </footer>
+<script type="text/javascript" src="info.js"></script></body>
+</html>

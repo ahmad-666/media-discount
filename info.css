@@ -10656,44 +10656,6 @@ header {
   #smooth {
     font-size: 4px; } }
 
-#about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-line-pack: "";
-      align-content: ""; }
-  #about h4 {
-    font-size: 2em;
-    font-weight: 700;
-    color: #2d2d31; }
-  #about .txt {
-    width: 100%;
-    height: auto;
-    margin-top: 0.75em;
-    line-height: 1.8em;
-    color: #90909b;
-    font-size: 1.6em; }
-
-@media screen and (max-width: 1000px) {
-  #about {
-    font-size: 8px; } }
-
-@media screen and (max-width: 700px) {
-  #about {
-    font-size: 6px; } }
-
 footer {
   width: 100%;
   height: auto;
