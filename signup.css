@@ -5498,7 +5498,7 @@ table.tableResp {
 
 @media screen and (max-width: 700px) {
   table.tableResp {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 .collapseTrigger {
   cursor: pointer; }
@@ -7435,7 +7435,7 @@ form#loginUser button[type="submit"] {
 
 @media screen and (max-width: 700px) {
   form#loginUser, form#loginAdmin, form#signupUser, form#signupAdmin, form#forgetPassword {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 form#checkCode {
   width: 40em;
@@ -7700,7 +7700,7 @@ form#checkCode {
 
 @media screen and (max-width: 700px) {
   form#checkCode {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 1000px) {
   form#checkCode {
@@ -8987,7 +8987,7 @@ form#editInfo {
 
 @media screen and (max-width: 700px) {
   form#editInfo {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 1100px) {
   form#editInfo .allWrapper {
@@ -9328,7 +9328,7 @@ form#changePass {
 
 @media screen and (max-width: 700px) {
   form#changePass {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 550px) {
   form#changePass .inputs .inputWrapper.text {
@@ -9527,7 +9527,7 @@ form#info {
 
 @media screen and (max-width: 700px) {
   form#info {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 450px) {
   form#info .questions .question .answers .radio {
@@ -9828,5 +9828,5 @@ input[type=number] {
 
 @media screen and (max-width: 700px) {
   #loginWrapper, #signupWrapper, #forgetPasswordWrapper {
-    font-size: 6px; } }
+    font-size: 8px; } }
 

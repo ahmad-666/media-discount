@@ -5498,7 +5498,7 @@ table.tableResp {
 
 @media screen and (max-width: 700px) {
   table.tableResp {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 .collapseTrigger {
   cursor: pointer; }
@@ -5699,8 +5699,8 @@ input[type=number] {
           align-content: "";
       margin-right: 1.5em; }
       #topMenu .right .logo img {
-        width: 5em;
-        height: 4em; }
+        width: 6em;
+        height: 5em; }
       #topMenu .right .logo h1 {
         margin-right: .3em;
         font-size: 2em;
@@ -6071,7 +6071,7 @@ input[type=number] {
 
 @media screen and (max-width: 700px) {
   #topMenu {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 500px) {
   #topMenu .right .logo {
@@ -6108,7 +6108,31 @@ input[type=number] {
 
 @media screen and (max-width: 450px) {
   #topMenu {
-    font-size: 4px; } }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    #topMenu .right {
+      width: auto;
+      position: relative;
+      top: 0%;
+      right: 0%;
+      -webkit-transform: translate(0%, 0%);
+          -ms-transform: translate(0%, 0%);
+           -o-transform: translate(0%, 0%);
+              transform: translate(0%, 0%); }
+  #topMenu {
+    font-size: 6px; } }
 
 header {
   width: 100%;
@@ -6522,7 +6546,7 @@ header {
 
 @media screen and (max-width: 700px) {
   #menuTrigger {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 1000px) {
   #menu {
@@ -6530,7 +6554,7 @@ header {
 
 @media screen and (max-width: 700px) {
   #menu {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 500px) {
   #menuTrigger {
@@ -6599,11 +6623,7 @@ header {
 
 @media screen and (max-width: 700px) {
   #leftFix {
-    font-size: 6px; } }
-
-@media screen and (max-width: 550px) {
-  #leftFix {
-    font-size: 4px; } }
+    font-size: 8px; } }
 
 #smooth {
   z-index: 3;
@@ -6638,11 +6658,7 @@ header {
 
 @media screen and (max-width: 700px) {
   #smooth {
-    font-size: 6px; } }
-
-@media screen and (max-width: 550px) {
-  #smooth {
-    font-size: 4px; } }
+    font-size: 8px; } }
 
 main {
   width: 90%;
@@ -6703,7 +6719,7 @@ main {
 
 @media screen and (max-width: 700px) {
   main {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 main aside.sideBar {
   display: -webkit-box;
@@ -7666,7 +7682,7 @@ footer {
 
 @media screen and (max-width: 700px) {
   footer {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 550px) {
   footer .top {

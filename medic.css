@@ -5498,7 +5498,7 @@ table.tableResp {
 
 @media screen and (max-width: 700px) {
   table.tableResp {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 .collapseTrigger {
   cursor: pointer; }
@@ -7433,7 +7433,7 @@ form#loginUser button[type="submit"] {
 
 @media screen and (max-width: 700px) {
   form#loginUser, form#loginAdmin, form#signupUser, form#signupAdmin, form#forgetPassword {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 form#checkCode {
   width: 40em;
@@ -7698,7 +7698,7 @@ form#checkCode {
 
 @media screen and (max-width: 700px) {
   form#checkCode {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 1000px) {
   form#checkCode {
@@ -8985,7 +8985,7 @@ form#editInfo {
 
 @media screen and (max-width: 700px) {
   form#editInfo {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 1100px) {
   form#editInfo .allWrapper {
@@ -9326,7 +9326,7 @@ form#changePass {
 
 @media screen and (max-width: 700px) {
   form#changePass {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 550px) {
   form#changePass .inputs .inputWrapper.text {
@@ -9525,7 +9525,7 @@ form#info {
 
 @media screen and (max-width: 700px) {
   form#info {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 450px) {
   form#info .questions .question .answers .radio {
@@ -9711,8 +9711,8 @@ input[type=number] {
           align-content: "";
       margin-right: 1.5em; }
       #topMenu .right .logo img {
-        width: 5em;
-        height: 4em; }
+        width: 6em;
+        height: 5em; }
       #topMenu .right .logo h1 {
         margin-right: .3em;
         font-size: 2em;
@@ -10083,7 +10083,7 @@ input[type=number] {
 
 @media screen and (max-width: 700px) {
   #topMenu {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 500px) {
   #topMenu .right .logo {
@@ -10120,7 +10120,31 @@ input[type=number] {
 
 @media screen and (max-width: 450px) {
   #topMenu {
-    font-size: 4px; } }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    #topMenu .right {
+      width: auto;
+      position: relative;
+      top: 0%;
+      right: 0%;
+      -webkit-transform: translate(0%, 0%);
+          -ms-transform: translate(0%, 0%);
+           -o-transform: translate(0%, 0%);
+              transform: translate(0%, 0%); }
+  #topMenu {
+    font-size: 6px; } }
 
 header {
   width: 100%;
@@ -10534,7 +10558,7 @@ header {
 
 @media screen and (max-width: 700px) {
   #menuTrigger {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 1000px) {
   #menu {
@@ -10542,7 +10566,7 @@ header {
 
 @media screen and (max-width: 700px) {
   #menu {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 500px) {
   #menuTrigger {
@@ -10611,11 +10635,7 @@ header {
 
 @media screen and (max-width: 700px) {
   #leftFix {
-    font-size: 6px; } }
-
-@media screen and (max-width: 550px) {
-  #leftFix {
-    font-size: 4px; } }
+    font-size: 8px; } }
 
 #smooth {
   z-index: 3;
@@ -10650,11 +10670,7 @@ header {
 
 @media screen and (max-width: 700px) {
   #smooth {
-    font-size: 6px; } }
-
-@media screen and (max-width: 550px) {
-  #smooth {
-    font-size: 4px; } }
+    font-size: 8px; } }
 
 #breadcrumb {
   width: auto;
@@ -10719,7 +10735,7 @@ header {
 
 @media screen and (max-width: 700px) {
   #breadcrumb {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 .productSlider {
   -ms-flex-negative: 0;
@@ -11889,7 +11905,7 @@ header {
 
 @media screen and (max-width: 700px) {
   #medicWrapper {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 750px) {
   #medicWrapper {
@@ -12334,7 +12350,7 @@ header {
 
 @media screen and (max-width: 700px) {
   #similars {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 1100px) {
   #similars .helper .slides .slide {
@@ -12677,11 +12693,11 @@ header {
 
 @media screen and (max-width: 700px) {
   #comments {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 700px) {
   #adminApprove {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 750px) {
   #comments .comment .commentReply, #comments .commentReply .commentReply {
@@ -13089,7 +13105,7 @@ footer {
 
 @media screen and (max-width: 700px) {
   footer {
-    font-size: 6px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 550px) {
   footer .top {
