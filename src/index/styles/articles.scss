@@ -5,10 +5,13 @@
     padding: 2em;
     display: flex;
     @include flex(column,flex-start,flex-start,nowrap,"") ;
-    h4{
+    > h4{
         font-size: $fontL;
-        color: $textDark;
+        color: white;
         font-weight: 700;
+        background-color: $primaryColor;
+        padding: .5em;
+        border-radius: $dist1;
     }
     .articlesWrapper{
         width: 100%;

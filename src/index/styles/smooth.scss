@@ -11,19 +11,19 @@
     transform: translateX(50%);
     bottom: 2.5%;
     cursor: pointer;
-    background-color: white;
+    background-color: #c62828 ;
     box-shadow: 0 0 .5em .1em $shadowColor;
     &::before{
         position: absolute;
         top: 50%;
         right: 50%;
         transform: translate(50%,-50%);
-        color: $primaryColor ;
+        color: white ;
         font-size: $fontXL;
     }
 }
 @include resizeTablet('#smooth') ;
 @include resizeMobile('#smooth') ;
-@include mediaQ(550px){
-    #smooth{font-size: 4px;}
-}
+// @include mediaQ(550px){
+//     #smooth{font-size: 4px;}
+// }

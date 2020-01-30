@@ -46,9 +46,13 @@
 }
 @include resizeTablet('#sliderCategory') ;
 @include resizeMobile('#sliderCategory') ;
+@include mediaQ(600px){
+    #sliderCategory{
+        height: 25em;
+    }
+}
 @include mediaQ(420px){
     #sliderCategory{
-        height: 40em;
         ul{
             width: 16em;
             li{

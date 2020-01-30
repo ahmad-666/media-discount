@@ -302,6 +302,18 @@
         }
     }
 }
-@include mediaQ(450px){
-    #topMenu{font-size: 4px;}
+@include mediaQ(650px){
+    #topMenu{
+      
+        @include flex(row,space-between,center,nowrap,"") ;
+        .right{
+            width: auto;
+            position: relative;
+            top: 0%;
+            right: 0%;
+            transform: translate(0%,-0%);
+        }
+  
+    }
+    #topMenu{font-size: 6px;}
 }

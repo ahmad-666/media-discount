@@ -204,7 +204,7 @@
 @mixin resizeMobile($wrapper){
     @media screen and (max-width:700px){
         #{$wrapper}{
-            font-size: 6px ;
+            font-size: 8px ;
             @content ;
         }
     }
