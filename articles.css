@@ -6106,7 +6106,7 @@ input[type=number] {
       #topMenu .left #more ul {
         width: 25em; } }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
   #topMenu {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -6164,7 +6164,7 @@ header {
   -o-transition: all .3s linear;
   transition: all .3s linear;
   color: white;
-  background-color: #00897b;
+  background-color: #c62828;
   border: 1.2px solid transparent;
   position: fixed;
   top: 50%;
@@ -6177,9 +6177,9 @@ header {
   z-index: 10;
   transition: all .3s linear; }
   #menuTrigger:hover {
-    color: #00897b;
+    color: #c62828;
     background-color: white;
-    border: 1.2px solid #00897b; }
+    border: 1.2px solid #c62828; }
   #menuTrigger::before {
     position: absolute;
     top: 50%;
@@ -6638,7 +6638,7 @@ header {
           transform: translateX(50%);
   bottom: 2.5%;
   cursor: pointer;
-  background-color: white;
+  background-color: #c62828;
   -webkit-box-shadow: 0 0 0.5em 0.1em rgba(70, 69, 85, 0.3);
           box-shadow: 0 0 0.5em 0.1em rgba(70, 69, 85, 0.3); }
   #smooth::before {
@@ -6649,7 +6649,7 @@ header {
         -ms-transform: translate(50%, -50%);
          -o-transform: translate(50%, -50%);
             transform: translate(50%, -50%);
-    color: #00897b;
+    color: white;
     font-size: 2.4em; }
 
 @media screen and (max-width: 1000px) {
