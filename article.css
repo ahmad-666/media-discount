@@ -5498,7 +5498,7 @@ table.tableResp {
 
 @media screen and (max-width: 700px) {
   table.tableResp {
-    font-size: 8px; } }
+    font-size: 7px; } }
 
 .collapseTrigger {
   cursor: pointer; }
@@ -7433,7 +7433,7 @@ form#loginUser button[type="submit"] {
 
 @media screen and (max-width: 700px) {
   form#loginUser, form#loginAdmin, form#signupUser, form#signupAdmin, form#forgetPassword {
-    font-size: 8px; } }
+    font-size: 7px; } }
 
 form#checkCode {
   width: 40em;
@@ -7698,7 +7698,7 @@ form#checkCode {
 
 @media screen and (max-width: 700px) {
   form#checkCode {
-    font-size: 8px; } }
+    font-size: 7px; } }
 
 @media screen and (max-width: 1000px) {
   form#checkCode {
@@ -8074,6 +8074,60 @@ form#userComment {
       -webkit-transition: all .2s linear;
       -o-transition: all .2s linear;
       transition: all .2s linear; }
+  form#userComment .inputWrapper.star {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#userComment .inputWrapper.star .stars {
+      width: auto;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: ""; }
+      form#userComment .inputWrapper.star .stars i {
+        font-size: 2em;
+        cursor: pointer;
+        margin-right: .2em;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear;
+        color: #d6d6da; }
+        form#userComment .inputWrapper.star .stars i:first-child {
+          margin-right: 0; }
+      form#userComment .inputWrapper.star .stars i.active {
+        color: #FFBE4F; }
   form#userComment button[type="submit"] {
     width: auto;
     height: auto;
@@ -8985,7 +9039,7 @@ form#editInfo {
 
 @media screen and (max-width: 700px) {
   form#editInfo {
-    font-size: 8px; } }
+    font-size: 7px; } }
 
 @media screen and (max-width: 1100px) {
   form#editInfo .allWrapper {
@@ -9326,7 +9380,7 @@ form#changePass {
 
 @media screen and (max-width: 700px) {
   form#changePass {
-    font-size: 8px; } }
+    font-size: 7px; } }
 
 @media screen and (max-width: 550px) {
   form#changePass .inputs .inputWrapper.text {
@@ -9525,7 +9579,7 @@ form#info {
 
 @media screen and (max-width: 700px) {
   form#info {
-    font-size: 8px; } }
+    font-size: 7px; } }
 
 @media screen and (max-width: 450px) {
   form#info .questions .question .answers .radio {
@@ -10079,10 +10133,6 @@ input[type=number] {
   #topMenu {
     font-size: 8px; } }
 
-@media screen and (max-width: 700px) {
-  #topMenu {
-    font-size: 8px; } }
-
 @media screen and (max-width: 500px) {
   #topMenu .right .logo {
     margin-right: 0.75em; }
@@ -10140,9 +10190,15 @@ input[type=number] {
       -webkit-transform: translate(0%, 0%);
           -ms-transform: translate(0%, 0%);
            -o-transform: translate(0%, 0%);
-              transform: translate(0%, 0%); }
+              transform: translate(0%, 0%); } }
+
+@media screen and (max-width: 400px) {
   #topMenu {
-    font-size: 6px; } }
+    font-size: 6.5px; }
+  #topMenu .left #lang {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    font-size: 8px; } }
 
 header {
   width: 100%;
@@ -10224,7 +10280,6 @@ header {
 #menu {
   width: 25em;
   height: 100vh;
-  overflow: auto;
   position: fixed;
   top: 0;
   right: -28em;
@@ -10254,7 +10309,7 @@ header {
       align-content: ""; }
   #menu .top {
     width: 100%;
-    height: auto;
+    height: 20vh;
     padding: 0.75em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10311,9 +10366,10 @@ header {
             -ms-transform: rotate(180deg);
              -o-transform: rotate(180deg);
                 transform: rotate(180deg); }
-  #menu .links, #menu .info {
+  #menu .menuContainer {
     width: 100%;
-    height: auto;
+    height: 60vh;
+    overflow: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -10331,18 +10387,8 @@ header {
         flex-wrap: nowrap;
     -ms-flex-line-pack: "";
         align-content: ""; }
-    #menu .links h4, #menu .info h4 {
-      padding-right: 0.75em;
+    #menu .menuContainer .links, #menu .menuContainer .info {
       width: 100%;
-      font-size: 1.6em;
-      color: #2d2d31;
-      font-weight: 700;
-      margin-top: 0.75em;
-      border-bottom: 1px solid white; }
-    #menu .links ul, #menu .info ul {
-      width: 100%;
-      height: auto;
-      overflow: auto;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -10359,49 +10405,19 @@ header {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
       -ms-flex-line-pack: "";
-          align-content: "";
-      padding-bottom: 0.75em;
-      border-bottom: 1.5px solid #00897b; }
-      #menu .links ul li, #menu .info ul li {
+          align-content: ""; }
+      #menu .menuContainer .links h4, #menu .menuContainer .info h4 {
+        padding-right: 0.75em;
+        width: 100%;
+        font-size: 1.6em;
+        color: #2d2d31;
+        font-weight: 700;
+        margin-top: 0.75em;
+        border-bottom: 1px solid white; }
+      #menu .menuContainer .links ul, #menu .menuContainer .info ul {
         width: 100%;
         height: auto;
-        -webkit-transition: all .3s linear;
-        -o-transition: all .3s linear;
-        transition: all .3s linear; }
-        #menu .links ul li:not(:last-child), #menu .info ul li:not(:last-child) {
-          border-bottom: 1px solid #c6c6cb; }
-      #menu .links ul li:not(.withCollapse):hover, #menu .info ul li:not(.withCollapse):hover {
-        background-color: #00897b; }
-        #menu .links ul li:not(.withCollapse):hover a i, #menu .links ul li:not(.withCollapse):hover a p, #menu .info ul li:not(.withCollapse):hover a i, #menu .info ul li:not(.withCollapse):hover a p {
-          color: white !important; }
-      #menu .links ul li:not(.withCollapse) a, #menu .info ul li:not(.withCollapse) a {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        padding: 0.95em;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
-        -ms-flex-line-pack: "";
-            align-content: ""; }
-        #menu .links ul li:not(.withCollapse) a i, #menu .links ul li:not(.withCollapse) a p, #menu .info ul li:not(.withCollapse) a i, #menu .info ul li:not(.withCollapse) a p {
-          font-size: 1.4em; }
-        #menu .links ul li:not(.withCollapse) a p, #menu .info ul li:not(.withCollapse) a p {
-          color: #00897b;
-          margin-right: .3em; }
-      #menu .links ul li.withCollapse, #menu .info ul li.withCollapse {
+        overflow: auto;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -10418,11 +10434,26 @@ header {
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
         -ms-flex-line-pack: "";
-            align-content: ""; }
-        #menu .links ul li.withCollapse .collapseTrigger, #menu .info ul li.withCollapse .collapseTrigger {
+            align-content: "";
+        padding-bottom: 0.75em;
+        border-bottom: 1.5px solid #00897b; }
+        #menu .menuContainer .links ul li, #menu .menuContainer .info ul li {
           width: 100%;
           height: auto;
-          padding: 0.75em;
+          -webkit-transition: all .3s linear;
+          -o-transition: all .3s linear;
+          transition: all .3s linear; }
+          #menu .menuContainer .links ul li:not(:last-child), #menu .menuContainer .info ul li:not(:last-child) {
+            border-bottom: 1px solid #c6c6cb; }
+        #menu .menuContainer .links ul li:not(.withCollapse):hover, #menu .menuContainer .info ul li:not(.withCollapse):hover {
+          background-color: #00897b; }
+          #menu .menuContainer .links ul li:not(.withCollapse):hover a i, #menu .menuContainer .links ul li:not(.withCollapse):hover a p, #menu .menuContainer .info ul li:not(.withCollapse):hover a i, #menu .menuContainer .info ul li:not(.withCollapse):hover a p {
+            color: white !important; }
+        #menu .menuContainer .links ul li:not(.withCollapse) a, #menu .menuContainer .info ul li:not(.withCollapse) a {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          padding: 0.95em;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -10439,20 +10470,13 @@ header {
           -ms-flex-wrap: nowrap;
               flex-wrap: nowrap;
           -ms-flex-line-pack: "";
-              align-content: "";
-          color: #00897b;
-          -webkit-transition: all .3s linear;
-          -o-transition: all .3s linear;
-          transition: all .3s linear; }
-          #menu .links ul li.withCollapse .collapseTrigger:hover, #menu .info ul li.withCollapse .collapseTrigger:hover {
-            background-color: #00897b;
-            color: white !important; }
-          #menu .links ul li.withCollapse .collapseTrigger p, #menu .links ul li.withCollapse .collapseTrigger i, #menu .info ul li.withCollapse .collapseTrigger p, #menu .info ul li.withCollapse .collapseTrigger i {
+              align-content: ""; }
+          #menu .menuContainer .links ul li:not(.withCollapse) a i, #menu .menuContainer .links ul li:not(.withCollapse) a p, #menu .menuContainer .info ul li:not(.withCollapse) a i, #menu .menuContainer .info ul li:not(.withCollapse) a p {
             font-size: 1.4em; }
-          #menu .links ul li.withCollapse .collapseTrigger i, #menu .info ul li.withCollapse .collapseTrigger i {
+          #menu .menuContainer .links ul li:not(.withCollapse) a p, #menu .menuContainer .info ul li:not(.withCollapse) a p {
+            color: #00897b;
             margin-right: .3em; }
-        #menu .links ul li.withCollapse .collapse, #menu .info ul li.withCollapse .collapse {
-          width: 100%;
+        #menu .menuContainer .links ul li.withCollapse, #menu .menuContainer .info ul li.withCollapse {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -10470,47 +10494,98 @@ header {
               flex-wrap: nowrap;
           -ms-flex-line-pack: "";
               align-content: ""; }
-          #menu .links ul li.withCollapse .collapse a, #menu .info ul li.withCollapse .collapse a {
+          #menu .menuContainer .links ul li.withCollapse .collapseTrigger, #menu .menuContainer .info ul li.withCollapse .collapseTrigger {
             width: 100%;
             height: auto;
             padding: 0.75em;
-            color: #2d2d31;
-            font-size: 1.4em;
-            padding-right: 1.5em;
-            -webkit-transition: all .2s linear;
-            -o-transition: all .2s linear;
-            transition: all .2s linear; }
-            #menu .links ul li.withCollapse .collapse a:not(:last-child), #menu .info ul li.withCollapse .collapse a:not(:last-child) {
-              border-bottom: 1px solid #d3d3d7; }
-            #menu .links ul li.withCollapse .collapse a:hover, #menu .info ul li.withCollapse .collapse a:hover {
-              background-color: #e6e6e8; }
-  #menu .links ul li a i {
-    width: 2em;
-    height: 100%; }
-  #menu .links ul li:nth-child(1) a i {
-    color: #007FE8; }
-  #menu .links ul li:nth-child(2) a i {
-    color: #FF805B; }
-  #menu .links ul li:nth-child(3) a i {
-    color: #ea6161; }
-  #menu .links ul li:nth-child(4) a i {
-    color: #3f51b5; }
-  #menu .links ul li:nth-child(5) a i {
-    color: #FF427B; }
-  #menu .info ul li a i {
-    width: 2em;
-    height: 100%; }
-  #menu .info ul li:nth-child(1) a i {
-    color: #00897b; }
-  #menu .info ul li:nth-child(2) a i {
-    color: #4a4e60; }
-  #menu .info ul li:nth-child(3) a i {
-    color: #003DBB; }
-  #menu .info ul li:nth-child(4) a i {
-    color: #C422A0; }
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            -ms-flex-line-pack: "";
+                align-content: "";
+            color: #00897b;
+            -webkit-transition: all .3s linear;
+            -o-transition: all .3s linear;
+            transition: all .3s linear; }
+            #menu .menuContainer .links ul li.withCollapse .collapseTrigger:hover, #menu .menuContainer .info ul li.withCollapse .collapseTrigger:hover {
+              background-color: #00897b;
+              color: white !important; }
+            #menu .menuContainer .links ul li.withCollapse .collapseTrigger p, #menu .menuContainer .links ul li.withCollapse .collapseTrigger i, #menu .menuContainer .info ul li.withCollapse .collapseTrigger p, #menu .menuContainer .info ul li.withCollapse .collapseTrigger i {
+              font-size: 1.4em; }
+            #menu .menuContainer .links ul li.withCollapse .collapseTrigger i, #menu .menuContainer .info ul li.withCollapse .collapseTrigger i {
+              margin-right: .3em; }
+          #menu .menuContainer .links ul li.withCollapse .collapse, #menu .menuContainer .info ul li.withCollapse .collapse {
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            -ms-flex-line-pack: "";
+                align-content: ""; }
+            #menu .menuContainer .links ul li.withCollapse .collapse a, #menu .menuContainer .info ul li.withCollapse .collapse a {
+              width: 100%;
+              height: auto;
+              padding: 0.75em;
+              color: #2d2d31;
+              font-size: 1.4em;
+              padding-right: 1.5em;
+              -webkit-transition: all .2s linear;
+              -o-transition: all .2s linear;
+              transition: all .2s linear; }
+              #menu .menuContainer .links ul li.withCollapse .collapse a:not(:last-child), #menu .menuContainer .info ul li.withCollapse .collapse a:not(:last-child) {
+                border-bottom: 1px solid #d3d3d7; }
+              #menu .menuContainer .links ul li.withCollapse .collapse a:hover, #menu .menuContainer .info ul li.withCollapse .collapse a:hover {
+                background-color: #e6e6e8; }
+    #menu .menuContainer .links ul li a i {
+      width: 2em;
+      height: 100%; }
+    #menu .menuContainer .links ul li:nth-child(1) a i {
+      color: #007FE8; }
+    #menu .menuContainer .links ul li:nth-child(2) a i {
+      color: #FF805B; }
+    #menu .menuContainer .links ul li:nth-child(3) a i {
+      color: #ea6161; }
+    #menu .menuContainer .links ul li:nth-child(4) a i {
+      color: #3f51b5; }
+    #menu .menuContainer .links ul li:nth-child(5) a i {
+      color: #FF427B; }
+    #menu .menuContainer .info ul li a i {
+      width: 2em;
+      height: 100%; }
+    #menu .menuContainer .info ul li:nth-child(1) a i {
+      color: #00897b; }
+    #menu .menuContainer .info ul li:nth-child(2) a i {
+      color: #4a4e60; }
+    #menu .menuContainer .info ul li:nth-child(3) a i {
+      color: #003DBB; }
+    #menu .menuContainer .info ul li:nth-child(4) a i {
+      color: #C422A0; }
   #menu .bottom {
     width: 100%;
-    height: auto;
+    height: 20vh;
     padding: 0.75em;
     background-color: #00897b; }
     #menu .bottom h6 {
@@ -10556,7 +10631,7 @@ header {
 
 @media screen and (max-width: 700px) {
   #menuTrigger {
-    font-size: 8px; } }
+    font-size: 7px; } }
 
 @media screen and (max-width: 1000px) {
   #menu {
@@ -10564,7 +10639,7 @@ header {
 
 @media screen and (max-width: 700px) {
   #menu {
-    font-size: 8px; } }
+    font-size: 7px; } }
 
 @media screen and (max-width: 500px) {
   #menuTrigger {
@@ -10633,7 +10708,7 @@ header {
 
 @media screen and (max-width: 700px) {
   #leftFix {
-    font-size: 8px; } }
+    font-size: 7px; } }
 
 #smooth {
   z-index: 3;
@@ -10668,7 +10743,7 @@ header {
 
 @media screen and (max-width: 700px) {
   #smooth {
-    font-size: 8px; } }
+    font-size: 7px; } }
 
 #breadcrumb {
   width: auto;
@@ -10733,7 +10808,7 @@ header {
 
 @media screen and (max-width: 700px) {
   #breadcrumb {
-    font-size: 8px; } }
+    font-size: 7px; } }
 
 main {
   width: 90%;
@@ -10794,7 +10869,7 @@ main {
 
 @media screen and (max-width: 700px) {
   main {
-    font-size: 8px; } }
+    font-size: 7px; } }
 
 main aside.sideBar {
   display: -webkit-box;
@@ -11604,11 +11679,11 @@ main {
 
 @media screen and (max-width: 700px) {
   #comments {
-    font-size: 8px; } }
+    font-size: 7px; } }
 
 @media screen and (max-width: 700px) {
   #adminApprove {
-    font-size: 8px; } }
+    font-size: 7px; } }
 
 @media screen and (max-width: 750px) {
   #comments .comment .commentReply, #comments .commentReply .commentReply {
@@ -12016,7 +12091,7 @@ footer {
 
 @media screen and (max-width: 700px) {
   footer {
-    font-size: 8px; } }
+    font-size: 7px; } }
 
 @media screen and (max-width: 550px) {
   footer .top {
