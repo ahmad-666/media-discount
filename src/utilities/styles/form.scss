@@ -272,8 +272,10 @@ form#searchForm{
         }
     }
 }
-@include mediaQ(420px){
+@include mediaQ(500px){
     form#searchForm{
+        margin-top: 8em;
+
         @include flex(column,flex-start,center,nowrap,"") ;
         padding: $dist2;
         .inputWrapper.text {
@@ -290,6 +292,12 @@ form#searchForm{
             margin-right: 0;
             margin-top: $dist2;
         }
+    }
+}
+@include mediaQ(400px){
+    form#searchForm{
+        margin-top: 6.5em;
+
     }
 }
 form#filters{
@@ -2265,6 +2273,48 @@ form#userComment{
             top: calc(100% - .6px);
             transition: all .2s linear;
         }
+    }
+    .inputWrapper.star {
+        width: auto;
+        height: auto;
+        position: relative;
+        margin: $dist2;
+        display: flex ;
+        @include flex(column,flex-start,center,nowrap,"") ;
+        .stars{
+            width: auto ;
+            height: auto;
+            display: flex; 
+            @include flex(row,flex-start,center,nowrap,"") ;
+            i{
+                font-size: $fontL ;
+                cursor: pointer;
+                margin-right: .2em ;
+                &:first-child{margin-right: 0;}
+                transition: all .2s linear ;
+                color: lighten($textGrey,26%) ;
+            }
+            i.active{
+                color: $yellowColor ;
+            }
+        }
+        // button{
+        //     width: auto ;
+        //     height: auto;
+        //     padding: $dist1 - .1em $dist2 + 1em ;
+        //     border-radius: $dist3 ;
+        //     cursor: pointer;
+        //     margin-top: $dist1 ;
+        //     background-color: $primaryColor ;
+        //     color: white ;
+        //     border: 1px solid transparent ;
+        //     transition: all .2s linear ;
+        //     &:hover{
+        //         border: 1px solid $primaryColor ;
+        //         background-color: white ;
+        //         color: $primaryColor ;
+        //     }
+        // }
     }
     button[type="submit"] {
         width: auto;

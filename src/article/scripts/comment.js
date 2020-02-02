@@ -32,3 +32,6 @@ function likeToggle(e){
     if(icon.classList.contains('active')) likeNum.textContent = parseInt(likeNum.textContent)+1 ;
     else likeNum.textContent = parseInt(likeNum.textContent)-1 ;
 }
+commentsWrapper.querySelectorAll('.inputWrapper.star').forEach(star => {
+    new form.StarScore(star) ;
+})

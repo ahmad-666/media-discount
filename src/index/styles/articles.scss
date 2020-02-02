@@ -84,3 +84,29 @@
 }
 @include resizeTablet('#articles') ;
 @include resizeMobile('#articles') ;
+@include mediaQ(750px){
+    #articles{
+        .articlesWrapper{
+            .article{   
+                .content{
+                    a{
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+    }
+}
+@include mediaQ(500px){
+    #articles{
+        .articlesWrapper{
+            .article{
+                width: 100%;
+                &:nth-child(odd){margin-top: 2em;}
+                &:nth-child(even){margin-right: 0em; margin-top: 2em;}
+            }
+        }
+    }
+}

@@ -167,7 +167,7 @@
     }
 }
 @include resizeTablet(".sliderCarousel") ;
-@include resizeMobile(".sliderCarousel") ;
+// @include resizeMobile(".sliderCarousel") ;
 @include mediaQ(1200px){
     .sliderCarousel{
         .helper{
@@ -199,8 +199,6 @@
             }
         }
     }
-}
-@include mediaQ(500px){
     .sliderCarousel{
         .helper{
             .slides{
@@ -211,7 +209,7 @@
         }
     }
 }
-@include mediaQ(350px){
+@include mediaQ(480px){
     .sliderCarousel{
         .helper{
             .slides{

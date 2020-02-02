@@ -127,43 +127,10 @@
     }
 }
 @include resizeTablet('#category') ;
-@include resizeMobile('#category') ;
-@include mediaQ(650px){
+// @include resizeMobile('#category') ;
+@include mediaQ(750px){
     #category{
-        .grid{
-            .row{
-                &:nth-child(1){
-                    .col{
-                        &:nth-child(1){
-                            .innerRow{
-                                @include flex(column,flex-start,flex-start,nowrap,"") ;
-                                .category{
-                                    width: 100%;
-                                    &:nth-child(2){
-                                        margin-top: 2em;
-                                        margin-right: 0em;
-                                    }
-                                    .img{
-                                        height: 20em;
-                                    }
-                                }
-                            }
-                        }
-                        &:nth-child(2){
-                            .category{
-                                .img{
-                                    height: 70em;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@include mediaQ(550px){
-    #category{
+        font-size: 8px;
         .grid{
             .row{
                 @include flex(column,flex-start,flex-start,nowrap,"") ;
@@ -186,7 +153,7 @@
                                         margin-right: 0em;
                                     }
                                     .img{
-                                        height: 20em;
+                                        height: 25em;
                                     }
                                 }
                             }
@@ -194,7 +161,7 @@
                                 width: 100%;
                                 margin-top: 1em;
                                 .img{
-                                    height: 20em;
+                                    height: 25em;
                                 }
                             }
                         }
@@ -204,7 +171,7 @@
                             .category{
                                 width: 100%;
                                 .img{
-                                    height: 20em;
+                                    height: 25em;
                                 }
                             }
                         }
@@ -217,6 +184,48 @@
                             margin-top: 1em;
                             margin-right: 0em;
                         }
+                        .img{
+                            height: 25em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include mediaQ(500px){
+    #category{
+        .grid{
+            .row{
+                &:nth-child(1){
+                    .col{
+                        &:nth-child(1){
+                            .innerRow{
+                                .category{
+                                    .img{
+                                        height: 20em;
+                                    }
+                                }
+                            }
+                            > .category{       
+                                .img{
+                                    height: 20em;
+                                }
+                            }
+                        }
+                        &:nth-child(2){
+                        
+                            .category{
+                                .img{
+                                    height: 20em;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    .category{
+                       
                         .img{
                             height: 20em;
                         }

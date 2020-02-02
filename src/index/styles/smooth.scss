@@ -24,6 +24,13 @@
 }
 @include resizeTablet('#smooth') ;
 @include resizeMobile('#smooth') ;
-// @include mediaQ(550px){
-//     #smooth{font-size: 4px;}
-// }
+@include mediaQ(500px){
+    #smooth{
+        right: 4%;
+    } 
+}
+@include mediaQ(400px){
+    #smooth{
+        right: 5%;
+    } 
+}
