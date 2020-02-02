@@ -5795,8 +5795,9 @@ form#searchForm {
     form#searchForm button[type="submit"] {
       margin-right: 1.5em; } }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
   form#searchForm {
+    margin-top: 8em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -5823,6 +5824,10 @@ form#searchForm {
     form#searchForm button[type="submit"] {
       margin-right: 0;
       margin-top: 1.5em; } }
+
+@media screen and (max-width: 400px) {
+  form#searchForm {
+    margin-top: 6.5em; } }
 
 form#filters .inputWrapper.select {
   width: 100%;

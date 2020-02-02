@@ -5793,8 +5793,9 @@ form#searchForm {
     form#searchForm button[type="submit"] {
       margin-right: 1.5em; } }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
   form#searchForm {
+    margin-top: 8em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -5821,6 +5822,10 @@ form#searchForm {
     form#searchForm button[type="submit"] {
       margin-right: 0;
       margin-top: 1.5em; } }
+
+@media screen and (max-width: 400px) {
+  form#searchForm {
+    margin-top: 6.5em; } }
 
 form#filters .inputWrapper.select {
   width: 100%;
@@ -10286,6 +10291,10 @@ header {
   #leftFix {
     font-size: 7px; } }
 
+@media screen and (max-width: 550px) {
+  #leftFix {
+    font-size: 6px; } }
+
 #smooth {
   z-index: 3;
   width: 4.5em;
@@ -10320,6 +10329,14 @@ header {
 @media screen and (max-width: 700px) {
   #smooth {
     font-size: 7px; } }
+
+@media screen and (max-width: 500px) {
+  #smooth {
+    right: 4%; } }
+
+@media screen and (max-width: 400px) {
+  #smooth {
+    right: 5%; } }
 
 #menuTrigger {
   width: 4.5em;

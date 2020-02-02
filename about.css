@@ -5793,8 +5793,9 @@ form#searchForm {
     form#searchForm button[type="submit"] {
       margin-right: 1.5em; } }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
   form#searchForm {
+    margin-top: 8em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -5821,6 +5822,10 @@ form#searchForm {
     form#searchForm button[type="submit"] {
       margin-right: 0;
       margin-top: 1.5em; } }
+
+@media screen and (max-width: 400px) {
+  form#searchForm {
+    margin-top: 6.5em; } }
 
 form#filters .inputWrapper.select {
   width: 100%;
@@ -10437,8 +10442,7 @@ header {
             flex-wrap: nowrap;
         -ms-flex-line-pack: "";
             align-content: "";
-        padding-bottom: 0.75em;
-        border-bottom: 1.5px solid #00897b; }
+        padding-bottom: 0.75em; }
         #menu .menuContainer .links ul li, #menu .menuContainer .info ul li {
           width: 100%;
           height: auto;
@@ -10561,9 +10565,11 @@ header {
                 border-bottom: 1px solid #d3d3d7; }
               #menu .menuContainer .links ul li.withCollapse .collapse a:hover, #menu .menuContainer .info ul li.withCollapse .collapse a:hover {
                 background-color: #e6e6e8; }
-    #menu .menuContainer .links ul li a i {
-      width: 2em;
-      height: 100%; }
+    #menu .menuContainer .links ul {
+      border-bottom: 1.5px solid #00897b; }
+      #menu .menuContainer .links ul li a i {
+        width: 2em;
+        height: 100%; }
     #menu .menuContainer .links ul li:nth-child(1) a i {
       color: #007FE8; }
     #menu .menuContainer .links ul li:nth-child(2) a i {
@@ -10647,6 +10653,28 @@ header {
   #menuTrigger {
     right: 4%; } }
 
+@media screen and (max-width: 800px) {
+  #menu .top {
+    height: 17vh; }
+  #menu .menuContainer {
+    height: 66vh; }
+  #menu .bottom {
+    height: 17vh; } }
+
+@media screen and (max-width: 500px) {
+  #menu .top {
+    height: 17vh; }
+  #menu .menuContainer {
+    height: 66vh; }
+  #menu .bottom {
+    height: 17vh; } }
+
+@media screen and (max-width: 400px) {
+  #menuTrigger {
+    right: 5.5%; }
+  #menuTrigger.show {
+    right: 28em; } }
+
 #leftFix {
   width: auto;
   height: auto;
@@ -10712,6 +10740,10 @@ header {
   #leftFix {
     font-size: 7px; } }
 
+@media screen and (max-width: 550px) {
+  #leftFix {
+    font-size: 6px; } }
+
 #smooth {
   z-index: 3;
   width: 4.5em;
@@ -10746,6 +10778,14 @@ header {
 @media screen and (max-width: 700px) {
   #smooth {
     font-size: 7px; } }
+
+@media screen and (max-width: 500px) {
+  #smooth {
+    right: 4%; } }
+
+@media screen and (max-width: 400px) {
+  #smooth {
+    right: 5%; } }
 
 #about {
   display: -webkit-box;
