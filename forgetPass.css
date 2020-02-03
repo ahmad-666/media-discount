@@ -5764,18 +5764,6 @@ form#searchForm {
     form#searchForm .inputWrapper.text input.style2 ~ label.top {
       font-size: 6px; } }
 
-@media screen and (max-width: 600px) {
-  form#searchForm {
-    font-size: 6px; }
-    form#searchForm .inputWrapper.text input.style1:focus ~ label {
-      font-size: 4px; }
-    form#searchForm .inputWrapper.text input.style2:focus ~ label {
-      font-size: 4px; }
-    form#searchForm .inputWrapper.text input.style1 ~ label.top {
-      font-size: 4px; }
-    form#searchForm .inputWrapper.text input.style2 ~ label.top {
-      font-size: 4px; } }
-
 @media screen and (max-width: 850px) {
   form#searchForm {
     width: 100%;
@@ -5793,9 +5781,9 @@ form#searchForm {
     form#searchForm button[type="submit"] {
       margin-right: 1.5em; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   form#searchForm {
-    margin-top: 8em;
+    margin-top: 6em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -5814,7 +5802,8 @@ form#searchForm {
     form#searchForm .inputWrapper.text {
       width: 80%;
       height: 3.5em;
-      margin: 0; }
+      margin: 0;
+      margin-top: 0.75em; }
     form#searchForm .select2 {
       width: 80%;
       margin-right: 0;
@@ -5823,9 +5812,9 @@ form#searchForm {
       margin-right: 0;
       margin-top: 1.5em; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
   form#searchForm {
-    margin-top: 6.5em; } }
+    margin-top: 4.5em; } }
 
 form#filters .inputWrapper.select {
   width: 100%;
@@ -6414,22 +6403,6 @@ form#filters .row:nth-child(2) .mobileFixFlexFixer {
   form#filters .inputWrapper.checkboxes .checkbox label .content p {
     font-size: 1.4em; } }
 
-@media screen and (max-width: 600px) {
-  form#filters {
-    font-size: 6px; }
-    form#filters .inputWrapper.select input.style1:focus ~ label {
-      font-size: 4px; }
-    form#filters .inputWrapper.select input.style2:focus ~ label {
-      font-size: 4px; }
-    form#filters .inputWrapper.select input.style1 ~ label.top {
-      font-size: 4px; }
-    form#filters .inputWrapper.select input.style2 ~ label.top {
-      font-size: 4px; }
-  form#filters .mainCategory .inputWrapper.checkboxes .checkbox label .content p {
-    font-size: 2em; }
-  form#filters .subCategory .inputWrapper.checkboxes .checkbox label .content p {
-    font-size: 1.2em; } }
-
 form#report {
   width: 50%;
   height: auto;
@@ -6806,36 +6779,16 @@ form#report {
       font-size: 6px; }
     form#report .row .inputWrapper.text input.style2 ~ label.top {
       font-size: 6px; }
-    form#report .row .inputWrapper.textarea textarea.style1:focus ~ label {
-      font-size: 6px; }
-    form#report .row .inputWrapper.textarea textarea.style2:focus ~ label {
-      font-size: 6px; }
-    form#report .row .inputWrapper.textarea textarea.style1 ~ label.top {
-      font-size: 6px; }
-    form#report .row .inputWrapper.textarea textarea.style2 ~ label.top {
-      font-size: 6px; } }
-
-@media screen and (max-width: 700px) {
-  form#report .row {
+  form#report .inputWrapper.textarea textarea.style1:focus ~ label {
     font-size: 6px; }
-    form#report .row .inputWrapper.text input.style1:focus ~ label {
-      font-size: 4px; }
-    form#report .row .inputWrapper.text input.style2:focus ~ label {
-      font-size: 4px; }
-    form#report .row .inputWrapper.text input.style1 ~ label.top {
-      font-size: 4px; }
-    form#report .row .inputWrapper.text input.style2 ~ label.top {
-      font-size: 4px; }
-    form#report .row .inputWrapper.textarea textarea.style1:focus ~ label {
-      font-size: 4px; }
-    form#report .row .inputWrapper.textarea textarea.style2:focus ~ label {
-      font-size: 4px; }
-    form#report .row .inputWrapper.textarea textarea.style1 ~ label.top {
-      font-size: 4px; }
-    form#report .row .inputWrapper.textarea textarea.style2 ~ label.top {
-      font-size: 4px; } }
+  form#report .inputWrapper.textarea textarea.style2:focus ~ label {
+    font-size: 6px; }
+  form#report .inputWrapper.textarea textarea.style1 ~ label.top {
+    font-size: 6px; }
+  form#report .inputWrapper.textarea textarea.style2 ~ label.top {
+    font-size: 6px; } }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   form#report {
     width: 100%;
     margin-right: 0;
@@ -7406,39 +7359,35 @@ form#loginUser button[type="submit"] {
 
 @media screen and (max-width: 700px) {
   form#loginUser, form#loginAdmin, form#signupUser, form#signupAdmin, form#forgetPassword {
-    font-size: 6px; }
+    font-size: 8px; }
     form#loginUser .inputWrapper.text input.style1:focus ~ label, form#loginAdmin .inputWrapper.text input.style1:focus ~ label, form#signupUser .inputWrapper.text input.style1:focus ~ label, form#signupAdmin .inputWrapper.text input.style1:focus ~ label, form#forgetPassword .inputWrapper.text input.style1:focus ~ label {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.text input.style2:focus ~ label, form#loginAdmin .inputWrapper.text input.style2:focus ~ label, form#signupUser .inputWrapper.text input.style2:focus ~ label, form#signupAdmin .inputWrapper.text input.style2:focus ~ label, form#forgetPassword .inputWrapper.text input.style2:focus ~ label {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.text input.style1 ~ label.top, form#loginAdmin .inputWrapper.text input.style1 ~ label.top, form#signupUser .inputWrapper.text input.style1 ~ label.top, form#signupAdmin .inputWrapper.text input.style1 ~ label.top, form#forgetPassword .inputWrapper.text input.style1 ~ label.top {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.text input.style2 ~ label.top, form#loginAdmin .inputWrapper.text input.style2 ~ label.top, form#signupUser .inputWrapper.text input.style2 ~ label.top, form#signupAdmin .inputWrapper.text input.style2 ~ label.top, form#forgetPassword .inputWrapper.text input.style2 ~ label.top {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.select input.style1:focus ~ label, form#loginAdmin .inputWrapper.select input.style1:focus ~ label, form#signupUser .inputWrapper.select input.style1:focus ~ label, form#signupAdmin .inputWrapper.select input.style1:focus ~ label, form#forgetPassword .inputWrapper.select input.style1:focus ~ label {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.select input.style2:focus ~ label, form#loginAdmin .inputWrapper.select input.style2:focus ~ label, form#signupUser .inputWrapper.select input.style2:focus ~ label, form#signupAdmin .inputWrapper.select input.style2:focus ~ label, form#forgetPassword .inputWrapper.select input.style2:focus ~ label {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.select input.style1 ~ label.top, form#loginAdmin .inputWrapper.select input.style1 ~ label.top, form#signupUser .inputWrapper.select input.style1 ~ label.top, form#signupAdmin .inputWrapper.select input.style1 ~ label.top, form#forgetPassword .inputWrapper.select input.style1 ~ label.top {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.select input.style2 ~ label.top, form#loginAdmin .inputWrapper.select input.style2 ~ label.top, form#signupUser .inputWrapper.select input.style2 ~ label.top, form#signupAdmin .inputWrapper.select input.style2 ~ label.top, form#forgetPassword .inputWrapper.select input.style2 ~ label.top {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.textarea textarea.style1:focus ~ label, form#loginAdmin .inputWrapper.textarea textarea.style1:focus ~ label, form#signupUser .inputWrapper.textarea textarea.style1:focus ~ label, form#signupAdmin .inputWrapper.textarea textarea.style1:focus ~ label, form#forgetPassword .inputWrapper.textarea textarea.style1:focus ~ label {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.textarea textarea.style2:focus ~ label, form#loginAdmin .inputWrapper.textarea textarea.style2:focus ~ label, form#signupUser .inputWrapper.textarea textarea.style2:focus ~ label, form#signupAdmin .inputWrapper.textarea textarea.style2:focus ~ label, form#forgetPassword .inputWrapper.textarea textarea.style2:focus ~ label {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.textarea textarea.style1 ~ label.top, form#loginAdmin .inputWrapper.textarea textarea.style1 ~ label.top, form#signupUser .inputWrapper.textarea textarea.style1 ~ label.top, form#signupAdmin .inputWrapper.textarea textarea.style1 ~ label.top, form#forgetPassword .inputWrapper.textarea textarea.style1 ~ label.top {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.textarea textarea.style2 ~ label.top, form#loginAdmin .inputWrapper.textarea textarea.style2 ~ label.top, form#signupUser .inputWrapper.textarea textarea.style2 ~ label.top, form#signupAdmin .inputWrapper.textarea textarea.style2 ~ label.top, form#forgetPassword .inputWrapper.textarea textarea.style2 ~ label.top {
-      font-size: 4px; } }
+      font-size: 6px; } }
 
 @media screen and (max-width: 1000px) {
   form#loginUser, form#loginAdmin, form#signupUser, form#signupAdmin, form#forgetPassword {
     font-size: 8px; } }
-
-@media screen and (max-width: 700px) {
-  form#loginUser, form#loginAdmin, form#signupUser, form#signupAdmin, form#forgetPassword {
-    font-size: 7px; } }
 
 form#checkCode {
   width: 40em;
@@ -8172,27 +8121,7 @@ form#userComment {
     form#userComment .inputWrapper.textarea textarea.style2 ~ label.top {
       font-size: 6px; } }
 
-@media screen and (max-width: 600px) {
-  form#userComment {
-    font-size: 6px; }
-    form#userComment .row .inputWrapper.text input.style1:focus ~ label {
-      font-size: 4px; }
-    form#userComment .row .inputWrapper.text input.style2:focus ~ label {
-      font-size: 4px; }
-    form#userComment .row .inputWrapper.text input.style1 ~ label.top {
-      font-size: 4px; }
-    form#userComment .row .inputWrapper.text input.style2 ~ label.top {
-      font-size: 4px; }
-    form#userComment .inputWrapper.textarea textarea.style1:focus ~ label {
-      font-size: 4px; }
-    form#userComment .inputWrapper.textarea textarea.style2:focus ~ label {
-      font-size: 4px; }
-    form#userComment .inputWrapper.textarea textarea.style1 ~ label.top {
-      font-size: 4px; }
-    form#userComment .inputWrapper.textarea textarea.style2 ~ label.top {
-      font-size: 4px; } }
-
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 460px) {
   form#userComment {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -8441,26 +8370,6 @@ form.reply {
     form.reply .inputWrapper.textarea textarea.style2 ~ label.top {
       font-size: 6px; } }
 
-@media screen and (max-width: 600px) {
-  form.reply {
-    font-size: 6px; }
-    form.reply .inputWrapper.text input.style1:focus ~ label {
-      font-size: 4px; }
-    form.reply .inputWrapper.text input.style2:focus ~ label {
-      font-size: 4px; }
-    form.reply .inputWrapper.text input.style1 ~ label.top {
-      font-size: 4px; }
-    form.reply .inputWrapper.text input.style2 ~ label.top {
-      font-size: 4px; }
-    form.reply .inputWrapper.textarea textarea.style1:focus ~ label {
-      font-size: 4px; }
-    form.reply .inputWrapper.textarea textarea.style2:focus ~ label {
-      font-size: 4px; }
-    form.reply .inputWrapper.textarea textarea.style1 ~ label.top {
-      font-size: 4px; }
-    form.reply .inputWrapper.textarea textarea.style2 ~ label.top {
-      font-size: 4px; } }
-
 @media screen and (max-width: 400px) {
   form.reply {
     width: 100%; }
@@ -8668,17 +8577,20 @@ form#editInfo {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -ms-flex-line-pack: "";
       align-content: ""; }
-  form#editInfo h4 {
+  form#editInfo > h4 {
     font-size: 2em;
-    color: #2d2d31;
-    font-weight: 700; }
+    color: white;
+    font-weight: 700;
+    background-color: #00897b;
+    padding: 0.5em 1.5em;
+    border-radius: 0.75em; }
   form#editInfo button[type="submit"] {
     cursor: pointer;
     -webkit-transition: all .3s linear;
@@ -8687,7 +8599,8 @@ form#editInfo {
     color: white;
     background-color: #00897b;
     border: 1.2px solid transparent;
-    font-size: 1.6em; }
+    font-size: 1.6em;
+    margin: 1.5em auto 0 auto; }
     form#editInfo button[type="submit"]:hover {
       color: #00897b;
       background-color: white;
@@ -8711,7 +8624,8 @@ form#editInfo {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -ms-flex-line-pack: "";
-        align-content: ""; }
+        align-content: "";
+    margin-top: 1.5em; }
     form#editInfo .allWrapper .img {
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -9017,34 +8931,14 @@ form#editInfo {
 @media screen and (max-width: 1000px) {
   form#editInfo {
     font-size: 8px; }
-    form#editInfo .inputWrapper.text input.style1:focus ~ label {
-      font-size: 6px; }
-    form#editInfo .inputWrapper.text input.style2:focus ~ label {
-      font-size: 6px; }
-    form#editInfo .inputWrapper.text input.style1 ~ label.top {
-      font-size: 6px; }
-    form#editInfo .inputWrapper.text input.style2 ~ label.top {
-      font-size: 6px; } }
-
-@media screen and (max-width: 600px) {
-  form#editInfo {
-    font-size: 6px; }
-    form#editInfo .inputWrapper.text input.style1:focus ~ label {
-      font-size: 4px; }
-    form#editInfo .inputWrapper.text input.style2:focus ~ label {
-      font-size: 4px; }
-    form#editInfo .inputWrapper.text input.style1 ~ label.top {
-      font-size: 4px; }
-    form#editInfo .inputWrapper.text input.style2 ~ label.top {
-      font-size: 4px; } }
+    form#editInfo .inputs .inputWrapper.text input.style1:focus ~ label {
+      font-size: 7px; }
+    form#editInfo .inputs .inputWrapper.text input.style1 ~ label.top {
+      font-size: 7px; } }
 
 @media screen and (max-width: 1000px) {
   form#editInfo {
     font-size: 8px; } }
-
-@media screen and (max-width: 700px) {
-  form#editInfo {
-    font-size: 7px; } }
 
 @media screen and (max-width: 1100px) {
   form#editInfo .allWrapper {
@@ -9074,7 +8968,7 @@ form#editInfo {
     form#editInfo .inputs .select2 {
       width: calc((100% - (3 * 3em)) / 3); } }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   form#editInfo .allWrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -9102,7 +8996,7 @@ form#editInfo {
     form#editInfo .inputs .select2 {
       width: calc((100% - (3 * 3em)) / 3); } }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 530px) {
   form#editInfo .allWrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -9130,6 +9024,36 @@ form#editInfo {
     form#editInfo .inputs .select2 {
       width: calc((100% - (2 * 3em)) / 2); } }
 
+@media screen and (max-width: 410px) {
+  form#editInfo .allWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#editInfo .allWrapper .img {
+      width: 12em; }
+      form#editInfo .allWrapper .img img {
+        width: 10em;
+        height: 10em; }
+  form#editInfo .inputs {
+    margin-right: 1.5em; }
+    form#editInfo .inputs .inputWrapper.text {
+      width: 100%; }
+    form#editInfo .inputs .select2 {
+      width: 100%; }
+    form#editInfo .inputs .inputWrapper.toggle {
+      margin-top: 0; } }
+
 form#changePass {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9141,17 +9065,20 @@ form#changePass {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -ms-flex-line-pack: "";
       align-content: ""; }
-  form#changePass h4 {
+  form#changePass > h4 {
     font-size: 2em;
-    color: #2d2d31;
-    font-weight: 700; }
+    color: white;
+    font-weight: 700;
+    background-color: #00897b;
+    padding: 0.5em 1.5em;
+    border-radius: 0.75em; }
   form#changePass button[type="submit"] {
     cursor: pointer;
     -webkit-transition: all .3s linear;
@@ -9160,12 +9087,16 @@ form#changePass {
     color: white;
     background-color: #00897b;
     border: 1.2px solid transparent;
-    font-size: 1.6em; }
+    font-size: 1.6em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1.5em; }
     form#changePass button[type="submit"]:hover {
       color: #00897b;
       background-color: white;
       border: 1.2px solid #00897b; }
   form#changePass .inputs {
+    margin-top: 0.75em;
     width: 100%;
     height: auto;
     display: -webkit-box;
@@ -9358,42 +9289,30 @@ form#changePass {
 @media screen and (max-width: 1000px) {
   form#changePass {
     font-size: 8px; }
-    form#changePass .inputWrapper.text input.style1:focus ~ label {
+    form#changePass .inputs .inputWrapper.text input.style1:focus ~ label {
       font-size: 6px; }
-    form#changePass .inputWrapper.text input.style2:focus ~ label {
+    form#changePass .inputs .inputWrapper.text input.style2:focus ~ label {
       font-size: 6px; }
-    form#changePass .inputWrapper.text input.style1 ~ label.top {
+    form#changePass .inputs .inputWrapper.text input.style1 ~ label.top {
       font-size: 6px; }
-    form#changePass .inputWrapper.text input.style2 ~ label.top {
+    form#changePass .inputs .inputWrapper.text input.style2 ~ label.top {
       font-size: 6px; } }
-
-@media screen and (max-width: 600px) {
-  form#changePass {
-    font-size: 6px; }
-    form#changePass .inputWrapper.text input.style1:focus ~ label {
-      font-size: 4px; }
-    form#changePass .inputWrapper.text input.style2:focus ~ label {
-      font-size: 4px; }
-    form#changePass .inputWrapper.text input.style1 ~ label.top {
-      font-size: 4px; }
-    form#changePass .inputWrapper.text input.style2 ~ label.top {
-      font-size: 4px; } }
 
 @media screen and (max-width: 1000px) {
   form#changePass {
     font-size: 8px; } }
 
-@media screen and (max-width: 700px) {
-  form#changePass {
-    font-size: 7px; } }
-
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   form#changePass .inputs .inputWrapper.text {
     width: calc((100% - (3 * 3em)) / 3); } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 580px) {
   form#changePass .inputs .inputWrapper.text {
     width: calc((100% - (2 * 3em)) / 2); } }
+
+@media screen and (max-width: 420px) {
+  form#changePass .inputs .inputWrapper.text {
+    width: 100%; } }
 
 form#info {
   display: -webkit-box;
@@ -9406,17 +9325,20 @@ form#info {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -ms-flex-line-pack: "";
       align-content: ""; }
-  form#info h4 {
+  form#info > h4 {
     font-size: 2em;
+    color: white;
     font-weight: 700;
-    color: #00897b; }
+    background-color: #00897b;
+    padding: 0.5em 1.5em;
+    border-radius: 0.75em; }
   form#info button[type="submit"] {
     cursor: pointer;
     -webkit-transition: all .3s linear;
@@ -9425,7 +9347,7 @@ form#info {
     color: white;
     background-color: #00897b;
     border: 1.2px solid transparent;
-    margin-top: 1.5em; }
+    margin: 1.5em auto 0 auto; }
     form#info button[type="submit"]:hover {
       color: #00897b;
       background-color: white;
@@ -9582,11 +9504,7 @@ form#info {
   form#info {
     font-size: 8px; } }
 
-@media screen and (max-width: 700px) {
-  form#info {
-    font-size: 7px; } }
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
   form#info .questions .question .answers .radio {
     width: calc((100% - (2 * 1.5em)) / 2); } }
 
@@ -9685,12 +9603,6 @@ input[type=number] {
     font-size: 1.3em; }
   .select2-results__option.alert {
     font-size: 1.3em; } }
-
-@media screen and (max-width: 700px) {
-  .select2-results__option {
-    font-size: 0.8em; }
-  .select2-results__option.alert {
-    font-size: 0.8em; } }
 
 #loginWrapper, #signupWrapper, #forgetPasswordWrapper {
   width: 100%;

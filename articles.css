@@ -5521,6 +5521,3995 @@ table.tableResp {
   opacity: 1;
   visibility: visible; }
 
+.select2-container{-webkit-box-sizing:border-box;box-sizing:border-box;display:inline-block;margin:0;position:relative;vertical-align:middle}.select2-container .select2-selection--single{-webkit-box-sizing:border-box;box-sizing:border-box;cursor:pointer;display:block;height:28px;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-select:none}.select2-container .select2-selection--single .select2-selection__rendered{display:block;padding-left:8px;padding-right:20px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.select2-container .select2-selection--single .select2-selection__clear{position:relative}.select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered{padding-right:8px;padding-left:20px}.select2-container .select2-selection--multiple{-webkit-box-sizing:border-box;box-sizing:border-box;cursor:pointer;display:block;min-height:32px;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-select:none}.select2-container .select2-selection--multiple .select2-selection__rendered{display:inline-block;overflow:hidden;padding-left:8px;text-overflow:ellipsis;white-space:nowrap}.select2-container .select2-search--inline{float:left}.select2-container .select2-search--inline .select2-search__field{-webkit-box-sizing:border-box;box-sizing:border-box;border:none;font-size:100%;margin-top:5px;padding:0}.select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button{-webkit-appearance:none}.select2-dropdown{background-color:white;border:1px solid #aaa;border-radius:4px;-webkit-box-sizing:border-box;box-sizing:border-box;display:block;position:absolute;left:-100000px;width:100%;z-index:1051}.select2-results{display:block}.select2-results__options{list-style:none;margin:0;padding:0}.select2-results__option{padding:6px;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-select:none}.select2-results__option[aria-selected]{cursor:pointer}.select2-container--open .select2-dropdown{left:0}.select2-container--open .select2-dropdown--above{border-bottom:none;border-bottom-left-radius:0;border-bottom-right-radius:0}.select2-container--open .select2-dropdown--below{border-top:none;border-top-left-radius:0;border-top-right-radius:0}.select2-search--dropdown{display:block;padding:4px}.select2-search--dropdown .select2-search__field{padding:4px;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box}.select2-search--dropdown .select2-search__field::-webkit-search-cancel-button{-webkit-appearance:none}.select2-search--dropdown.select2-search--hide{display:none}.select2-close-mask{border:0;margin:0;padding:0;display:block;position:fixed;left:0;top:0;min-height:100%;min-width:100%;height:auto;width:auto;opacity:0;z-index:99;background-color:#fff;filter:alpha(opacity=0)}.select2-hidden-accessible{border:0 !important;clip:rect(0 0 0 0) !important;-webkit-clip-path:inset(50%) !important;clip-path:inset(50%) !important;height:1px !important;overflow:hidden !important;padding:0 !important;position:absolute !important;width:1px !important;white-space:nowrap !important}.select2-container--default .select2-selection--single{background-color:#fff;border:1px solid #aaa;border-radius:4px}.select2-container--default .select2-selection--single .select2-selection__rendered{color:#444;line-height:28px}.select2-container--default .select2-selection--single .select2-selection__clear{cursor:pointer;float:right;font-weight:bold}.select2-container--default .select2-selection--single .select2-selection__placeholder{color:#999}.select2-container--default .select2-selection--single .select2-selection__arrow{height:26px;position:absolute;top:1px;right:1px;width:20px}.select2-container--default .select2-selection--single .select2-selection__arrow b{border-color:#888 transparent transparent transparent;border-style:solid;border-width:5px 4px 0 4px;height:0;left:50%;margin-left:-4px;margin-top:-2px;position:absolute;top:50%;width:0}.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__clear{float:left}.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__arrow{left:1px;right:auto}.select2-container--default.select2-container--disabled .select2-selection--single{background-color:#eee;cursor:default}.select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear{display:none}.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{border-color:transparent transparent #888 transparent;border-width:0 4px 5px 4px}.select2-container--default .select2-selection--multiple{background-color:white;border:1px solid #aaa;border-radius:4px;cursor:text}.select2-container--default .select2-selection--multiple .select2-selection__rendered{-webkit-box-sizing:border-box;box-sizing:border-box;list-style:none;margin:0;padding:0 5px;width:100%}.select2-container--default .select2-selection--multiple .select2-selection__rendered li{list-style:none}.select2-container--default .select2-selection--multiple .select2-selection__clear{cursor:pointer;float:right;font-weight:bold;margin-top:5px;margin-right:10px;padding:1px}.select2-container--default .select2-selection--multiple .select2-selection__choice{background-color:#e4e4e4;border:1px solid #aaa;border-radius:4px;cursor:default;float:left;margin-right:5px;margin-top:5px;padding:0 5px}.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{color:#999;cursor:pointer;display:inline-block;font-weight:bold;margin-right:2px}.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover{color:#333}.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice,.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-search--inline{float:right}.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice{margin-left:5px;margin-right:auto}.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove{margin-left:2px;margin-right:auto}.select2-container--default.select2-container--focus .select2-selection--multiple{border:solid black 1px;outline:0}.select2-container--default.select2-container--disabled .select2-selection--multiple{background-color:#eee;cursor:default}.select2-container--default.select2-container--disabled .select2-selection__choice__remove{display:none}.select2-container--default.select2-container--open.select2-container--above .select2-selection--single,.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple{border-top-left-radius:0;border-top-right-radius:0}.select2-container--default.select2-container--open.select2-container--below .select2-selection--single,.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple{border-bottom-left-radius:0;border-bottom-right-radius:0}.select2-container--default .select2-search--dropdown .select2-search__field{border:1px solid #aaa}.select2-container--default .select2-search--inline .select2-search__field{background:transparent;border:none;outline:0;-webkit-box-shadow:none;box-shadow:none;-webkit-appearance:textfield}.select2-container--default .select2-results>.select2-results__options{max-height:200px;overflow-y:auto}.select2-container--default .select2-results__option[role=group]{padding:0}.select2-container--default .select2-results__option[aria-disabled=true]{color:#999}.select2-container--default .select2-results__option[aria-selected=true]{background-color:#ddd}.select2-container--default .select2-results__option .select2-results__option{padding-left:1em}.select2-container--default .select2-results__option .select2-results__option .select2-results__group{padding-left:0}.select2-container--default .select2-results__option .select2-results__option .select2-results__option{margin-left:-1em;padding-left:2em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-2em;padding-left:3em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-3em;padding-left:4em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-4em;padding-left:5em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-5em;padding-left:6em}.select2-container--default .select2-results__option--highlighted[aria-selected]{background-color:#5897fb;color:white}.select2-container--default .select2-results__group{cursor:default;display:block;padding:6px}.select2-container--classic .select2-selection--single{background-color:#f7f7f7;border:1px solid #aaa;border-radius:4px;outline:0;background-image:-webkit-linear-gradient(top, #fff 50%, #eee 100%);background-image:-o-linear-gradient(top, #fff 50%, #eee 100%);background-image:-webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), to(#eee));background-image:linear-gradient(to bottom, #fff 50%, #eee 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0)}.select2-container--classic .select2-selection--single:focus{border:1px solid #5897fb}.select2-container--classic .select2-selection--single .select2-selection__rendered{color:#444;line-height:28px}.select2-container--classic .select2-selection--single .select2-selection__clear{cursor:pointer;float:right;font-weight:bold;margin-right:10px}.select2-container--classic .select2-selection--single .select2-selection__placeholder{color:#999}.select2-container--classic .select2-selection--single .select2-selection__arrow{background-color:#ddd;border:none;border-left:1px solid #aaa;border-top-right-radius:4px;border-bottom-right-radius:4px;height:26px;position:absolute;top:1px;right:1px;width:20px;background-image:-webkit-linear-gradient(top, #eee 50%, #ccc 100%);background-image:-o-linear-gradient(top, #eee 50%, #ccc 100%);background-image:-webkit-gradient(linear, left top, left bottom, color-stop(50%, #eee), to(#ccc));background-image:linear-gradient(to bottom, #eee 50%, #ccc 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFCCCCCC', GradientType=0)}.select2-container--classic .select2-selection--single .select2-selection__arrow b{border-color:#888 transparent transparent transparent;border-style:solid;border-width:5px 4px 0 4px;height:0;left:50%;margin-left:-4px;margin-top:-2px;position:absolute;top:50%;width:0}.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__clear{float:left}.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__arrow{border:none;border-right:1px solid #aaa;border-radius:0;border-top-left-radius:4px;border-bottom-left-radius:4px;left:1px;right:auto}.select2-container--classic.select2-container--open .select2-selection--single{border:1px solid #5897fb}.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow{background:transparent;border:none}.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b{border-color:transparent transparent #888 transparent;border-width:0 4px 5px 4px}.select2-container--classic.select2-container--open.select2-container--above .select2-selection--single{border-top:none;border-top-left-radius:0;border-top-right-radius:0;background-image:-webkit-linear-gradient(top, #fff 0%, #eee 50%);background-image:-o-linear-gradient(top, #fff 0%, #eee 50%);background-image:-webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(50%, #eee));background-image:linear-gradient(to bottom, #fff 0%, #eee 50%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0)}.select2-container--classic.select2-container--open.select2-container--below .select2-selection--single{border-bottom:none;border-bottom-left-radius:0;border-bottom-right-radius:0;background-image:-webkit-linear-gradient(top, #eee 50%, #fff 100%);background-image:-o-linear-gradient(top, #eee 50%, #fff 100%);background-image:-webkit-gradient(linear, left top, left bottom, color-stop(50%, #eee), to(#fff));background-image:linear-gradient(to bottom, #eee 50%, #fff 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFFFFFFF', GradientType=0)}.select2-container--classic .select2-selection--multiple{background-color:white;border:1px solid #aaa;border-radius:4px;cursor:text;outline:0}.select2-container--classic .select2-selection--multiple:focus{border:1px solid #5897fb}.select2-container--classic .select2-selection--multiple .select2-selection__rendered{list-style:none;margin:0;padding:0 5px}.select2-container--classic .select2-selection--multiple .select2-selection__clear{display:none}.select2-container--classic .select2-selection--multiple .select2-selection__choice{background-color:#e4e4e4;border:1px solid #aaa;border-radius:4px;cursor:default;float:left;margin-right:5px;margin-top:5px;padding:0 5px}.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove{color:#888;cursor:pointer;display:inline-block;font-weight:bold;margin-right:2px}.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover{color:#555}.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice{float:right;margin-left:5px;margin-right:auto}.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove{margin-left:2px;margin-right:auto}.select2-container--classic.select2-container--open .select2-selection--multiple{border:1px solid #5897fb}.select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple{border-top:none;border-top-left-radius:0;border-top-right-radius:0}.select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple{border-bottom:none;border-bottom-left-radius:0;border-bottom-right-radius:0}.select2-container--classic .select2-search--dropdown .select2-search__field{border:1px solid #aaa;outline:0}.select2-container--classic .select2-search--inline .select2-search__field{outline:0;-webkit-box-shadow:none;box-shadow:none}.select2-container--classic .select2-dropdown{background-color:#fff;border:1px solid transparent}.select2-container--classic .select2-dropdown--above{border-bottom:none}.select2-container--classic .select2-dropdown--below{border-top:none}.select2-container--classic .select2-results>.select2-results__options{max-height:200px;overflow-y:auto}.select2-container--classic .select2-results__option[role=group]{padding:0}.select2-container--classic .select2-results__option[aria-disabled=true]{color:grey}.select2-container--classic .select2-results__option--highlighted[aria-selected]{background-color:#3875d7;color:#fff}.select2-container--classic .select2-results__group{cursor:default;display:block;padding:6px}.select2-container--classic.select2-container--open .select2-dropdown{border-color:#5897fb}
+
+form#searchForm {
+  width: 100%;
+  height: auto;
+  margin-top: 5em;
+  padding: 1.5em 3em;
+  background-color: white;
+  border-bottom: 1px solid #00897b;
+  -webkit-box-shadow: 0 0.7em 1em -0.2em rgba(70, 69, 85, 0.3);
+          box-shadow: 0 0.7em 1em -0.2em rgba(70, 69, 85, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start; }
+  form#searchForm .inputWrapper.text {
+    width: 25em;
+    height: 4em;
+    position: relative;
+    margin: 1.5em; }
+    form#searchForm .inputWrapper.text input {
+      width: 100%;
+      height: 100%;
+      line-height: 4em;
+      padding: 0 0.75em;
+      font-size: 1.6em;
+      color: #2d2d31;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+      form#searchForm .inputWrapper.text input::-webkit-input-placeholder {
+        color: #90909b;
+        font-size: 1.6em; }
+      form#searchForm .inputWrapper.text input::-moz-placeholder {
+        color: #90909b;
+        font-size: 1.6em; }
+      form#searchForm .inputWrapper.text input:-ms-input-placeholder {
+        color: #90909b;
+        font-size: 1.6em; }
+      form#searchForm .inputWrapper.text input::-ms-input-placeholder {
+        color: #90909b;
+        font-size: 1.6em; }
+      form#searchForm .inputWrapper.text input::placeholder {
+        color: #90909b;
+        font-size: 1.6em; }
+    form#searchForm .inputWrapper.text input.style1 {
+      border: none;
+      border-bottom: 1.2px solid #d3d3d7; }
+      form#searchForm .inputWrapper.text input.style1:focus ~ label {
+        color: #00897b;
+        font-size: 8px;
+        bottom: calc(100% + .5em);
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+             -o-transform: translateY(50%);
+                transform: translateY(50%);
+        right: 0; }
+      form#searchForm .inputWrapper.text input.style1:focus ~ .line {
+        width: 100%; }
+    form#searchForm .inputWrapper.text input.style2 {
+      border: 1.2px solid #d3d3d7;
+      border-radius: 3em; }
+      form#searchForm .inputWrapper.text input.style2:focus {
+        border: 1.2px solid #00897b; }
+        form#searchForm .inputWrapper.text input.style2:focus ~ label {
+          color: #00897b;
+          font-size: 8px;
+          bottom: calc(100% + 1.5em);
+          -webkit-transform: translateY(50%);
+              -ms-transform: translateY(50%);
+               -o-transform: translateY(50%);
+                  transform: translateY(50%);
+          right: 0.75em; }
+        form#searchForm .inputWrapper.text input.style2:focus ~ .line {
+          width: 0%; }
+    form#searchForm .inputWrapper.text input.style1.error {
+      border-bottom: 1.2px solid #ea6161; }
+      form#searchForm .inputWrapper.text input.style1.error ~ label {
+        color: #ea6161; }
+      form#searchForm .inputWrapper.text input.style1.error ~ .line {
+        background-color: #ea6161; }
+    form#searchForm .inputWrapper.text input.style2.error {
+      border: 1.2px solid #ea6161; }
+      form#searchForm .inputWrapper.text input.style2.error ~ label {
+        color: #ea6161; }
+    form#searchForm .inputWrapper.text label {
+      width: auto;
+      height: auto;
+      position: absolute;
+      right: 0.75em;
+      bottom: 50%;
+      -webkit-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+           -o-transform: translateY(50%);
+              transform: translateY(50%);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: "";
+      color: #c6c6cb;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+      form#searchForm .inputWrapper.text label .isRequire {
+        width: auto;
+        height: auto;
+        color: #e74a4a;
+        font-size: 1.1em;
+        padding-left: .3em; }
+      form#searchForm .inputWrapper.text label .icon {
+        font-size: 1.6em; }
+      form#searchForm .inputWrapper.text label p {
+        font-size: 1.5em;
+        -webkit-transform: translateX(-0.3em);
+            -ms-transform: translateX(-0.3em);
+             -o-transform: translateX(-0.3em);
+                transform: translateX(-0.3em); }
+    form#searchForm .inputWrapper.text input.style1 ~ label.top {
+      font-size: 8px;
+      bottom: calc(100% + .5em);
+      -webkit-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+           -o-transform: translateY(50%);
+              transform: translateY(50%);
+      right: 0; }
+    form#searchForm .inputWrapper.text input.style2 ~ label.top {
+      font-size: 8px;
+      bottom: calc(100% + 1.5em);
+      -webkit-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+           -o-transform: translateY(50%);
+              transform: translateY(50%);
+      right: 0.75em; }
+    form#searchForm .inputWrapper.text .line {
+      width: 0%;
+      height: 1.2px;
+      background-color: #00897b;
+      position: absolute;
+      right: 0;
+      top: calc(100% - 1px);
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+    form#searchForm .inputWrapper.text .msg {
+      width: auto;
+      height: auto;
+      border-radius: 3em;
+      padding: 0.75em 1.5em;
+      position: relative;
+      background-color: #ea6161;
+      position: absolute;
+      right: 0;
+      top: 115%;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+      form#searchForm .inputWrapper.text .msg p {
+        color: #fbfbfb;
+        font-size: 1.4em; }
+      form#searchForm .inputWrapper.text .msg i {
+        font-size: 2.4em;
+        color: #ea6161;
+        position: absolute;
+        right: 1.5em;
+        top: calc(0% - .6em); }
+    form#searchForm .inputWrapper.text .msg.show {
+      opacity: 1;
+      visibility: visible;
+      z-index: 2; }
+  form#searchForm .select2 {
+    width: 15em;
+    font-size: 1.6em;
+    margin-right: 3em; }
+    form#searchForm .select2 option {
+      color: #767682;
+      font-size: 1.6em; }
+  form#searchForm .select2-container--default .select2-selection--single {
+    border-radius: 3em;
+    border: 1.2px solid #d3d3d7;
+    height: 2.5em;
+    outline: none; }
+    form#searchForm .select2-container--default .select2-selection--single .select2-selection__rendered {
+      line-height: 2.5em; }
+    form#searchForm .select2-container--default .select2-selection--single .select2-selection__arrow {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+           -o-transform: translateY(-50%);
+              transform: translateY(-50%); }
+  form#searchForm button[type="submit"] {
+    font-size: 1.6em;
+    margin-right: 3em;
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    color: white;
+    background-color: #00897b;
+    border: 1.2px solid transparent; }
+    form#searchForm button[type="submit"]:hover {
+      color: #00897b;
+      background-color: white;
+      border: 1.2px solid #00897b; }
+
+@media screen and (max-width: 1000px) {
+  form#searchForm {
+    font-size: 8px; }
+    form#searchForm .inputWrapper.text input.style1:focus ~ label {
+      font-size: 6px; }
+    form#searchForm .inputWrapper.text input.style2:focus ~ label {
+      font-size: 6px; }
+    form#searchForm .inputWrapper.text input.style1 ~ label.top {
+      font-size: 6px; }
+    form#searchForm .inputWrapper.text input.style2 ~ label.top {
+      font-size: 6px; } }
+
+@media screen and (max-width: 850px) {
+  form#searchForm {
+    width: 100%;
+    height: auto;
+    padding: 1.5em 1.5em; }
+    form#searchForm .inputWrapper.text {
+      width: 20em;
+      height: 3.5em;
+      margin: 1.5em; }
+    form#searchForm .select2 {
+      width: 12em;
+      margin-right: 1.5em; }
+    form#searchForm .select2-container--default .select2-selection--single {
+      height: 2.5em; }
+    form#searchForm button[type="submit"] {
+      margin-right: 1.5em; } }
+
+@media screen and (max-width: 600px) {
+  form#searchForm {
+    margin-top: 6em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: "";
+    padding: 1.5em; }
+    form#searchForm .inputWrapper.text {
+      width: 80%;
+      height: 3.5em;
+      margin: 0;
+      margin-top: 0.75em; }
+    form#searchForm .select2 {
+      width: 80%;
+      margin-right: 0;
+      margin-top: 0.75em; }
+    form#searchForm button[type="submit"] {
+      margin-right: 0;
+      margin-top: 1.5em; } }
+
+@media screen and (max-width: 440px) {
+  form#searchForm {
+    margin-top: 4.5em; } }
+
+form#filters .inputWrapper.select {
+  width: 100%;
+  position: relative; }
+  form#filters .inputWrapper.select input {
+    width: 100%;
+    height: 100%;
+    line-height: 4em;
+    padding: 0 0.75em;
+    color: #2d2d31;
+    font-size: 1.6em;
+    cursor: pointer;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear; }
+    form#filters .inputWrapper.select input::-webkit-input-placeholder {
+      font-size: 1.6em;
+      color: #90909b; }
+    form#filters .inputWrapper.select input::-moz-placeholder {
+      font-size: 1.6em;
+      color: #90909b; }
+    form#filters .inputWrapper.select input:-ms-input-placeholder {
+      font-size: 1.6em;
+      color: #90909b; }
+    form#filters .inputWrapper.select input::-ms-input-placeholder {
+      font-size: 1.6em;
+      color: #90909b; }
+    form#filters .inputWrapper.select input::placeholder {
+      font-size: 1.6em;
+      color: #90909b; }
+  form#filters .inputWrapper.select input.style1 {
+    border: none;
+    border-bottom: 1.2px solid #d3d3d7; }
+    form#filters .inputWrapper.select input.style1:focus ~ label {
+      font-size: 8px;
+      color: #00897b;
+      right: 0;
+      bottom: calc(100% + .5em); }
+    form#filters .inputWrapper.select input.style1:focus ~ .arrow {
+      color: #00897b; }
+    form#filters .inputWrapper.select input.style1:focus ~ .line {
+      width: 100%; }
+    form#filters .inputWrapper.select input.style1:focus ~ ul {
+      opacity: 1;
+      visibility: visible; }
+  form#filters .inputWrapper.select input.style2 {
+    border: 1.2px solid #d3d3d7;
+    border-radius: 3em; }
+    form#filters .inputWrapper.select input.style2:focus {
+      border: 1.2px solid #00897b; }
+      form#filters .inputWrapper.select input.style2:focus ~ label {
+        font-size: 8px;
+        color: #00897b;
+        right: 0;
+        bottom: calc(100% + 1.5em); }
+      form#filters .inputWrapper.select input.style2:focus ~ .arrow {
+        color: #00897b; }
+      form#filters .inputWrapper.select input.style2:focus ~ .line {
+        width: 0%; }
+      form#filters .inputWrapper.select input.style2:focus ~ ul {
+        opacity: 1;
+        visibility: visible; }
+  form#filters .inputWrapper.select input.style1.error ~ label {
+    color: #ea6161; }
+  form#filters .inputWrapper.select input.style1.error ~ .arrow {
+    color: #ea6161; }
+  form#filters .inputWrapper.select input.style1.error ~ .line {
+    width: 100%;
+    background-color: #ea6161; }
+  form#filters .inputWrapper.select input.style2.error {
+    border: 1.2px solid #ea6161; }
+    form#filters .inputWrapper.select input.style2.error ~ label {
+      color: #ea6161; }
+    form#filters .inputWrapper.select input.style2.error ~ .arrow {
+      color: #ea6161; }
+    form#filters .inputWrapper.select input.style2.error ~ .line {
+      background-color: #ea6161; }
+  form#filters .inputWrapper.select label {
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: "";
+    color: #c6c6cb;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+         -o-transform: translateY(50%);
+            transform: translateY(50%);
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear; }
+    form#filters .inputWrapper.select label .icon {
+      font-size: 1.6em; }
+    form#filters .inputWrapper.select label p {
+      font-size: 1.5em;
+      -webkit-transform: translateX(-0.3em);
+          -ms-transform: translateX(-0.3em);
+           -o-transform: translateX(-0.3em);
+              transform: translateX(-0.3em); }
+  form#filters .inputWrapper.select input.style1 ~ label.top {
+    font-size: 8px;
+    right: 0;
+    bottom: calc(100% + .5em); }
+  form#filters .inputWrapper.select input.style2 ~ label.top {
+    font-size: 8px;
+    right: 0;
+    bottom: calc(100% + 1.5em); }
+  form#filters .inputWrapper.select .arrow {
+    cursor: pointer;
+    font-size: 2em;
+    color: #c6c6cb;
+    left: 0;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear; }
+  form#filters .inputWrapper.select .line {
+    width: 0;
+    height: 1.2px;
+    background-color: #00897b;
+    position: absolute;
+    right: 0;
+    top: calc(100% - .6px);
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear; }
+  form#filters .inputWrapper.select ul {
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    width: 100%;
+    max-height: 16em;
+    overflow: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: "";
+    position: absolute;
+    top: 105%;
+    right: 0;
+    -webkit-box-shadow: 0 0.2em 0.5em 0em rgba(70, 69, 85, 0.3);
+            box-shadow: 0 0.2em 0.5em 0em rgba(70, 69, 85, 0.3); }
+    form#filters .inputWrapper.select ul li {
+      width: 100%;
+      height: 2.5em;
+      line-height: 2.5em;
+      padding: 0 0.75em;
+      font-size: 1.6em;
+      color: #2d2d31;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear;
+      cursor: pointer;
+      background-color: white; }
+      form#filters .inputWrapper.select ul li:hover {
+        background-color: #e6e6e6; }
+  form#filters .inputWrapper.select ul.show {
+    opacity: 1;
+    visibility: visible; }
+
+form#filters .inputWrapper.range#priceRanger .ranger {
+  width: 100%;
+  height: .4em;
+  margin-top: 1.5em; }
+  form#filters .inputWrapper.range#priceRanger .ranger .noUi-connect {
+    background-color: #00897b; }
+  form#filters .inputWrapper.range#priceRanger .ranger .noUi-connect, form#filters .inputWrapper.range#priceRanger .ranger .noUi-origin {
+    position: relative; }
+  form#filters .inputWrapper.range#priceRanger .ranger .noUi-handle.circle {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #00897b;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    cursor: pointer; }
+    form#filters .inputWrapper.range#priceRanger .ranger .noUi-handle.circle::before {
+      display: none; }
+    form#filters .inputWrapper.range#priceRanger .ranger .noUi-handle.circle::after {
+      display: none; }
+    form#filters .inputWrapper.range#priceRanger .ranger .noUi-handle.circle:focus {
+      outline: none; }
+      form#filters .inputWrapper.range#priceRanger .ranger .noUi-handle.circle:focus .noUi-tooltip {
+        outline: none; }
+  form#filters .inputWrapper.range#priceRanger .ranger .noUi-handle.right {
+    right: 0%;
+    -webkit-transform: translate(0%, -60%);
+        -ms-transform: translate(0%, -60%);
+         -o-transform: translate(0%, -60%);
+            transform: translate(0%, -60%);
+    top: 0%; }
+  form#filters .inputWrapper.range#priceRanger .ranger .noUi-handle.left {
+    left: 95%;
+    top: 20%;
+    -webkit-transform: translate(0%, -60%);
+        -ms-transform: translate(0%, -60%);
+         -o-transform: translate(0%, -60%);
+            transform: translate(0%, -60%); }
+  form#filters .inputWrapper.range#priceRanger .ranger .noUi-tooltip {
+    display: none; }
+  form#filters .inputWrapper.range#priceRanger .ranger .noUi-tooltip.newStyle {
+    font-size: .8em; }
+  form#filters .inputWrapper.range#priceRanger .ranger .noUi-tooltip.right {
+    -webkit-transform: translate(-90%, 0);
+        -ms-transform: translate(-90%, 0);
+         -o-transform: translate(-90%, 0);
+            transform: translate(-90%, 0); }
+  form#filters .inputWrapper.range#priceRanger .ranger .noUi-tooltip.left {
+    -webkit-transform: translate(0%, 0);
+        -ms-transform: translate(0%, 0);
+         -o-transform: translate(0%, 0);
+            transform: translate(0%, 0); }
+
+form#filters .inputWrapper.range#priceRanger .text {
+  width: 100%;
+  height: auto;
+  margin-top: 0.75em;
+  text-align: center;
+  color: #90909b;
+  font-size: 1.6em; }
+
+form#filters .inputWrapper.checkboxes {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: "";
+      align-content: ""; }
+  form#filters .inputWrapper.checkboxes .checkbox {
+    width: auto;
+    height: auto;
+    padding-right: 0.75em;
+    margin-top: 1.5em; }
+    form#filters .inputWrapper.checkboxes .checkbox input[type="checkbox"] {
+      width: 0;
+      height: 0;
+      display: none; }
+    form#filters .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect {
+      border: 1px solid transparent;
+      background-color: #00897b; }
+      form#filters .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i {
+        opacity: 1; }
+    form#filters .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p {
+      color: #00897b; }
+    form#filters .inputWrapper.checkboxes .checkbox label {
+      cursor: pointer;
+      width: auto;
+      height: auto;
+      line-height: 2.5em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: ""; }
+      form#filters .inputWrapper.checkboxes .checkbox label .rect {
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        width: 2.3em;
+        height: 2.3em;
+        border: 1px solid #90909b;
+        position: relative;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear;
+        border-radius: .45em; }
+        form#filters .inputWrapper.checkboxes .checkbox label .rect i {
+          opacity: 0;
+          font-size: 1.6em;
+          color: #fbfbfb;
+          -webkit-transition: all .2s linear;
+          -o-transition: all .2s linear;
+          transition: all .2s linear; }
+      form#filters .inputWrapper.checkboxes .checkbox label p.error {
+        color: #ea6161; }
+      form#filters .inputWrapper.checkboxes .checkbox label .content {
+        max-width: calc(100% - 1.5em);
+        height: auto;
+        margin-right: .3em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -ms-flex-line-pack: "";
+            align-content: ""; }
+        form#filters .inputWrapper.checkboxes .checkbox label .content p, form#filters .inputWrapper.checkboxes .checkbox label .content i {
+          color: #90909b;
+          margin-right: .3em;
+          font-size: 1.6em; }
+        form#filters .inputWrapper.checkboxes .checkbox label .content .fa-star {
+          color: #ff8865; }
+
+form#filters .row:nth-child(2) .mobileFixFlexFixer {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: "";
+      align-content: ""; }
+  form#filters .row:nth-child(2) .mobileFixFlexFixer .filtersWrapper {
+    width: 100%;
+    height: auto;
+    padding: 0.75em;
+    padding-bottom: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#filters .row:nth-child(2) .mobileFixFlexFixer .filtersWrapper:not(:last-child) {
+      border-bottom: 1px solid #d3d3d7; }
+    form#filters .row:nth-child(2) .mobileFixFlexFixer .filtersWrapper h4 {
+      font-size: 1.4em;
+      color: #2d2d31;
+      font-weight: 700; }
+    form#filters .row:nth-child(2) .mobileFixFlexFixer .filtersWrapper .withCollapse {
+      width: 100%;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: ""; }
+      form#filters .row:nth-child(2) .mobileFixFlexFixer .filtersWrapper .withCollapse .mainCategory {
+        width: 100%;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        color: #90909b;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -ms-flex-line-pack: "";
+            align-content: ""; }
+        form#filters .row:nth-child(2) .mobileFixFlexFixer .filtersWrapper .withCollapse .mainCategory i.collapseTrigger {
+          font-size: 1.6em;
+          color: inherit;
+          padding-right: 1.5em; }
+        form#filters .row:nth-child(2) .mobileFixFlexFixer .filtersWrapper .withCollapse .mainCategory .inputWrapper.checkboxes .checkbox {
+          margin-top: 0;
+          padding-right: 0; }
+      form#filters .row:nth-child(2) .mobileFixFlexFixer .filtersWrapper .withCollapse .collapse {
+        width: 100%;
+        padding-right: 1.5em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -ms-flex-line-pack: "";
+            align-content: "";
+        font-size: 9px; }
+  form#filters .row:nth-child(2) .mobileFixFlexFixer #currFilters .top {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#filters .row:nth-child(2) .mobileFixFlexFixer #currFilters .top #clearFilters {
+      font-size: 1.3em;
+      margin-right: 1.5em;
+      white-space: nowrap;
+      cursor: pointer;
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear;
+      color: white;
+      background-color: #00897b;
+      border: 1.2px solid transparent; }
+      form#filters .row:nth-child(2) .mobileFixFlexFixer #currFilters .top #clearFilters:hover {
+        color: #00897b;
+        background-color: white;
+        border: 1.2px solid #00897b; }
+  form#filters .row:nth-child(2) .mobileFixFlexFixer #currFilters .bottom {
+    width: 100%;
+    height: auto;
+    margin-top: 0.75em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+        align-content: flex-start; }
+    form#filters .row:nth-child(2) .mobileFixFlexFixer #currFilters .bottom .currFilter {
+      width: auto;
+      height: auto;
+      border-radius: 0.75em;
+      padding: 0.5em 0.75em;
+      cursor: pointer;
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear;
+      color: white;
+      background-color: #00897b;
+      border: 1.2px solid transparent;
+      margin: 0.75em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: ""; }
+      form#filters .row:nth-child(2) .mobileFixFlexFixer #currFilters .bottom .currFilter:hover {
+        color: #00897b;
+        background-color: white;
+        border: 1.2px solid #00897b; }
+      form#filters .row:nth-child(2) .mobileFixFlexFixer #currFilters .bottom .currFilter .close {
+        font-size: 1.2em; }
+      form#filters .row:nth-child(2) .mobileFixFlexFixer #currFilters .bottom .currFilter p {
+        font-size: 1.2em;
+        margin-right: .5em; }
+
+@media screen and (max-width: 900px) {
+  form#filters {
+    font-size: 8px; }
+    form#filters .inputWrapper.select input.style1:focus ~ label {
+      font-size: 6px; }
+    form#filters .inputWrapper.select input.style2:focus ~ label {
+      font-size: 6px; }
+    form#filters .inputWrapper.select input.style1 ~ label.top {
+      font-size: 6px; }
+    form#filters .inputWrapper.select input.style2 ~ label.top {
+      font-size: 6px; }
+  form#filters .inputWrapper.checkboxes .checkbox label .content p {
+    font-size: 1.4em; } }
+
+form#report {
+  width: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: "";
+      align-content: "";
+  margin-right: 1.5em; }
+  form#report .row {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#report .row .inputWrapper.text {
+      width: 50%;
+      height: 4em;
+      position: relative; }
+      form#report .row .inputWrapper.text:not(:first-child) {
+        margin-right: 1.5em; }
+      form#report .row .inputWrapper.text input {
+        width: 100%;
+        height: 100%;
+        line-height: 4em;
+        padding: 0 0.75em;
+        font-size: 1.6em;
+        color: #2d2d31;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+        form#report .row .inputWrapper.text input::-webkit-input-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#report .row .inputWrapper.text input::-moz-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#report .row .inputWrapper.text input:-ms-input-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#report .row .inputWrapper.text input::-ms-input-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#report .row .inputWrapper.text input::placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+      form#report .row .inputWrapper.text input.style1 {
+        border: none;
+        border-bottom: 1.2px solid #d3d3d7; }
+        form#report .row .inputWrapper.text input.style1:focus ~ label {
+          color: #00897b;
+          font-size: 8px;
+          bottom: calc(100% + .5em);
+          -webkit-transform: translateY(50%);
+              -ms-transform: translateY(50%);
+               -o-transform: translateY(50%);
+                  transform: translateY(50%);
+          right: 0; }
+        form#report .row .inputWrapper.text input.style1:focus ~ .line {
+          width: 100%; }
+      form#report .row .inputWrapper.text input.style2 {
+        border: 1.2px solid #d3d3d7;
+        border-radius: 3em; }
+        form#report .row .inputWrapper.text input.style2:focus {
+          border: 1.2px solid #00897b; }
+          form#report .row .inputWrapper.text input.style2:focus ~ label {
+            color: #00897b;
+            font-size: 8px;
+            bottom: calc(100% + 1.5em);
+            -webkit-transform: translateY(50%);
+                -ms-transform: translateY(50%);
+                 -o-transform: translateY(50%);
+                    transform: translateY(50%);
+            right: 0.75em; }
+          form#report .row .inputWrapper.text input.style2:focus ~ .line {
+            width: 0%; }
+      form#report .row .inputWrapper.text input.style1.error {
+        border-bottom: 1.2px solid #ea6161; }
+        form#report .row .inputWrapper.text input.style1.error ~ label {
+          color: #ea6161; }
+        form#report .row .inputWrapper.text input.style1.error ~ .line {
+          background-color: #ea6161; }
+      form#report .row .inputWrapper.text input.style2.error {
+        border: 1.2px solid #ea6161; }
+        form#report .row .inputWrapper.text input.style2.error ~ label {
+          color: #ea6161; }
+      form#report .row .inputWrapper.text label {
+        width: auto;
+        height: auto;
+        position: absolute;
+        right: 0.75em;
+        bottom: 50%;
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+             -o-transform: translateY(50%);
+                transform: translateY(50%);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -ms-flex-line-pack: "";
+            align-content: "";
+        color: #c6c6cb;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+        form#report .row .inputWrapper.text label .icon {
+          font-size: 1.6em; }
+        form#report .row .inputWrapper.text label p {
+          font-size: 1.5em;
+          -webkit-transform: translateX(-0.3em);
+              -ms-transform: translateX(-0.3em);
+               -o-transform: translateX(-0.3em);
+                  transform: translateX(-0.3em); }
+      form#report .row .inputWrapper.text input.style1 ~ label.top {
+        font-size: 8px;
+        bottom: calc(100% + .5em);
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+             -o-transform: translateY(50%);
+                transform: translateY(50%);
+        right: 0; }
+      form#report .row .inputWrapper.text input.style2 ~ label.top {
+        font-size: 8px;
+        bottom: calc(100% + 1.5em);
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+             -o-transform: translateY(50%);
+                transform: translateY(50%);
+        right: 0.75em; }
+      form#report .row .inputWrapper.text .line {
+        width: 0%;
+        height: 1.2px;
+        background-color: #00897b;
+        position: absolute;
+        right: 0;
+        top: calc(100% - 1px);
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+      form#report .row .inputWrapper.text .msg {
+        width: auto;
+        height: auto;
+        border-radius: 3em;
+        padding: 0.75em 1.5em;
+        position: relative;
+        background-color: #ea6161;
+        position: absolute;
+        right: 0;
+        top: 115%;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+        form#report .row .inputWrapper.text .msg p {
+          color: #fbfbfb;
+          font-size: 1.4em; }
+        form#report .row .inputWrapper.text .msg i {
+          font-size: 2.4em;
+          color: #ea6161;
+          position: absolute;
+          right: 1.5em;
+          top: calc(0% - .6em); }
+      form#report .row .inputWrapper.text .msg.show {
+        opacity: 1;
+        visibility: visible;
+        z-index: 2; }
+  form#report .inputWrapper.textarea {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 4em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    form#report .inputWrapper.textarea textarea {
+      width: 100%;
+      font-size: 1.6em;
+      color: #2d2d31;
+      padding: 0.75em;
+      line-height: 1.5em;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear;
+      resize: none; }
+      form#report .inputWrapper.textarea textarea::-webkit-input-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form#report .inputWrapper.textarea textarea::-moz-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form#report .inputWrapper.textarea textarea:-ms-input-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form#report .inputWrapper.textarea textarea::-ms-input-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form#report .inputWrapper.textarea textarea::placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+    form#report .inputWrapper.textarea textarea.style1 {
+      height: 12em;
+      border: 1.2px solid #d3d3d7;
+      border-radius: 1.5em; }
+      form#report .inputWrapper.textarea textarea.style1 ~ label {
+        bottom: 100%;
+        -webkit-transform: translateY(150%);
+            -ms-transform: translateY(150%);
+             -o-transform: translateY(150%);
+                transform: translateY(150%); }
+      form#report .inputWrapper.textarea textarea.style1:focus {
+        border: 1.2px solid #00897b; }
+        form#report .inputWrapper.textarea textarea.style1:focus ~ label {
+          font-size: 8px;
+          right: 0.75em;
+          color: #00897b;
+          bottom: calc(100% + .5em);
+          -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+               -o-transform: translateY(0);
+                  transform: translateY(0); }
+    form#report .inputWrapper.textarea textarea.style2 {
+      overflow: hidden;
+      border: none;
+      border-bottom: 1.2px solid #d3d3d7; }
+      form#report .inputWrapper.textarea textarea.style2 ~ label {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+             -o-transform: translateY(-50%);
+                transform: translateY(-50%); }
+      form#report .inputWrapper.textarea textarea.style2:focus {
+        border-bottom: 1.2px solid #00897b; }
+        form#report .inputWrapper.textarea textarea.style2:focus ~ label {
+          font-size: 8px;
+          right: 0;
+          color: #00897b;
+          top: 0;
+          -webkit-transform: translateY(-100%);
+              -ms-transform: translateY(-100%);
+               -o-transform: translateY(-100%);
+                  transform: translateY(-100%); }
+        form#report .inputWrapper.textarea textarea.style2:focus ~ .line {
+          width: 100%; }
+    form#report .inputWrapper.textarea textarea.style1.error {
+      border: 1.2px solid #ea6161; }
+      form#report .inputWrapper.textarea textarea.style1.error ~ label {
+        color: #ea6161; }
+    form#report .inputWrapper.textarea textarea.style2.error {
+      border-bottom: 1.2px solid #ea6161; }
+      form#report .inputWrapper.textarea textarea.style2.error ~ label {
+        color: #ea6161; }
+    form#report .inputWrapper.textarea textarea.style1 ~ label.top {
+      font-size: 8px;
+      bottom: calc(100% + 2em);
+      -webkit-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+           -o-transform: translateY(50%);
+              transform: translateY(50%);
+      right: 0; }
+    form#report .inputWrapper.textarea textarea.style2 ~ label.top {
+      font-size: 8px;
+      top: 0;
+      -webkit-transform: translateY(-100%);
+          -ms-transform: translateY(-100%);
+           -o-transform: translateY(-100%);
+              transform: translateY(-100%);
+      right: 0; }
+    form#report .inputWrapper.textarea label {
+      width: auto;
+      height: auto;
+      position: absolute;
+      right: 0.75em;
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: "";
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear;
+      color: #c6c6cb; }
+      form#report .inputWrapper.textarea label i {
+        font-size: 1.6em; }
+      form#report .inputWrapper.textarea label p {
+        font-size: 1.5em;
+        -webkit-transform: translateX(-0.3em);
+            -ms-transform: translateX(-0.3em);
+             -o-transform: translateX(-0.3em);
+                transform: translateX(-0.3em); }
+    form#report .inputWrapper.textarea .line {
+      width: 0%;
+      height: 1.2px;
+      background-color: #00897b;
+      position: absolute;
+      right: 0;
+      top: calc(100% - .6px);
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+  form#report button[type="submit"] {
+    margin-top: 1.5em;
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    color: #fbfbfb;
+    background-color: #00897b;
+    border: 1.2px solid transparent; }
+    form#report button[type="submit"]:hover {
+      color: #00897b;
+      background-color: #fbfbfb;
+      border: 1.2px solid #00897b; }
+
+@media screen and (max-width: 1000px) {
+  form#report .row {
+    font-size: 8px; }
+    form#report .row .inputWrapper.text input.style1:focus ~ label {
+      font-size: 6px; }
+    form#report .row .inputWrapper.text input.style2:focus ~ label {
+      font-size: 6px; }
+    form#report .row .inputWrapper.text input.style1 ~ label.top {
+      font-size: 6px; }
+    form#report .row .inputWrapper.text input.style2 ~ label.top {
+      font-size: 6px; }
+  form#report .inputWrapper.textarea textarea.style1:focus ~ label {
+    font-size: 6px; }
+  form#report .inputWrapper.textarea textarea.style2:focus ~ label {
+    font-size: 6px; }
+  form#report .inputWrapper.textarea textarea.style1 ~ label.top {
+    font-size: 6px; }
+  form#report .inputWrapper.textarea textarea.style2 ~ label.top {
+    font-size: 6px; } }
+
+@media screen and (max-width: 650px) {
+  form#report {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 1.5em; } }
+
+form#loginUser, form#loginAdmin, form#signupUser, form#signupAdmin, form#forgetPassword {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: "";
+      align-content: ""; }
+  form#loginUser h3, form#loginAdmin h3, form#signupUser h3, form#signupAdmin h3, form#forgetPassword h3 {
+    font-size: 2em;
+    color: #00897b;
+    font-weight: 700;
+    margin-top: 1.5em; }
+  form#loginUser .inputWrapper.text, form#loginAdmin .inputWrapper.text, form#signupUser .inputWrapper.text, form#signupAdmin .inputWrapper.text, form#forgetPassword .inputWrapper.text {
+    width: 28em;
+    height: 4em;
+    position: relative;
+    margin-top: 2.5em; }
+    form#loginUser .inputWrapper.text input, form#loginAdmin .inputWrapper.text input, form#signupUser .inputWrapper.text input, form#signupAdmin .inputWrapper.text input, form#forgetPassword .inputWrapper.text input {
+      width: 100%;
+      height: 100%;
+      line-height: 4em;
+      padding: 0 0.75em;
+      font-size: 1.6em;
+      color: #2d2d31;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+      form#loginUser .inputWrapper.text input::-webkit-input-placeholder, form#loginAdmin .inputWrapper.text input::-webkit-input-placeholder, form#signupUser .inputWrapper.text input::-webkit-input-placeholder, form#signupAdmin .inputWrapper.text input::-webkit-input-placeholder, form#forgetPassword .inputWrapper.text input::-webkit-input-placeholder {
+        color: #90909b;
+        font-size: 1.6em; }
+      form#loginUser .inputWrapper.text input::-moz-placeholder, form#loginAdmin .inputWrapper.text input::-moz-placeholder, form#signupUser .inputWrapper.text input::-moz-placeholder, form#signupAdmin .inputWrapper.text input::-moz-placeholder, form#forgetPassword .inputWrapper.text input::-moz-placeholder {
+        color: #90909b;
+        font-size: 1.6em; }
+      form#loginUser .inputWrapper.text input:-ms-input-placeholder, form#loginAdmin .inputWrapper.text input:-ms-input-placeholder, form#signupUser .inputWrapper.text input:-ms-input-placeholder, form#signupAdmin .inputWrapper.text input:-ms-input-placeholder, form#forgetPassword .inputWrapper.text input:-ms-input-placeholder {
+        color: #90909b;
+        font-size: 1.6em; }
+      form#loginUser .inputWrapper.text input::-ms-input-placeholder, form#loginAdmin .inputWrapper.text input::-ms-input-placeholder, form#signupUser .inputWrapper.text input::-ms-input-placeholder, form#signupAdmin .inputWrapper.text input::-ms-input-placeholder, form#forgetPassword .inputWrapper.text input::-ms-input-placeholder {
+        color: #90909b;
+        font-size: 1.6em; }
+      form#loginUser .inputWrapper.text input::placeholder, form#loginAdmin .inputWrapper.text input::placeholder, form#signupUser .inputWrapper.text input::placeholder, form#signupAdmin .inputWrapper.text input::placeholder, form#forgetPassword .inputWrapper.text input::placeholder {
+        color: #90909b;
+        font-size: 1.6em; }
+    form#loginUser .inputWrapper.text input.style1, form#loginAdmin .inputWrapper.text input.style1, form#signupUser .inputWrapper.text input.style1, form#signupAdmin .inputWrapper.text input.style1, form#forgetPassword .inputWrapper.text input.style1 {
+      border: none;
+      border-bottom: 1.2px solid #d3d3d7; }
+      form#loginUser .inputWrapper.text input.style1:focus ~ label, form#loginAdmin .inputWrapper.text input.style1:focus ~ label, form#signupUser .inputWrapper.text input.style1:focus ~ label, form#signupAdmin .inputWrapper.text input.style1:focus ~ label, form#forgetPassword .inputWrapper.text input.style1:focus ~ label {
+        color: #00897b;
+        font-size: 8px;
+        bottom: calc(100% + .5em);
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+             -o-transform: translateY(50%);
+                transform: translateY(50%);
+        right: 0; }
+      form#loginUser .inputWrapper.text input.style1:focus ~ .line, form#loginAdmin .inputWrapper.text input.style1:focus ~ .line, form#signupUser .inputWrapper.text input.style1:focus ~ .line, form#signupAdmin .inputWrapper.text input.style1:focus ~ .line, form#forgetPassword .inputWrapper.text input.style1:focus ~ .line {
+        width: 100%; }
+    form#loginUser .inputWrapper.text input.style2, form#loginAdmin .inputWrapper.text input.style2, form#signupUser .inputWrapper.text input.style2, form#signupAdmin .inputWrapper.text input.style2, form#forgetPassword .inputWrapper.text input.style2 {
+      background-color: #fbfbfc;
+      border: 1.2px solid #d3d3d7;
+      border-radius: 3em; }
+      form#loginUser .inputWrapper.text input.style2:focus, form#loginAdmin .inputWrapper.text input.style2:focus, form#signupUser .inputWrapper.text input.style2:focus, form#signupAdmin .inputWrapper.text input.style2:focus, form#forgetPassword .inputWrapper.text input.style2:focus {
+        border: 1.2px solid #00897b; }
+        form#loginUser .inputWrapper.text input.style2:focus ~ label, form#loginAdmin .inputWrapper.text input.style2:focus ~ label, form#signupUser .inputWrapper.text input.style2:focus ~ label, form#signupAdmin .inputWrapper.text input.style2:focus ~ label, form#forgetPassword .inputWrapper.text input.style2:focus ~ label {
+          color: #00897b;
+          font-size: 8px;
+          bottom: calc(100% + 1.5em);
+          -webkit-transform: translateY(50%);
+              -ms-transform: translateY(50%);
+               -o-transform: translateY(50%);
+                  transform: translateY(50%);
+          right: 0.75em; }
+        form#loginUser .inputWrapper.text input.style2:focus ~ .line, form#loginAdmin .inputWrapper.text input.style2:focus ~ .line, form#signupUser .inputWrapper.text input.style2:focus ~ .line, form#signupAdmin .inputWrapper.text input.style2:focus ~ .line, form#forgetPassword .inputWrapper.text input.style2:focus ~ .line {
+          width: 0%; }
+    form#loginUser .inputWrapper.text input.style1.error, form#loginAdmin .inputWrapper.text input.style1.error, form#signupUser .inputWrapper.text input.style1.error, form#signupAdmin .inputWrapper.text input.style1.error, form#forgetPassword .inputWrapper.text input.style1.error {
+      border-bottom: 1.2px solid #ea6161; }
+      form#loginUser .inputWrapper.text input.style1.error ~ label, form#loginAdmin .inputWrapper.text input.style1.error ~ label, form#signupUser .inputWrapper.text input.style1.error ~ label, form#signupAdmin .inputWrapper.text input.style1.error ~ label, form#forgetPassword .inputWrapper.text input.style1.error ~ label {
+        color: #ea6161; }
+      form#loginUser .inputWrapper.text input.style1.error ~ .line, form#loginAdmin .inputWrapper.text input.style1.error ~ .line, form#signupUser .inputWrapper.text input.style1.error ~ .line, form#signupAdmin .inputWrapper.text input.style1.error ~ .line, form#forgetPassword .inputWrapper.text input.style1.error ~ .line {
+        background-color: #ea6161; }
+    form#loginUser .inputWrapper.text input.style2.error, form#loginAdmin .inputWrapper.text input.style2.error, form#signupUser .inputWrapper.text input.style2.error, form#signupAdmin .inputWrapper.text input.style2.error, form#forgetPassword .inputWrapper.text input.style2.error {
+      border: 1.2px solid #ea6161; }
+      form#loginUser .inputWrapper.text input.style2.error ~ label, form#loginAdmin .inputWrapper.text input.style2.error ~ label, form#signupUser .inputWrapper.text input.style2.error ~ label, form#signupAdmin .inputWrapper.text input.style2.error ~ label, form#forgetPassword .inputWrapper.text input.style2.error ~ label {
+        color: #ea6161; }
+    form#loginUser .inputWrapper.text label, form#loginAdmin .inputWrapper.text label, form#signupUser .inputWrapper.text label, form#signupAdmin .inputWrapper.text label, form#forgetPassword .inputWrapper.text label {
+      width: auto;
+      height: auto;
+      position: absolute;
+      right: 0.75em;
+      bottom: 50%;
+      -webkit-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+           -o-transform: translateY(50%);
+              transform: translateY(50%);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: "";
+      color: #c6c6cb;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+      form#loginUser .inputWrapper.text label .icon, form#loginAdmin .inputWrapper.text label .icon, form#signupUser .inputWrapper.text label .icon, form#signupAdmin .inputWrapper.text label .icon, form#forgetPassword .inputWrapper.text label .icon {
+        font-size: 1.6em; }
+      form#loginUser .inputWrapper.text label p, form#loginAdmin .inputWrapper.text label p, form#signupUser .inputWrapper.text label p, form#signupAdmin .inputWrapper.text label p, form#forgetPassword .inputWrapper.text label p {
+        font-size: 1.5em;
+        -webkit-transform: translateX(-0.3em);
+            -ms-transform: translateX(-0.3em);
+             -o-transform: translateX(-0.3em);
+                transform: translateX(-0.3em); }
+    form#loginUser .inputWrapper.text input.style1 ~ label.top, form#loginAdmin .inputWrapper.text input.style1 ~ label.top, form#signupUser .inputWrapper.text input.style1 ~ label.top, form#signupAdmin .inputWrapper.text input.style1 ~ label.top, form#forgetPassword .inputWrapper.text input.style1 ~ label.top {
+      font-size: 8px;
+      bottom: calc(100% + .5em);
+      -webkit-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+           -o-transform: translateY(50%);
+              transform: translateY(50%);
+      right: 0; }
+    form#loginUser .inputWrapper.text input.style2 ~ label.top, form#loginAdmin .inputWrapper.text input.style2 ~ label.top, form#signupUser .inputWrapper.text input.style2 ~ label.top, form#signupAdmin .inputWrapper.text input.style2 ~ label.top, form#forgetPassword .inputWrapper.text input.style2 ~ label.top {
+      font-size: 8px;
+      bottom: calc(100% + 1.5em);
+      -webkit-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+           -o-transform: translateY(50%);
+              transform: translateY(50%);
+      right: 0.75em; }
+    form#loginUser .inputWrapper.text .line, form#loginAdmin .inputWrapper.text .line, form#signupUser .inputWrapper.text .line, form#signupAdmin .inputWrapper.text .line, form#forgetPassword .inputWrapper.text .line {
+      width: 0%;
+      height: 1.2px;
+      background-color: #00897b;
+      position: absolute;
+      right: 0;
+      top: calc(100% - 1px);
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+    form#loginUser .inputWrapper.text .msg, form#loginAdmin .inputWrapper.text .msg, form#signupUser .inputWrapper.text .msg, form#signupAdmin .inputWrapper.text .msg, form#forgetPassword .inputWrapper.text .msg {
+      width: auto;
+      height: auto;
+      border-radius: 3em;
+      padding: 0.75em 1.5em;
+      position: relative;
+      background-color: #ea6161;
+      position: absolute;
+      right: 0;
+      top: 115%;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+      form#loginUser .inputWrapper.text .msg p, form#loginAdmin .inputWrapper.text .msg p, form#signupUser .inputWrapper.text .msg p, form#signupAdmin .inputWrapper.text .msg p, form#forgetPassword .inputWrapper.text .msg p {
+        color: #fbfbfb;
+        font-size: 1.4em; }
+      form#loginUser .inputWrapper.text .msg i, form#loginAdmin .inputWrapper.text .msg i, form#signupUser .inputWrapper.text .msg i, form#signupAdmin .inputWrapper.text .msg i, form#forgetPassword .inputWrapper.text .msg i {
+        font-size: 2.4em;
+        color: #ea6161;
+        position: absolute;
+        right: 1.5em;
+        top: calc(0% - .6em); }
+    form#loginUser .inputWrapper.text .msg.show, form#loginAdmin .inputWrapper.text .msg.show, form#signupUser .inputWrapper.text .msg.show, form#signupAdmin .inputWrapper.text .msg.show, form#forgetPassword .inputWrapper.text .msg.show {
+      opacity: 1;
+      visibility: visible;
+      z-index: 2; }
+    form#loginUser .inputWrapper.text .forgetPass, form#loginAdmin .inputWrapper.text .forgetPass, form#signupUser .inputWrapper.text .forgetPass, form#signupAdmin .inputWrapper.text .forgetPass, form#forgetPassword .inputWrapper.text .forgetPass {
+      display: block;
+      font-size: 1.2em;
+      color: #00897b;
+      margin-top: 0.75em;
+      visibility: visible; }
+    form#loginUser .inputWrapper.text .desc, form#loginAdmin .inputWrapper.text .desc, form#signupUser .inputWrapper.text .desc, form#signupAdmin .inputWrapper.text .desc, form#forgetPassword .inputWrapper.text .desc {
+      padding-bottom: 3em;
+      margin-right: 0.75em;
+      margin-top: .1em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: ""; }
+      form#loginUser .inputWrapper.text .desc i, form#loginAdmin .inputWrapper.text .desc i, form#signupUser .inputWrapper.text .desc i, form#signupAdmin .inputWrapper.text .desc i, form#forgetPassword .inputWrapper.text .desc i {
+        font-size: 1.4em;
+        color: #007FE8; }
+      form#loginUser .inputWrapper.text .desc p, form#loginAdmin .inputWrapper.text .desc p, form#signupUser .inputWrapper.text .desc p, form#signupAdmin .inputWrapper.text .desc p, form#forgetPassword .inputWrapper.text .desc p {
+        margin-right: .2em;
+        font-size: 1.2em;
+        color: #90909b; }
+  form#loginUser .someSpace, form#loginAdmin .someSpace, form#signupUser .someSpace, form#signupAdmin .someSpace, form#forgetPassword .someSpace {
+    margin-top: 3.7em !important; }
+  form#loginUser select, form#loginAdmin select, form#signupUser select, form#signupAdmin select, form#forgetPassword select {
+    font-size: 1.6em;
+    color: #00897b;
+    margin-top: 2.5em;
+    border-radius: 1.5em;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+         -o-transform: translateX(50%);
+            transform: translateX(50%); }
+    form#loginUser select option, form#loginAdmin select option, form#signupUser select option, form#signupAdmin select option, form#forgetPassword select option {
+      color: #90909b; }
+  form#loginUser .select2, form#loginAdmin .select2, form#signupUser .select2, form#signupAdmin .select2, form#forgetPassword .select2 {
+    width: 17em;
+    font-size: 1.6em;
+    margin-top: 1.5em; }
+    form#loginUser .select2 option, form#loginAdmin .select2 option, form#signupUser .select2 option, form#signupAdmin .select2 option, form#forgetPassword .select2 option {
+      color: #767682;
+      font-size: 1.6em; }
+  form#loginUser .select2-container--default .select2-selection--single, form#loginAdmin .select2-container--default .select2-selection--single, form#signupUser .select2-container--default .select2-selection--single, form#signupAdmin .select2-container--default .select2-selection--single, form#forgetPassword .select2-container--default .select2-selection--single {
+    border-radius: 3em;
+    border: 1.2px solid #d3d3d7;
+    height: 2.5em;
+    outline: none; }
+    form#loginUser .select2-container--default .select2-selection--single .select2-selection__rendered, form#loginAdmin .select2-container--default .select2-selection--single .select2-selection__rendered, form#signupUser .select2-container--default .select2-selection--single .select2-selection__rendered, form#signupAdmin .select2-container--default .select2-selection--single .select2-selection__rendered, form#forgetPassword .select2-container--default .select2-selection--single .select2-selection__rendered {
+      line-height: 2.5em; }
+    form#loginUser .select2-container--default .select2-selection--single .select2-selection__arrow, form#loginAdmin .select2-container--default .select2-selection--single .select2-selection__arrow, form#signupUser .select2-container--default .select2-selection--single .select2-selection__arrow, form#signupAdmin .select2-container--default .select2-selection--single .select2-selection__arrow, form#forgetPassword .select2-container--default .select2-selection--single .select2-selection__arrow {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+           -o-transform: translateY(-50%);
+              transform: translateY(-50%); }
+  form#loginUser button[type="submit"], form#loginAdmin button[type="submit"], form#signupUser button[type="submit"], form#signupAdmin button[type="submit"], form#forgetPassword button[type="submit"] {
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    color: white;
+    background-color: #00897b;
+    border: 1.2px solid transparent;
+    cursor: pointer;
+    margin-top: 1.5em;
+    padding: 0.4em 3em; }
+    form#loginUser button[type="submit"]:hover, form#loginAdmin button[type="submit"]:hover, form#signupUser button[type="submit"]:hover, form#signupAdmin button[type="submit"]:hover, form#forgetPassword button[type="submit"]:hover {
+      color: #00897b;
+      background-color: white;
+      border: 1.2px solid #00897b; }
+  form#loginUser .loginRoute, form#loginAdmin .loginRoute, form#signupUser .loginRoute, form#signupAdmin .loginRoute, form#forgetPassword .loginRoute {
+    font-size: 1.6em;
+    color: #00897b;
+    margin-top: 0.75em;
+    position: relative; }
+    form#loginUser .loginRoute::before, form#loginAdmin .loginRoute::before, form#signupUser .loginRoute::before, form#signupAdmin .loginRoute::before, form#forgetPassword .loginRoute::before {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: #00897b;
+      position: absolute;
+      right: 0;
+      top: 102%; }
+  form#loginUser .inputWrapper.checkboxes, form#loginAdmin .inputWrapper.checkboxes, form#signupUser .inputWrapper.checkboxes, form#signupAdmin .inputWrapper.checkboxes, form#forgetPassword .inputWrapper.checkboxes {
+    width: auto;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: translateX(25%);
+        -ms-transform: translateX(25%);
+         -o-transform: translateX(25%);
+            transform: translateX(25%);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: "";
+    margin-top: 1.5em; }
+    form#loginUser .inputWrapper.checkboxes .checkbox, form#loginAdmin .inputWrapper.checkboxes .checkbox, form#signupUser .inputWrapper.checkboxes .checkbox, form#signupAdmin .inputWrapper.checkboxes .checkbox, form#forgetPassword .inputWrapper.checkboxes .checkbox {
+      width: auto;
+      height: auto;
+      padding-right: 0; }
+      form#loginUser .inputWrapper.checkboxes .checkbox input[type="checkbox"], form#loginAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"], form#signupUser .inputWrapper.checkboxes .checkbox input[type="checkbox"], form#signupAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"], form#forgetPassword .inputWrapper.checkboxes .checkbox input[type="checkbox"] {
+        width: 0;
+        height: 0;
+        display: none; }
+      form#loginUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label .rect, form#loginAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label .rect, form#signupUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label .rect, form#signupAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label .rect, form#forgetPassword .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label .rect {
+        width: 2em;
+        height: 1em;
+        border-radius: 0;
+        border-top: none;
+        border-right: none;
+        border-left: 1.2px solid #00897b;
+        border-bottom: 1.2px solid #00897b;
+        -webkit-transform: translateY(-0.3em) rotate(-45deg);
+            -ms-transform: translateY(-0.3em) rotate(-45deg);
+             -o-transform: translateY(-0.3em) rotate(-45deg);
+                transform: translateY(-0.3em) rotate(-45deg); }
+      form#loginUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label p, form#loginAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label p, form#signupUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label p, form#signupAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label p, form#forgetPassword .inputWrapper.checkboxes .checkbox input[type="checkbox"].style1:checked ~ label p {
+        color: #00897b; }
+      form#loginUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect, form#loginAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect, form#signupUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect, form#signupAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect, form#forgetPassword .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect {
+        border: 1px solid transparent;
+        background-color: #00897b; }
+        form#loginUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i, form#loginAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i, form#signupUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i, form#signupAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i, form#forgetPassword .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i {
+          opacity: 1; }
+      form#loginUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p, form#loginAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p, form#signupUser .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p, form#signupAdmin .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p, form#forgetPassword .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p {
+        color: #00897b; }
+      form#loginUser .inputWrapper.checkboxes .checkbox label, form#loginAdmin .inputWrapper.checkboxes .checkbox label, form#signupUser .inputWrapper.checkboxes .checkbox label, form#signupAdmin .inputWrapper.checkboxes .checkbox label, form#forgetPassword .inputWrapper.checkboxes .checkbox label {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        line-height: 2.5em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -ms-flex-line-pack: "";
+            align-content: ""; }
+        form#loginUser .inputWrapper.checkboxes .checkbox label .rect, form#loginAdmin .inputWrapper.checkboxes .checkbox label .rect, form#signupUser .inputWrapper.checkboxes .checkbox label .rect, form#signupAdmin .inputWrapper.checkboxes .checkbox label .rect, form#forgetPassword .inputWrapper.checkboxes .checkbox label .rect {
+          -ms-flex-negative: 0;
+              flex-shrink: 0;
+          width: 2.3em;
+          height: 2.3em;
+          border: 1px solid #696975;
+          position: relative;
+          -webkit-transition: all .2s linear;
+          -o-transition: all .2s linear;
+          transition: all .2s linear;
+          border-radius: .45em; }
+          form#loginUser .inputWrapper.checkboxes .checkbox label .rect i, form#loginAdmin .inputWrapper.checkboxes .checkbox label .rect i, form#signupUser .inputWrapper.checkboxes .checkbox label .rect i, form#signupAdmin .inputWrapper.checkboxes .checkbox label .rect i, form#forgetPassword .inputWrapper.checkboxes .checkbox label .rect i {
+            opacity: 0;
+            font-size: 1.6em;
+            color: #fbfbfb;
+            -webkit-transition: all .2s linear;
+            -o-transition: all .2s linear;
+            transition: all .2s linear; }
+        form#loginUser .inputWrapper.checkboxes .checkbox label p, form#loginAdmin .inputWrapper.checkboxes .checkbox label p, form#signupUser .inputWrapper.checkboxes .checkbox label p, form#signupAdmin .inputWrapper.checkboxes .checkbox label p, form#forgetPassword .inputWrapper.checkboxes .checkbox label p {
+          max-width: auto;
+          font-size: 1.6em;
+          color: #696975;
+          margin-right: .3em;
+          -webkit-transition: all .2s linear;
+          -o-transition: all .2s linear;
+          transition: all .2s linear; }
+        form#loginUser .inputWrapper.checkboxes .checkbox label p.error, form#loginAdmin .inputWrapper.checkboxes .checkbox label p.error, form#signupUser .inputWrapper.checkboxes .checkbox label p.error, form#signupAdmin .inputWrapper.checkboxes .checkbox label p.error, form#forgetPassword .inputWrapper.checkboxes .checkbox label p.error {
+          color: #ea6161; }
+    form#loginUser .inputWrapper.checkboxes > p, form#loginAdmin .inputWrapper.checkboxes > p, form#signupUser .inputWrapper.checkboxes > p, form#signupAdmin .inputWrapper.checkboxes > p, form#forgetPassword .inputWrapper.checkboxes > p {
+      margin-top: .2em;
+      font-size: 1.4em;
+      margin-right: 4em;
+      color: #2d2d31; }
+      form#loginUser .inputWrapper.checkboxes > p a, form#loginAdmin .inputWrapper.checkboxes > p a, form#signupUser .inputWrapper.checkboxes > p a, form#signupAdmin .inputWrapper.checkboxes > p a, form#forgetPassword .inputWrapper.checkboxes > p a {
+        color: #007FE8;
+        font-weight: 700; }
+  form#loginUser .inputWrapper.file, form#loginAdmin .inputWrapper.file, form#signupUser .inputWrapper.file, form#signupAdmin .inputWrapper.file, form#forgetPassword .inputWrapper.file {
+    width: 28em;
+    height: auto;
+    margin-top: 1.5em;
+    position: relative; }
+    form#loginUser .inputWrapper.file input[type="file"], form#loginAdmin .inputWrapper.file input[type="file"], form#signupUser .inputWrapper.file input[type="file"], form#signupAdmin .inputWrapper.file input[type="file"], form#forgetPassword .inputWrapper.file input[type="file"] {
+      display: none; }
+    form#loginUser .inputWrapper.file label, form#loginAdmin .inputWrapper.file label, form#signupUser .inputWrapper.file label, form#signupAdmin .inputWrapper.file label, form#forgetPassword .inputWrapper.file label {
+      width: auto;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: ""; }
+      form#loginUser .inputWrapper.file label p:nth-child(1), form#loginAdmin .inputWrapper.file label p:nth-child(1), form#signupUser .inputWrapper.file label p:nth-child(1), form#signupAdmin .inputWrapper.file label p:nth-child(1), form#forgetPassword .inputWrapper.file label p:nth-child(1) {
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        color: white;
+        background-color: #00897b;
+        cursor: pointer; }
+      form#loginUser .inputWrapper.file label p:nth-child(2), form#loginAdmin .inputWrapper.file label p:nth-child(2), form#signupUser .inputWrapper.file label p:nth-child(2), form#signupAdmin .inputWrapper.file label p:nth-child(2), form#forgetPassword .inputWrapper.file label p:nth-child(2) {
+        font-size: 1.4em;
+        color: #00897b;
+        margin-right: .5em; }
+    form#loginUser .inputWrapper.file .msg, form#loginAdmin .inputWrapper.file .msg, form#signupUser .inputWrapper.file .msg, form#signupAdmin .inputWrapper.file .msg, form#forgetPassword .inputWrapper.file .msg {
+      width: auto;
+      height: auto;
+      border-radius: 3em;
+      padding: 0.75em 1.5em;
+      background-color: #ea6161;
+      position: absolute;
+      right: 0;
+      top: 115%;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+      form#loginUser .inputWrapper.file .msg p, form#loginAdmin .inputWrapper.file .msg p, form#signupUser .inputWrapper.file .msg p, form#signupAdmin .inputWrapper.file .msg p, form#forgetPassword .inputWrapper.file .msg p {
+        color: #fbfbfb;
+        font-size: 1.4em; }
+      form#loginUser .inputWrapper.file .msg i, form#loginAdmin .inputWrapper.file .msg i, form#signupUser .inputWrapper.file .msg i, form#signupAdmin .inputWrapper.file .msg i, form#forgetPassword .inputWrapper.file .msg i {
+        font-size: 2.4em;
+        color: #ea6161;
+        position: absolute;
+        right: 1.5em;
+        top: calc(0% - .6em); }
+    form#loginUser .inputWrapper.file .msg.show, form#loginAdmin .inputWrapper.file .msg.show, form#signupUser .inputWrapper.file .msg.show, form#signupAdmin .inputWrapper.file .msg.show, form#forgetPassword .inputWrapper.file .msg.show {
+      opacity: 1;
+      visibility: visible;
+      z-index: 2; }
+  form#loginUser .inputWrapper.toggle, form#loginAdmin .inputWrapper.toggle, form#signupUser .inputWrapper.toggle, form#signupAdmin .inputWrapper.toggle, form#forgetPassword .inputWrapper.toggle {
+    width: auto;
+    height: auto;
+    margin-top: 1.5em;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+         -o-transform: translateX(50%);
+            transform: translateX(50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#loginUser .inputWrapper.toggle .toggleText,
+    form#loginUser .inputWrapper.toggle .switch, form#loginAdmin .inputWrapper.toggle .toggleText,
+    form#loginAdmin .inputWrapper.toggle .switch, form#signupUser .inputWrapper.toggle .toggleText,
+    form#signupUser .inputWrapper.toggle .switch, form#signupAdmin .inputWrapper.toggle .toggleText,
+    form#signupAdmin .inputWrapper.toggle .switch, form#forgetPassword .inputWrapper.toggle .toggleText,
+    form#forgetPassword .inputWrapper.toggle .switch {
+      margin-right: 0.75em; }
+      form#loginUser .inputWrapper.toggle .toggleText:first-child,
+      form#loginUser .inputWrapper.toggle .switch:first-child, form#loginAdmin .inputWrapper.toggle .toggleText:first-child,
+      form#loginAdmin .inputWrapper.toggle .switch:first-child, form#signupUser .inputWrapper.toggle .toggleText:first-child,
+      form#signupUser .inputWrapper.toggle .switch:first-child, form#signupAdmin .inputWrapper.toggle .toggleText:first-child,
+      form#signupAdmin .inputWrapper.toggle .switch:first-child, form#forgetPassword .inputWrapper.toggle .toggleText:first-child,
+      form#forgetPassword .inputWrapper.toggle .switch:first-child {
+        margin-right: 0; }
+    form#loginUser .inputWrapper.toggle .toggleText, form#loginAdmin .inputWrapper.toggle .toggleText, form#signupUser .inputWrapper.toggle .toggleText, form#signupAdmin .inputWrapper.toggle .toggleText, form#forgetPassword .inputWrapper.toggle .toggleText {
+      font-size: 1.6em;
+      color: #e0e0e4;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+    form#loginUser .inputWrapper.toggle .toggleText.active, form#loginAdmin .inputWrapper.toggle .toggleText.active, form#signupUser .inputWrapper.toggle .toggleText.active, form#signupAdmin .inputWrapper.toggle .toggleText.active, form#forgetPassword .inputWrapper.toggle .toggleText.active {
+      color: #45454d; }
+    form#loginUser .inputWrapper.toggle .switch, form#loginAdmin .inputWrapper.toggle .switch, form#signupUser .inputWrapper.toggle .switch, form#signupAdmin .inputWrapper.toggle .switch, form#forgetPassword .inputWrapper.toggle .switch {
+      width: 5em;
+      height: 2em;
+      position: relative;
+      background-color: #00897b;
+      border-radius: 3em;
+      cursor: pointer; }
+      form#loginUser .inputWrapper.toggle .switch .circle, form#loginAdmin .inputWrapper.toggle .switch .circle, form#signupUser .inputWrapper.toggle .switch .circle, form#signupAdmin .inputWrapper.toggle .switch .circle, form#forgetPassword .inputWrapper.toggle .switch .circle {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        background-color: #fbfbfb;
+        position: absolute;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+      form#loginUser .inputWrapper.toggle .switch .circle.left, form#loginAdmin .inputWrapper.toggle .switch .circle.left, form#signupUser .inputWrapper.toggle .switch .circle.left, form#signupAdmin .inputWrapper.toggle .switch .circle.left, form#forgetPassword .inputWrapper.toggle .switch .circle.left {
+        left: .4em; }
+      form#loginUser .inputWrapper.toggle .switch .circle.right, form#loginAdmin .inputWrapper.toggle .switch .circle.right, form#signupUser .inputWrapper.toggle .switch .circle.right, form#signupAdmin .inputWrapper.toggle .switch .circle.right, form#forgetPassword .inputWrapper.toggle .switch .circle.right {
+        left: calc(100% - 1.5em - .4em); }
+
+form#loginAdmin button[type="submit"] {
+  margin-top: 3em; }
+
+form#loginUser button[type="submit"] {
+  margin-top: 3em; }
+
+@media screen and (max-width: 1000px) {
+  form#loginUser, form#loginAdmin, form#signupUser, form#signupAdmin, form#forgetPassword {
+    font-size: 8px; }
+    form#loginUser .inputWrapper.text input.style1:focus ~ label, form#loginAdmin .inputWrapper.text input.style1:focus ~ label, form#signupUser .inputWrapper.text input.style1:focus ~ label, form#signupAdmin .inputWrapper.text input.style1:focus ~ label, form#forgetPassword .inputWrapper.text input.style1:focus ~ label {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.text input.style2:focus ~ label, form#loginAdmin .inputWrapper.text input.style2:focus ~ label, form#signupUser .inputWrapper.text input.style2:focus ~ label, form#signupAdmin .inputWrapper.text input.style2:focus ~ label, form#forgetPassword .inputWrapper.text input.style2:focus ~ label {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.text input.style1 ~ label.top, form#loginAdmin .inputWrapper.text input.style1 ~ label.top, form#signupUser .inputWrapper.text input.style1 ~ label.top, form#signupAdmin .inputWrapper.text input.style1 ~ label.top, form#forgetPassword .inputWrapper.text input.style1 ~ label.top {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.text input.style2 ~ label.top, form#loginAdmin .inputWrapper.text input.style2 ~ label.top, form#signupUser .inputWrapper.text input.style2 ~ label.top, form#signupAdmin .inputWrapper.text input.style2 ~ label.top, form#forgetPassword .inputWrapper.text input.style2 ~ label.top {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.select input.style1:focus ~ label, form#loginAdmin .inputWrapper.select input.style1:focus ~ label, form#signupUser .inputWrapper.select input.style1:focus ~ label, form#signupAdmin .inputWrapper.select input.style1:focus ~ label, form#forgetPassword .inputWrapper.select input.style1:focus ~ label {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.select input.style2:focus ~ label, form#loginAdmin .inputWrapper.select input.style2:focus ~ label, form#signupUser .inputWrapper.select input.style2:focus ~ label, form#signupAdmin .inputWrapper.select input.style2:focus ~ label, form#forgetPassword .inputWrapper.select input.style2:focus ~ label {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.select input.style1 ~ label.top, form#loginAdmin .inputWrapper.select input.style1 ~ label.top, form#signupUser .inputWrapper.select input.style1 ~ label.top, form#signupAdmin .inputWrapper.select input.style1 ~ label.top, form#forgetPassword .inputWrapper.select input.style1 ~ label.top {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.select input.style2 ~ label.top, form#loginAdmin .inputWrapper.select input.style2 ~ label.top, form#signupUser .inputWrapper.select input.style2 ~ label.top, form#signupAdmin .inputWrapper.select input.style2 ~ label.top, form#forgetPassword .inputWrapper.select input.style2 ~ label.top {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.textarea textarea.style1:focus ~ label, form#loginAdmin .inputWrapper.textarea textarea.style1:focus ~ label, form#signupUser .inputWrapper.textarea textarea.style1:focus ~ label, form#signupAdmin .inputWrapper.textarea textarea.style1:focus ~ label, form#forgetPassword .inputWrapper.textarea textarea.style1:focus ~ label {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.textarea textarea.style2:focus ~ label, form#loginAdmin .inputWrapper.textarea textarea.style2:focus ~ label, form#signupUser .inputWrapper.textarea textarea.style2:focus ~ label, form#signupAdmin .inputWrapper.textarea textarea.style2:focus ~ label, form#forgetPassword .inputWrapper.textarea textarea.style2:focus ~ label {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.textarea textarea.style1 ~ label.top, form#loginAdmin .inputWrapper.textarea textarea.style1 ~ label.top, form#signupUser .inputWrapper.textarea textarea.style1 ~ label.top, form#signupAdmin .inputWrapper.textarea textarea.style1 ~ label.top, form#forgetPassword .inputWrapper.textarea textarea.style1 ~ label.top {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.textarea textarea.style2 ~ label.top, form#loginAdmin .inputWrapper.textarea textarea.style2 ~ label.top, form#signupUser .inputWrapper.textarea textarea.style2 ~ label.top, form#signupAdmin .inputWrapper.textarea textarea.style2 ~ label.top, form#forgetPassword .inputWrapper.textarea textarea.style2 ~ label.top {
+      font-size: 6px; } }
+
+@media screen and (max-width: 700px) {
+  form#loginUser, form#loginAdmin, form#signupUser, form#signupAdmin, form#forgetPassword {
+    font-size: 8px; }
+    form#loginUser .inputWrapper.text input.style1:focus ~ label, form#loginAdmin .inputWrapper.text input.style1:focus ~ label, form#signupUser .inputWrapper.text input.style1:focus ~ label, form#signupAdmin .inputWrapper.text input.style1:focus ~ label, form#forgetPassword .inputWrapper.text input.style1:focus ~ label {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.text input.style2:focus ~ label, form#loginAdmin .inputWrapper.text input.style2:focus ~ label, form#signupUser .inputWrapper.text input.style2:focus ~ label, form#signupAdmin .inputWrapper.text input.style2:focus ~ label, form#forgetPassword .inputWrapper.text input.style2:focus ~ label {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.text input.style1 ~ label.top, form#loginAdmin .inputWrapper.text input.style1 ~ label.top, form#signupUser .inputWrapper.text input.style1 ~ label.top, form#signupAdmin .inputWrapper.text input.style1 ~ label.top, form#forgetPassword .inputWrapper.text input.style1 ~ label.top {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.text input.style2 ~ label.top, form#loginAdmin .inputWrapper.text input.style2 ~ label.top, form#signupUser .inputWrapper.text input.style2 ~ label.top, form#signupAdmin .inputWrapper.text input.style2 ~ label.top, form#forgetPassword .inputWrapper.text input.style2 ~ label.top {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.select input.style1:focus ~ label, form#loginAdmin .inputWrapper.select input.style1:focus ~ label, form#signupUser .inputWrapper.select input.style1:focus ~ label, form#signupAdmin .inputWrapper.select input.style1:focus ~ label, form#forgetPassword .inputWrapper.select input.style1:focus ~ label {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.select input.style2:focus ~ label, form#loginAdmin .inputWrapper.select input.style2:focus ~ label, form#signupUser .inputWrapper.select input.style2:focus ~ label, form#signupAdmin .inputWrapper.select input.style2:focus ~ label, form#forgetPassword .inputWrapper.select input.style2:focus ~ label {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.select input.style1 ~ label.top, form#loginAdmin .inputWrapper.select input.style1 ~ label.top, form#signupUser .inputWrapper.select input.style1 ~ label.top, form#signupAdmin .inputWrapper.select input.style1 ~ label.top, form#forgetPassword .inputWrapper.select input.style1 ~ label.top {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.select input.style2 ~ label.top, form#loginAdmin .inputWrapper.select input.style2 ~ label.top, form#signupUser .inputWrapper.select input.style2 ~ label.top, form#signupAdmin .inputWrapper.select input.style2 ~ label.top, form#forgetPassword .inputWrapper.select input.style2 ~ label.top {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.textarea textarea.style1:focus ~ label, form#loginAdmin .inputWrapper.textarea textarea.style1:focus ~ label, form#signupUser .inputWrapper.textarea textarea.style1:focus ~ label, form#signupAdmin .inputWrapper.textarea textarea.style1:focus ~ label, form#forgetPassword .inputWrapper.textarea textarea.style1:focus ~ label {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.textarea textarea.style2:focus ~ label, form#loginAdmin .inputWrapper.textarea textarea.style2:focus ~ label, form#signupUser .inputWrapper.textarea textarea.style2:focus ~ label, form#signupAdmin .inputWrapper.textarea textarea.style2:focus ~ label, form#forgetPassword .inputWrapper.textarea textarea.style2:focus ~ label {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.textarea textarea.style1 ~ label.top, form#loginAdmin .inputWrapper.textarea textarea.style1 ~ label.top, form#signupUser .inputWrapper.textarea textarea.style1 ~ label.top, form#signupAdmin .inputWrapper.textarea textarea.style1 ~ label.top, form#forgetPassword .inputWrapper.textarea textarea.style1 ~ label.top {
+      font-size: 6px; }
+    form#loginUser .inputWrapper.textarea textarea.style2 ~ label.top, form#loginAdmin .inputWrapper.textarea textarea.style2 ~ label.top, form#signupUser .inputWrapper.textarea textarea.style2 ~ label.top, form#signupAdmin .inputWrapper.textarea textarea.style2 ~ label.top, form#forgetPassword .inputWrapper.textarea textarea.style2 ~ label.top {
+      font-size: 6px; } }
+
+@media screen and (max-width: 1000px) {
+  form#loginUser, form#loginAdmin, form#signupUser, form#signupAdmin, form#forgetPassword {
+    font-size: 8px; } }
+
+form#checkCode {
+  width: 40em;
+  height: auto;
+  padding: 1.5em;
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+      -ms-transform: translate(50%, -50%);
+       -o-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: "";
+      align-content: ""; }
+  form#checkCode .title {
+    width: auto;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#checkCode .title img {
+      width: 12em;
+      height: 10em; }
+    form#checkCode .title p {
+      font-size: 1.6em;
+      color: #90909b; }
+  form#checkCode h4 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #00897b; }
+  form#checkCode .inputWrapper.text {
+    width: 35em;
+    height: 4em;
+    position: relative;
+    margin-top: 1.5em; }
+    form#checkCode .inputWrapper.text input {
+      width: 100%;
+      height: 100%;
+      line-height: 4em;
+      padding: 0 0.75em;
+      font-size: 1.6em;
+      color: #2d2d31;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+      form#checkCode .inputWrapper.text input::-webkit-input-placeholder {
+        color: #90909b;
+        font-size: 1.6em; }
+      form#checkCode .inputWrapper.text input::-moz-placeholder {
+        color: #90909b;
+        font-size: 1.6em; }
+      form#checkCode .inputWrapper.text input:-ms-input-placeholder {
+        color: #90909b;
+        font-size: 1.6em; }
+      form#checkCode .inputWrapper.text input::-ms-input-placeholder {
+        color: #90909b;
+        font-size: 1.6em; }
+      form#checkCode .inputWrapper.text input::placeholder {
+        color: #90909b;
+        font-size: 1.6em; }
+    form#checkCode .inputWrapper.text input.style1 {
+      border: none;
+      border-bottom: 1.2px solid #d3d3d7; }
+      form#checkCode .inputWrapper.text input.style1:focus ~ label {
+        color: #00897b;
+        font-size: 8px;
+        bottom: calc(100% + .5em);
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+             -o-transform: translateY(50%);
+                transform: translateY(50%);
+        right: 0; }
+      form#checkCode .inputWrapper.text input.style1:focus ~ .line {
+        width: 100%; }
+    form#checkCode .inputWrapper.text input.style2 {
+      border: 1.2px solid #d3d3d7;
+      border-radius: 3em; }
+      form#checkCode .inputWrapper.text input.style2:focus {
+        border: 1.2px solid #00897b; }
+        form#checkCode .inputWrapper.text input.style2:focus ~ label {
+          color: #00897b;
+          font-size: 8px;
+          bottom: calc(100% + 1.5em);
+          -webkit-transform: translateY(50%);
+              -ms-transform: translateY(50%);
+               -o-transform: translateY(50%);
+                  transform: translateY(50%);
+          right: 0.75em; }
+        form#checkCode .inputWrapper.text input.style2:focus ~ .line {
+          width: 0%; }
+    form#checkCode .inputWrapper.text input.style1.error {
+      border-bottom: 1.2px solid #ea6161; }
+      form#checkCode .inputWrapper.text input.style1.error ~ label {
+        color: #ea6161; }
+      form#checkCode .inputWrapper.text input.style1.error ~ .line {
+        background-color: #ea6161; }
+    form#checkCode .inputWrapper.text input.style2.error {
+      border: 1.2px solid #ea6161; }
+      form#checkCode .inputWrapper.text input.style2.error ~ label {
+        color: #ea6161; }
+    form#checkCode .inputWrapper.text label {
+      width: auto;
+      height: auto;
+      position: absolute;
+      right: 0.75em;
+      bottom: 50%;
+      -webkit-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+           -o-transform: translateY(50%);
+              transform: translateY(50%);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: "";
+      color: #c6c6cb;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+      form#checkCode .inputWrapper.text label .isRequire {
+        width: auto;
+        height: auto;
+        color: #e74a4a;
+        font-size: 1.1em;
+        padding-left: .3em; }
+      form#checkCode .inputWrapper.text label .icon {
+        font-size: 1.6em; }
+      form#checkCode .inputWrapper.text label p {
+        font-size: 1.5em;
+        -webkit-transform: translateX(-0.3em);
+            -ms-transform: translateX(-0.3em);
+             -o-transform: translateX(-0.3em);
+                transform: translateX(-0.3em); }
+    form#checkCode .inputWrapper.text input.style1 ~ label.top {
+      font-size: 8px;
+      bottom: calc(100% + .5em);
+      -webkit-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+           -o-transform: translateY(50%);
+              transform: translateY(50%);
+      right: 0; }
+    form#checkCode .inputWrapper.text input.style2 ~ label.top {
+      font-size: 8px;
+      bottom: calc(100% + 1.5em);
+      -webkit-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+           -o-transform: translateY(50%);
+              transform: translateY(50%);
+      right: 0.75em; }
+    form#checkCode .inputWrapper.text .line {
+      width: 0%;
+      height: 1.2px;
+      background-color: #00897b;
+      position: absolute;
+      right: 0;
+      top: calc(100% - .6px);
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+    form#checkCode .inputWrapper.text .msg {
+      width: auto;
+      height: auto;
+      border-radius: 3em;
+      padding: 0.75em 1.5em;
+      position: relative;
+      background-color: #ea6161;
+      position: absolute;
+      right: 0;
+      top: 115%;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+      form#checkCode .inputWrapper.text .msg p {
+        color: #fbfbfb;
+        font-size: 1.4em; }
+      form#checkCode .inputWrapper.text .msg i {
+        font-size: 2.4em;
+        color: #ea6161;
+        position: absolute;
+        right: 1.5em;
+        top: calc(0% - .6em); }
+    form#checkCode .inputWrapper.text .msg.show {
+      opacity: 1;
+      visibility: visible;
+      z-index: 2; }
+    form#checkCode .inputWrapper.text .rememberPassword {
+      font-size: 1.2em;
+      color: #ababb3;
+      position: absolute;
+      right: 0;
+      top: 140%; }
+  form#checkCode button[type="submit"] {
+    width: auto;
+    height: auto;
+    padding: 0.3em 2em;
+    margin-top: 1.5em;
+    border-radius: 3em;
+    font-size: 2em;
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    color: #fbfbfb;
+    background-color: #00897b;
+    border: 1.2px solid transparent; }
+    form#checkCode button[type="submit"]:hover {
+      color: #00897b;
+      background-color: #fbfbfb;
+      border: 1.2px solid #00897b; }
+  form#checkCode a.login {
+    font-size: 1.4em;
+    color: #90909b;
+    margin-top: 1.5em; }
+
+@media screen and (max-width: 1000px) {
+  form#checkCode {
+    font-size: 8px; } }
+
+@media screen and (max-width: 700px) {
+  form#checkCode {
+    font-size: 7px; } }
+
+@media screen and (max-width: 1000px) {
+  form#checkCode {
+    font-size: 8px; }
+    form#checkCode .inputWrapper.text input.style1:focus ~ label {
+      font-size: 6px; }
+    form#checkCode .inputWrapper.text input.style2:focus ~ label {
+      font-size: 6px; }
+    form#checkCode .inputWrapper.text input.style1 ~ label.top {
+      font-size: 6px; }
+    form#checkCode .inputWrapper.text input.style2 ~ label.top {
+      font-size: 6px; } }
+
+@media screen and (max-width: 600px) {
+  form#checkCode {
+    font-size: 6px; }
+    form#checkCode .inputWrapper.text input.style1:focus ~ label {
+      font-size: 4px; }
+    form#checkCode .inputWrapper.text input.style2:focus ~ label {
+      font-size: 4px; }
+    form#checkCode .inputWrapper.text input.style1 ~ label.top {
+      font-size: 4px; }
+    form#checkCode .inputWrapper.text input.style2 ~ label.top {
+      font-size: 4px; } }
+
+form#userComment {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: "";
+      align-content: ""; }
+  form#userComment .row {
+    width: auto;
+    height: auto;
+    margin-top: 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+        align-content: flex-start; }
+    form#userComment .row .inputWrapper.text {
+      width: 25em;
+      height: 4em;
+      position: relative; }
+      form#userComment .row .inputWrapper.text:not(:first-child) {
+        margin-right: 3em; }
+      form#userComment .row .inputWrapper.text input {
+        width: 100%;
+        height: 100%;
+        line-height: 4em;
+        padding: 0 0.75em;
+        font-size: 1.6em;
+        color: #2d2d31;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+        form#userComment .row .inputWrapper.text input::-webkit-input-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#userComment .row .inputWrapper.text input::-moz-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#userComment .row .inputWrapper.text input:-ms-input-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#userComment .row .inputWrapper.text input::-ms-input-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#userComment .row .inputWrapper.text input::placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+      form#userComment .row .inputWrapper.text input.style1 {
+        border: none;
+        border-bottom: 1.2px solid #d3d3d7; }
+        form#userComment .row .inputWrapper.text input.style1:focus ~ label {
+          color: #00897b;
+          font-size: 8px;
+          bottom: calc(100% + .5em);
+          -webkit-transform: translateY(50%);
+              -ms-transform: translateY(50%);
+               -o-transform: translateY(50%);
+                  transform: translateY(50%);
+          right: 0; }
+        form#userComment .row .inputWrapper.text input.style1:focus ~ .line {
+          width: 100%; }
+      form#userComment .row .inputWrapper.text input.style2 {
+        border: 1.2px solid #d3d3d7;
+        border-radius: 3em; }
+        form#userComment .row .inputWrapper.text input.style2:focus {
+          border: 1.2px solid #00897b; }
+          form#userComment .row .inputWrapper.text input.style2:focus ~ label {
+            color: #00897b;
+            font-size: 8px;
+            bottom: calc(100% + 1.5em);
+            -webkit-transform: translateY(50%);
+                -ms-transform: translateY(50%);
+                 -o-transform: translateY(50%);
+                    transform: translateY(50%);
+            right: 0.75em; }
+          form#userComment .row .inputWrapper.text input.style2:focus ~ .line {
+            width: 0%; }
+      form#userComment .row .inputWrapper.text input.style1.error {
+        border-bottom: 1.2px solid #ea6161; }
+        form#userComment .row .inputWrapper.text input.style1.error ~ label {
+          color: #ea6161; }
+        form#userComment .row .inputWrapper.text input.style1.error ~ .line {
+          background-color: #ea6161; }
+      form#userComment .row .inputWrapper.text input.style2.error {
+        border: 1.2px solid #ea6161; }
+        form#userComment .row .inputWrapper.text input.style2.error ~ label {
+          color: #ea6161; }
+      form#userComment .row .inputWrapper.text label {
+        width: auto;
+        height: auto;
+        position: absolute;
+        right: 0.75em;
+        bottom: 50%;
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+             -o-transform: translateY(50%);
+                transform: translateY(50%);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -ms-flex-line-pack: "";
+            align-content: "";
+        color: #c6c6cb;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+        form#userComment .row .inputWrapper.text label .icon {
+          font-size: 1.6em; }
+        form#userComment .row .inputWrapper.text label p {
+          font-size: 1.5em;
+          -webkit-transform: translateX(-0.3em);
+              -ms-transform: translateX(-0.3em);
+               -o-transform: translateX(-0.3em);
+                  transform: translateX(-0.3em); }
+      form#userComment .row .inputWrapper.text input.style1 ~ label.top {
+        font-size: 8px;
+        bottom: calc(100% + .5em);
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+             -o-transform: translateY(50%);
+                transform: translateY(50%);
+        right: 0; }
+      form#userComment .row .inputWrapper.text input.style2 ~ label.top {
+        font-size: 8px;
+        bottom: calc(100% + 1.5em);
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+             -o-transform: translateY(50%);
+                transform: translateY(50%);
+        right: 0.75em; }
+      form#userComment .row .inputWrapper.text .line {
+        width: 0%;
+        height: 1.2px;
+        background-color: #00897b;
+        position: absolute;
+        right: 0;
+        top: calc(100% - 1px);
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+      form#userComment .row .inputWrapper.text .msg {
+        width: auto;
+        height: auto;
+        border-radius: 3em;
+        padding: 0.75em 1.5em;
+        position: relative;
+        background-color: #ea6161;
+        position: absolute;
+        right: 0;
+        top: 115%;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+        form#userComment .row .inputWrapper.text .msg p {
+          color: #fbfbfb;
+          font-size: 1.4em; }
+        form#userComment .row .inputWrapper.text .msg i {
+          font-size: 2.4em;
+          color: #ea6161;
+          position: absolute;
+          right: 1.5em;
+          top: calc(0% - .6em); }
+      form#userComment .row .inputWrapper.text .msg.show {
+        opacity: 1;
+        visibility: visible;
+        z-index: 2; }
+  form#userComment .inputWrapper.textarea {
+    width: 53em;
+    height: auto;
+    position: relative;
+    margin-top: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    form#userComment .inputWrapper.textarea textarea {
+      width: 100%;
+      font-size: 1.6em;
+      color: #2d2d31;
+      padding: 0.75em;
+      line-height: 1.5em;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear;
+      resize: none; }
+      form#userComment .inputWrapper.textarea textarea::-webkit-input-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form#userComment .inputWrapper.textarea textarea::-moz-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form#userComment .inputWrapper.textarea textarea:-ms-input-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form#userComment .inputWrapper.textarea textarea::-ms-input-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form#userComment .inputWrapper.textarea textarea::placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+    form#userComment .inputWrapper.textarea textarea.style1 {
+      height: 8em;
+      border: 1.2px solid #d3d3d7;
+      border-radius: 1.5em; }
+      form#userComment .inputWrapper.textarea textarea.style1 ~ label {
+        bottom: 100%;
+        -webkit-transform: translateY(150%);
+            -ms-transform: translateY(150%);
+             -o-transform: translateY(150%);
+                transform: translateY(150%); }
+      form#userComment .inputWrapper.textarea textarea.style1:focus {
+        border: 1.2px solid #00897b; }
+        form#userComment .inputWrapper.textarea textarea.style1:focus ~ label {
+          font-size: 8px;
+          right: 0.75em;
+          color: #00897b;
+          bottom: calc(100% + .5em);
+          -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+               -o-transform: translateY(0);
+                  transform: translateY(0); }
+    form#userComment .inputWrapper.textarea textarea.style2 {
+      overflow: hidden;
+      border: none;
+      border-bottom: 1.2px solid #d3d3d7; }
+      form#userComment .inputWrapper.textarea textarea.style2 ~ label {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+             -o-transform: translateY(-50%);
+                transform: translateY(-50%); }
+      form#userComment .inputWrapper.textarea textarea.style2:focus {
+        border-bottom: 1.2px solid #00897b; }
+        form#userComment .inputWrapper.textarea textarea.style2:focus ~ label {
+          font-size: 8px;
+          right: 0;
+          color: #00897b;
+          top: 0;
+          -webkit-transform: translateY(-100%);
+              -ms-transform: translateY(-100%);
+               -o-transform: translateY(-100%);
+                  transform: translateY(-100%); }
+        form#userComment .inputWrapper.textarea textarea.style2:focus ~ .line {
+          width: 100%; }
+    form#userComment .inputWrapper.textarea textarea.style1.error {
+      border: 1.2px solid #ea6161; }
+      form#userComment .inputWrapper.textarea textarea.style1.error ~ label {
+        color: #ea6161; }
+    form#userComment .inputWrapper.textarea textarea.style2.error {
+      border-bottom: 1.2px solid #ea6161; }
+      form#userComment .inputWrapper.textarea textarea.style2.error ~ label {
+        color: #ea6161; }
+    form#userComment .inputWrapper.textarea textarea.style1 ~ label.top {
+      font-size: 8px;
+      bottom: calc(100% + 2em);
+      -webkit-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+           -o-transform: translateY(50%);
+              transform: translateY(50%);
+      right: 0; }
+    form#userComment .inputWrapper.textarea textarea.style2 ~ label.top {
+      font-size: 8px;
+      top: 0;
+      -webkit-transform: translateY(-100%);
+          -ms-transform: translateY(-100%);
+           -o-transform: translateY(-100%);
+              transform: translateY(-100%);
+      right: 0; }
+    form#userComment .inputWrapper.textarea label {
+      width: auto;
+      height: auto;
+      position: absolute;
+      right: 0.75em;
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: "";
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear;
+      color: #c6c6cb; }
+      form#userComment .inputWrapper.textarea label i {
+        font-size: 1.6em; }
+      form#userComment .inputWrapper.textarea label p {
+        font-size: 1.5em;
+        -webkit-transform: translateX(-0.3em);
+            -ms-transform: translateX(-0.3em);
+             -o-transform: translateX(-0.3em);
+                transform: translateX(-0.3em); }
+    form#userComment .inputWrapper.textarea .line {
+      width: 0%;
+      height: 1.2px;
+      background-color: #00897b;
+      position: absolute;
+      right: 0;
+      top: calc(100% - .6px);
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+  form#userComment .inputWrapper.star {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#userComment .inputWrapper.star .stars {
+      width: auto;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: ""; }
+      form#userComment .inputWrapper.star .stars i {
+        font-size: 2em;
+        cursor: pointer;
+        margin-right: .2em;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear;
+        color: #d6d6da; }
+        form#userComment .inputWrapper.star .stars i:first-child {
+          margin-right: 0; }
+      form#userComment .inputWrapper.star .stars i.active {
+        color: #FFBE4F; }
+  form#userComment button[type="submit"] {
+    width: auto;
+    height: auto;
+    padding: 0.5em 1.7em;
+    margin: 1.5em auto 0 auto;
+    border-radius: 3em;
+    font-size: 1.6em;
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    color: #fbfbfb;
+    background-color: #00897b;
+    border: 1.2px solid transparent; }
+    form#userComment button[type="submit"]:hover {
+      color: #00897b;
+      background-color: #fbfbfb;
+      border: 1.2px solid #00897b; }
+
+@media screen and (max-width: 900px) {
+  form#userComment {
+    font-size: 8px; }
+    form#userComment .row .inputWrapper.text input.style1:focus ~ label {
+      font-size: 6px; }
+    form#userComment .row .inputWrapper.text input.style2:focus ~ label {
+      font-size: 6px; }
+    form#userComment .row .inputWrapper.text input.style1 ~ label.top {
+      font-size: 6px; }
+    form#userComment .row .inputWrapper.text input.style2 ~ label.top {
+      font-size: 6px; }
+    form#userComment .inputWrapper.textarea textarea.style1:focus ~ label {
+      font-size: 6px; }
+    form#userComment .inputWrapper.textarea textarea.style2:focus ~ label {
+      font-size: 6px; }
+    form#userComment .inputWrapper.textarea textarea.style1 ~ label.top {
+      font-size: 6px; }
+    form#userComment .inputWrapper.textarea textarea.style2 ~ label.top {
+      font-size: 6px; } }
+
+@media screen and (max-width: 460px) {
+  form#userComment {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#userComment .row {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+      width: 100%; }
+      form#userComment .row .inputWrapper.text {
+        width: 90%;
+        height: 4em;
+        position: relative; }
+        form#userComment .row .inputWrapper.text:not(:first-child) {
+          margin-right: 0;
+          margin-top: 3em; }
+    form#userComment .inputWrapper.textarea {
+      width: 90%; } }
+
+form.reply {
+  width: auto;
+  height: auto;
+  margin-top: -0.75em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: "";
+      align-content: ""; }
+  form.reply .inputWrapper.textarea {
+    width: 53em;
+    height: auto;
+    position: relative;
+    margin-top: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    form.reply .inputWrapper.textarea textarea {
+      width: 100%;
+      font-size: 1.6em;
+      color: #2d2d31;
+      padding: 0.75em;
+      line-height: 1.5em;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear;
+      resize: none; }
+      form.reply .inputWrapper.textarea textarea::-webkit-input-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form.reply .inputWrapper.textarea textarea::-moz-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form.reply .inputWrapper.textarea textarea:-ms-input-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form.reply .inputWrapper.textarea textarea::-ms-input-placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+      form.reply .inputWrapper.textarea textarea::placeholder {
+        font-size: 1.6em;
+        color: #90909b; }
+    form.reply .inputWrapper.textarea textarea.style1 {
+      height: 8em;
+      border: 1.2px solid #d3d3d7;
+      border-radius: 1.5em; }
+      form.reply .inputWrapper.textarea textarea.style1 ~ label {
+        bottom: 100%;
+        -webkit-transform: translateY(150%);
+            -ms-transform: translateY(150%);
+             -o-transform: translateY(150%);
+                transform: translateY(150%); }
+      form.reply .inputWrapper.textarea textarea.style1:focus {
+        border: 1.2px solid #00897b; }
+        form.reply .inputWrapper.textarea textarea.style1:focus ~ label {
+          font-size: 8px;
+          right: 0.75em;
+          color: #00897b;
+          bottom: calc(100% + .5em);
+          -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+               -o-transform: translateY(0);
+                  transform: translateY(0); }
+    form.reply .inputWrapper.textarea textarea.style2 {
+      overflow: hidden;
+      border: none;
+      border-bottom: 1.2px solid #d3d3d7; }
+      form.reply .inputWrapper.textarea textarea.style2 ~ label {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+             -o-transform: translateY(-50%);
+                transform: translateY(-50%); }
+      form.reply .inputWrapper.textarea textarea.style2:focus {
+        border-bottom: 1.2px solid #00897b; }
+        form.reply .inputWrapper.textarea textarea.style2:focus ~ label {
+          font-size: 8px;
+          right: 0;
+          color: #00897b;
+          top: 0;
+          -webkit-transform: translateY(-100%);
+              -ms-transform: translateY(-100%);
+               -o-transform: translateY(-100%);
+                  transform: translateY(-100%); }
+        form.reply .inputWrapper.textarea textarea.style2:focus ~ .line {
+          width: 100%; }
+    form.reply .inputWrapper.textarea textarea.style1.error {
+      border: 1.2px solid #ea6161; }
+      form.reply .inputWrapper.textarea textarea.style1.error ~ label {
+        color: #ea6161; }
+    form.reply .inputWrapper.textarea textarea.style2.error {
+      border-bottom: 1.2px solid #ea6161; }
+      form.reply .inputWrapper.textarea textarea.style2.error ~ label {
+        color: #ea6161; }
+    form.reply .inputWrapper.textarea textarea.style1 ~ label.top {
+      font-size: 8px;
+      bottom: calc(100% + 2em);
+      -webkit-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+           -o-transform: translateY(50%);
+              transform: translateY(50%);
+      right: 0; }
+    form.reply .inputWrapper.textarea textarea.style2 ~ label.top {
+      font-size: 8px;
+      top: 0;
+      -webkit-transform: translateY(-100%);
+          -ms-transform: translateY(-100%);
+           -o-transform: translateY(-100%);
+              transform: translateY(-100%);
+      right: 0; }
+    form.reply .inputWrapper.textarea label {
+      width: auto;
+      height: auto;
+      position: absolute;
+      right: 0.75em;
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: "";
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear;
+      color: #d3d3d7; }
+      form.reply .inputWrapper.textarea label i {
+        font-size: 1.6em; }
+      form.reply .inputWrapper.textarea label p {
+        font-size: 1.5em;
+        -webkit-transform: translateX(-0.3em);
+            -ms-transform: translateX(-0.3em);
+             -o-transform: translateX(-0.3em);
+                transform: translateX(-0.3em); }
+    form.reply .inputWrapper.textarea .line {
+      width: 0%;
+      height: 1.2px;
+      background-color: #00897b;
+      position: absolute;
+      right: 0;
+      top: calc(100% - .6px);
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+  form.reply button[type="submit"] {
+    width: auto;
+    height: auto;
+    padding: 0.5em 1.7em;
+    margin: 0.75em auto;
+    border-radius: 3em;
+    font-size: 1.6em;
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    color: #fbfbfb;
+    background-color: #00897b;
+    border: 1.2px solid transparent; }
+    form.reply button[type="submit"]:hover {
+      color: #00897b;
+      background-color: #fbfbfb;
+      border: 1.2px solid #00897b; }
+
+@media screen and (max-width: 900px) {
+  form.reply {
+    font-size: 8px; }
+    form.reply .inputWrapper.text input.style1:focus ~ label {
+      font-size: 6px; }
+    form.reply .inputWrapper.text input.style2:focus ~ label {
+      font-size: 6px; }
+    form.reply .inputWrapper.text input.style1 ~ label.top {
+      font-size: 6px; }
+    form.reply .inputWrapper.text input.style2 ~ label.top {
+      font-size: 6px; }
+    form.reply .inputWrapper.textarea textarea.style1:focus ~ label {
+      font-size: 6px; }
+    form.reply .inputWrapper.textarea textarea.style2:focus ~ label {
+      font-size: 6px; }
+    form.reply .inputWrapper.textarea textarea.style1 ~ label.top {
+      font-size: 6px; }
+    form.reply .inputWrapper.textarea textarea.style2 ~ label.top {
+      font-size: 6px; } }
+
+@media screen and (max-width: 400px) {
+  form.reply {
+    width: 100%; }
+    form.reply .inputWrapper.textarea {
+      width: 90%; } }
+
+form#discount {
+  width: 100%;
+  height: auto;
+  margin-top: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: "";
+      align-content: ""; }
+  form#discount .number {
+    width: auto;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#discount .number label {
+      font-size: 1.4em;
+      color: #90909b; }
+    form#discount .number select {
+      width: 6em;
+      height: 2em;
+      margin-right: 0.75em;
+      border-radius: 0.75em;
+      border: 1px solid #00897b; }
+      form#discount .number select option {
+        color: #00897b;
+        font-size: 1.2em;
+        padding: .3em; }
+  form#discount .reserve {
+    width: auto;
+    height: auto;
+    margin-right: 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#discount .reserve button[type="submit"] {
+      white-space: nowrap;
+      font-size: 1.4em;
+      cursor: pointer;
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear;
+      color: white;
+      background-color: #00897b;
+      border: 1.2px solid transparent;
+      padding: 0.3em 1.05em; }
+      form#discount .reserve button[type="submit"]:hover {
+        color: #00897b;
+        background-color: white;
+        border: 1.2px solid #00897b; }
+    form#discount .reserve .inputWrapper.checkboxes {
+      width: auto;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: "";
+      margin-top: 0; }
+      form#discount .reserve .inputWrapper.checkboxes .checkbox {
+        width: 100%;
+        height: 100%;
+        padding-right: 0.75em;
+        margin-top: 0.75em; }
+        form#discount .reserve .inputWrapper.checkboxes .checkbox input[type="checkbox"] {
+          width: 0;
+          height: 0;
+          display: none; }
+        form#discount .reserve .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect {
+          border: 1px solid transparent;
+          background-color: #00897b; }
+          form#discount .reserve .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label .rect i {
+            opacity: 1; }
+        form#discount .reserve .inputWrapper.checkboxes .checkbox input[type="checkbox"].style2:checked ~ label p {
+          color: #00897b; }
+        form#discount .reserve .inputWrapper.checkboxes .checkbox label {
+          cursor: pointer;
+          width: 100%;
+          height: 100%;
+          line-height: 2.5em;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+          -ms-flex-line-pack: "";
+              align-content: ""; }
+          form#discount .reserve .inputWrapper.checkboxes .checkbox label .rect {
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
+            width: 2em;
+            height: 2em;
+            border: 1px solid #696975;
+            position: relative;
+            -webkit-transition: all .2s linear;
+            -o-transition: all .2s linear;
+            transition: all .2s linear;
+            border-radius: .45em; }
+            form#discount .reserve .inputWrapper.checkboxes .checkbox label .rect i {
+              opacity: 0;
+              font-size: 1.6em;
+              color: #fbfbfb;
+              -webkit-transition: all .2s linear;
+              -o-transition: all .2s linear;
+              transition: all .2s linear; }
+          form#discount .reserve .inputWrapper.checkboxes .checkbox label p {
+            max-width: auto;
+            font-size: 1.4em;
+            color: #696975;
+            margin-right: .3em;
+            -webkit-transition: all .2s linear;
+            -o-transition: all .2s linear;
+            transition: all .2s linear; }
+          form#discount .reserve .inputWrapper.checkboxes .checkbox label p.error {
+            color: #ea6161; }
+
+@media screen and (max-width: 750px) {
+  form#discount .number select {
+    width: 5em;
+    height: 1.5em;
+    margin-right: 0.75em;
+    border-radius: 0.75em;
+    border: 1px solid #00897b; }
+    form#discount .number select option {
+      color: #00897b;
+      font-size: 10px;
+      padding: .3em; } }
+
+form#editInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: "";
+      align-content: ""; }
+  form#editInfo > h4 {
+    font-size: 2em;
+    color: white;
+    font-weight: 700;
+    background-color: #00897b;
+    padding: 0.5em 1.5em;
+    border-radius: 0.75em; }
+  form#editInfo button[type="submit"] {
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    color: white;
+    background-color: #00897b;
+    border: 1.2px solid transparent;
+    font-size: 1.6em;
+    margin: 1.5em auto 0 auto; }
+    form#editInfo button[type="submit"]:hover {
+      color: #00897b;
+      background-color: white;
+      border: 1.2px solid #00897b; }
+  form#editInfo .allWrapper {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: "";
+    margin-top: 1.5em; }
+    form#editInfo .allWrapper .img {
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      width: 12em;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: ""; }
+      form#editInfo .allWrapper .img img {
+        width: 10em;
+        height: 10em;
+        border-radius: 50%; }
+      form#editInfo .allWrapper .img input[type="file"] {
+        display: none; }
+      form#editInfo .allWrapper .img label {
+        cursor: pointer; }
+        form#editInfo .allWrapper .img label i {
+          display: inline-block;
+          font-size: 2.4em;
+          color: #00897b; }
+  form#editInfo .inputs {
+    width: 100%;
+    height: auto;
+    margin-right: 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+        align-content: flex-start; }
+    form#editInfo .inputs .inputWrapper.text {
+      width: calc((100% - (4 * 3em)) / 4);
+      height: 4em;
+      position: relative;
+      margin: 1.5em; }
+      form#editInfo .inputs .inputWrapper.text input {
+        width: 100%;
+        height: 100%;
+        line-height: 4em;
+        padding: 0 0.75em;
+        font-size: 1.6em;
+        color: #2d2d31;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+        form#editInfo .inputs .inputWrapper.text input::-webkit-input-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#editInfo .inputs .inputWrapper.text input::-moz-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#editInfo .inputs .inputWrapper.text input:-ms-input-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#editInfo .inputs .inputWrapper.text input::-ms-input-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#editInfo .inputs .inputWrapper.text input::placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+      form#editInfo .inputs .inputWrapper.text input.style1 {
+        border: none;
+        border-bottom: 1.2px solid #d3d3d7; }
+        form#editInfo .inputs .inputWrapper.text input.style1:focus ~ label {
+          color: #00897b;
+          font-size: 8px;
+          bottom: calc(100% + .5em);
+          -webkit-transform: translateY(50%);
+              -ms-transform: translateY(50%);
+               -o-transform: translateY(50%);
+                  transform: translateY(50%);
+          right: 0; }
+        form#editInfo .inputs .inputWrapper.text input.style1:focus ~ .line {
+          width: 100%; }
+      form#editInfo .inputs .inputWrapper.text input.style2 {
+        border: 1.2px solid #d3d3d7;
+        border-radius: 3em; }
+        form#editInfo .inputs .inputWrapper.text input.style2:focus {
+          border: 1.2px solid #00897b; }
+          form#editInfo .inputs .inputWrapper.text input.style2:focus ~ label {
+            color: #00897b;
+            font-size: 8px;
+            bottom: calc(100% + 1.5em);
+            -webkit-transform: translateY(50%);
+                -ms-transform: translateY(50%);
+                 -o-transform: translateY(50%);
+                    transform: translateY(50%);
+            right: 0.75em; }
+          form#editInfo .inputs .inputWrapper.text input.style2:focus ~ .line {
+            width: 0%; }
+      form#editInfo .inputs .inputWrapper.text input.style1.error {
+        border-bottom: 1.2px solid #ea6161; }
+        form#editInfo .inputs .inputWrapper.text input.style1.error ~ label {
+          color: #ea6161; }
+        form#editInfo .inputs .inputWrapper.text input.style1.error ~ .line {
+          background-color: #ea6161; }
+      form#editInfo .inputs .inputWrapper.text input.style2.error {
+        border: 1.2px solid #ea6161; }
+        form#editInfo .inputs .inputWrapper.text input.style2.error ~ label {
+          color: #ea6161; }
+      form#editInfo .inputs .inputWrapper.text label {
+        width: auto;
+        height: auto;
+        position: absolute;
+        right: 0.75em;
+        bottom: 50%;
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+             -o-transform: translateY(50%);
+                transform: translateY(50%);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -ms-flex-line-pack: "";
+            align-content: "";
+        color: #c6c6cb;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+        form#editInfo .inputs .inputWrapper.text label .isRequire {
+          width: auto;
+          height: auto;
+          color: #e74a4a;
+          font-size: 1.1em;
+          padding-left: .3em; }
+        form#editInfo .inputs .inputWrapper.text label .icon {
+          font-size: 1.6em; }
+        form#editInfo .inputs .inputWrapper.text label p {
+          font-size: 1.5em;
+          -webkit-transform: translateX(-0.3em);
+              -ms-transform: translateX(-0.3em);
+               -o-transform: translateX(-0.3em);
+                  transform: translateX(-0.3em); }
+      form#editInfo .inputs .inputWrapper.text input.style1 ~ label.top {
+        font-size: 8px;
+        bottom: calc(100% + .5em);
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+             -o-transform: translateY(50%);
+                transform: translateY(50%);
+        right: 0; }
+      form#editInfo .inputs .inputWrapper.text input.style2 ~ label.top {
+        font-size: 8px;
+        bottom: calc(100% + 1.5em);
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+             -o-transform: translateY(50%);
+                transform: translateY(50%);
+        right: 0.75em; }
+      form#editInfo .inputs .inputWrapper.text .line {
+        width: 0%;
+        height: 1.2px;
+        background-color: #00897b;
+        position: absolute;
+        right: 0;
+        top: calc(100% - 1px);
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+      form#editInfo .inputs .inputWrapper.text .msg {
+        width: auto;
+        height: auto;
+        border-radius: 3em;
+        padding: 0.75em 1.5em;
+        position: relative;
+        background-color: #ea6161;
+        position: absolute;
+        right: 0;
+        top: 115%;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+        form#editInfo .inputs .inputWrapper.text .msg p {
+          color: #fbfbfb;
+          font-size: 1.4em; }
+        form#editInfo .inputs .inputWrapper.text .msg i {
+          font-size: 2.4em;
+          color: #ea6161;
+          position: absolute;
+          right: 1.5em;
+          top: calc(0% - .6em); }
+      form#editInfo .inputs .inputWrapper.text .msg.show {
+        opacity: 1;
+        visibility: visible;
+        z-index: 2; }
+    form#editInfo .inputs .select2 {
+      width: calc((100% - (4 * 3em)) / 4);
+      font-size: 1.6em;
+      margin: 1.5em; }
+      form#editInfo .inputs .select2 option {
+        color: #767682;
+        font-size: 1.6em; }
+    form#editInfo .inputs .select2-container--default .select2-selection--single {
+      border-radius: 3em;
+      border: 1.2px solid #d3d3d7;
+      height: 2.5em;
+      outline: none; }
+      form#editInfo .inputs .select2-container--default .select2-selection--single .select2-selection__rendered {
+        line-height: 2.5em; }
+      form#editInfo .inputs .select2-container--default .select2-selection--single .select2-selection__arrow {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+             -o-transform: translateY(-50%);
+                transform: translateY(-50%); }
+    form#editInfo .inputs .inputWrapper.toggle {
+      width: auto;
+      height: auto;
+      margin: 1.5em;
+      margin-top: 3em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: ""; }
+      form#editInfo .inputs .inputWrapper.toggle .toggleText,
+      form#editInfo .inputs .inputWrapper.toggle .switch {
+        margin-right: 0.75em; }
+        form#editInfo .inputs .inputWrapper.toggle .toggleText:first-child,
+        form#editInfo .inputs .inputWrapper.toggle .switch:first-child {
+          margin-right: 0; }
+      form#editInfo .inputs .inputWrapper.toggle .toggleText {
+        font-size: 1.6em;
+        color: #e0e0e4;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+      form#editInfo .inputs .inputWrapper.toggle .toggleText.active {
+        color: #45454d; }
+      form#editInfo .inputs .inputWrapper.toggle .switch {
+        width: 5em;
+        height: 2em;
+        position: relative;
+        background-color: #00897b;
+        border-radius: 3em;
+        cursor: pointer; }
+        form#editInfo .inputs .inputWrapper.toggle .switch .circle {
+          width: 1.5em;
+          height: 1.5em;
+          border-radius: 50%;
+          background-color: #fbfbfb;
+          position: absolute;
+          -webkit-transition: all .2s linear;
+          -o-transition: all .2s linear;
+          transition: all .2s linear; }
+        form#editInfo .inputs .inputWrapper.toggle .switch .circle.left {
+          left: .4em; }
+        form#editInfo .inputs .inputWrapper.toggle .switch .circle.right {
+          left: calc(100% - 1.5em - .4em); }
+
+@media screen and (max-width: 1000px) {
+  form#editInfo {
+    font-size: 8px; }
+    form#editInfo .inputs .inputWrapper.text input.style1:focus ~ label {
+      font-size: 7px; }
+    form#editInfo .inputs .inputWrapper.text input.style1 ~ label.top {
+      font-size: 7px; } }
+
+@media screen and (max-width: 1000px) {
+  form#editInfo {
+    font-size: 8px; } }
+
+@media screen and (max-width: 1100px) {
+  form#editInfo .allWrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#editInfo .allWrapper .img {
+      width: 12em; }
+      form#editInfo .allWrapper .img img {
+        width: 10em;
+        height: 10em; }
+  form#editInfo .inputs {
+    margin-right: 1.5em; }
+    form#editInfo .inputs .inputWrapper.text {
+      width: calc((100% - (3 * 3em)) / 3); }
+    form#editInfo .inputs .select2 {
+      width: calc((100% - (3 * 3em)) / 3); } }
+
+@media screen and (max-width: 650px) {
+  form#editInfo .allWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#editInfo .allWrapper .img {
+      width: 12em; }
+      form#editInfo .allWrapper .img img {
+        width: 10em;
+        height: 10em; }
+  form#editInfo .inputs {
+    margin-right: 1.5em; }
+    form#editInfo .inputs .inputWrapper.text {
+      width: calc((100% - (3 * 3em)) / 3); }
+    form#editInfo .inputs .select2 {
+      width: calc((100% - (3 * 3em)) / 3); } }
+
+@media screen and (max-width: 530px) {
+  form#editInfo .allWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#editInfo .allWrapper .img {
+      width: 12em; }
+      form#editInfo .allWrapper .img img {
+        width: 10em;
+        height: 10em; }
+  form#editInfo .inputs {
+    margin-right: 1.5em; }
+    form#editInfo .inputs .inputWrapper.text {
+      width: calc((100% - (2 * 3em)) / 2); }
+    form#editInfo .inputs .select2 {
+      width: calc((100% - (2 * 3em)) / 2); } }
+
+@media screen and (max-width: 410px) {
+  form#editInfo .allWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#editInfo .allWrapper .img {
+      width: 12em; }
+      form#editInfo .allWrapper .img img {
+        width: 10em;
+        height: 10em; }
+  form#editInfo .inputs {
+    margin-right: 1.5em; }
+    form#editInfo .inputs .inputWrapper.text {
+      width: 100%; }
+    form#editInfo .inputs .select2 {
+      width: 100%; }
+    form#editInfo .inputs .inputWrapper.toggle {
+      margin-top: 0; } }
+
+form#changePass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: "";
+      align-content: ""; }
+  form#changePass > h4 {
+    font-size: 2em;
+    color: white;
+    font-weight: 700;
+    background-color: #00897b;
+    padding: 0.5em 1.5em;
+    border-radius: 0.75em; }
+  form#changePass button[type="submit"] {
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    color: white;
+    background-color: #00897b;
+    border: 1.2px solid transparent;
+    font-size: 1.6em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1.5em; }
+    form#changePass button[type="submit"]:hover {
+      color: #00897b;
+      background-color: white;
+      border: 1.2px solid #00897b; }
+  form#changePass .inputs {
+    margin-top: 0.75em;
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+        align-content: flex-start; }
+    form#changePass .inputs .inputWrapper.text {
+      width: calc((100% - (4 * 3em)) / 4);
+      height: 4em;
+      position: relative;
+      margin: 1.5em; }
+      form#changePass .inputs .inputWrapper.text input {
+        width: 100%;
+        height: 100%;
+        line-height: 4em;
+        padding: 0 0.75em;
+        font-size: 1.6em;
+        color: #2d2d31;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+        form#changePass .inputs .inputWrapper.text input::-webkit-input-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#changePass .inputs .inputWrapper.text input::-moz-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#changePass .inputs .inputWrapper.text input:-ms-input-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#changePass .inputs .inputWrapper.text input::-ms-input-placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+        form#changePass .inputs .inputWrapper.text input::placeholder {
+          color: #90909b;
+          font-size: 1.6em; }
+      form#changePass .inputs .inputWrapper.text input.style1 {
+        border: none;
+        border-bottom: 1.2px solid #d3d3d7; }
+        form#changePass .inputs .inputWrapper.text input.style1:focus ~ label {
+          color: #00897b;
+          font-size: 8px;
+          bottom: calc(100% + .5em);
+          -webkit-transform: translateY(50%);
+              -ms-transform: translateY(50%);
+               -o-transform: translateY(50%);
+                  transform: translateY(50%);
+          right: 0; }
+        form#changePass .inputs .inputWrapper.text input.style1:focus ~ .line {
+          width: 100%; }
+      form#changePass .inputs .inputWrapper.text input.style2 {
+        border: 1.2px solid #d3d3d7;
+        border-radius: 3em; }
+        form#changePass .inputs .inputWrapper.text input.style2:focus {
+          border: 1.2px solid #00897b; }
+          form#changePass .inputs .inputWrapper.text input.style2:focus ~ label {
+            color: #00897b;
+            font-size: 8px;
+            bottom: calc(100% + 1.5em);
+            -webkit-transform: translateY(50%);
+                -ms-transform: translateY(50%);
+                 -o-transform: translateY(50%);
+                    transform: translateY(50%);
+            right: 0.75em; }
+          form#changePass .inputs .inputWrapper.text input.style2:focus ~ .line {
+            width: 0%; }
+      form#changePass .inputs .inputWrapper.text input.style1.error {
+        border-bottom: 1.2px solid #ea6161; }
+        form#changePass .inputs .inputWrapper.text input.style1.error ~ label {
+          color: #ea6161; }
+        form#changePass .inputs .inputWrapper.text input.style1.error ~ .line {
+          background-color: #ea6161; }
+      form#changePass .inputs .inputWrapper.text input.style2.error {
+        border: 1.2px solid #ea6161; }
+        form#changePass .inputs .inputWrapper.text input.style2.error ~ label {
+          color: #ea6161; }
+      form#changePass .inputs .inputWrapper.text label {
+        width: auto;
+        height: auto;
+        position: absolute;
+        right: 0.75em;
+        bottom: 50%;
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+             -o-transform: translateY(50%);
+                transform: translateY(50%);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -ms-flex-line-pack: "";
+            align-content: "";
+        color: #c6c6cb;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+        form#changePass .inputs .inputWrapper.text label .isRequire {
+          width: auto;
+          height: auto;
+          color: #e74a4a;
+          font-size: 1.1em;
+          padding-left: .3em; }
+        form#changePass .inputs .inputWrapper.text label .icon {
+          font-size: 1.6em; }
+        form#changePass .inputs .inputWrapper.text label p {
+          font-size: 1.5em;
+          -webkit-transform: translateX(-0.3em);
+              -ms-transform: translateX(-0.3em);
+               -o-transform: translateX(-0.3em);
+                  transform: translateX(-0.3em); }
+      form#changePass .inputs .inputWrapper.text input.style1 ~ label.top {
+        font-size: 8px;
+        bottom: calc(100% + .5em);
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+             -o-transform: translateY(50%);
+                transform: translateY(50%);
+        right: 0; }
+      form#changePass .inputs .inputWrapper.text input.style2 ~ label.top {
+        font-size: 8px;
+        bottom: calc(100% + 1.5em);
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+             -o-transform: translateY(50%);
+                transform: translateY(50%);
+        right: 0.75em; }
+      form#changePass .inputs .inputWrapper.text .line {
+        width: 0%;
+        height: 1.2px;
+        background-color: #00897b;
+        position: absolute;
+        right: 0;
+        top: calc(100% - 1px);
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+      form#changePass .inputs .inputWrapper.text .msg {
+        width: auto;
+        height: auto;
+        border-radius: 3em;
+        padding: 0.75em 1.5em;
+        position: relative;
+        background-color: #ea6161;
+        position: absolute;
+        right: 0;
+        top: 115%;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+        form#changePass .inputs .inputWrapper.text .msg p {
+          color: #fbfbfb;
+          font-size: 1.4em; }
+        form#changePass .inputs .inputWrapper.text .msg i {
+          font-size: 2.4em;
+          color: #ea6161;
+          position: absolute;
+          right: 1.5em;
+          top: calc(0% - .6em); }
+      form#changePass .inputs .inputWrapper.text .msg.show {
+        opacity: 1;
+        visibility: visible;
+        z-index: 2; }
+
+@media screen and (max-width: 1000px) {
+  form#changePass {
+    font-size: 8px; }
+    form#changePass .inputs .inputWrapper.text input.style1:focus ~ label {
+      font-size: 6px; }
+    form#changePass .inputs .inputWrapper.text input.style2:focus ~ label {
+      font-size: 6px; }
+    form#changePass .inputs .inputWrapper.text input.style1 ~ label.top {
+      font-size: 6px; }
+    form#changePass .inputs .inputWrapper.text input.style2 ~ label.top {
+      font-size: 6px; } }
+
+@media screen and (max-width: 1000px) {
+  form#changePass {
+    font-size: 8px; } }
+
+@media screen and (max-width: 650px) {
+  form#changePass .inputs .inputWrapper.text {
+    width: calc((100% - (3 * 3em)) / 3); } }
+
+@media screen and (max-width: 580px) {
+  form#changePass .inputs .inputWrapper.text {
+    width: calc((100% - (2 * 3em)) / 2); } }
+
+@media screen and (max-width: 420px) {
+  form#changePass .inputs .inputWrapper.text {
+    width: 100%; } }
+
+form#info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: "";
+      align-content: ""; }
+  form#info > h4 {
+    font-size: 2em;
+    color: white;
+    font-weight: 700;
+    background-color: #00897b;
+    padding: 0.5em 1.5em;
+    border-radius: 0.75em; }
+  form#info button[type="submit"] {
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    color: white;
+    background-color: #00897b;
+    border: 1.2px solid transparent;
+    margin: 1.5em auto 0 auto; }
+    form#info button[type="submit"]:hover {
+      color: #00897b;
+      background-color: white;
+      border: 1.2px solid #00897b; }
+  form#info .questions {
+    width: 100%;
+    height: auto;
+    margin-top: 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#info .questions .question {
+      width: 100%;
+      height: auto;
+      margin-top: 1.5em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-line-pack: "";
+          align-content: ""; }
+      form#info .questions .question:not(:last-child) {
+        padding-bottom: 1.5em;
+        border-bottom: 1px solid #c6c6cb; }
+      form#info .questions .question .quest {
+        width: 100%;
+        height: auto;
+        font-size: 1.6em;
+        color: #2d2d31; }
+      form#info .questions .question .answers {
+        width: 100%;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 0.75em;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-line-pack: start;
+            align-content: flex-start; }
+        form#info .questions .question .answers .radio {
+          width: calc((100% - (4 * 1.5em)) / 4);
+          height: auto;
+          margin: 0.75em; }
+  form#info .radio input[type="radio"] {
+    width: 0;
+    height: 0;
+    display: none; }
+  form#info .radio input[type="radio"].style2 ~ label .circle .fill {
+    width: 80%;
+    height: 80%; }
+  form#info .radio input[type="radio"].style2:checked ~ label .circle {
+    border: 1px solid #00897b; }
+    form#info .radio input[type="radio"].style2:checked ~ label .circle .fill {
+      -webkit-transform: translate(50%, -50%) scale(1);
+          -ms-transform: translate(50%, -50%) scale(1);
+           -o-transform: translate(50%, -50%) scale(1);
+              transform: translate(50%, -50%) scale(1);
+      opacity: 1; }
+  form#info .radio input[type="radio"].style2:checked ~ label p {
+    color: #00897b; }
+  form#info .radio label {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    line-height: 2.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#info .radio label .circle {
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      width: 2.2em;
+      height: 2.2em;
+      border-radius: 50%;
+      border: 1px solid #696975;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear;
+      position: relative;
+      transition: all .2s linear; }
+      form#info .radio label .circle .fill {
+        border-radius: 50%;
+        opacity: 0;
+        background-color: #00897b;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        -webkit-transform: translate(50%, -50%) scale(0);
+            -ms-transform: translate(50%, -50%) scale(0);
+             -o-transform: translate(50%, -50%) scale(0);
+                transform: translate(50%, -50%) scale(0);
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+    form#info .radio label p {
+      font-size: 1.6em;
+      color: #696975;
+      margin-right: .3em;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+
+@media screen and (max-width: 1000px) {
+  form#info {
+    font-size: 8px; } }
+
+@media screen and (max-width: 600px) {
+  form#info .questions .question .answers .radio {
+    width: calc((100% - (2 * 1.5em)) / 2); } }
+
 @font-face {
   font-family: iranSans;
   src: url(assets/fonts/iransans.ttf); }
@@ -5616,12 +9605,6 @@ input[type=number] {
     font-size: 1.3em; }
   .select2-results__option.alert {
     font-size: 1.3em; } }
-
-@media screen and (max-width: 700px) {
-  .select2-results__option {
-    font-size: 0.8em; }
-  .select2-results__option.alert {
-    font-size: 0.8em; } }
 
 #topMenu {
   width: 100%;
@@ -5871,11 +9854,13 @@ input[type=number] {
             flex-wrap: nowrap;
         -ms-flex-line-pack: "";
             align-content: ""; }
+        #topMenu .left #lang .title img {
+          width: 2em;
+          height: 1.5em; }
         #topMenu .left #lang .title p, #topMenu .left #lang .title i {
           font-size: 1.6em;
-          color: #fbfbfb; }
-        #topMenu .left #lang .title i {
-          margin-right: .3em; }
+          color: #fbfbfb;
+          margin-right: .2em; }
       #topMenu .left #lang ul {
         width: 12em;
         height: auto;
@@ -5921,11 +9906,33 @@ input[type=number] {
             color: #fbfbfb;
             background-color: #00897b; }
           #topMenu .left #lang ul li a {
-            display: inline-block;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            -ms-flex-line-pack: "";
+                align-content: "";
             width: 100%;
             height: 100%;
-            color: inherit;
-            font-size: 1.4em; }
+            color: inherit; }
+            #topMenu .left #lang ul li a img {
+              width: 2em;
+              height: 1.5em; }
+            #topMenu .left #lang ul li a p {
+              font-size: 1.6em;
+              color: inherit;
+              margin-right: .2em; }
       #topMenu .left #lang ul.show {
         z-index: 1; }
     #topMenu .left #more {
@@ -6166,7 +10173,7 @@ header {
   -o-transition: all .3s linear;
   transition: all .3s linear;
   color: white;
-  background-color: #c62828;
+  background-color: #7b1fa2;
   border: 1.2px solid transparent;
   position: fixed;
   top: 50%;
@@ -6179,9 +10186,9 @@ header {
   z-index: 10;
   transition: all .3s linear; }
   #menuTrigger:hover {
-    color: #c62828;
+    color: #7b1fa2;
     background-color: white;
-    border: 1.2px solid #c62828; }
+    border: 1.2px solid #7b1fa2; }
   #menuTrigger::before {
     position: absolute;
     top: 50%;
@@ -6686,7 +10693,7 @@ header {
           transform: translateX(50%);
   bottom: 2.5%;
   cursor: pointer;
-  background-color: #c62828;
+  background-color: #7b1fa2;
   -webkit-box-shadow: 0 0 0.5em 0.1em rgba(70, 69, 85, 0.3);
           box-shadow: 0 0 0.5em 0.1em rgba(70, 69, 85, 0.3); }
   #smooth::before {
@@ -6772,10 +10779,6 @@ main {
         flex-wrap: nowrap;
     -ms-flex-line-pack: "";
         align-content: ""; } }
-
-@media screen and (max-width: 700px) {
-  main {
-    font-size: 7px; } }
 
 main aside.sideBar {
   display: -webkit-box;
@@ -7086,6 +11089,10 @@ main aside.sideBar {
   main aside.sideBar #popular .articles .article, main aside.sideBar #similars .articles .article {
     width: calc((100% - (5 * 3em)) / 1); } }
 
+@media screen and (max-width: 340px) {
+  main aside.sideBar #popular .articles .article, main aside.sideBar #similars .articles .article {
+    width: 75%; } }
+
 .pagination {
   width: auto;
   height: auto;
@@ -7168,10 +11175,13 @@ main {
         flex-wrap: nowrap;
     -ms-flex-line-pack: "";
         align-content: ""; }
-    main .wrapper h4 {
+    main .wrapper > h4 {
       font-size: 2em;
-      color: #2d2d31;
-      font-weight: 700; }
+      color: white;
+      font-weight: 700;
+      background-color: #00897b;
+      padding: 0.5em 1.5em;
+      border-radius: 0.75em; }
     main .wrapper .articles {
       width: 100%;
       height: auto;
@@ -7329,15 +11339,23 @@ main {
           color: #90909b;
           font-size: 1.6em; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   main .wrapper .articles .article {
     width: calc((100% - (3 * 3em)) / 3); } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 880px) {
   main .wrapper .articles .article {
     width: calc((100% - (2 * 3em)) / 2); } }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 750px) {
+  main .wrapper .articles .article {
+    width: calc((100% - (3 * 3em)) / 3); } }
+
+@media screen and (max-width: 550px) {
+  main .wrapper .articles .article {
+    width: calc((100% - (2 * 3em)) / 2); } }
+
+@media screen and (max-width: 390px) {
   main .wrapper .articles .article {
     width: 95%; } }
 

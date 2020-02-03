@@ -5764,18 +5764,6 @@ form#searchForm {
     form#searchForm .inputWrapper.text input.style2 ~ label.top {
       font-size: 6px; } }
 
-@media screen and (max-width: 600px) {
-  form#searchForm {
-    font-size: 6px; }
-    form#searchForm .inputWrapper.text input.style1:focus ~ label {
-      font-size: 4px; }
-    form#searchForm .inputWrapper.text input.style2:focus ~ label {
-      font-size: 4px; }
-    form#searchForm .inputWrapper.text input.style1 ~ label.top {
-      font-size: 4px; }
-    form#searchForm .inputWrapper.text input.style2 ~ label.top {
-      font-size: 4px; } }
-
 @media screen and (max-width: 850px) {
   form#searchForm {
     width: 100%;
@@ -5793,9 +5781,9 @@ form#searchForm {
     form#searchForm button[type="submit"] {
       margin-right: 1.5em; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   form#searchForm {
-    margin-top: 8em;
+    margin-top: 6em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -5814,7 +5802,8 @@ form#searchForm {
     form#searchForm .inputWrapper.text {
       width: 80%;
       height: 3.5em;
-      margin: 0; }
+      margin: 0;
+      margin-top: 0.75em; }
     form#searchForm .select2 {
       width: 80%;
       margin-right: 0;
@@ -5823,9 +5812,9 @@ form#searchForm {
       margin-right: 0;
       margin-top: 1.5em; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
   form#searchForm {
-    margin-top: 6.5em; } }
+    margin-top: 4.5em; } }
 
 form#filters .inputWrapper.select {
   width: 100%;
@@ -6414,22 +6403,6 @@ form#filters .row:nth-child(2) .mobileFixFlexFixer {
   form#filters .inputWrapper.checkboxes .checkbox label .content p {
     font-size: 1.4em; } }
 
-@media screen and (max-width: 600px) {
-  form#filters {
-    font-size: 6px; }
-    form#filters .inputWrapper.select input.style1:focus ~ label {
-      font-size: 4px; }
-    form#filters .inputWrapper.select input.style2:focus ~ label {
-      font-size: 4px; }
-    form#filters .inputWrapper.select input.style1 ~ label.top {
-      font-size: 4px; }
-    form#filters .inputWrapper.select input.style2 ~ label.top {
-      font-size: 4px; }
-  form#filters .mainCategory .inputWrapper.checkboxes .checkbox label .content p {
-    font-size: 2em; }
-  form#filters .subCategory .inputWrapper.checkboxes .checkbox label .content p {
-    font-size: 1.2em; } }
-
 form#report {
   width: 50%;
   height: auto;
@@ -6806,36 +6779,16 @@ form#report {
       font-size: 6px; }
     form#report .row .inputWrapper.text input.style2 ~ label.top {
       font-size: 6px; }
-    form#report .row .inputWrapper.textarea textarea.style1:focus ~ label {
-      font-size: 6px; }
-    form#report .row .inputWrapper.textarea textarea.style2:focus ~ label {
-      font-size: 6px; }
-    form#report .row .inputWrapper.textarea textarea.style1 ~ label.top {
-      font-size: 6px; }
-    form#report .row .inputWrapper.textarea textarea.style2 ~ label.top {
-      font-size: 6px; } }
-
-@media screen and (max-width: 700px) {
-  form#report .row {
+  form#report .inputWrapper.textarea textarea.style1:focus ~ label {
     font-size: 6px; }
-    form#report .row .inputWrapper.text input.style1:focus ~ label {
-      font-size: 4px; }
-    form#report .row .inputWrapper.text input.style2:focus ~ label {
-      font-size: 4px; }
-    form#report .row .inputWrapper.text input.style1 ~ label.top {
-      font-size: 4px; }
-    form#report .row .inputWrapper.text input.style2 ~ label.top {
-      font-size: 4px; }
-    form#report .row .inputWrapper.textarea textarea.style1:focus ~ label {
-      font-size: 4px; }
-    form#report .row .inputWrapper.textarea textarea.style2:focus ~ label {
-      font-size: 4px; }
-    form#report .row .inputWrapper.textarea textarea.style1 ~ label.top {
-      font-size: 4px; }
-    form#report .row .inputWrapper.textarea textarea.style2 ~ label.top {
-      font-size: 4px; } }
+  form#report .inputWrapper.textarea textarea.style2:focus ~ label {
+    font-size: 6px; }
+  form#report .inputWrapper.textarea textarea.style1 ~ label.top {
+    font-size: 6px; }
+  form#report .inputWrapper.textarea textarea.style2 ~ label.top {
+    font-size: 6px; } }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   form#report {
     width: 100%;
     margin-right: 0;
@@ -7406,39 +7359,35 @@ form#loginUser button[type="submit"] {
 
 @media screen and (max-width: 700px) {
   form#loginUser, form#loginAdmin, form#signupUser, form#signupAdmin, form#forgetPassword {
-    font-size: 6px; }
+    font-size: 8px; }
     form#loginUser .inputWrapper.text input.style1:focus ~ label, form#loginAdmin .inputWrapper.text input.style1:focus ~ label, form#signupUser .inputWrapper.text input.style1:focus ~ label, form#signupAdmin .inputWrapper.text input.style1:focus ~ label, form#forgetPassword .inputWrapper.text input.style1:focus ~ label {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.text input.style2:focus ~ label, form#loginAdmin .inputWrapper.text input.style2:focus ~ label, form#signupUser .inputWrapper.text input.style2:focus ~ label, form#signupAdmin .inputWrapper.text input.style2:focus ~ label, form#forgetPassword .inputWrapper.text input.style2:focus ~ label {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.text input.style1 ~ label.top, form#loginAdmin .inputWrapper.text input.style1 ~ label.top, form#signupUser .inputWrapper.text input.style1 ~ label.top, form#signupAdmin .inputWrapper.text input.style1 ~ label.top, form#forgetPassword .inputWrapper.text input.style1 ~ label.top {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.text input.style2 ~ label.top, form#loginAdmin .inputWrapper.text input.style2 ~ label.top, form#signupUser .inputWrapper.text input.style2 ~ label.top, form#signupAdmin .inputWrapper.text input.style2 ~ label.top, form#forgetPassword .inputWrapper.text input.style2 ~ label.top {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.select input.style1:focus ~ label, form#loginAdmin .inputWrapper.select input.style1:focus ~ label, form#signupUser .inputWrapper.select input.style1:focus ~ label, form#signupAdmin .inputWrapper.select input.style1:focus ~ label, form#forgetPassword .inputWrapper.select input.style1:focus ~ label {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.select input.style2:focus ~ label, form#loginAdmin .inputWrapper.select input.style2:focus ~ label, form#signupUser .inputWrapper.select input.style2:focus ~ label, form#signupAdmin .inputWrapper.select input.style2:focus ~ label, form#forgetPassword .inputWrapper.select input.style2:focus ~ label {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.select input.style1 ~ label.top, form#loginAdmin .inputWrapper.select input.style1 ~ label.top, form#signupUser .inputWrapper.select input.style1 ~ label.top, form#signupAdmin .inputWrapper.select input.style1 ~ label.top, form#forgetPassword .inputWrapper.select input.style1 ~ label.top {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.select input.style2 ~ label.top, form#loginAdmin .inputWrapper.select input.style2 ~ label.top, form#signupUser .inputWrapper.select input.style2 ~ label.top, form#signupAdmin .inputWrapper.select input.style2 ~ label.top, form#forgetPassword .inputWrapper.select input.style2 ~ label.top {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.textarea textarea.style1:focus ~ label, form#loginAdmin .inputWrapper.textarea textarea.style1:focus ~ label, form#signupUser .inputWrapper.textarea textarea.style1:focus ~ label, form#signupAdmin .inputWrapper.textarea textarea.style1:focus ~ label, form#forgetPassword .inputWrapper.textarea textarea.style1:focus ~ label {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.textarea textarea.style2:focus ~ label, form#loginAdmin .inputWrapper.textarea textarea.style2:focus ~ label, form#signupUser .inputWrapper.textarea textarea.style2:focus ~ label, form#signupAdmin .inputWrapper.textarea textarea.style2:focus ~ label, form#forgetPassword .inputWrapper.textarea textarea.style2:focus ~ label {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.textarea textarea.style1 ~ label.top, form#loginAdmin .inputWrapper.textarea textarea.style1 ~ label.top, form#signupUser .inputWrapper.textarea textarea.style1 ~ label.top, form#signupAdmin .inputWrapper.textarea textarea.style1 ~ label.top, form#forgetPassword .inputWrapper.textarea textarea.style1 ~ label.top {
-      font-size: 4px; }
+      font-size: 6px; }
     form#loginUser .inputWrapper.textarea textarea.style2 ~ label.top, form#loginAdmin .inputWrapper.textarea textarea.style2 ~ label.top, form#signupUser .inputWrapper.textarea textarea.style2 ~ label.top, form#signupAdmin .inputWrapper.textarea textarea.style2 ~ label.top, form#forgetPassword .inputWrapper.textarea textarea.style2 ~ label.top {
-      font-size: 4px; } }
+      font-size: 6px; } }
 
 @media screen and (max-width: 1000px) {
   form#loginUser, form#loginAdmin, form#signupUser, form#signupAdmin, form#forgetPassword {
     font-size: 8px; } }
-
-@media screen and (max-width: 700px) {
-  form#loginUser, form#loginAdmin, form#signupUser, form#signupAdmin, form#forgetPassword {
-    font-size: 7px; } }
 
 form#checkCode {
   width: 40em;
@@ -8172,27 +8121,7 @@ form#userComment {
     form#userComment .inputWrapper.textarea textarea.style2 ~ label.top {
       font-size: 6px; } }
 
-@media screen and (max-width: 600px) {
-  form#userComment {
-    font-size: 6px; }
-    form#userComment .row .inputWrapper.text input.style1:focus ~ label {
-      font-size: 4px; }
-    form#userComment .row .inputWrapper.text input.style2:focus ~ label {
-      font-size: 4px; }
-    form#userComment .row .inputWrapper.text input.style1 ~ label.top {
-      font-size: 4px; }
-    form#userComment .row .inputWrapper.text input.style2 ~ label.top {
-      font-size: 4px; }
-    form#userComment .inputWrapper.textarea textarea.style1:focus ~ label {
-      font-size: 4px; }
-    form#userComment .inputWrapper.textarea textarea.style2:focus ~ label {
-      font-size: 4px; }
-    form#userComment .inputWrapper.textarea textarea.style1 ~ label.top {
-      font-size: 4px; }
-    form#userComment .inputWrapper.textarea textarea.style2 ~ label.top {
-      font-size: 4px; } }
-
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 460px) {
   form#userComment {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -8441,26 +8370,6 @@ form.reply {
     form.reply .inputWrapper.textarea textarea.style2 ~ label.top {
       font-size: 6px; } }
 
-@media screen and (max-width: 600px) {
-  form.reply {
-    font-size: 6px; }
-    form.reply .inputWrapper.text input.style1:focus ~ label {
-      font-size: 4px; }
-    form.reply .inputWrapper.text input.style2:focus ~ label {
-      font-size: 4px; }
-    form.reply .inputWrapper.text input.style1 ~ label.top {
-      font-size: 4px; }
-    form.reply .inputWrapper.text input.style2 ~ label.top {
-      font-size: 4px; }
-    form.reply .inputWrapper.textarea textarea.style1:focus ~ label {
-      font-size: 4px; }
-    form.reply .inputWrapper.textarea textarea.style2:focus ~ label {
-      font-size: 4px; }
-    form.reply .inputWrapper.textarea textarea.style1 ~ label.top {
-      font-size: 4px; }
-    form.reply .inputWrapper.textarea textarea.style2 ~ label.top {
-      font-size: 4px; } }
-
 @media screen and (max-width: 400px) {
   form.reply {
     width: 100%; }
@@ -8668,17 +8577,20 @@ form#editInfo {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -ms-flex-line-pack: "";
       align-content: ""; }
-  form#editInfo h4 {
+  form#editInfo > h4 {
     font-size: 2em;
-    color: #2d2d31;
-    font-weight: 700; }
+    color: white;
+    font-weight: 700;
+    background-color: #00897b;
+    padding: 0.5em 1.5em;
+    border-radius: 0.75em; }
   form#editInfo button[type="submit"] {
     cursor: pointer;
     -webkit-transition: all .3s linear;
@@ -8687,7 +8599,8 @@ form#editInfo {
     color: white;
     background-color: #00897b;
     border: 1.2px solid transparent;
-    font-size: 1.6em; }
+    font-size: 1.6em;
+    margin: 1.5em auto 0 auto; }
     form#editInfo button[type="submit"]:hover {
       color: #00897b;
       background-color: white;
@@ -8711,7 +8624,8 @@ form#editInfo {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -ms-flex-line-pack: "";
-        align-content: ""; }
+        align-content: "";
+    margin-top: 1.5em; }
     form#editInfo .allWrapper .img {
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -9017,34 +8931,14 @@ form#editInfo {
 @media screen and (max-width: 1000px) {
   form#editInfo {
     font-size: 8px; }
-    form#editInfo .inputWrapper.text input.style1:focus ~ label {
-      font-size: 6px; }
-    form#editInfo .inputWrapper.text input.style2:focus ~ label {
-      font-size: 6px; }
-    form#editInfo .inputWrapper.text input.style1 ~ label.top {
-      font-size: 6px; }
-    form#editInfo .inputWrapper.text input.style2 ~ label.top {
-      font-size: 6px; } }
-
-@media screen and (max-width: 600px) {
-  form#editInfo {
-    font-size: 6px; }
-    form#editInfo .inputWrapper.text input.style1:focus ~ label {
-      font-size: 4px; }
-    form#editInfo .inputWrapper.text input.style2:focus ~ label {
-      font-size: 4px; }
-    form#editInfo .inputWrapper.text input.style1 ~ label.top {
-      font-size: 4px; }
-    form#editInfo .inputWrapper.text input.style2 ~ label.top {
-      font-size: 4px; } }
+    form#editInfo .inputs .inputWrapper.text input.style1:focus ~ label {
+      font-size: 7px; }
+    form#editInfo .inputs .inputWrapper.text input.style1 ~ label.top {
+      font-size: 7px; } }
 
 @media screen and (max-width: 1000px) {
   form#editInfo {
     font-size: 8px; } }
-
-@media screen and (max-width: 700px) {
-  form#editInfo {
-    font-size: 7px; } }
 
 @media screen and (max-width: 1100px) {
   form#editInfo .allWrapper {
@@ -9074,7 +8968,7 @@ form#editInfo {
     form#editInfo .inputs .select2 {
       width: calc((100% - (3 * 3em)) / 3); } }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   form#editInfo .allWrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -9102,7 +8996,7 @@ form#editInfo {
     form#editInfo .inputs .select2 {
       width: calc((100% - (3 * 3em)) / 3); } }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 530px) {
   form#editInfo .allWrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -9130,6 +9024,36 @@ form#editInfo {
     form#editInfo .inputs .select2 {
       width: calc((100% - (2 * 3em)) / 2); } }
 
+@media screen and (max-width: 410px) {
+  form#editInfo .allWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: "";
+        align-content: ""; }
+    form#editInfo .allWrapper .img {
+      width: 12em; }
+      form#editInfo .allWrapper .img img {
+        width: 10em;
+        height: 10em; }
+  form#editInfo .inputs {
+    margin-right: 1.5em; }
+    form#editInfo .inputs .inputWrapper.text {
+      width: 100%; }
+    form#editInfo .inputs .select2 {
+      width: 100%; }
+    form#editInfo .inputs .inputWrapper.toggle {
+      margin-top: 0; } }
+
 form#changePass {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9141,17 +9065,20 @@ form#changePass {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -ms-flex-line-pack: "";
       align-content: ""; }
-  form#changePass h4 {
+  form#changePass > h4 {
     font-size: 2em;
-    color: #2d2d31;
-    font-weight: 700; }
+    color: white;
+    font-weight: 700;
+    background-color: #00897b;
+    padding: 0.5em 1.5em;
+    border-radius: 0.75em; }
   form#changePass button[type="submit"] {
     cursor: pointer;
     -webkit-transition: all .3s linear;
@@ -9160,12 +9087,16 @@ form#changePass {
     color: white;
     background-color: #00897b;
     border: 1.2px solid transparent;
-    font-size: 1.6em; }
+    font-size: 1.6em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1.5em; }
     form#changePass button[type="submit"]:hover {
       color: #00897b;
       background-color: white;
       border: 1.2px solid #00897b; }
   form#changePass .inputs {
+    margin-top: 0.75em;
     width: 100%;
     height: auto;
     display: -webkit-box;
@@ -9358,42 +9289,30 @@ form#changePass {
 @media screen and (max-width: 1000px) {
   form#changePass {
     font-size: 8px; }
-    form#changePass .inputWrapper.text input.style1:focus ~ label {
+    form#changePass .inputs .inputWrapper.text input.style1:focus ~ label {
       font-size: 6px; }
-    form#changePass .inputWrapper.text input.style2:focus ~ label {
+    form#changePass .inputs .inputWrapper.text input.style2:focus ~ label {
       font-size: 6px; }
-    form#changePass .inputWrapper.text input.style1 ~ label.top {
+    form#changePass .inputs .inputWrapper.text input.style1 ~ label.top {
       font-size: 6px; }
-    form#changePass .inputWrapper.text input.style2 ~ label.top {
+    form#changePass .inputs .inputWrapper.text input.style2 ~ label.top {
       font-size: 6px; } }
-
-@media screen and (max-width: 600px) {
-  form#changePass {
-    font-size: 6px; }
-    form#changePass .inputWrapper.text input.style1:focus ~ label {
-      font-size: 4px; }
-    form#changePass .inputWrapper.text input.style2:focus ~ label {
-      font-size: 4px; }
-    form#changePass .inputWrapper.text input.style1 ~ label.top {
-      font-size: 4px; }
-    form#changePass .inputWrapper.text input.style2 ~ label.top {
-      font-size: 4px; } }
 
 @media screen and (max-width: 1000px) {
   form#changePass {
     font-size: 8px; } }
 
-@media screen and (max-width: 700px) {
-  form#changePass {
-    font-size: 7px; } }
-
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   form#changePass .inputs .inputWrapper.text {
     width: calc((100% - (3 * 3em)) / 3); } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 580px) {
   form#changePass .inputs .inputWrapper.text {
     width: calc((100% - (2 * 3em)) / 2); } }
+
+@media screen and (max-width: 420px) {
+  form#changePass .inputs .inputWrapper.text {
+    width: 100%; } }
 
 form#info {
   display: -webkit-box;
@@ -9406,17 +9325,20 @@ form#info {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -ms-flex-line-pack: "";
       align-content: ""; }
-  form#info h4 {
+  form#info > h4 {
     font-size: 2em;
+    color: white;
     font-weight: 700;
-    color: #00897b; }
+    background-color: #00897b;
+    padding: 0.5em 1.5em;
+    border-radius: 0.75em; }
   form#info button[type="submit"] {
     cursor: pointer;
     -webkit-transition: all .3s linear;
@@ -9425,7 +9347,7 @@ form#info {
     color: white;
     background-color: #00897b;
     border: 1.2px solid transparent;
-    margin-top: 1.5em; }
+    margin: 1.5em auto 0 auto; }
     form#info button[type="submit"]:hover {
       color: #00897b;
       background-color: white;
@@ -9582,11 +9504,7 @@ form#info {
   form#info {
     font-size: 8px; } }
 
-@media screen and (max-width: 700px) {
-  form#info {
-    font-size: 7px; } }
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
   form#info .questions .question .answers .radio {
     width: calc((100% - (2 * 1.5em)) / 2); } }
 
@@ -9685,12 +9603,6 @@ input[type=number] {
     font-size: 1.3em; }
   .select2-results__option.alert {
     font-size: 1.3em; } }
-
-@media screen and (max-width: 700px) {
-  .select2-results__option {
-    font-size: 0.8em; }
-  .select2-results__option.alert {
-    font-size: 0.8em; } }
 
 .select2-container{-webkit-box-sizing:border-box;box-sizing:border-box;display:inline-block;margin:0;position:relative;vertical-align:middle}.select2-container .select2-selection--single{-webkit-box-sizing:border-box;box-sizing:border-box;cursor:pointer;display:block;height:28px;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-select:none}.select2-container .select2-selection--single .select2-selection__rendered{display:block;padding-left:8px;padding-right:20px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.select2-container .select2-selection--single .select2-selection__clear{position:relative}.select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered{padding-right:8px;padding-left:20px}.select2-container .select2-selection--multiple{-webkit-box-sizing:border-box;box-sizing:border-box;cursor:pointer;display:block;min-height:32px;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-select:none}.select2-container .select2-selection--multiple .select2-selection__rendered{display:inline-block;overflow:hidden;padding-left:8px;text-overflow:ellipsis;white-space:nowrap}.select2-container .select2-search--inline{float:left}.select2-container .select2-search--inline .select2-search__field{-webkit-box-sizing:border-box;box-sizing:border-box;border:none;font-size:100%;margin-top:5px;padding:0}.select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button{-webkit-appearance:none}.select2-dropdown{background-color:white;border:1px solid #aaa;border-radius:4px;-webkit-box-sizing:border-box;box-sizing:border-box;display:block;position:absolute;left:-100000px;width:100%;z-index:1051}.select2-results{display:block}.select2-results__options{list-style:none;margin:0;padding:0}.select2-results__option{padding:6px;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-select:none}.select2-results__option[aria-selected]{cursor:pointer}.select2-container--open .select2-dropdown{left:0}.select2-container--open .select2-dropdown--above{border-bottom:none;border-bottom-left-radius:0;border-bottom-right-radius:0}.select2-container--open .select2-dropdown--below{border-top:none;border-top-left-radius:0;border-top-right-radius:0}.select2-search--dropdown{display:block;padding:4px}.select2-search--dropdown .select2-search__field{padding:4px;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box}.select2-search--dropdown .select2-search__field::-webkit-search-cancel-button{-webkit-appearance:none}.select2-search--dropdown.select2-search--hide{display:none}.select2-close-mask{border:0;margin:0;padding:0;display:block;position:fixed;left:0;top:0;min-height:100%;min-width:100%;height:auto;width:auto;opacity:0;z-index:99;background-color:#fff;filter:alpha(opacity=0)}.select2-hidden-accessible{border:0 !important;clip:rect(0 0 0 0) !important;-webkit-clip-path:inset(50%) !important;clip-path:inset(50%) !important;height:1px !important;overflow:hidden !important;padding:0 !important;position:absolute !important;width:1px !important;white-space:nowrap !important}.select2-container--default .select2-selection--single{background-color:#fff;border:1px solid #aaa;border-radius:4px}.select2-container--default .select2-selection--single .select2-selection__rendered{color:#444;line-height:28px}.select2-container--default .select2-selection--single .select2-selection__clear{cursor:pointer;float:right;font-weight:bold}.select2-container--default .select2-selection--single .select2-selection__placeholder{color:#999}.select2-container--default .select2-selection--single .select2-selection__arrow{height:26px;position:absolute;top:1px;right:1px;width:20px}.select2-container--default .select2-selection--single .select2-selection__arrow b{border-color:#888 transparent transparent transparent;border-style:solid;border-width:5px 4px 0 4px;height:0;left:50%;margin-left:-4px;margin-top:-2px;position:absolute;top:50%;width:0}.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__clear{float:left}.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__arrow{left:1px;right:auto}.select2-container--default.select2-container--disabled .select2-selection--single{background-color:#eee;cursor:default}.select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear{display:none}.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{border-color:transparent transparent #888 transparent;border-width:0 4px 5px 4px}.select2-container--default .select2-selection--multiple{background-color:white;border:1px solid #aaa;border-radius:4px;cursor:text}.select2-container--default .select2-selection--multiple .select2-selection__rendered{-webkit-box-sizing:border-box;box-sizing:border-box;list-style:none;margin:0;padding:0 5px;width:100%}.select2-container--default .select2-selection--multiple .select2-selection__rendered li{list-style:none}.select2-container--default .select2-selection--multiple .select2-selection__clear{cursor:pointer;float:right;font-weight:bold;margin-top:5px;margin-right:10px;padding:1px}.select2-container--default .select2-selection--multiple .select2-selection__choice{background-color:#e4e4e4;border:1px solid #aaa;border-radius:4px;cursor:default;float:left;margin-right:5px;margin-top:5px;padding:0 5px}.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{color:#999;cursor:pointer;display:inline-block;font-weight:bold;margin-right:2px}.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover{color:#333}.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice,.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-search--inline{float:right}.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice{margin-left:5px;margin-right:auto}.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove{margin-left:2px;margin-right:auto}.select2-container--default.select2-container--focus .select2-selection--multiple{border:solid black 1px;outline:0}.select2-container--default.select2-container--disabled .select2-selection--multiple{background-color:#eee;cursor:default}.select2-container--default.select2-container--disabled .select2-selection__choice__remove{display:none}.select2-container--default.select2-container--open.select2-container--above .select2-selection--single,.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple{border-top-left-radius:0;border-top-right-radius:0}.select2-container--default.select2-container--open.select2-container--below .select2-selection--single,.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple{border-bottom-left-radius:0;border-bottom-right-radius:0}.select2-container--default .select2-search--dropdown .select2-search__field{border:1px solid #aaa}.select2-container--default .select2-search--inline .select2-search__field{background:transparent;border:none;outline:0;-webkit-box-shadow:none;box-shadow:none;-webkit-appearance:textfield}.select2-container--default .select2-results>.select2-results__options{max-height:200px;overflow-y:auto}.select2-container--default .select2-results__option[role=group]{padding:0}.select2-container--default .select2-results__option[aria-disabled=true]{color:#999}.select2-container--default .select2-results__option[aria-selected=true]{background-color:#ddd}.select2-container--default .select2-results__option .select2-results__option{padding-left:1em}.select2-container--default .select2-results__option .select2-results__option .select2-results__group{padding-left:0}.select2-container--default .select2-results__option .select2-results__option .select2-results__option{margin-left:-1em;padding-left:2em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-2em;padding-left:3em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-3em;padding-left:4em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-4em;padding-left:5em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-5em;padding-left:6em}.select2-container--default .select2-results__option--highlighted[aria-selected]{background-color:#5897fb;color:white}.select2-container--default .select2-results__group{cursor:default;display:block;padding:6px}.select2-container--classic .select2-selection--single{background-color:#f7f7f7;border:1px solid #aaa;border-radius:4px;outline:0;background-image:-webkit-linear-gradient(top, #fff 50%, #eee 100%);background-image:-o-linear-gradient(top, #fff 50%, #eee 100%);background-image:-webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), to(#eee));background-image:linear-gradient(to bottom, #fff 50%, #eee 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0)}.select2-container--classic .select2-selection--single:focus{border:1px solid #5897fb}.select2-container--classic .select2-selection--single .select2-selection__rendered{color:#444;line-height:28px}.select2-container--classic .select2-selection--single .select2-selection__clear{cursor:pointer;float:right;font-weight:bold;margin-right:10px}.select2-container--classic .select2-selection--single .select2-selection__placeholder{color:#999}.select2-container--classic .select2-selection--single .select2-selection__arrow{background-color:#ddd;border:none;border-left:1px solid #aaa;border-top-right-radius:4px;border-bottom-right-radius:4px;height:26px;position:absolute;top:1px;right:1px;width:20px;background-image:-webkit-linear-gradient(top, #eee 50%, #ccc 100%);background-image:-o-linear-gradient(top, #eee 50%, #ccc 100%);background-image:-webkit-gradient(linear, left top, left bottom, color-stop(50%, #eee), to(#ccc));background-image:linear-gradient(to bottom, #eee 50%, #ccc 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFCCCCCC', GradientType=0)}.select2-container--classic .select2-selection--single .select2-selection__arrow b{border-color:#888 transparent transparent transparent;border-style:solid;border-width:5px 4px 0 4px;height:0;left:50%;margin-left:-4px;margin-top:-2px;position:absolute;top:50%;width:0}.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__clear{float:left}.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__arrow{border:none;border-right:1px solid #aaa;border-radius:0;border-top-left-radius:4px;border-bottom-left-radius:4px;left:1px;right:auto}.select2-container--classic.select2-container--open .select2-selection--single{border:1px solid #5897fb}.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow{background:transparent;border:none}.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b{border-color:transparent transparent #888 transparent;border-width:0 4px 5px 4px}.select2-container--classic.select2-container--open.select2-container--above .select2-selection--single{border-top:none;border-top-left-radius:0;border-top-right-radius:0;background-image:-webkit-linear-gradient(top, #fff 0%, #eee 50%);background-image:-o-linear-gradient(top, #fff 0%, #eee 50%);background-image:-webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(50%, #eee));background-image:linear-gradient(to bottom, #fff 0%, #eee 50%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0)}.select2-container--classic.select2-container--open.select2-container--below .select2-selection--single{border-bottom:none;border-bottom-left-radius:0;border-bottom-right-radius:0;background-image:-webkit-linear-gradient(top, #eee 50%, #fff 100%);background-image:-o-linear-gradient(top, #eee 50%, #fff 100%);background-image:-webkit-gradient(linear, left top, left bottom, color-stop(50%, #eee), to(#fff));background-image:linear-gradient(to bottom, #eee 50%, #fff 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFFFFFFF', GradientType=0)}.select2-container--classic .select2-selection--multiple{background-color:white;border:1px solid #aaa;border-radius:4px;cursor:text;outline:0}.select2-container--classic .select2-selection--multiple:focus{border:1px solid #5897fb}.select2-container--classic .select2-selection--multiple .select2-selection__rendered{list-style:none;margin:0;padding:0 5px}.select2-container--classic .select2-selection--multiple .select2-selection__clear{display:none}.select2-container--classic .select2-selection--multiple .select2-selection__choice{background-color:#e4e4e4;border:1px solid #aaa;border-radius:4px;cursor:default;float:left;margin-right:5px;margin-top:5px;padding:0 5px}.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove{color:#888;cursor:pointer;display:inline-block;font-weight:bold;margin-right:2px}.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover{color:#555}.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice{float:right;margin-left:5px;margin-right:auto}.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove{margin-left:2px;margin-right:auto}.select2-container--classic.select2-container--open .select2-selection--multiple{border:1px solid #5897fb}.select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple{border-top:none;border-top-left-radius:0;border-top-right-radius:0}.select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple{border-bottom:none;border-bottom-left-radius:0;border-bottom-right-radius:0}.select2-container--classic .select2-search--dropdown .select2-search__field{border:1px solid #aaa;outline:0}.select2-container--classic .select2-search--inline .select2-search__field{outline:0;-webkit-box-shadow:none;box-shadow:none}.select2-container--classic .select2-dropdown{background-color:#fff;border:1px solid transparent}.select2-container--classic .select2-dropdown--above{border-bottom:none}.select2-container--classic .select2-dropdown--below{border-top:none}.select2-container--classic .select2-results>.select2-results__options{max-height:200px;overflow-y:auto}.select2-container--classic .select2-results__option[role=group]{padding:0}.select2-container--classic .select2-results__option[aria-disabled=true]{color:grey}.select2-container--classic .select2-results__option--highlighted[aria-selected]{background-color:#3875d7;color:#fff}.select2-container--classic .select2-results__group{cursor:default;display:block;padding:6px}.select2-container--classic.select2-container--open .select2-dropdown{border-color:#5897fb}
 
@@ -9942,11 +9854,13 @@ input[type=number] {
             flex-wrap: nowrap;
         -ms-flex-line-pack: "";
             align-content: ""; }
+        #topMenu .left #lang .title img {
+          width: 2em;
+          height: 1.5em; }
         #topMenu .left #lang .title p, #topMenu .left #lang .title i {
           font-size: 1.6em;
-          color: #fbfbfb; }
-        #topMenu .left #lang .title i {
-          margin-right: .3em; }
+          color: #fbfbfb;
+          margin-right: .2em; }
       #topMenu .left #lang ul {
         width: 12em;
         height: auto;
@@ -9992,11 +9906,33 @@ input[type=number] {
             color: #fbfbfb;
             background-color: #00897b; }
           #topMenu .left #lang ul li a {
-            display: inline-block;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            -ms-flex-line-pack: "";
+                align-content: "";
             width: 100%;
             height: 100%;
-            color: inherit;
-            font-size: 1.4em; }
+            color: inherit; }
+            #topMenu .left #lang ul li a img {
+              width: 2em;
+              height: 1.5em; }
+            #topMenu .left #lang ul li a p {
+              font-size: 1.6em;
+              color: inherit;
+              margin-right: .2em; }
       #topMenu .left #lang ul.show {
         z-index: 1; }
     #topMenu .left #more {
@@ -10237,7 +10173,7 @@ header {
   -o-transition: all .3s linear;
   transition: all .3s linear;
   color: white;
-  background-color: #c62828;
+  background-color: #7b1fa2;
   border: 1.2px solid transparent;
   position: fixed;
   top: 50%;
@@ -10250,9 +10186,9 @@ header {
   z-index: 10;
   transition: all .3s linear; }
   #menuTrigger:hover {
-    color: #c62828;
+    color: #7b1fa2;
     background-color: white;
-    border: 1.2px solid #c62828; }
+    border: 1.2px solid #7b1fa2; }
   #menuTrigger::before {
     position: absolute;
     top: 50%;
@@ -10757,7 +10693,7 @@ header {
           transform: translateX(50%);
   bottom: 2.5%;
   cursor: pointer;
-  background-color: #c62828;
+  background-color: #7b1fa2;
   -webkit-box-shadow: 0 0 0.5em 0.1em rgba(70, 69, 85, 0.3);
           box-shadow: 0 0 0.5em 0.1em rgba(70, 69, 85, 0.3); }
   #smooth::before {
@@ -10798,17 +10734,20 @@ header {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -ms-flex-line-pack: "";
       align-content: ""; }
-  #reportWrapper h4 {
+  #reportWrapper > h4 {
     font-size: 2em;
+    color: white;
     font-weight: 700;
-    color: #00897b; }
+    background-color: #00897b;
+    padding: 0.5em 1.5em;
+    border-radius: 0.75em; }
   #reportWrapper .content {
     width: 100%;
     height: auto;
@@ -10848,7 +10787,7 @@ header {
   #reportWrapper {
     font-size: 7px; } }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   #reportWrapper .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
