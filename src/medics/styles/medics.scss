@@ -241,9 +241,9 @@ main{
     }
 }
 @include resizeTablet('main') ;
-@include resizeMobile('main') ;
+// @include resizeMobile('main') ;
 @include resizeTablet('#mobileFilterSort') ;
-@include resizeMobile('#mobileFilterSort') ;
+// @include resizeMobile('#mobileFilterSort') ;
 @include mediaQ(1200px){
     main{
         #medics{
@@ -297,7 +297,7 @@ main{
     }
     #mobileFilterSort{display: flex;}
 }
-@include mediaQ(550px){
+@include mediaQ(620px){
     main{
         #medics{
             .medicsWrapper{
@@ -309,7 +309,7 @@ main{
         }
     }
 }
-@include mediaQ(380px){
+@include mediaQ(480px){
     main{
         #medics{
             .medicsWrapper{
@@ -318,6 +318,13 @@ main{
                     height: 31em;
                 }
             }
+        }
+    }
+}
+@include mediaQ(350px){
+    form#filters{
+        .row#filterWrapper{
+            width: 90% !important; 
         }
     }
 }

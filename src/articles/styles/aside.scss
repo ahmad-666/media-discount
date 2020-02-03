@@ -192,3 +192,17 @@ main{
         
     }
 }
+@include mediaQ(340px){
+    main{
+        aside.sideBar{
+            #popular,#similars{
+               .articles{
+                   .article{
+                       width: 75%;             
+                   }       
+               }
+            }
+        }  
+        
+    }
+}

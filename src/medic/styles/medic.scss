@@ -18,7 +18,7 @@
     }
 }
 @include resizeTablet('#medicWrapper') ;
-@include resizeMobile('#medicWrapper') ;
+// @include resizeMobile('#medicWrapper') ;
 @include mediaQ(750px){
     #medicWrapper{
         @include flex(column-reverse,flex-start,center,nowrap,"") ;

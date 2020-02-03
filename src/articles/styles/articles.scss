@@ -113,7 +113,7 @@ main {
         }
     }
 }
-@include mediaQ(1200px){
+@include mediaQ(1300px){
     main {
         .wrapper {
             .articles {
@@ -124,7 +124,7 @@ main {
         }
     }
 }
-@include mediaQ(500px){
+@include mediaQ(880px){
     main {
         .wrapper {
             .articles {
@@ -135,7 +135,29 @@ main {
         }
     }
 }
-@include mediaQ(350px){
+@include mediaQ(750px){
+    main {
+        .wrapper {
+            .articles {
+                .article {
+                    width: calc((100% - (3 * 3em)) / 3);             
+                }       
+            }
+        }
+    }
+}
+@include mediaQ(550px){
+    main {
+        .wrapper {
+            .articles {
+                .article {
+                    width: calc((100% - (2 * 3em)) / 2);             
+                }       
+            }
+        }
+    }
+}
+@include mediaQ(390px){
     main {
         .wrapper {
             .articles {

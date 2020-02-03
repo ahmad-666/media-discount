@@ -71,14 +71,14 @@ input[type=number] {-moz-appearance:textfield;}
         font-size: $fontM - .3em;
     }
 }
-@include mediaQ(700px){
-    .select2-results__option{
-        font-size: $fontM - .8em;
-    }
-    .select2-results__option.alert{
-        font-size: $fontM - .8em ;
-    }
-}
+// @include mediaQ(700px){
+//     .select2-results__option{
+//         font-size: $fontM - .8em;
+//     }
+//     .select2-results__option.alert{
+//         font-size: $fontM - .8em ;
+//     }
+// }
 // #blackFilter{
 //     opacity: 0;
 //     visibility: hidden;

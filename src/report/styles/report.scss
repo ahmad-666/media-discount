@@ -27,7 +27,7 @@
     #reportWrapper{width: 95%;}
 }
 @include resizeMobile('#reportWrapper') ;
-@include mediaQ(550px){
+@include mediaQ(650px){
     #reportWrapper{
         .content{
             @include flex(column,flex-start,center,nowrap,"") ;
