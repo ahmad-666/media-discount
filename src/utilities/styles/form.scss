@@ -2798,21 +2798,26 @@ form#discount{
 }
 form#editInfo{
     display: flex;
-    @include flex(column,flex-start,center,nowrap,"") ;
-    h4{
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    > h4{
         font-size: $fontL;
-        color: $textDark;
+        color: white;
         font-weight: 700;
+        background-color: $primaryColor;
+        padding: .5em $dist2;
+        border-radius: $dist1;
     }
     button[type="submit"]{
         @include swapColor(white,$primaryColor) ;
         font-size: $fontM;
+        margin: $dist2 auto 0 auto;
     }
     .allWrapper{
         width: 100%;
         height: auto;
         display: flex;
         @include flex(row,flex-start,flex-start,nowrap,"") ;
+        margin-top: $dist2;
         .img{
             flex-shrink: 0;
             width: 12em;
@@ -3082,53 +3087,21 @@ form#editInfo{
 @include mediaQ(1000px){
     form#editInfo {
         font-size: 8px ;
-        .inputWrapper.text {
-            input.style1 {
-                &:focus {
-                    ~label {font-size: 6px;}                  
-                }
+        .inputs{
+            .inputWrapper.text {
+                input.style1 {
+                    &:focus {
+                        ~label {font-size: 7px;}                  
+                    }
+                }    
+                input.style1 {
+                    ~label.top {font-size: 7px;}
+                }    
             }
-            input.style2 {
-                &:focus {
-                    ~label {font-size: 6px;}
-                }
-            }  
-            input.style1 {
-                ~label.top {font-size: 6px;}
-            }
-    
-            input.style2 {
-                ~label.top {font-size: 6px;}
-            }
-        }
-    }
-}
-@include mediaQ(600px){
-    form#editInfo {
-        font-size: 6px ;
-        .inputWrapper.text {
-            input.style1 {
-                &:focus {
-                    ~label {font-size: 4px;}                  
-                }
-            }
-            input.style2 {
-                &:focus {
-                    ~label {font-size: 4px;}
-                }
-            }  
-            input.style1 {
-                ~label.top {font-size: 4px;}
-            }
-    
-            input.style2 {
-                ~label.top {font-size: 4px;}
-            }
-        }
+        }     
     }
 }
 @include resizeTablet('form#editInfo') ;
-@include resizeMobile('form#editInfo') ;
 @include mediaQ(1100px){
     form#editInfo{
         .allWrapper{
@@ -3152,7 +3125,7 @@ form#editInfo{
         }
     }
 }
-@include mediaQ(550px){
+@include mediaQ(650px){
     form#editInfo{
         .allWrapper{
             @include flex(column,flex-start,center,nowrap,"") ;
@@ -3175,7 +3148,7 @@ form#editInfo{
         }
     }
 }
-@include mediaQ(450px){
+@include mediaQ(530px){
     form#editInfo{
         .allWrapper{
             @include flex(column,flex-start,center,nowrap,"") ;
@@ -3194,23 +3167,56 @@ form#editInfo{
             }
             .select2{
                 width: calc((100% - (2 * 3em)) / 2);
+            }
+        }
+    }
+}
+@include mediaQ(410px){
+    form#editInfo{
+        .allWrapper{
+            @include flex(column,flex-start,center,nowrap,"") ;
+            .img{
+                width: 12em;
+                img{
+                    width: 10em;
+                    height: 10em;
+                }
+            }
+        }
+        .inputs{
+            margin-right: $dist2;
+            .inputWrapper.text {
+                width: 100%;
+            }
+            .select2{
+                width: 100%;
+            }
+            .inputWrapper.toggle{
+                margin-top: 0;
             }
         }
     }
 }
 form#changePass{
     display: flex;
-    @include flex(column,flex-start,center,nowrap,"") ;
-    h4{
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    > h4{
         font-size: $fontL;
-        color: $textDark;
+        color: white;
         font-weight: 700;
+        background-color: $primaryColor;
+        padding: .5em $dist2;
+        border-radius: $dist1;
     }
     button[type="submit"]{
         @include swapColor(white,$primaryColor) ;
         font-size: $fontM;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: $dist2;
     }
     .inputs{
+        margin-top: $dist1;
         width: 100%;
         height: auto;
         display: flex;
@@ -3388,54 +3394,32 @@ form#changePass{
 @include mediaQ(1000px){
     form#changePass {
         font-size: 8px ;
-        .inputWrapper.text {
-            input.style1 {
-                &:focus {
-                    ~label {font-size: 6px;}                  
+        .inputs{
+            .inputWrapper.text {
+                input.style1 {
+                    &:focus {
+                        ~label {font-size: 6px;}                  
+                    }
                 }
-            }
-            input.style2 {
-                &:focus {
-                    ~label {font-size: 6px;}
+                input.style2 {
+                    &:focus {
+                        ~label {font-size: 6px;}
+                    }
+                }  
+                input.style1 {
+                    ~label.top {font-size: 6px;}
                 }
-            }  
-            input.style1 {
-                ~label.top {font-size: 6px;}
-            }
-    
-            input.style2 {
-                ~label.top {font-size: 6px;}
+        
+                input.style2 {
+                    ~label.top {font-size: 6px;}
+                }
             }
         }
-    }
-}
-@include mediaQ(600px){
-    form#changePass {
-        font-size: 6px ;
-        .inputWrapper.text {
-            input.style1 {
-                &:focus {
-                    ~label {font-size: 4px;}                  
-                }
-            }
-            input.style2 {
-                &:focus {
-                    ~label {font-size: 4px;}
-                }
-            }  
-            input.style1 {
-                ~label.top {font-size: 4px;}
-            }
-    
-            input.style2 {
-                ~label.top {font-size: 4px;}
-            }
-        }
+        
     }
 }
 @include resizeTablet('form#changePass') ;
-@include resizeMobile('form#changePass') ;
-@include mediaQ(550px){
+@include mediaQ(650px){
     form#changePass{
         .inputs{
             .inputWrapper.text {
@@ -3444,7 +3428,7 @@ form#changePass{
         }
     }
 }
-@include mediaQ(400px){
+@include mediaQ(580px){
     form#changePass{
         .inputs{
             .inputWrapper.text {
@@ -3453,17 +3437,29 @@ form#changePass{
         }
     }
 }
+@include mediaQ(420px){
+    form#changePass{
+        .inputs{
+            .inputWrapper.text {
+                width: 100%;
+            }
+        }
+    }
+}
 form#info{
     display: flex;
-    @include flex(column,flex-start,center,nowrap,"") ;
-    h4{
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    > h4{
         font-size: $fontL;
+        color: white;
         font-weight: 700;
-        color: $primaryColor;
+        background-color: $primaryColor;
+        padding: .5em $dist2;
+        border-radius: $dist1;
     }
     button[type="submit"]{
         @include swapColor(white,$primaryColor) ;
-        margin-top: $dist2;
+        margin: $dist2 auto 0 auto;
     }
     .questions{
         width: 100%;
@@ -3571,8 +3567,7 @@ form#info{
     }
 }
 @include resizeTablet('form#info') ;
-@include resizeMobile('form#info') ;
-@include mediaQ(450px){
+@include mediaQ(600px){
     form#info{
         .questions{
             .question{

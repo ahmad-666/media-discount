@@ -4,10 +4,13 @@
 #bookmarks{
     display: flex;
     @include flex(column,flex-start,flex-start,nowrap,"") ;
-    h4{
+    > h4{
         font-size: $fontL;
+        color: white;
         font-weight: 700;
-        color: $textDark;
+        background-color: $primaryColor;
+        padding: .5em $dist1;
+        border-radius: $dist1;
     }
     .showMore{
         border-radius: $dist1;
@@ -184,7 +187,6 @@
     }
 }
 @include resizeTablet('#bookmarks') ;
-@include resizeMobile('#bookmarks') ;
 @include mediaQ(1200px){
     #bookmarks{
         .medicsWrapper{
@@ -195,7 +197,7 @@
         }
     }
 }
-@include mediaQ(750px){
+@include mediaQ(850px){
     #bookmarks{
         .medicsWrapper{
             .medic{
@@ -205,7 +207,7 @@
         }
     }
 }
-@include mediaQ(450px){
+@include mediaQ(550px){
     #bookmarks{
         .medicsWrapper{
             .medic{

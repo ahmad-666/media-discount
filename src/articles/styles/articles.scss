@@ -9,10 +9,13 @@ main {
     .wrapper {
         display: flex;
         @include flex(column, flex-start, flex-start, nowrap, "");
-        h4 {
+        > h4{
             font-size: $fontL;
-            color: $textDark;
+            color: white;
             font-weight: 700;
+            background-color: $primaryColor;
+            padding: .5em $dist2;
+            border-radius: $dist1;
         }
         .articles {
             width: 100%;

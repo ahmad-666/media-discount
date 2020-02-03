@@ -3,11 +3,14 @@
 @import '../../mixins.scss' ;
 #reportWrapper{
     display: flex;
-    @include flex(column,flex-start,center,nowrap,"") ;
-    h4{
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    > h4{
         font-size: $fontL;
+        color: white;
         font-weight: 700;
-        color: $primaryColor;
+        background-color: $primaryColor;
+        padding: .5em $dist2;
+        border-radius: $dist1;
     }
     .content{
         width: 100%;
