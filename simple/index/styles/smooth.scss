@@ -1,0 +1,36 @@
+@import '../../variables.scss' ;
+@import '../../mixins.scss' ;
+@import '../../colors.scss' ;
+#smooth{
+    z-index: 3;
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 50%;
+    position: fixed;
+    right: 2.5%;
+    transform: translateX(50%);
+    bottom: 2.5%;
+    cursor: pointer;
+    background-color: #7b1fa2 ;
+    box-shadow: 0 0 .5em .1em $shadowColor;
+    &::before{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%,-50%);
+        color: white ;
+        font-size: $fontXL;
+    }
+}
+@include resizeTablet('#smooth') ;
+@include resizeMobile('#smooth') ;
+@include mediaQ(500px){
+    #smooth{
+        right: 4%;
+    } 
+}
+@include mediaQ(400px){
+    #smooth{
+        right: 5%;
+    } 
+}

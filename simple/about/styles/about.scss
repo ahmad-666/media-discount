@@ -1,0 +1,25 @@
+@import '../../variables.scss' ;
+@import '../../mixins.scss' ;
+@import '../../colors.scss' ;
+#about{
+    display: flex;
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    > h4{
+        font-size: $fontL;
+        color: white;
+        font-weight: 700;
+        background-color: $primaryColor;
+        padding: .5em $dist2;
+        border-radius: $dist1;
+    }
+    .txt{
+        width: 100%;
+        height: auto;
+        margin-top: $dist1;
+        line-height: $dist2 + .3em;
+        color: $textGrey;
+        font-size: $fontM;
+    }
+}
+@include resizeTablet('#about') ;
+// @include resizeMobile('#about') ;

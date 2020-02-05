@@ -1,0 +1,459 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+@import '../../utilities/styles/productSlider.scss' ;
+#medicInfo{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    @include flex(column-reverse,flex-start,flex-start,nowrap,"") ;
+    .right{
+        width: 100%;
+        height: auto;
+        padding: $dist2;
+        display: flex;
+        @include flex(column,flex-start,flex-start,nowrap,"") ;
+        // border-left: 1px solid lighten($textGrey,20%);
+        .title{
+            width: 100%;
+            height: auto;
+            display: flex;
+            @include flex(row,space-between,center,nowrap,"") ;
+            h4{
+                height: auto;
+                max-width: 65%;
+                font-size: $fontL;
+                font-weight: 700;
+                color: $primaryColor;
+            }
+        }
+        .icons{
+            width: 100%;
+            height: auto;
+            display: flex;
+            @include flex(row,flex-start,center,wrap,flex-start) ;
+            margin-top: $dist1;
+            margin-right: -$dist2;
+            .icon{
+                width: auto;
+                height: auto;
+                display: flex;
+                @include flex(row,flex-start,center,nowrap,"") ;
+                margin: $dist1 $dist2;            
+                i{
+                    font-size: $fontS + .1em;
+                    color: $primaryColor;
+                }
+                p{
+                    margin-right: .3em;
+                    color: $textGrey;
+                    font-size: $fontM - .2em;
+                }
+            }
+            
+           
+        }
+        .score{
+            width: auto ;
+            height: auto;
+            margin-top: $dist2;
+            display: flex;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            i{
+                font-size: $fontS + .2em;
+                color: #ff8f00  ;
+            }
+            i.notActive{color: lighten($textGrey,15%);}
+            p{
+                margin-right: .2em;
+                font-size: $fontS + .2em;
+                color: $textGrey;
+            }
+        }
+        .emojis{
+            width: auto;
+            height: auto;
+            margin-top: $dist2;
+            display: flex;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            .emoji{
+                &:not(:first-child){margin-right: 2em;}
+                width: auto;
+                height: auto;
+                display: flex;
+                @include flex(column,flex-start,center,nowrap,"") ;
+                i{
+                    font-size: 4em ;
+                    color: $textGrey;
+                }
+                p{
+                    font-weight: 700;
+                    margin-top: .2em;
+                    font-size: $fontM;
+                }
+                &:nth-child(1){
+                    p{color: $primaryColor;}
+                }
+                &:nth-child(2){
+                    p{color: $orangeColor1;}
+                }
+                &:nth-child(3){
+                    p{color: lighten($redColor2,5%);}
+                }
+            }
+        }
+        .bookmark{
+            flex-shrink: 0;
+            width: auto;     
+            height: auto;
+            margin-top: $dist2;
+            display: flex;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            cursor: pointer;
+            color: $textGrey;
+            p{font-size: $fontM - .2em;}
+            &:hover{color: lighten($redColor2,15%);}
+            .likeIcon{
+                margin-right: .3em;
+                font-size: $fontL;
+                transition: all .3s linear;
+            }
+            position: relative;
+            .toast{
+                opacity: 0;
+                visibility: hidden;
+                width: 118%;
+                height: auto;
+                border-radius: $dist2 ;
+                padding: .3em $dist1 + .3em;
+                background-color: $primaryColor ;
+                color: white;
+                font-size: $fontS ;
+                position: absolute;
+                top: 105%;
+                right: 0;
+            }
+            .toast.show{animation: toast 1.5s linear 0s 1 forwards ;}
+            @keyframes toast {
+                0%{opacity: 0;visibility: hidden;}
+                15%{opacity: 1;visibility: visible;}
+                85%{opacity: 1;visibility: visible;}
+                100%{opacity: 0;visibility: hidden;}
+            }
+            
+        }
+        .bookmark.trigger{
+            z-index: 2;
+            color: lighten($redColor2,5%);
+        }
+        .share{
+            width: auto;
+            height: auto;
+            margin-top: $dist2;
+            display: flex;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            .title{
+                width: auto;
+                height: auto;
+                display: flex;
+                @include flex(column,flex-start,center,nowrap,"") ;
+                cursor: pointer;
+                i{
+                    width: 5.5em;
+                    height: 5.5em;
+                    border-radius: 50%;
+                    position: relative;
+                    background-color: $primaryColor;
+                    &::before{
+                        position: absolute;
+                        top: 50%;
+                        right: 50%;
+                        transform: translate(50%,-50%);
+                        font-size: $fontL;
+                        color: white;
+                    }
+                }
+                p{
+                    font-size: $fontM - .2em;
+                    color: $textGrey;
+                    margin-top: .2em;
+                }
+            }
+            .socials{
+                // opacity: 0;
+                // visibility: hidden;
+                transition: all .45s linear;
+                width: auto;
+                height: auto;
+                display: flex;
+                @include flex(row,flex-start,center,nowrap,"") ;
+                a{
+                    width: 3.5em;
+                    height: 3.5em;
+                    margin-right: $dist3;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    &:nth-child(1){
+                        i{
+                            background-color: $blueColor1;
+                        }
+                    }
+                    &:nth-child(2){
+                        i{
+                            background-color: $blueColor2;
+                        }
+                    }
+                    &:nth-child(3){
+                        background-color: $primaryColor;
+                    }
+                    i{
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        &::before{
+                            position: absolute;
+                            top: 50%;
+                            right: 50%;
+                            transform: translate(50%,-50%);
+                            color: white;
+                            font-size: $fontM + .2em;
+                        }
+                    }
+                }
+            }
+            // .socials.show{
+            //     opacity: 1;
+            //     visibility: visible;
+            // }
+        }
+        .desc{
+            width: 100%;
+            max-height: 23em;
+            overflow: auto;
+            font-size: $fontM;
+            line-height: $dist2 + .2em;
+            color: $textGrey;
+            margin-top: $dist2;
+        }
+        #features{
+            width: 100%;
+            height: auto;
+            margin-top: $dist2;
+            padding: $dist2 0;
+            border-bottom: 1px solid lighten($textGrey,15%);
+            border-top: 1px solid lighten($textGrey,15%);
+            display: flex;
+            @include flex(column,flex-start,flex-start,nowrap,"") ;
+            .right,.left,.last{
+                width: 100%;
+                height: auto;
+                padding: 0 $dist2;
+                display: flex;
+                @include flex(column,flex-start,flex-start,nowrap,"") ;
+                .collapseTrigger{
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    @include flex(row,flex-start,center,nowrap,"") ;
+                    h4{
+                        font-size: $fontM + .2em;
+                        font-weight: 700;
+                    }
+                    i{
+                        font-size: $fontM + .2em;
+                        margin-right: .3em;
+                    }
+                }
+                ul{
+                    width: 100%;
+                    margin-top: $dist1;
+                    display: flex;
+                    @include flex(column,flex-start,flex-start,nowrap,"") ;
+                    li{
+                        width: 100%;
+                        height: auto;
+                        &:not(:first-child){margin-top: $dist1;}
+                        display: flex;
+                        @include flex(row,flex-start,center,nowrap,"") ;
+                        i{
+                            font-size: $fontM;
+                        }
+                        p{
+                            width: 100%;
+                            height: auto;
+                            line-height: $dist2 + .3em;
+                            color: $textGrey;
+                            font-size: $fontM;
+                            margin-right: .4em;
+                        }
+                    }
+                }
+            }
+            .right{
+                .collapseTrigger{
+                    h4,i{color: lighten($redColor2,5%);}
+                }
+                ul{
+                    li{
+                        i{color: lighten($redColor2,5%);}
+                    }
+                }
+            }
+            .left{
+                margin-top: $dist2;
+                .collapseTrigger{
+                    h4,i{color: $primaryColor;}
+                }
+                ul{
+                    li{
+                        i{color: $primaryColor;}
+                    }
+                }
+            }
+            .last{
+                margin-top: $dist2;
+                .collapseTrigger{
+                    h4,i{color: $orangeColor1;}
+                }
+                ul{
+                    li{
+                        i{color: $orangeColor1;}
+                    }
+                }
+            }
+
+        }  
+        #map{
+            width: 100%;
+            height: auto;
+            margin-top: $dist2;
+            display: flex;
+            @include flex(column,flex-start,flex-start,nowrap,"") ;
+            h4{
+                font-size: $fontL;
+                font-weight: 700;
+                color: $primaryColor;
+                margin-right: $dist1;
+            }
+            img{
+                margin: $dist2 auto 0 auto;
+                width: 75%;
+                height: 35em;
+            }
+        }      
+    }
+    .left{
+        width: 100%;
+        padding: $dist2;
+        .productSlider{
+            flex-shrink: none;
+            width: 75% ;
+            height: auto;
+            margin-right: auto ;
+            margin-left: auto;
+            .curr_wrapper{
+                width: 100% ;
+                height: 40em;
+            }
+            .slider_wrapper{
+                .slider{
+                    .slide{
+                        width: calc((100% - (7 * 1.4em)) / 7) ;
+                        height: 10em;
+                    }
+                }
+            }
+        }
+    }
+}
+@include mediaQ(1200px){
+    #medicInfo{
+        .left{
+            .productSlider{
+                width: 75% ;
+                .curr_wrapper{
+                    height: 40em;
+                }
+                .slider_wrapper{
+                    .slider{
+                        .slide{
+                            width: calc((100% - (6 * 1.4em)) / 6) ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include mediaQ(900px){
+    #medicInfo{
+        .left{
+            .productSlider{
+                width: 85% ;
+                .curr_wrapper{
+                    height: 40em;
+                }
+                .slider_wrapper{
+                    .slider{
+                        .slide{
+                            width: calc((100% - (5 * 1.4em)) / 5) ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include mediaQ(650px){
+    #medicInfo{
+        .left{
+            .productSlider{
+                width: 95% ;
+                .curr_wrapper{
+                    height: 40em;
+                }
+                .slider_wrapper{
+                    .slider{
+                        .slide{
+                            width: calc((100% - (4 * 1.4em)) / 4) ;
+                        }
+                    }
+                }
+            }
+        }
+        .right{
+            #features{
+                @include flex(column,flex-start,flex-start,nowrap,"") ;
+                .right,.left{
+                    width: 100%;    
+                }
+            }  
+            #map{
+                img{
+                    width: 95%;
+                    height: 35em;
+                }
+            }      
+        }
+    }
+}
+@include mediaQ(480px){
+    #medicInfo{
+        .left{
+            .productSlider{
+                width: 95% ;
+                .curr_wrapper{
+                    height: 40em;
+                }
+                .slider_wrapper{
+                    .slider{
+                        .slide{
+                            width: calc((100% - (3 * 1.4em)) / 3) ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

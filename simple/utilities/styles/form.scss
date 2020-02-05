@@ -1,0 +1,3582 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+form#searchForm{
+    width: 100%;
+    height: auto;
+    margin-top: 5em;
+    padding: $dist2 $dist3;
+    background-color: white ;
+    border-bottom: 1px solid $primaryColor;
+    box-shadow: 0 .7em 1em -.2em $shadowColor;
+    display: flex;
+    @include flex(row,center,center,wrap,flex-start) ;
+    .inputWrapper.text {
+        width: 25em;
+        height: 4em;
+        position: relative;
+        margin: $dist2;
+        input {
+            width: 100%;
+            height: 100%;
+            line-height: 4em;
+            padding: 0 $dist1;
+            font-size: $fontM;
+            color: $darkColor;
+            transition: all .2s linear;
+            &::placeholder {
+                color: $textGrey;
+                font-size: $fontM;
+            }
+        }
+        input.style1 {
+            border: none;
+            border-bottom: 1.2px solid lighten($textGrey, 25%);
+
+            &:focus {
+                ~label {
+                    color: $primaryColor;
+                    font-size: 8px;
+                    bottom: calc(100% + .5em);
+                    transform: translateY(50%);
+                    right: 0;
+                }
+
+                ~.line {
+                    width: 100%;
+                }
+            }
+        }
+
+        input.style2 {
+            border: 1.2px solid lighten($textGrey, 25%);
+            border-radius: $dist3;
+
+            &:focus {
+                border: 1.2px solid $primaryColor;
+
+                ~label {
+                    color: $primaryColor;
+                    font-size: 8px;
+                    bottom: calc(100% + 1.5em);
+                    transform: translateY(50%);
+                    right: $dist1;
+                }
+
+                ~.line {
+                    width: 0%;
+                }
+            }
+        }
+
+        input.style1.error {
+            border-bottom: 1.2px solid lighten($redColor2, 5%);
+
+            ~label {
+                color: lighten($redColor2, 5%);
+            }
+
+            ~.line {
+                background-color: lighten($redColor2, 5%);
+            }
+        }
+
+        input.style2.error {
+            border: 1.2px solid lighten($redColor2, 5%);
+
+            ~label {
+                color: lighten($redColor2, 5%);
+            }
+        }
+
+        label {
+            width: auto;
+            height: auto;
+            position: absolute;
+            right: $dist1;
+            bottom: 50%;
+            transform: translateY(50%);
+            display: flex;
+            @include flex(row, flex-start, center, nowrap, "");
+            color: lighten($textGrey, 20%);
+            transition: all .2s linear;
+            .isRequire{
+                width: auto;
+                height: auto;
+                color: lighten($redColor2, 0%);
+                font-size: $fontS - .1em; 
+                padding-left: .3em;
+            }
+            .icon {
+                font-size: $fontM;
+            }
+
+            p {
+                font-size: $fontM - .1em;
+                transform: translateX(-.3em);
+            }
+        }
+
+        input.style1 {
+            ~label.top {
+                font-size: 8px;
+                bottom: calc(100% + .5em);
+                transform: translateY(50%);
+                right: 0;
+            }
+        }
+
+        input.style2 {
+            ~label.top {
+                font-size: 8px;
+                bottom: calc(100% + 1.5em);
+                transform: translateY(50%);
+                right: $dist1;
+            }
+        }
+
+        .line {
+            width: 0%;
+            height: 1.2px;
+            background-color: $primaryColor;
+            position: absolute;
+            right: 0;
+            top: calc(100% - 1px);
+            transition: all .2s linear;
+        }
+
+        .msg {
+            width: auto;
+            height: auto;
+            border-radius: $dist3;
+            padding: $dist1 $dist2;
+            position: relative;
+            background-color: lighten($redColor2, 5%);
+            position: absolute;
+            right: 0;
+            top: 115%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .2s linear;
+
+            p {
+                color: $whiteColor2;
+                font-size: $fontM - .2em;
+            }
+
+            i {
+                font-size: $fontXL;
+                color: lighten($redColor2, 5%);
+                position: absolute;
+                right: $dist2;
+                top: calc(0% - .6em);
+            }
+        }
+
+        .msg.show {
+            opacity: 1;
+            visibility: visible;
+            z-index: 2;
+        }
+    } 
+    .select2{
+        width: 15em ;
+        font-size: $fontM ;
+        margin-right: $dist3;
+        option{
+            color: darken($textGrey,10%) ;
+            font-size: $fontM ;
+        }    
+    }
+    .select2-container--default .select2-selection--single{
+        border-radius: $dist3 ;
+        border: 1.2px solid lighten($textGrey,25%) ;
+        height: 2.5em;
+        outline: none  ;
+        .select2-selection__rendered{line-height: 2.5em ;}
+        .select2-selection__arrow{@include center-y ;}
+    }
+    button[type="submit"]{
+        font-size: $fontM ;
+        margin-right: $dist3;
+        @include swapColor(white,$primaryColor) ;
+    }
+}
+@include mediaQ(1000px){
+    form#searchForm {
+        font-size: 8px ;
+        .inputWrapper.text {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 6px;}                  
+                }
+            }
+            input.style2 {
+                &:focus {
+                    ~label {font-size: 6px;}
+                }
+            }  
+            input.style1 {
+                ~label.top {font-size: 6px;}
+            }
+    
+            input.style2 {
+                ~label.top {font-size: 6px;}
+            }
+        }
+    }
+}
+// @include mediaQ(600px){
+//     form#searchForm {
+//         font-size: 6px ;
+//         .inputWrapper.text {
+//             input.style1 {
+//                 &:focus {
+//                     ~label {font-size: 4px;}                  
+//                 }
+//             }
+//             input.style2 {
+//                 &:focus {
+//                     ~label {font-size: 4px;}
+//                 }
+//             }  
+//             input.style1 {
+//                 ~label.top {font-size: 4px;}
+//             }
+    
+//             input.style2 {
+//                 ~label.top {font-size: 4px;}
+//             }
+//         }
+//     }
+// }
+@include mediaQ(850px){
+    form#searchForm{
+        width: 100%;
+        height: auto;
+        padding: $dist2 $dist2;
+        .inputWrapper.text {
+            width: 20em;
+            height: 3.5em;
+            margin: $dist2;
+        } 
+        .select2{
+            width: 12em ;
+            margin-right: $dist2; 
+        }
+        .select2-container--default .select2-selection--single{
+            height: 2.5em;
+        }
+        button[type="submit"]{
+            margin-right: $dist2;
+        }
+    }
+}
+@include mediaQ(600px){
+    form#searchForm{
+        margin-top: 6em;
+
+        @include flex(column,flex-start,center,nowrap,"") ;
+        padding: $dist2;
+        .inputWrapper.text {
+            width: 80%;
+            height: 3.5em;
+            margin: 0;
+            margin-top: $dist1;
+        }
+        .select2{
+            width: 80%;
+            margin-right: 0;  
+            margin-top: $dist1;  
+        }
+        button[type="submit"]{
+            margin-right: 0;
+            margin-top: $dist2;
+        }
+    }
+}
+@include mediaQ(440px){
+    form#searchForm{
+        margin-top: 4.5em;
+
+    }
+}
+form#filters{
+    .inputWrapper.select {
+        width: 100%;
+        position: relative;
+        input {
+            width: 100%;
+            height: 100%;
+            line-height: 4em;
+            padding: 0 $dist1;
+            color: $darkColor;
+            font-size: $fontM;
+            cursor: pointer;
+            transition: all .2s linear;
+            &::placeholder {
+                font-size: $fontM;
+                color: $textGrey;
+            }
+        }
+        input.style1 {
+            border: none;
+            border-bottom: 1.2px solid lighten($textGrey, 25%);
+            &:focus {
+                ~label {
+                    font-size: 8px;
+                    color: $primaryColor;
+                    right: 0;
+                    bottom: calc(100% + .5em);
+                }
+                ~.arrow {
+                    color: $primaryColor;
+                }
+                ~.line {
+                    width: 100%;
+                }
+                ~ul {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        input.style2 {
+            border: 1.2px solid lighten($textGrey, 25%);
+            border-radius: $dist3;
+
+            &:focus {
+                border: 1.2px solid $primaryColor;
+
+                ~label {
+                    font-size: 8px;
+                    color: $primaryColor;
+                    right: 0;
+                    bottom: calc(100% + 1.5em);
+                }
+
+                ~.arrow {
+                    color: $primaryColor;
+                }
+
+                ~.line {
+                    width: 0%;
+                }
+
+                ~ul {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        input.style1.error {
+            ~label {
+                color: lighten($redColor2, 5%);
+            }
+
+            ~.arrow {
+                color: lighten($redColor2, 5%);
+            }
+
+            ~.line {
+                width: 100%;
+                background-color: lighten($redColor2, 5%);
+            }
+        }
+        input.style2.error {
+            border: 1.2px solid lighten($redColor2, 5%);
+
+            ~label {
+                color: lighten($redColor2, 5%);
+            }
+
+            ~.arrow {
+                color: lighten($redColor2, 5%);
+            }
+
+            ~.line {
+                background-color: lighten($redColor2, 5%);
+            }
+        }
+        label {
+            cursor: pointer;
+            width: auto;
+            height: auto;
+            display: flex;
+            @include flex(row, flex-start, center, nowrap, "");
+            color: lighten($textGrey, 20%);
+            position: absolute;
+            right: 0;
+            bottom: 50%;
+            transform: translateY(50%);
+            transition: all .2s linear;
+            .icon {
+                font-size: $fontM;
+            }
+            p {
+                font-size: $fontM - .1em;
+                transform: translateX(-.3em);
+            }
+        }
+        input.style1 {
+            ~label.top {
+                font-size: 8px;
+                right: 0;
+                bottom: calc(100% + .5em);
+            }
+        }
+        input.style2 {
+            ~label.top {
+                font-size: 8px;
+                right: 0;
+                bottom: calc(100% + 1.5em);
+            }
+        }
+        .arrow {
+            cursor: pointer;
+            font-size: $fontL;
+            color: lighten($textGrey, 20%);
+            left: 0;
+            transition: all .2s linear;
+        }
+        .line {
+            width: 0;
+            height: 1.2px;
+            background-color: $primaryColor;
+            position: absolute;
+            right: 0;
+            top: calc(100% - .6px);
+            transition: all .2s linear;
+        }
+        ul {
+            z-index: 5;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .2s linear;
+            width: 100%;
+            max-height: 16em; //7 * 2.5em(height of each <li>)
+            overflow: auto;
+            display: flex;
+            @include flex(column, flex-start, flex-start, nowrap, "");
+            position: absolute;
+            top: 105%;
+            right: 0;
+            box-shadow: 0 .2em .5em 0em $shadowColor;
+            li {
+                width: 100%;
+                height: 2.5em;
+                line-height: 2.5em;
+                padding: 0 $dist1;
+                font-size: $fontM;
+                color: $darkColor;
+                transition: all .2s linear;
+                cursor: pointer;
+                background-color: white;
+
+                &:hover {
+                    background-color: darken(white, 10%);
+                }
+            }
+        }
+        ul.show {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .inputWrapper.range#priceRanger {
+        .ranger {
+            width: 100% ;
+            height: .4em;
+            margin-top: $dist2;
+            .noUi-connect {
+                background-color: $primaryColor;
+            }
+            .noUi-connect, .noUi-origin{position: relative;}
+            .noUi-handle.circle {
+                width: 2em;
+                height: 2em;
+                border-radius: 50%;
+                background-color: $primaryColor;
+                border: none;
+                box-shadow: none;
+                cursor: pointer;
+                &::before {
+                    display: none;
+                }
+                &::after {
+                    display: none;
+                }
+                &:focus {
+                    outline: none;
+                    .noUi-tooltip {
+                        outline: none;
+                    }
+                }
+            }
+            .noUi-handle.right {
+                right: 0%;
+                transform: translate(0%, -60%);
+                top: 0%;
+            }
+            .noUi-handle.left {
+                left: 95%;
+                top: 20%;
+                transform: translate(0%, -60%);
+            }
+            .noUi-tooltip {
+                display: none;
+            }
+            .noUi-tooltip.newStyle {
+                font-size: .8em;
+            }
+            .noUi-tooltip.right {
+                transform: translate(-90%, 0);
+            }
+            .noUi-tooltip.left {
+                transform: translate(0%, 0);
+            }
+        }
+        .text {
+            width: 100%;
+            height: auto;
+            margin-top: $dist1;
+            text-align: center ;
+            color: $textGrey;
+            font-size: $fontM;
+        }
+    }
+    .inputWrapper.checkboxes {
+        width: auto;
+        height: auto;
+        display: flex;
+        @include flex(column, flex-start, flex-start, nowrap, "");
+        .checkbox {
+            width: auto;
+            height: auto;
+            padding-right: $dist1;
+            margin-top: $dist2 ;
+            input[type="checkbox"] {
+                width: 0;
+                height: 0;
+                display: none;
+            }
+            input[type="checkbox"].style2 {
+                &:checked {
+                    ~label {
+                        .rect {
+                            border: 1px solid transparent;
+                            background-color: $primaryColor;
+
+                            i {
+                                opacity: 1;
+                            }
+                        }
+
+                        p {
+                            color: $primaryColor;
+                        }
+                    }
+                }
+            }
+            label {
+                cursor: pointer;
+                width: auto;
+                height: auto;
+                line-height: 2.5em;
+                display: flex;
+                @include flex(row, flex-start, center, nowrap, "");
+                .rect {
+                    flex-shrink: 0;
+                    width: 2.3em;
+                    height: 2.3em;
+                    border: 1px solid $textGrey ;
+                    position: relative;
+                    transition: all .2s linear;
+                    border-radius: .45em;
+
+                    i {
+                        opacity: 0;
+                        font-size: $fontM;
+                        color: $whiteColor2;
+                        transition: all .2s linear;
+                    }
+                }
+                p.error {color: lighten($redColor2,5%);}
+                .content{
+                    max-width: calc(100% - 1.5em);
+                    height: auto;
+                    margin-right: .3em;
+                    display: flex;
+                    @include flex(row,flex-start,center,nowrap,"") ;
+                    p,i{
+                        color: $textGrey;
+                        margin-right: .3em;
+                        font-size: $fontM;
+                    }
+                    .fa-star{color: lighten($orangeColor1,2%);}
+                }
+            }
+        }
+    } 
+    .row{
+        &:nth-child(2){
+            .mobileFixFlexFixer{
+                width: 100%;
+                height: auto;
+                display: flex;
+                @include flex(column,flex-start,flex-start,nowrap,"") ;
+                .filtersWrapper{
+                    width: 100%;
+                    height: auto;
+                    padding: $dist1;
+                    padding-bottom: $dist3;
+                    &:not(:last-child){border-bottom: 1px solid lighten($textGrey,25%);}      
+                    display: flex;
+                    @include flex(column,flex-start,flex-start,nowrap,"") ;
+                    h4{
+                        font-size: $fontM - .2em;
+                        color: $textDark;
+                        font-weight: 700;
+                    }
+                    .withCollapse{
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        @include flex(column,flex-start,flex-start,nowrap,"") ;
+                        .mainCategory{
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            color: $textGrey;
+                            @include flex(row,space-between,center,nowrap,"") ;
+                            i.collapseTrigger{
+                                font-size: $fontM;
+                                color: inherit;
+                                padding-right: $dist2;
+                            }
+                            .inputWrapper.checkboxes {             
+                                .checkbox {
+                                    margin-top: 0 ;
+                                    padding-right: 0;
+                                }
+                            } 
+                        }
+                        .collapse{
+                            width: 100%;
+                            // height: auto;
+                            padding-right: $dist2;
+                            display: flex;
+                            @include flex(column,flex-start,flex-start,nowrap,"") ;
+                            font-size: 9px; 
+                        }
+                    }
+                }
+                #currFilters{
+                    .top{
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        @include flex(row,space-between,center,nowrap,"") ;
+                        #clearFilters{
+                            font-size: $fontS + .1em;
+                            margin-right: $dist2;
+                            white-space: nowrap;
+                            @include swapColor(white,$primaryColor) ;
+                        }                       
+                    }
+                    .bottom{
+                        width: 100%;
+                        height: auto;
+                        margin-top: $dist1;
+                        display: flex;
+                        @include flex(row,flex-start,flex-start,wrap,flex-start) ;
+                        .currFilter{
+                            width: auto;
+                            height: auto;
+                            border-radius: $dist1;
+                            padding: .5em $dist1;
+                            @include swapColor(white,$primaryColor) ;
+                            margin: $dist1 ;
+                            display: flex;
+                            @include flex(row,flex-start,center,nowrap,"") ;
+                            .close{font-size: $fontS;}
+                            p{
+                                font-size: $fontS;
+                                margin-right: .5em;
+                            }
+                        }
+                    }
+                }            
+            }
+        }
+    }
+}
+@include mediaQ(900px){
+    form#filters {
+        font-size: 8px ;
+        .inputWrapper.select {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 6px;}
+                }
+            }
+            input.style2 {       
+                &:focus {    
+                    ~label {font-size: 6px;}               
+                }
+            }         
+            input.style1 {
+                ~label.top {font-size: 6px;}
+            }
+            input.style2 {
+                ~label.top {font-size: 6px;}
+            }                
+        }
+    }
+    form#filters .inputWrapper.checkboxes .checkbox label .content p{
+        font-size: $fontM - .2em;
+    }
+}
+
+// @include mediaQ(600px){
+//     form#filters {
+//         font-size: 6px ;
+//         .inputWrapper.select {
+//             input.style1 {
+//                 &:focus {
+//                     ~label {font-size: 4px;}
+//                 }
+//             }
+//             input.style2 {       
+//                 &:focus {    
+//                     ~label {font-size: 4px;}               
+//                 }
+//             }         
+//             input.style1 {
+//                 ~label.top {font-size: 4px;}
+//             }
+//             input.style2 {
+//                 ~label.top {font-size: 4px;}
+//             }                
+//         }
+//     }
+//     form#filters .mainCategory .inputWrapper.checkboxes .checkbox label .content p{
+//         font-size: $fontL;
+//     }
+//     form#filters .subCategory .inputWrapper.checkboxes .checkbox label .content p{
+//         font-size: $fontS  ;
+//     }
+// }
+form#report{
+    width: 50%;
+    height: auto;
+    display: flex;
+    @include flex(column,flex-start,center,nowrap,"") ;
+    margin-right: $dist2;
+    .row{
+        width: 100%;
+        height: auto;
+        display: flex;
+        @include flex(row,flex-start,center,nowrap,"") ;
+        .inputWrapper.text {
+            width: 50%;
+            height: 4em;
+            position: relative;
+            &:not(:first-child){margin-right: $dist2;}
+            input {
+                width: 100%;
+                height: 100%;
+                line-height: 4em;
+                padding: 0 $dist1;
+                font-size: $fontM;
+                color: $darkColor;
+                transition: all .2s linear;
+                &::placeholder {
+                    color: $textGrey;
+                    font-size: $fontM;
+                }
+            }
+            input.style1 {
+                border: none;
+                border-bottom: 1.2px solid lighten($textGrey, 25%);
+    
+                &:focus {
+                    ~label {
+                        color: $primaryColor;
+                        font-size: 8px;
+                        bottom: calc(100% + .5em);
+                        transform: translateY(50%);
+                        right: 0;
+                    }
+    
+                    ~.line {
+                        width: 100%;
+                    }
+                }
+            }
+    
+            input.style2 {
+                border: 1.2px solid lighten($textGrey, 25%);
+                border-radius: $dist3;
+    
+                &:focus {
+                    border: 1.2px solid $primaryColor;
+    
+                    ~label {
+                        color: $primaryColor;
+                        font-size: 8px;
+                        bottom: calc(100% + 1.5em);
+                        transform: translateY(50%);
+                        right: $dist1;
+                    }
+    
+                    ~.line {
+                        width: 0%;
+                    }
+                }
+            }
+    
+            input.style1.error {
+                border-bottom: 1.2px solid lighten($redColor2, 5%);
+    
+                ~label {
+                    color: lighten($redColor2, 5%);
+                }
+    
+                ~.line {
+                    background-color: lighten($redColor2, 5%);
+                }
+            }
+    
+            input.style2.error {
+                border: 1.2px solid lighten($redColor2, 5%);
+    
+                ~label {
+                    color: lighten($redColor2, 5%);
+                }
+            }
+    
+            label {
+                width: auto;
+                height: auto;
+                position: absolute;
+                right: $dist1;
+                bottom: 50%;
+                transform: translateY(50%);
+                display: flex;
+                @include flex(row, flex-start, center, nowrap, "");
+                color: lighten($textGrey, 20%);
+                transition: all .2s linear;
+    
+                .icon {
+                    font-size: $fontM;
+                }
+    
+                p {
+                    font-size: $fontM - .1em;
+                    transform: translateX(-.3em);
+                }
+            }
+    
+            input.style1 {
+                ~label.top {
+                    font-size: 8px;
+                    bottom: calc(100% + .5em);
+                    transform: translateY(50%);
+                    right: 0;
+                }
+            }
+    
+            input.style2 {
+                ~label.top {
+                    font-size: 8px;
+                    bottom: calc(100% + 1.5em);
+                    transform: translateY(50%);
+                    right: $dist1;
+                }
+            }
+    
+            .line {
+                width: 0%;
+                height: 1.2px;
+                background-color: $primaryColor;
+                position: absolute;
+                right: 0;
+                top: calc(100% - 1px);
+                transition: all .2s linear;
+            }
+    
+            .msg {
+                width: auto;
+                height: auto;
+                border-radius: $dist3;
+                padding: $dist1 $dist2;
+                position: relative;
+                background-color: lighten($redColor2, 5%);
+                position: absolute;
+                right: 0;
+                top: 115%;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .2s linear;
+    
+                p {
+                    color: $whiteColor2;
+                    font-size: $fontM - .2em;
+                }
+    
+                i {
+                    font-size: $fontXL;
+                    color: lighten($redColor2, 5%);
+                    position: absolute;
+                    right: $dist2;
+                    top: calc(0% - .6em);
+                }
+            }
+    
+            .msg.show {
+                opacity: 1;
+                visibility: visible;
+                z-index: 2;
+            }
+        }
+    }
+    .inputWrapper.textarea {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: $dist3 + 1em;
+        display: flex;
+        textarea {
+            // we set height/max-height via js
+            width: 100%;
+            font-size: $fontM;
+            color: $darkColor;
+            padding: $dist1;
+            line-height: $dist2 ;
+            transition: all .2s linear;
+            resize: none;
+            &::placeholder {
+                font-size: $fontM;
+                color: $textGrey;
+            }
+        }
+        textarea.style1 {
+            height: 12em;
+            border: 1.2px solid lighten($textGrey, 25%);
+            border-radius: $dist2;
+            ~label {
+                bottom: 100%;
+                transform: translateY(150%);
+            }
+            &:focus {
+                border: 1.2px solid $primaryColor;
+                ~label {
+                    font-size: 8px;
+                    right: $dist1;
+                    color: $primaryColor;
+                    bottom: calc(100% + .5em);
+                    transform: translateY(0);
+                }
+            }
+        }
+        textarea.style2 {
+            overflow: hidden;
+            border: none;
+            border-bottom: 1.2px solid lighten($textGrey, 25%);
+            ~label {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:focus {
+                border-bottom: 1.2px solid $primaryColor;
+                ~label {
+                    font-size: 8px;
+                    right: 0;
+                    color: $primaryColor;
+                    top: 0;
+                    transform: translateY(-100%);
+                }
+                ~.line {
+                    width: 100%;
+                }
+            }
+        }
+        textarea.style1.error {
+            border: 1.2px solid lighten($redColor2, 5%);
+
+            ~label {
+                color: lighten($redColor2, 5%);
+            }
+        }
+        textarea.style2.error {
+            border-bottom: 1.2px solid lighten($redColor2, 5%);
+            ~label {
+                color: lighten($redColor2, 5%);
+            }
+        }
+        textarea.style1 {
+            ~label.top {
+                font-size: 8px;
+                bottom: calc(100% + 2em);
+                transform: translateY(50%);
+                right: 0;
+            }
+        }
+        textarea.style2 {
+            ~label.top {
+                font-size: 8px;
+                top: 0;
+                transform: translateY(-100%);
+                right: 0;                            
+            }
+        }
+        label {
+            width: auto;
+            height: auto;
+            position: absolute;
+            right: $dist1;
+            position: absolute;
+            display: flex;
+            @include flex(row, flex-start, center, nowrap, "");
+            transition: all .2s linear;
+            color: lighten($textGrey,20%);
+            i {
+                font-size: $fontM;
+            }
+
+            p {
+                font-size: $fontM - .1em;
+                transform: translateX(-.3em);
+            }
+        }
+        .line {
+            width: 0%;
+            height: 1.2px;
+            background-color: $primaryColor;
+            position: absolute;
+            right: 0;
+            top: calc(100% - .6px);
+            transition: all .2s linear;
+        }
+    }
+    button[type="submit"]{
+        margin-top: $dist2;
+        @include swapColor($textWhite,$primaryColor) ;
+    }
+}
+@include mediaQ(1000px){
+    form#report {
+        .row{
+            font-size: 8px ;
+            .inputWrapper.text {
+                input.style1 {
+                    &:focus {
+                        ~label {font-size: 6px;}                  
+                    }
+                }
+                input.style2 {
+                    &:focus {
+                        ~label {font-size: 6px;}
+                    }
+                }  
+                input.style1 {
+                    ~label.top {font-size: 6px;}
+                }
+        
+                input.style2 {
+                    ~label.top {font-size: 6px;}
+                }
+            }
+           
+        }
+        .inputWrapper.textarea {   
+            textarea.style1 {
+                &:focus {    
+                    ~label {font-size: 6px;}
+                }
+            }
+            textarea.style2 {
+                &:focus {    
+                    ~label {font-size: 6px;}
+                }
+            }
+            textarea.style1 {
+                ~label.top {font-size: 6px;}
+            }
+            textarea.style2 {
+                ~label.top {font-size: 6px;}
+            }
+        }
+       
+    }
+}
+// @include mediaQ(700px){
+//     form#report {
+//         .row{
+//             font-size: 6px ;
+//             .inputWrapper.text {
+//                 input.style1 {
+//                     &:focus {
+//                         ~label {font-size: 4px;}                  
+//                     }
+//                 }
+//                 input.style2 {
+//                     &:focus {
+//                         ~label {font-size: 4px;}
+//                     }
+//                 }  
+//                 input.style1 {
+//                     ~label.top {font-size: 4px;}
+//                 }
+        
+//                 input.style2 {
+//                     ~label.top {font-size: 4px;}
+//                 }
+//             }
+//             .inputWrapper.textarea {   
+//                 textarea.style1 {
+//                     &:focus {    
+//                         ~label {font-size: 4px;}
+//                     }
+//                 }
+//                 textarea.style2 {
+//                     &:focus {    
+//                         ~label {font-size: 4px;}
+//                     }
+//                 }
+//                 textarea.style1 {
+//                     ~label.top {font-size: 4px;}
+//                 }
+//                 textarea.style2 {
+//                     ~label.top {font-size: 4px;}
+//                 }
+//             }
+//         }
+        
+//     }
+// }
+@include mediaQ(650px){
+    form#report{
+        width: 100%;
+        margin-right: 0;
+        margin-top: $dist2;
+    }
+}
+form#loginUser,form#loginAdmin,form#signupUser,form#signupAdmin,form#forgetPassword{
+    width: 100%;
+    height: auto;
+    display: flex;
+    @include flex(column,flex-start,center,nowrap,"") ;
+    h3{
+        font-size: $fontL;
+        color: $primaryColor;
+        font-weight: 700;
+        margin-top: $dist2;
+    }
+    .inputWrapper.text {
+        width: 28em;
+        height: 4em;
+        position: relative;
+        margin-top: 2.5em;
+        input {
+            width: 100%;
+            height: 100%;
+            line-height: 4em;
+            padding: 0 $dist1;
+            font-size: $fontM;
+            color: $darkColor;
+            transition: all .2s linear;
+            &::placeholder {
+                color: $textGrey;
+                font-size: $fontM;
+            }
+        }
+        input.style1 {
+            border: none;
+            border-bottom: 1.2px solid lighten($textGrey, 25%);
+
+            &:focus {
+                ~label {
+                    color: $primaryColor;
+                    font-size: 8px;
+                    bottom: calc(100% + .5em);
+                    transform: translateY(50%);
+                    right: 0;
+                }
+
+                ~.line {
+                    width: 100%;
+                }
+            }
+        }
+        input.style2 {
+            background-color: lighten($textGrey,40%);
+            border: 1.2px solid lighten($textGrey, 25%);
+            border-radius: $dist3;
+            &:focus {
+                border: 1.2px solid $primaryColor;
+                ~label {
+                    color: $primaryColor;
+                    font-size: 8px;
+                    bottom: calc(100% + 1.5em);
+                    transform: translateY(50%);
+                    right: $dist1;
+                }
+                ~.line {
+                    width: 0%;
+                }
+            }
+        }
+        input.style1.error {
+            border-bottom: 1.2px solid lighten($redColor2, 5%);
+
+            ~label {
+                color: lighten($redColor2, 5%);
+            }
+
+            ~.line {
+                background-color: lighten($redColor2, 5%);
+            }
+        }
+        input.style2.error {
+            border: 1.2px solid lighten($redColor2, 5%);
+
+            ~label {
+                color: lighten($redColor2, 5%);
+            }
+        }
+        label {
+            width: auto;
+            height: auto;
+            position: absolute;
+            right: $dist1;
+            bottom: 50%;
+            transform: translateY(50%);
+            display: flex;
+            @include flex(row, flex-start, center, nowrap, "");
+            color: lighten($textGrey, 20%);
+            transition: all .2s linear;
+
+            .icon {
+                font-size: $fontM;
+            }
+
+            p {
+                font-size: $fontM - .1em;
+                transform: translateX(-.3em);
+            }
+        }
+        input.style1 {
+            ~label.top {
+                font-size: 8px;
+                bottom: calc(100% + .5em);
+                transform: translateY(50%);
+                right: 0;
+            }
+        }
+        input.style2 {
+            ~label.top {
+                font-size: 8px;
+                bottom: calc(100% + 1.5em);
+                transform: translateY(50%);
+                right: $dist1;
+            }
+        }
+        .line {
+            width: 0%;
+            height: 1.2px;
+            background-color: $primaryColor;
+            position: absolute;
+            right: 0;
+            top: calc(100% - 1px);
+            transition: all .2s linear;
+        }
+        .msg {
+            width: auto;
+            height: auto;
+            border-radius: $dist3;
+            padding: $dist1 $dist2;
+            position: relative;
+            background-color: lighten($redColor2, 5%);
+            position: absolute;
+            right: 0;
+            top: 115%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .2s linear;
+
+            p {
+                color: $whiteColor2;
+                font-size: $fontM - .2em;
+            }
+
+            i {
+                font-size: $fontXL;
+                color: lighten($redColor2, 5%);
+                position: absolute;
+                right: $dist2;
+                top: calc(0% - .6em);
+            }
+        }
+        .msg.show {
+            opacity: 1;
+            visibility: visible;
+            z-index: 2;
+        }
+        .forgetPass{
+            display: block;
+            font-size: $fontS;
+            color: $primaryColor;
+            margin-top: $dist1;
+            visibility: visible;
+        }
+        .desc{
+            padding-bottom: $dist3;
+            margin-right: $dist1;
+            margin-top: .1em;
+            display: flex;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            i{
+                font-size: $fontS + .2em;
+                color: $blueColor1 ;
+            }
+            p{
+                margin-right: .2em;
+                font-size: $fontS;
+                color: $textGrey;
+            }
+        }
+    }
+    .someSpace{
+        margin-top: $dist3 + .7em !important;
+    }
+    select{
+        font-size: $fontM;
+        color: $primaryColor;
+        margin-top: 2.5em;
+        border-radius: $dist2;
+        transform: translateX(50%);
+        option{
+            color: $textGrey;
+        }
+    }
+    .select2{
+        width: 17em ;
+        font-size: $fontM ;
+        margin-top: 1.5em;
+        option{
+            color: darken($textGrey,10%) ;
+            font-size: $fontM ;
+        }    
+    }
+    .select2-container--default .select2-selection--single{
+        border-radius: $dist3 ;
+        border: 1.2px solid lighten($textGrey,25%) ;
+        height: 2.5em;
+        outline: none  ;
+        .select2-selection__rendered{line-height: 2.5em ;}
+        .select2-selection__arrow{@include center-y ;}
+    }
+    button[type="submit"]{
+        @include swapColor(white,$primaryColor) ;
+        cursor: pointer;
+        margin-top: $dist2 ;
+        padding: .4em $dist3;
+    }
+    .loginRoute{
+        font-size: $fontM;
+        color: $primaryColor;
+        margin-top: $dist1;
+        position: relative;
+        &::before{
+            content: '';
+            width: 100%;
+            height: 1px ;
+            background-color: $primaryColor;
+            position: absolute;
+            right: 0;
+            top: 102% ;
+        }
+    }
+    .inputWrapper.checkboxes {
+        width: auto;
+        height: auto;
+        display: flex;
+        transform: translateX(25%);
+        @include flex(column, flex-start, center, nowrap, "");
+        margin-top: 1.5em;
+        .checkbox {
+            width: auto;
+            height: auto;
+            padding-right: 0;
+            input[type="checkbox"] {
+                width: 0;
+                height: 0;
+                display: none;
+            }
+            input[type="checkbox"].style1 {
+                &:checked {
+                    ~label {
+                        .rect {
+                            width: 2em;
+                            height: 1em;
+                            border-radius: 0;
+                            border-top: none;
+                            border-right: none;
+                            border-left: 1.2px solid $primaryColor;
+                            border-bottom: 1.2px solid $primaryColor;
+                            transform: translateY(-.3em) rotate(-45deg);
+                        }
+
+                        p {
+                            color: $primaryColor;
+                        }
+                    }
+                }
+            }
+            input[type="checkbox"].style2 {
+                &:checked {
+                    ~label {
+                        .rect {
+                            border: 1px solid transparent;
+                            background-color: $primaryColor;
+
+                            i {
+                                opacity: 1;
+                            }
+                        }
+
+                        p {
+                            color: $primaryColor;
+                        }
+                    }
+                }
+            }
+            label {
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+                line-height: 2.5em;
+                display: flex;
+                @include flex(row, flex-start, center, nowrap, "");
+                .rect {
+                    flex-shrink: 0;
+                    width: 2.3em;
+                    height: 2.3em;
+                    border: 1px solid darken($textGrey, 15%);
+                    position: relative;
+                    transition: all .2s linear;
+                    border-radius: .45em;
+                    i {
+                        opacity: 0;
+                        font-size: $fontM;
+                        color: $whiteColor2;
+                        transition: all .2s linear;
+                    }
+                }
+                p {
+                    max-width: auto;
+                    font-size: $fontM;
+                    color: darken($textGrey, 15%);
+                    margin-right: .3em;
+                    transition: all .2s linear;
+                }
+                p.error {color: lighten($redColor2,5%);}
+            }
+        }
+        > p {
+            margin-top: .2em;
+            font-size: $fontM - .2em;
+            margin-right: 4em;
+            color: $textDark;
+            
+            a{
+                color: $blueColor1;
+                font-weight: 700;
+            }
+        }
+    }
+    .inputWrapper.file{
+        width: 28em;
+        height: auto;
+        margin-top: 1.5em;
+        position: relative;
+        input[type="file"]{display: none;}
+        label{
+            width: auto;
+            height: auto;
+            display: flex;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            p{
+                &:nth-child(1){
+                    flex-shrink: 0;
+                    color: white;
+                    background-color: $primaryColor ;
+                    cursor: pointer;
+                }
+                &:nth-child(2){
+                    font-size: $fontM - .2em;
+                    color: $primaryColor ;
+                    margin-right: .5em;}        
+            }
+        }
+        .msg {
+            width: auto;
+            height: auto;
+            border-radius: $dist3;
+            padding: $dist1 $dist2;
+            background-color: lighten($redColor2, 5%);
+            position: absolute;
+            right: 0;
+            top: 115%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .2s linear;
+            p {
+                color: $whiteColor2;
+                font-size: $fontM - .2em;
+            }
+
+            i {
+                font-size: $fontXL;
+                color: lighten($redColor2, 5%);
+                position: absolute;
+                right: $dist2;
+                top: calc(0% - .6em);
+            }
+        }
+        .msg.show {
+            opacity: 1;
+            visibility: visible;
+            z-index: 2;
+        }   
+    }
+    .inputWrapper.toggle {
+        width: auto;
+        height: auto;
+        margin-top: 1.5em;
+        transform: translateX(50%);
+        display: flex;
+        @include flex(row, flex-start, center, nowrap, "");
+        .toggleText,
+        .switch {
+            margin-right: $dist1;
+            &:first-child {
+                margin-right: 0;
+            }
+        }
+
+        .toggleText {
+            font-size: $fontM;
+            color: lighten($textGrey, 30%);
+            transition: all .2s linear;
+        }
+
+        .toggleText.active {
+            color: darken($textGrey, 30%);
+        }
+
+        .switch {
+            width: 5em;
+            height: 2em;
+            position: relative;
+            background-color: $primaryColor;
+            border-radius: $dist3;
+            cursor: pointer;
+
+            .circle {
+                width: 1.5em;
+                height: 1.5em;
+                border-radius: 50%;
+                background-color: $whiteColor2;
+                position: absolute;
+                transition: all .2s linear;
+            }
+
+            .circle.left {
+                left: .4em;
+            }
+
+            .circle.right {
+                left: calc(100% - 1.5em - .4em);
+            }
+        }
+    }
+}
+form#loginAdmin{button[type="submit"]{margin-top: $dist3 ;}}
+form#loginUser{button[type="submit"]{margin-top: $dist3 ;}}
+@include mediaQ(1000px){
+    form#loginUser,form#loginAdmin,form#signupUser,form#signupAdmin,form#forgetPassword {
+        font-size: 8px ;
+        .inputWrapper.text {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 6px;}                  
+                }
+            }
+            input.style2 {
+                &:focus {
+                    ~label {font-size: 6px;}
+                }
+            }  
+            input.style1 {
+                ~label.top {font-size: 6px;}
+            }
+    
+            input.style2 {
+                ~label.top {font-size: 6px;}
+            }
+        }
+        .inputWrapper.select {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 6px;}
+                }
+            }
+            input.style2 {       
+                &:focus {    
+                    ~label {font-size: 6px;}               
+                }
+            }         
+            input.style1 {
+                ~label.top {font-size: 6px;}
+            }
+            input.style2 {
+                ~label.top {font-size: 6px;}
+            }                
+        }
+        .inputWrapper.textarea {   
+            textarea.style1 {
+                &:focus {    
+                    ~label {font-size: 6px;}
+                }
+            }
+            textarea.style2 {
+                &:focus {    
+                    ~label {font-size: 6px;}
+                }
+            }
+            textarea.style1 {
+                ~label.top {font-size: 6px;}
+            }
+            textarea.style2 {
+                ~label.top {font-size: 6px;}
+            }
+        }
+    }
+}
+@include mediaQ(700px){
+    form#loginUser,form#loginAdmin,form#signupUser,form#signupAdmin,form#forgetPassword {
+        font-size: 8px ;
+        .inputWrapper.text {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 6px;}                  
+                }
+            }
+            input.style2 {
+                &:focus {
+                    ~label {font-size: 6px;}
+                }
+            }  
+            input.style1 {
+                ~label.top {font-size: 6px;}
+            }
+    
+            input.style2 {
+                ~label.top {font-size: 6px;}
+            }
+        }
+        .inputWrapper.select {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 6px;}
+                }
+            }
+            input.style2 {       
+                &:focus {    
+                    ~label {font-size: 6px;}               
+                }
+            }         
+            input.style1 {
+                ~label.top {font-size: 6px;}
+            }
+            input.style2 {
+                ~label.top {font-size: 6px;}
+            }                
+        }
+        .inputWrapper.textarea {   
+            textarea.style1 {
+                &:focus {    
+                    ~label {font-size: 6px;}
+                }
+            }
+            textarea.style2 {
+                &:focus {    
+                    ~label {font-size: 6px;}
+                }
+            }
+            textarea.style1 {
+                ~label.top {font-size: 6px;}
+            }
+            textarea.style2 {
+                ~label.top {font-size: 6px;}
+            }
+        }
+    }
+}
+@include resizeTablet('form#loginUser,form#loginAdmin,form#signupUser,form#signupAdmin,form#forgetPassword') ;
+// @include resizeMobile('form#loginUser,form#loginAdmin,form#signupUser,form#signupAdmin,form#forgetPassword') ;
+
+form#checkCode{
+    width: 40em;
+    height: auto;
+    padding: $dist2;
+    margin: 0 ;
+    position: fixed ;
+    top: 50% ;
+    right: 50% ;
+    transform: translate(50%,-50%) ;
+    display: flex;
+    @include flex(column, flex-start, center, nowrap, "");
+    .title{
+        width: auto;
+        height: auto;
+        display: flex;
+        @include flex(column,flex-start,center,nowrap,"") ;
+        img{
+            width: 12em ;
+            height: 10em;
+        }
+        p{
+            font-size: $fontM;
+            color: $textGrey;
+        }
+    }
+    h4 {
+        font-size: $fontL;
+        font-weight: 700;
+        color: $primaryColor;
+    }
+    .inputWrapper.text {
+        width: 35em;
+        height: 4em;
+        position: relative;
+        margin-top: $dist2;
+        input {
+            width: 100%;
+            height: 100%;
+            line-height: 4em;
+            padding: 0 $dist1;
+            font-size: $fontM;
+            color: $darkColor;
+            transition: all .2s linear;
+            &::placeholder {
+                color: $textGrey;
+                font-size: $fontM;
+            }
+        }
+        input.style1 {
+            border: none;
+            border-bottom: 1.2px solid lighten($textGrey, 25%);
+
+            &:focus {
+                ~label {
+                    color: $primaryColor;
+                    font-size: 8px;
+                    bottom: calc(100% + .5em);
+                    transform: translateY(50%);
+                    right: 0;
+                }
+
+                ~.line {
+                    width: 100%;
+                }
+            }
+        }
+        input.style2 {
+            border: 1.2px solid lighten($textGrey, 25%);
+            border-radius: $dist3;
+
+            &:focus {
+                border: 1.2px solid $primaryColor;
+
+                ~label {
+                    color: $primaryColor;
+                    font-size: 8px;
+                    bottom: calc(100% + 1.5em);
+                    transform: translateY(50%);
+                    right: $dist1;
+                }
+
+                ~.line {
+                    width: 0%;
+                }
+            }
+        }
+        input.style1.error {
+            border-bottom: 1.2px solid lighten($redColor2, 5%);
+            ~label {
+                color: lighten($redColor2, 5%);
+            }
+            ~.line {
+                background-color: lighten($redColor2, 5%);
+            }
+        }
+        input.style2.error {
+            border: 1.2px solid lighten($redColor2, 5%);
+
+            ~label {
+                color: lighten($redColor2, 5%);
+            }
+        }
+        label {
+            width: auto;
+            height: auto;
+            position: absolute;
+            right: $dist1;
+            bottom: 50%;
+            transform: translateY(50%);
+            display: flex;
+            @include flex(row, flex-start, center, nowrap, "");
+            color: lighten($textGrey, 20%);
+            transition: all .2s linear;
+            .isRequire{
+                width: auto;
+                height: auto;
+                color: lighten($redColor2, 0%);
+                font-size: $fontS - .1em; 
+                padding-left: .3em;
+            }
+            .icon {
+                font-size: $fontM;
+            }
+            p {
+                font-size: $fontM - .1em;
+                transform: translateX(-.3em);
+            }
+        }
+        input.style1 {
+            ~label.top {
+                font-size: 8px;
+                bottom: calc(100% + .5em);
+                transform: translateY(50%);
+                right: 0;
+            }
+        }
+        input.style2 {
+            ~label.top {
+                font-size: 8px;
+                bottom: calc(100% + 1.5em);
+                transform: translateY(50%);
+                right: $dist1;
+            }
+        }
+        .line {
+            width: 0%;
+            height: 1.2px;
+            background-color: $primaryColor;
+            position: absolute;
+            right: 0;
+            top: calc(100% - .6px);
+            transition: all .2s linear;
+        }
+        .msg {
+            width: auto;
+            height: auto;
+            border-radius: $dist3;
+            padding: $dist1 $dist2;
+            position: relative;
+            background-color: lighten($redColor2, 5%);
+            position: absolute;
+            right: 0;
+            top: 115%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .2s linear;
+            p {
+                color: $whiteColor2;
+                font-size: $fontM - .2em;
+            }
+            i {
+                font-size: $fontXL;
+                color: lighten($redColor2, 5%);
+                position: absolute;
+                right: $dist2;
+                top: calc(0% - .6em);
+            }
+        }
+        .msg.show {
+            opacity: 1;
+            visibility: visible;
+            z-index: 2;
+        }
+        .rememberPassword{
+            font-size: $fontS ;
+            color: lighten($textGrey,10%) ;
+            position: absolute ;
+            right: 0 ;
+            top: 140% ;
+        }
+    }
+    button[type="submit"] {
+        width: auto;
+        height: auto;
+        padding: .3em $dist2 + .5em;
+        margin-top: $dist2 ;
+        border-radius: $dist3;
+        font-size: $fontL;
+        @include swapColor($textWhite,$primaryColor) ;
+    }
+    a.login{
+        font-size: $fontS + .2em ;
+        color: $textGrey ;
+        margin-top: $dist2 ;
+    }
+}
+@include resizeTablet('form#checkCode') ;
+@include resizeMobile('form#checkCode') ;
+@include mediaQ(1000px){
+    form#checkCode {
+        font-size: 8px ;
+        .inputWrapper.text {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 6px;}                  
+                }
+            }
+            input.style2 {
+                &:focus {
+                    ~label {font-size: 6px;}
+                }
+            }  
+            input.style1 {
+                ~label.top {font-size: 6px;}
+            }
+    
+            input.style2 {
+                ~label.top {font-size: 6px;}
+            }
+        }
+    }
+}
+@include mediaQ(600px){
+    form#checkCode {
+        font-size: 6px ;
+        .inputWrapper.text {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 4px;}                  
+                }
+            }
+            input.style2 {
+                &:focus {
+                    ~label {font-size: 4px;}
+                }
+            }  
+            input.style1 {
+                ~label.top {font-size: 4px;}
+            }
+    
+            input.style2 {
+                ~label.top {font-size: 4px;}
+            }
+        }
+    }
+}
+form#userComment{
+    width: auto;
+    display: flex;
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    .row{
+        width: auto ;
+        height: auto;
+        margin-top: $dist2;
+        display: flex;
+        @include flex(row,flex-start,flex-start,wrap,flex-start) ;
+        .inputWrapper.text {
+            width: 25em;
+            height: 4em;
+            position: relative;
+            &:not(:first-child){margin-right: $dist3;}
+            input {
+                width: 100%;
+                height: 100%;
+                line-height: 4em;
+                padding: 0 $dist1;
+                font-size: $fontM;
+                color: $darkColor;
+                transition: all .2s linear;
+                &::placeholder {
+                    color: $textGrey;
+                    font-size: $fontM;
+                }
+            }
+            input.style1 {
+                border: none;
+                border-bottom: 1.2px solid lighten($textGrey, 25%);
+    
+                &:focus {
+                    ~label {
+                        color: $primaryColor;
+                        font-size: 8px;
+                        bottom: calc(100% + .5em);
+                        transform: translateY(50%);
+                        right: 0;
+                    }
+    
+                    ~.line {
+                        width: 100%;
+                    }
+                }
+            }
+    
+            input.style2 {
+                border: 1.2px solid lighten($textGrey, 25%);
+                border-radius: $dist3;
+    
+                &:focus {
+                    border: 1.2px solid $primaryColor;
+    
+                    ~label {
+                        color: $primaryColor;
+                        font-size: 8px;
+                        bottom: calc(100% + 1.5em);
+                        transform: translateY(50%);
+                        right: $dist1;
+                    }
+    
+                    ~.line {
+                        width: 0%;
+                    }
+                }
+            }
+    
+            input.style1.error {
+                border-bottom: 1.2px solid lighten($redColor2, 5%);
+    
+                ~label {
+                    color: lighten($redColor2, 5%);
+                }
+    
+                ~.line {
+                    background-color: lighten($redColor2, 5%);
+                }
+            }
+    
+            input.style2.error {
+                border: 1.2px solid lighten($redColor2, 5%);
+    
+                ~label {
+                    color: lighten($redColor2, 5%);
+                }
+            }
+    
+            label {
+                width: auto;
+                height: auto;
+                position: absolute;
+                right: $dist1;
+                bottom: 50%;
+                transform: translateY(50%);
+                display: flex;
+                @include flex(row, flex-start, center, nowrap, "");
+                color: lighten($textGrey, 20%);
+                transition: all .2s linear;
+    
+                .icon {
+                    font-size: $fontM;
+                }
+    
+                p {
+                    font-size: $fontM - .1em;
+                    transform: translateX(-.3em);
+                }
+            }
+    
+            input.style1 {
+                ~label.top {
+                    font-size: 8px;
+                    bottom: calc(100% + .5em);
+                    transform: translateY(50%);
+                    right: 0;
+                }
+            }
+    
+            input.style2 {
+                ~label.top {
+                    font-size: 8px;
+                    bottom: calc(100% + 1.5em);
+                    transform: translateY(50%);
+                    right: $dist1;
+                }
+            }
+    
+            .line {
+                width: 0%;
+                height: 1.2px;
+                background-color: $primaryColor;
+                position: absolute;
+                right: 0;
+                top: calc(100% - 1px);
+                transition: all .2s linear;
+            }
+    
+            .msg {
+                width: auto;
+                height: auto;
+                border-radius: $dist3;
+                padding: $dist1 $dist2;
+                position: relative;
+                background-color: lighten($redColor2, 5%);
+                position: absolute;
+                right: 0;
+                top: 115%;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .2s linear;
+    
+                p {
+                    color: $whiteColor2;
+                    font-size: $fontM - .2em;
+                }
+    
+                i {
+                    font-size: $fontXL;
+                    color: lighten($redColor2, 5%);
+                    position: absolute;
+                    right: $dist2;
+                    top: calc(0% - .6em);
+                }
+            }
+    
+            .msg.show {
+                opacity: 1;
+                visibility: visible;
+                z-index: 2;
+            }
+        }
+    }
+    .inputWrapper.textarea {
+        width: 53em;
+        height: auto;
+        position: relative;
+        margin-top: $dist3;
+        display: flex;
+        textarea {
+            // we set height/max-height via js
+            width: 100%;
+            font-size: $fontM;
+            color: $darkColor;
+            padding: $dist1;
+            line-height: $dist2 ;
+            transition: all .2s linear;
+            resize: none;
+            &::placeholder {
+                font-size: $fontM;
+                color: $textGrey;
+            }
+        }
+        textarea.style1 {
+            height: 8em;
+            border: 1.2px solid lighten($textGrey, 25%);
+            border-radius: $dist2;
+            ~label {
+                bottom: 100%;
+                transform: translateY(150%);
+            }
+            &:focus {
+                border: 1.2px solid $primaryColor;
+                ~label {
+                    font-size: 8px;
+                    right: $dist1;
+                    color: $primaryColor;
+                    bottom: calc(100% + .5em);
+                    transform: translateY(0);
+                }
+            }
+        }
+        textarea.style2 {
+            overflow: hidden;
+            border: none;
+            border-bottom: 1.2px solid lighten($textGrey, 25%);
+            ~label {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:focus {
+                border-bottom: 1.2px solid $primaryColor;
+                ~label {
+                    font-size: 8px;
+                    right: 0;
+                    color: $primaryColor;
+                    top: 0;
+                    transform: translateY(-100%);
+                }
+                ~.line {
+                    width: 100%;
+                }
+            }
+        }
+        textarea.style1.error {
+            border: 1.2px solid lighten($redColor2, 5%);
+
+            ~label {
+                color: lighten($redColor2, 5%);
+            }
+        }
+        textarea.style2.error {
+            border-bottom: 1.2px solid lighten($redColor2, 5%);
+            ~label {
+                color: lighten($redColor2, 5%);
+            }
+        }
+        textarea.style1 {
+            ~label.top {
+                font-size: 8px;
+                bottom: calc(100% + 2em);
+                transform: translateY(50%);
+                right: 0;
+            }
+        }
+        textarea.style2 {
+            ~label.top {
+                font-size: 8px;
+                top: 0;
+                transform: translateY(-100%);
+                right: 0;                            
+            }
+        }
+        label {
+            width: auto;
+            height: auto;
+            position: absolute;
+            right: $dist1;
+            position: absolute;
+            display: flex;
+            @include flex(row, flex-start, center, nowrap, "");
+            transition: all .2s linear;
+            color: lighten($textGrey,20%);
+            i {
+                font-size: $fontM;
+            }
+
+            p {
+                font-size: $fontM - .1em;
+                transform: translateX(-.3em);
+            }
+        }
+        .line {
+            width: 0%;
+            height: 1.2px;
+            background-color: $primaryColor;
+            position: absolute;
+            right: 0;
+            top: calc(100% - .6px);
+            transition: all .2s linear;
+        }
+    }
+    .inputWrapper.star {
+        width: auto;
+        height: auto;
+        position: relative;
+        margin: $dist2;
+        display: flex ;
+        @include flex(column,flex-start,center,nowrap,"") ;
+        .stars{
+            width: auto ;
+            height: auto;
+            display: flex; 
+            @include flex(row,flex-start,center,nowrap,"") ;
+            i{
+                font-size: $fontL ;
+                cursor: pointer;
+                margin-right: .2em ;
+                &:first-child{margin-right: 0;}
+                transition: all .2s linear ;
+                color: lighten($textGrey,26%) ;
+            }
+            i.active{
+                color: $yellowColor ;
+            }
+        }
+        // button{
+        //     width: auto ;
+        //     height: auto;
+        //     padding: $dist1 - .1em $dist2 + 1em ;
+        //     border-radius: $dist3 ;
+        //     cursor: pointer;
+        //     margin-top: $dist1 ;
+        //     background-color: $primaryColor ;
+        //     color: white ;
+        //     border: 1px solid transparent ;
+        //     transition: all .2s linear ;
+        //     &:hover{
+        //         border: 1px solid $primaryColor ;
+        //         background-color: white ;
+        //         color: $primaryColor ;
+        //     }
+        // }
+    }
+    button[type="submit"] {
+        width: auto;
+        height: auto;
+        padding: .5em $dist2 + .2em;
+        margin: $dist2 auto 0 auto;
+        border-radius: $dist3;
+        font-size: $fontM;
+        @include swapColor($textWhite,$primaryColor) ; 
+    }
+}
+@include mediaQ(900px){
+    form#userComment{
+        font-size: 8px ;
+        .row{
+            .inputWrapper.text {
+                input.style1 {
+                    &:focus {
+                        ~label {font-size: 6px;}                  
+                    }
+                }
+                input.style2 {
+                    &:focus {
+                        ~label {font-size: 6px;}
+                    }
+                }  
+                input.style1 {
+                    ~label.top {font-size: 6px;}
+                }
+        
+                input.style2 {
+                    ~label.top {font-size: 6px;}
+                }
+            }
+        } 
+        .inputWrapper.textarea {   
+            textarea.style1 {
+                &:focus {    
+                    ~label {font-size: 6px;}
+                }
+            }
+            textarea.style2 {
+                &:focus {    
+                    ~label {font-size: 6px;}
+                }
+            }
+            textarea.style1 {
+                ~label.top {font-size: 6px;}
+            }
+            textarea.style2 {
+                ~label.top {font-size: 6px;}
+            }
+        }
+    }
+}
+// @include mediaQ(600px){
+//     form#userComment{
+//         font-size: 6px ;
+//         .row{
+//             .inputWrapper.text {
+//                 input.style1 {
+//                     &:focus {
+//                         ~label {font-size: 4px;}                  
+//                     }
+//                 }
+//                 input.style2 {
+//                     &:focus {
+//                         ~label {font-size: 4px;}
+//                     }
+//                 }  
+//                 input.style1 {
+//                     ~label.top {font-size: 4px;}
+//                 }
+        
+//                 input.style2 {
+//                     ~label.top {font-size: 4px;}
+//                 }
+//             }
+//         }     
+//         .inputWrapper.textarea {   
+//             textarea.style1 {
+//                 &:focus {    
+//                     ~label {font-size: 4px;}
+//                 }
+//             }
+//             textarea.style2 {
+//                 &:focus {    
+//                     ~label {font-size: 4px;}
+//                 }
+//             }
+//             textarea.style1 {
+//                 ~label.top {font-size: 4px;}
+//             }
+//             textarea.style2 {
+//                 ~label.top {font-size: 4px;}
+//             }
+//         }
+//     }
+// }
+@include mediaQ(460px){
+    form#userComment{
+        width: 100%;
+        @include flex(column,flex-start,center,nowrap,"") ;
+        .row{
+            @include flex(row,center,center,wrap,flex-start) ;
+            width: 100%;
+            .inputWrapper.text {
+                width: 90%;
+                height: 4em;
+                position: relative;
+                &:not(:first-child){
+                    margin-right: 0;
+                    margin-top: $dist3;
+                }
+            }
+        }
+        .inputWrapper.textarea {
+            width: 90%;
+        }
+    }
+}
+form.reply{
+    width: auto;
+    height: auto;
+    margin-top: -$dist1;
+    display: flex;
+    @include flex(column,flex-start,center,nowrap,"") ;
+    .inputWrapper.textarea {
+        width: 53em;
+        height: auto;
+        position: relative;
+        margin-top: $dist3;
+        display: flex;
+        textarea {
+            width: 100%;
+            font-size: $fontM;
+            color: $darkColor;
+            padding: $dist1;
+            line-height: $dist2 ;
+            transition: all .2s linear;
+            resize: none;
+            &::placeholder {
+                font-size: $fontM;
+                color: $textGrey;
+            }
+        }
+        textarea.style1 {
+            height: 8em;
+            border: 1.2px solid lighten($textGrey, 25%);
+            border-radius: $dist2;
+            ~label {
+                bottom: 100%;
+                transform: translateY(150%);
+            }
+            &:focus {
+                border: 1.2px solid $primaryColor;
+                ~label {
+                    font-size: 8px;
+                    right: $dist1;
+                    color: $primaryColor;
+                    bottom: calc(100% + .5em);
+                    transform: translateY(0);
+                }
+            }
+        }
+        textarea.style2 {
+            overflow: hidden;
+            border: none;
+            border-bottom: 1.2px solid lighten($textGrey, 25%);
+            ~label {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:focus {
+                border-bottom: 1.2px solid $primaryColor;
+                ~label {
+                    font-size: 8px;
+                    right: 0;
+                    color: $primaryColor;
+                    top: 0;
+                    transform: translateY(-100%);
+                }
+                ~.line {
+                    width: 100%;
+                }
+            }
+        }
+        textarea.style1.error {
+            border: 1.2px solid lighten($redColor2, 5%);
+
+            ~label {
+                color: lighten($redColor2, 5%);
+            }
+        }
+        textarea.style2.error {
+            border-bottom: 1.2px solid lighten($redColor2, 5%);
+
+            ~label {
+                color: lighten($redColor2, 5%);
+            }
+        }
+        textarea.style1 {
+            ~label.top {
+                font-size: 8px;
+                bottom: calc(100% + 2em);
+                transform: translateY(50%);
+                right: 0;
+            }
+        }
+        textarea.style2 {
+            ~label.top {
+                font-size: 8px;
+                top: 0;
+                transform: translateY(-100%);
+                right: 0;                            
+            }
+        }
+        label {
+            width: auto;
+            height: auto;
+            position: absolute;
+            right: $dist1;
+            position: absolute;
+            display: flex;
+            @include flex(row, flex-start, center, nowrap, "");
+            transition: all .2s linear;
+            color: lighten($textGrey, 25%);
+
+            i {
+                font-size: $fontM;
+            }
+
+            p {
+                font-size: $fontM - .1em;
+                transform: translateX(-.3em);
+            }
+        }
+        .line {
+            width: 0%;
+            height: 1.2px;
+            background-color: $primaryColor;
+            position: absolute;
+            right: 0;
+            top: calc(100% - .6px);
+            transition: all .2s linear;
+        }
+    }
+    button[type="submit"] {
+        width: auto;
+        height: auto;
+        padding: .5em $dist2 + .2em;
+        margin: $dist1 auto;
+        border-radius: $dist3;
+        font-size: $fontM;
+        @include swapColor($textWhite,$primaryColor) ; 
+    }
+}
+@include mediaQ(900px){
+    form.reply{
+        font-size: 8px ;
+        .inputWrapper.text {
+            input.style1 {
+                &:focus {
+                    ~label {font-size: 6px;}                  
+                }
+            }
+            input.style2 {
+                &:focus {
+                    ~label {font-size: 6px;}
+                }
+            }  
+            input.style1 {
+                ~label.top {font-size: 6px;}
+            }
+    
+            input.style2 {
+                ~label.top {font-size: 6px;}
+            }
+        }
+        .inputWrapper.textarea {   
+            textarea.style1 {
+                &:focus {    
+                    ~label {font-size: 6px;}
+                }
+            }
+            textarea.style2 {
+                &:focus {    
+                    ~label {font-size: 6px;}
+                }
+            }
+            textarea.style1 {
+                ~label.top {font-size: 6px;}
+            }
+            textarea.style2 {
+                ~label.top {font-size: 6px;}
+            }
+        }
+    }
+}
+// @include mediaQ(600px){
+//     form.reply{
+//         font-size: 6px ;
+//         .inputWrapper.text {
+//             input.style1 {
+//                 &:focus {
+//                     ~label {font-size: 4px;}                  
+//                 }
+//             }
+//             input.style2 {
+//                 &:focus {
+//                     ~label {font-size: 4px;}
+//                 }
+//             }  
+//             input.style1 {
+//                 ~label.top {font-size: 4px;}
+//             }
+    
+//             input.style2 {
+//                 ~label.top {font-size: 4px;}
+//             }
+//         }
+//         .inputWrapper.textarea {   
+//             textarea.style1 {
+//                 &:focus {    
+//                     ~label {font-size: 4px;}
+//                 }
+//             }
+//             textarea.style2 {
+//                 &:focus {    
+//                     ~label {font-size: 4px;}
+//                 }
+//             }
+//             textarea.style1 {
+//                 ~label.top {font-size: 4px;}
+//             }
+//             textarea.style2 {
+//                 ~label.top {font-size: 4px;}
+//             }
+//         }
+//     }
+// }
+@include mediaQ(400px){
+    form.reply{
+        width: 100%;
+        .inputWrapper.textarea {
+            width: 90%;
+        }    
+    }
+}
+form#discount{
+    width: 100%;
+    height: auto;
+    margin-top: $dist2;
+    display: flex;
+    @include flex(row,center,center,nowrap,"") ;
+    .number{
+        width: auto;
+        height: auto;
+        display: flex;
+        @include flex(row,space-between,center,nowrap,"") ;
+        label{
+            font-size: $fontM - .2em;
+            color: $textGrey;
+        }
+        select{
+            width: 6em;
+            height: 2em;
+            margin-right: $dist1;
+            border-radius: $dist1;
+            border: 1px solid $primaryColor ;
+            option{
+                color: $primaryColor ;
+                font-size: $fontS;
+                padding: .3em;
+            }
+        }
+    }
+    .reserve{
+        width: auto;
+        height: auto;
+        margin-right: $dist2;
+        display: flex;
+        @include flex(column,flex-start,flex-start,nowrap,"") ;
+        button[type="submit"]{
+            white-space: nowrap;
+            font-size: $fontM - .2em;
+            @include swapColor(white,$primaryColor) ;
+            padding: .3em $dist1 + .3em;
+        }
+        .inputWrapper.checkboxes {
+            width: auto;
+            height: auto;
+            display: flex;
+            @include flex(column, flex-start, flex-start, nowrap, "");
+            margin-top: 0;
+            .checkbox {
+                width: 100%;
+                height: 100%;
+                padding-right: $dist1;
+                margin-top: $dist1 ;
+                input[type="checkbox"] {
+                    width: 0;
+                    height: 0;
+                    display: none;
+                }
+                input[type="checkbox"].style2 {
+                    &:checked {
+                        ~label {
+                            .rect {
+                                border: 1px solid transparent;
+                                background-color: $primaryColor;
+    
+                                i {
+                                    opacity: 1;
+                                }
+                            }
+    
+                            p {
+                                color: $primaryColor;
+                            }
+                        }
+                    }
+                }
+                label {
+                    cursor: pointer;
+                    width: 100%;
+                    height: 100%;
+                    line-height: 2.5em;
+                    display: flex;
+                    @include flex(row, flex-start, center, nowrap, "");
+                    .rect {
+                        flex-shrink: 0;
+                        width: 2em;
+                        height: 2em;
+                        border: 1px solid darken($textGrey, 15%);
+                        position: relative;
+                        transition: all .2s linear;
+                        border-radius: .45em;
+    
+                        i {
+                            opacity: 0;
+                            font-size: $fontM;
+                            color: $whiteColor2;
+                            transition: all .2s linear;
+                        }
+                    }
+    
+                    p {
+                        max-width: auto;
+                        font-size: $fontM - .2em;
+                        color: darken($textGrey, 15%);
+                        margin-right: .3em;
+                        transition: all .2s linear;
+                    }
+                    p.error {color: lighten($redColor2,5%);}
+                }
+            }
+        }
+    }
+}
+@include mediaQ(750px){
+    form#discount{
+        .number{
+            select{
+                width: 5em;
+                height: 1.5em;
+                margin-right: $dist1;
+                border-radius: $dist1;
+                border: 1px solid $primaryColor ;
+                option{
+                    color: $primaryColor ;
+                    font-size: 10px;
+                    padding: .3em;
+                }
+            }
+        }
+    } 
+}
+form#editInfo{
+    display: flex;
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    > h4{
+        font-size: $fontL;
+        color: white;
+        font-weight: 700;
+        background-color: $primaryColor;
+        padding: .5em $dist2;
+        border-radius: $dist1;
+    }
+    button[type="submit"]{
+        @include swapColor(white,$primaryColor) ;
+        font-size: $fontM;
+        margin: $dist2 auto 0 auto;
+    }
+    .allWrapper{
+        width: 100%;
+        height: auto;
+        display: flex;
+        @include flex(row,flex-start,flex-start,nowrap,"") ;
+        margin-top: $dist2;
+        .img{
+            flex-shrink: 0;
+            width: 12em;
+            height: auto;
+            display: flex;
+            @include flex(column,flex-start,center,nowrap,"") ;
+            img{
+                width: 10em;
+                height: 10em;
+                border-radius: 50%;
+            }
+            input[type="file"]{display: none;}
+            label{
+                cursor: pointer;
+                i{
+                    display: inline-block;
+                    font-size: $fontXL;
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+    .inputs{
+        width: 100%;
+        height: auto;
+        margin-right: $dist2;
+        display: flex;
+        @include flex(row,flex-start,flex-start,wrap,flex-start) ;
+        .inputWrapper.text {
+            width: calc((100% - (4 * 3em)) / 4);
+            height: 4em;
+            position: relative;
+            margin: $dist2;
+            input {
+                width: 100%;
+                height: 100%;
+                line-height: 4em;
+                padding: 0 $dist1;
+                font-size: $fontM;
+                color: $darkColor;
+                transition: all .2s linear;
+                &::placeholder {
+                    color: $textGrey;
+                    font-size: $fontM;
+                }
+            }
+            input.style1 {
+                border: none;
+                border-bottom: 1.2px solid lighten($textGrey, 25%);
+    
+                &:focus {
+                    ~label {
+                        color: $primaryColor;
+                        font-size: 8px;
+                        bottom: calc(100% + .5em);
+                        transform: translateY(50%);
+                        right: 0;
+                    }
+    
+                    ~.line {
+                        width: 100%;
+                    }
+                }
+            }
+    
+            input.style2 {
+                border: 1.2px solid lighten($textGrey, 25%);
+                border-radius: $dist3;
+    
+                &:focus {
+                    border: 1.2px solid $primaryColor;
+    
+                    ~label {
+                        color: $primaryColor;
+                        font-size: 8px;
+                        bottom: calc(100% + 1.5em);
+                        transform: translateY(50%);
+                        right: $dist1;
+                    }
+    
+                    ~.line {
+                        width: 0%;
+                    }
+                }
+            }
+    
+            input.style1.error {
+                border-bottom: 1.2px solid lighten($redColor2, 5%);
+    
+                ~label {
+                    color: lighten($redColor2, 5%);
+                }
+    
+                ~.line {
+                    background-color: lighten($redColor2, 5%);
+                }
+            }
+    
+            input.style2.error {
+                border: 1.2px solid lighten($redColor2, 5%);
+    
+                ~label {
+                    color: lighten($redColor2, 5%);
+                }
+            }
+    
+            label {
+                width: auto;
+                height: auto;
+                position: absolute;
+                right: $dist1;
+                bottom: 50%;
+                transform: translateY(50%);
+                display: flex;
+                @include flex(row, flex-start, center, nowrap, "");
+                color: lighten($textGrey, 20%);
+                transition: all .2s linear;
+                .isRequire{
+                    width: auto;
+                    height: auto;
+                    color: lighten($redColor2, 0%);
+                    font-size: $fontS - .1em; 
+                    padding-left: .3em;
+                }
+                .icon {
+                    font-size: $fontM;
+                }
+    
+                p {
+                    font-size: $fontM - .1em;
+                    transform: translateX(-.3em);
+                }
+            }
+    
+            input.style1 {
+                ~label.top {
+                    font-size: 8px;
+                    bottom: calc(100% + .5em);
+                    transform: translateY(50%);
+                    right: 0;
+                }
+            }
+    
+            input.style2 {
+                ~label.top {
+                    font-size: 8px;
+                    bottom: calc(100% + 1.5em);
+                    transform: translateY(50%);
+                    right: $dist1;
+                }
+            }
+    
+            .line {
+                width: 0%;
+                height: 1.2px;
+                background-color: $primaryColor;
+                position: absolute;
+                right: 0;
+                top: calc(100% - 1px);
+                transition: all .2s linear;
+            }
+    
+            .msg {
+                width: auto;
+                height: auto;
+                border-radius: $dist3;
+                padding: $dist1 $dist2;
+                position: relative;
+                background-color: lighten($redColor2, 5%);
+                position: absolute;
+                right: 0;
+                top: 115%;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .2s linear;
+    
+                p {
+                    color: $whiteColor2;
+                    font-size: $fontM - .2em;
+                }
+    
+                i {
+                    font-size: $fontXL;
+                    color: lighten($redColor2, 5%);
+                    position: absolute;
+                    right: $dist2;
+                    top: calc(0% - .6em);
+                }
+            }
+    
+            .msg.show {
+                opacity: 1;
+                visibility: visible;
+                z-index: 2;
+            }
+        }
+        .select2{
+            width: calc((100% - (4 * 3em)) / 4);
+            font-size: $fontM ;
+            margin: $dist2;
+            option{
+                color: darken($textGrey,10%) ;
+                font-size: $fontM ;
+            }    
+        }
+        .select2-container--default .select2-selection--single{
+            border-radius: $dist3 ;
+            border: 1.2px solid lighten($textGrey,25%) ;
+            height: 2.5em;
+            outline: none  ;
+            .select2-selection__rendered{line-height: 2.5em ;}
+            .select2-selection__arrow{@include center-y ;}
+        }
+        .inputWrapper.toggle {
+            width: auto;
+            height: auto;
+            margin: $dist2;
+            margin-top: $dist3;
+            display: flex;
+            @include flex(row, flex-start, center, nowrap, "");
+            .toggleText,
+            .switch {
+                margin-right: $dist1;
+                &:first-child {
+                    margin-right: 0;
+                }
+            }
+    
+            .toggleText {
+                font-size: $fontM;
+                color: lighten($textGrey, 30%);
+                transition: all .2s linear;
+            }
+    
+            .toggleText.active {
+                color: darken($textGrey, 30%);
+            }
+    
+            .switch {
+                width: 5em;
+                height: 2em;
+                position: relative;
+                background-color: $primaryColor;
+                border-radius: $dist3;
+                cursor: pointer;
+    
+                .circle {
+                    width: 1.5em;
+                    height: 1.5em;
+                    border-radius: 50%;
+                    background-color: $whiteColor2;
+                    position: absolute;
+                    transition: all .2s linear;
+                }
+    
+                .circle.left {
+                    left: .4em;
+                }
+    
+                .circle.right {
+                    left: calc(100% - 1.5em - .4em);
+                }
+            }
+        }
+    }
+}
+@include mediaQ(1000px){
+    form#editInfo {
+        font-size: 8px ;
+        .inputs{
+            .inputWrapper.text {
+                input.style1 {
+                    &:focus {
+                        ~label {font-size: 7px;}                  
+                    }
+                }    
+                input.style1 {
+                    ~label.top {font-size: 7px;}
+                }    
+            }
+        }     
+    }
+}
+@include resizeTablet('form#editInfo') ;
+@include mediaQ(1100px){
+    form#editInfo{
+        .allWrapper{
+            @include flex(row,flex-start,flex-start,nowrap,"") ;
+            .img{
+                width: 12em;
+                img{
+                    width: 10em;
+                    height: 10em;
+                }
+            }
+        }
+        .inputs{
+            margin-right: $dist2;
+            .inputWrapper.text {
+                width: calc((100% - (3 * 3em)) / 3);
+            }
+            .select2{
+                width: calc((100% - (3 * 3em)) / 3);
+            }
+        }
+    }
+}
+@include mediaQ(650px){
+    form#editInfo{
+        .allWrapper{
+            @include flex(column,flex-start,center,nowrap,"") ;
+            .img{
+                width: 12em;
+                img{
+                    width: 10em;
+                    height: 10em;
+                }
+            }
+        }
+        .inputs{
+            margin-right: $dist2;
+            .inputWrapper.text {
+                width: calc((100% - (3 * 3em)) / 3);
+            }
+            .select2{
+                width: calc((100% - (3 * 3em)) / 3);
+            }
+        }
+    }
+}
+@include mediaQ(530px){
+    form#editInfo{
+        .allWrapper{
+            @include flex(column,flex-start,center,nowrap,"") ;
+            .img{
+                width: 12em;
+                img{
+                    width: 10em;
+                    height: 10em;
+                }
+            }
+        }
+        .inputs{
+            margin-right: $dist2;
+            .inputWrapper.text {
+                width: calc((100% - (2 * 3em)) / 2);
+            }
+            .select2{
+                width: calc((100% - (2 * 3em)) / 2);
+            }
+        }
+    }
+}
+@include mediaQ(410px){
+    form#editInfo{
+        .allWrapper{
+            @include flex(column,flex-start,center,nowrap,"") ;
+            .img{
+                width: 12em;
+                img{
+                    width: 10em;
+                    height: 10em;
+                }
+            }
+        }
+        .inputs{
+            margin-right: $dist2;
+            .inputWrapper.text {
+                width: 100%;
+            }
+            .select2{
+                width: 100%;
+            }
+            .inputWrapper.toggle{
+                margin-top: 0;
+            }
+        }
+    }
+}
+form#changePass{
+    display: flex;
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    > h4{
+        font-size: $fontL;
+        color: white;
+        font-weight: 700;
+        background-color: $primaryColor;
+        padding: .5em $dist2;
+        border-radius: $dist1;
+    }
+    button[type="submit"]{
+        @include swapColor(white,$primaryColor) ;
+        font-size: $fontM;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: $dist2;
+    }
+    .inputs{
+        margin-top: $dist1;
+        width: 100%;
+        height: auto;
+        display: flex;
+        @include flex(row,flex-start,flex-start,wrap,flex-start) ;
+        .inputWrapper.text {
+            width: calc((100% - (4 * 3em)) / 4);
+            height: 4em;
+            position: relative;
+            margin: $dist2;
+            input {
+                width: 100%;
+                height: 100%;
+                line-height: 4em;
+                padding: 0 $dist1;
+                font-size: $fontM;
+                color: $darkColor;
+                transition: all .2s linear;
+                &::placeholder {
+                    color: $textGrey;
+                    font-size: $fontM;
+                }
+            }
+            input.style1 {
+                border: none;
+                border-bottom: 1.2px solid lighten($textGrey, 25%);
+    
+                &:focus {
+                    ~label {
+                        color: $primaryColor;
+                        font-size: 8px;
+                        bottom: calc(100% + .5em);
+                        transform: translateY(50%);
+                        right: 0;
+                    }
+    
+                    ~.line {
+                        width: 100%;
+                    }
+                }
+            }
+    
+            input.style2 {
+                border: 1.2px solid lighten($textGrey, 25%);
+                border-radius: $dist3;
+    
+                &:focus {
+                    border: 1.2px solid $primaryColor;
+    
+                    ~label {
+                        color: $primaryColor;
+                        font-size: 8px;
+                        bottom: calc(100% + 1.5em);
+                        transform: translateY(50%);
+                        right: $dist1;
+                    }
+    
+                    ~.line {
+                        width: 0%;
+                    }
+                }
+            }
+    
+            input.style1.error {
+                border-bottom: 1.2px solid lighten($redColor2, 5%);
+    
+                ~label {
+                    color: lighten($redColor2, 5%);
+                }
+    
+                ~.line {
+                    background-color: lighten($redColor2, 5%);
+                }
+            }
+    
+            input.style2.error {
+                border: 1.2px solid lighten($redColor2, 5%);
+    
+                ~label {
+                    color: lighten($redColor2, 5%);
+                }
+            }
+    
+            label {
+                width: auto;
+                height: auto;
+                position: absolute;
+                right: $dist1;
+                bottom: 50%;
+                transform: translateY(50%);
+                display: flex;
+                @include flex(row, flex-start, center, nowrap, "");
+                color: lighten($textGrey, 20%);
+                transition: all .2s linear;
+                .isRequire{
+                    width: auto;
+                    height: auto;
+                    color: lighten($redColor2, 0%);
+                    font-size: $fontS - .1em; 
+                    padding-left: .3em;
+                }
+                .icon {
+                    font-size: $fontM;
+                }
+    
+                p {
+                    font-size: $fontM - .1em;
+                    transform: translateX(-.3em);
+                }
+            }
+    
+            input.style1 {
+                ~label.top {
+                    font-size: 8px;
+                    bottom: calc(100% + .5em);
+                    transform: translateY(50%);
+                    right: 0;
+                }
+            }
+    
+            input.style2 {
+                ~label.top {
+                    font-size: 8px;
+                    bottom: calc(100% + 1.5em);
+                    transform: translateY(50%);
+                    right: $dist1;
+                }
+            }
+    
+            .line {
+                width: 0%;
+                height: 1.2px;
+                background-color: $primaryColor;
+                position: absolute;
+                right: 0;
+                top: calc(100% - 1px);
+                transition: all .2s linear;
+            }
+    
+            .msg {
+                width: auto;
+                height: auto;
+                border-radius: $dist3;
+                padding: $dist1 $dist2;
+                position: relative;
+                background-color: lighten($redColor2, 5%);
+                position: absolute;
+                right: 0;
+                top: 115%;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .2s linear;
+    
+                p {
+                    color: $whiteColor2;
+                    font-size: $fontM - .2em;
+                }
+    
+                i {
+                    font-size: $fontXL;
+                    color: lighten($redColor2, 5%);
+                    position: absolute;
+                    right: $dist2;
+                    top: calc(0% - .6em);
+                }
+            }
+    
+            .msg.show {
+                opacity: 1;
+                visibility: visible;
+                z-index: 2;
+            }
+        }
+    }
+}
+@include mediaQ(1000px){
+    form#changePass {
+        font-size: 8px ;
+        .inputs{
+            .inputWrapper.text {
+                input.style1 {
+                    &:focus {
+                        ~label {font-size: 6px;}                  
+                    }
+                }
+                input.style2 {
+                    &:focus {
+                        ~label {font-size: 6px;}
+                    }
+                }  
+                input.style1 {
+                    ~label.top {font-size: 6px;}
+                }
+        
+                input.style2 {
+                    ~label.top {font-size: 6px;}
+                }
+            }
+        }
+        
+    }
+}
+@include resizeTablet('form#changePass') ;
+@include mediaQ(650px){
+    form#changePass{
+        .inputs{
+            .inputWrapper.text {
+                width: calc((100% - (3 * 3em)) / 3);
+            }
+        }
+    }
+}
+@include mediaQ(580px){
+    form#changePass{
+        .inputs{
+            .inputWrapper.text {
+                width: calc((100% - (2 * 3em)) / 2);
+            }
+        }
+    }
+}
+@include mediaQ(420px){
+    form#changePass{
+        .inputs{
+            .inputWrapper.text {
+                width: 100%;
+            }
+        }
+    }
+}
+form#info{
+    display: flex;
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    > h4{
+        font-size: $fontL;
+        color: white;
+        font-weight: 700;
+        background-color: $primaryColor;
+        padding: .5em $dist2;
+        border-radius: $dist1;
+    }
+    button[type="submit"]{
+        @include swapColor(white,$primaryColor) ;
+        margin: $dist2 auto 0 auto;
+    }
+    .questions{
+        width: 100%;
+        height: auto;
+        margin-top: $dist2;
+        display: flex;
+        @include flex(column,flex-start,flex-start,nowrap,"") ;
+        .question{
+            width: 100%;
+            height: auto;
+            margin-top: $dist2;
+            &:not(:last-child){
+                padding-bottom: $dist2;
+                border-bottom: 1px solid lighten($textGrey,20%);
+            }
+            display: flex;
+            @include flex(column,flex-start,flex-start,nowrap,"") ;
+            .quest{
+                width: 100%;
+                height: auto;
+                font-size: $fontM ;
+                color: $textDark;
+            }
+            .answers{
+                width: 100%;
+                height: auto;
+                display: flex;
+                margin-top: $dist1;
+                @include flex(row,flex-start,flex-start,wrap,flex-start) ;
+                .radio{
+                    width: calc((100% - (4 * 1.5em)) / 4);
+                    height: auto;
+                    margin: $dist1;
+                }
+            }
+        }
+    }
+    .radio {
+        input[type="radio"] {
+            width: 0;
+            height: 0;
+            display: none;
+        }
+        input[type="radio"].style2 {
+            ~label {
+                .circle {
+                    .fill {
+                        width: 80%;
+                        height: 80%;
+                    }
+                }
+            }
+
+            &:checked {
+                ~label {
+                    .circle {
+                        border: 1px solid $primaryColor;
+
+                        .fill {
+                            transform: translate(50%, -50%) scale(1);
+                            opacity: 1;
+                        }
+                    }
+
+                    p {
+                        color: $primaryColor;
+                    }
+                }
+            }
+        }
+        label {
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            line-height: 2.5em;
+            display: flex;
+            @include flex(row, flex-start, center, nowrap, "");
+            .circle {
+                flex-shrink: 0;
+                width: 2.2em;
+                height: 2.2em;
+                border-radius: 50%;
+                border: 1px solid darken($textGrey, 15%);
+                transition: all .2s linear;
+                position: relative;
+                transition: all .2s linear;
+                .fill {
+                    border-radius: 50%;
+                    opacity: 0;
+                    background-color: $primaryColor;
+                    position: absolute;
+                    top: 50%;
+                    right: 50%;
+                    transform: translate(50%, -50%) scale(0);
+                    transition: all .2s linear;
+                }
+            }
+            p {
+                font-size: $fontM;
+                color: darken($textGrey, 15%);
+                margin-right: .3em;
+                transition: all .2s linear;
+            }
+        }
+    }
+}
+@include resizeTablet('form#info') ;
+@include mediaQ(600px){
+    form#info{
+        .questions{
+            .question{
+                .answers{
+                    .radio{
+                        width: calc((100% - (2 * 1.5em)) / 2);
+                    }
+                }
+            }
+        }
+    }
+}

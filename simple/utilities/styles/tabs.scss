@@ -1,0 +1,63 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+.tabs_wrapper{
+    width: 90% ;
+    height: auto;
+    padding: 0 ;
+    margin: $sectionsDist auto ;
+    display: flex ;
+    @include flex(column,flex-start,center,nowrap,"") ;
+    .tabs{
+        width: 100% ;
+        height: auto;
+        display: flex ;
+        @include flex(row,flex-start,center,nowrap,"") ;
+        position: relative ;
+        overflow: auto;
+        padding-bottom: .5em ;
+        .tab{
+            flex-shrink: 0 ;
+            width: auto ;
+            height: auto;
+            padding: $dist1 $dist2 ;
+            cursor: pointer;
+            font-size: $fontM - .2em ;
+            color: $primaryColor ;
+            background-color: white;
+            transition: all .3s linear ;
+            border-left: 1.2px solid lighten($textGrey,30%) ;
+            &:last-child{border-left: none ;}
+            &:hover{
+                background-color: $primaryColor;
+                color: $textWhite;
+            }
+        }
+        .tab.active{
+            background-color: $primaryColor;
+            color: $textWhite;
+        }
+    }
+    .contents{
+        width: 100% ;
+        height: auto;    
+        margin: $dist1 auto ;
+        .content{
+            width: 100% ;
+            height: auto;
+            display: none ;
+            // font-size: $fontM;
+            color: $textDark ;
+            padding: $dist1 ;
+        }
+        .content.active{
+            display: flex ;
+            animation: fadeIn .3s linear forwards;
+        }
+        @keyframes fadeIn {
+            from{opacity: 0;}
+            to{opacity: 1;}
+        }
+    }
+
+}

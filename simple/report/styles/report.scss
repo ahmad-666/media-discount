@@ -1,0 +1,43 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+#reportWrapper{
+    display: flex;
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    > h4{
+        font-size: $fontL;
+        color: white;
+        font-weight: 700;
+        background-color: $primaryColor;
+        padding: .5em $dist2;
+        border-radius: $dist1;
+    }
+    .content{
+        width: 100%;
+        height: auto;
+        margin-top: $dist2;
+        display: flex;
+        @include flex(row,flex-start,center,nowrap,"") ;
+        img{
+            width: calc(100% - 50% - 2em);
+            height: 30em;
+            object-fit: cover;
+        }
+    }
+}
+@include resizeTablet('#reportWrapper') ;
+@include mediaQ(800px){
+    #reportWrapper{width: 95%;}
+}
+@include resizeMobile('#reportWrapper') ;
+@include mediaQ(650px){
+    #reportWrapper{
+        .content{
+            @include flex(column,flex-start,center,nowrap,"") ;
+            img{
+                width: 90%;
+                height: 30em;
+            }
+        }
+    }
+}

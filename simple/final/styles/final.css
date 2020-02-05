@@ -1,0 +1,102 @@
+#final {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#final h4 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #00897b;
+}
+
+#final .trackCode {
+  width: auto;
+  height: auto;
+  padding: 1.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  border-radius: 1.5em;
+  margin-top: 0.75em;
+  background-color: #00897b;
+}
+
+#final .trackCode p {
+  margin-top: 0;
+  font-size: 1.6em;
+  color: white;
+}
+
+#final .trackCode p:not(:first-child) {
+  margin-right: 1.5em;
+}
+
+#final p {
+  margin-top: 0.75em;
+  font-size: 1.6em;
+  color: #90909b;
+}
+
+@media screen and (max-width: 1000px) {
+  #final {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #final {
+    font-size: 7px;
+  }
+}
+/*# sourceMappingURL=final.css.map */

@@ -1,0 +1,341 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+footer{
+    width: 100%;
+    height: auto;
+    margin-top: $sectionsDist * 3 ;
+    display: flex;
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+    box-shadow: 0 -2em 1.5em -1.2em $shadowColor;
+    .top{
+        width: 100%;
+        height: auto;
+        padding: $dist2;
+        border-bottom: 1px solid lighten($textGrey,15%);
+        background-color: #009688    ;
+        display: flex;
+        @include flex(column,flex-start,center,nowrap,"") ;
+        .row{
+            width: auto;
+            height: auto;
+            &:not(:first-child){margin-top: $dist1;}
+            display: flex;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            h6{
+                font-size: $fontM;
+                color: white;
+                font-weight: 700;
+            }
+            .infos{
+                width: auto;
+                height: auto;
+                margin-right: $dist3;
+                display: flex;
+                @include flex(row,flex-start,center,wrap,flex-start) ;
+                .info{
+                    width: auto;
+                    height: auto;
+                    margin: $dist2;
+                    display: flex;
+                    @include flex(row,flex-start,center,nowrap,"") ;
+                    color: $textWhite;
+                    i,p{
+                        font-size: $fontM - .2em   
+                    }
+                    p{margin-right: .3em;}
+                }
+                .social{
+                    width: auto;
+                    height: auto;
+                    margin: $dist2;
+                    transition: all .2s linear;
+                    &:hover{
+                        transform: scale(1.3);
+                    }
+                    i{
+                        width: 4.5em;
+                        height: 4.5em;
+                        border-radius: 50%;
+                        position: relative;
+                        @include swapColor(white,#3f51b5 ) ;
+                        border: 2px solid white ;
+
+                        &::before{
+                            position: absolute;
+                            top: 50%;
+                            right: 50%;
+                            transform: translate(50%,-50%);
+                            font-size: $fontM + .2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .middle{
+
+        width: 100%;
+        height: auto;
+        padding: $dist2;
+        border-bottom: 1px solid lighten($textGrey,15%);
+        background-color: white;
+        display: flex;
+        @include flex(row,flex-start,center,nowrap,"") ;
+        .right{
+            width: auto;
+            height: auto;
+            display: flex;
+            @include flex(row,flex-start,flex-start,nowrap,"") ;
+            .col{
+                width: 12em;
+                height: auto;
+                &:not(:first-child){margin-right: $dist4;}
+                display: flex;
+                @include flex(column,flex-start,flex-start,nowrap,"") ;
+                h6{
+                    font-size: $fontM ;
+                    color: $primaryColor;
+                    font-weight: 700;
+                    position: relative;
+                    &::before{
+                        content: '' ;
+                        width: 100%;
+                        height: 1px;
+                        position: absolute;
+                        top: 100%;
+                        right: 0;
+                        background-color: $primaryColor;
+                    }
+                }
+                a{
+                    font-size: $fontM - .2em;
+                    color: $textGrey;
+                    margin-top: $dist1 + .5em;
+                    &:hover{color: $primaryColor;}
+                }
+            }
+        }
+        .left{
+            flex-shrink: 0;
+            width: auto;
+            height: auto;
+            display: flex;
+            @include flex(row,flex-end,flex-start,wrap,flex-start) ;
+            margin-right: $dist2;
+            a{
+                width: auto;
+                height: auto;
+                padding: 0;
+                background-color: white;
+                border-radius: $dist1;
+                margin: $dist1;
+                img{
+                    width: 8em;
+                    height: 8em;
+                }
+            }
+        }
+        .mid{
+            width: 100%;
+            height: auto;
+            margin-right: $dist1;
+            display: flex;
+            @include flex(row,center,center,wrap,flex-start) ;
+            .feature{
+                width: calc((100% - (5 * 2.5em)) / 5);
+                height: 10em;
+                margin: $dist1 $dist2;
+                display: flex;
+                @include flex(column,flex-start,center,nowrap,"") ;
+                transition: all .3s linear;
+                &:hover{
+                    transform: scale(1.1);
+                    box-shadow: 0 0 1.2em .3em $shadowColor;
+                }
+                img{
+                    width: 50%;
+                    height: 6em;
+                }
+                p{
+                    font-size: $fontM - .2em;
+                    font-weight: 700;
+                    color: $primaryColor;
+                    margin-top: $dist1;
+                }
+            }
+        }
+    }
+    .bottom{
+        width: 100%;
+        height: auto;
+        padding: 0 $dist2 $dist2 $dist2;
+        background-color: lighten($textGrey,35%);
+        display: flex;
+        @include flex(column,flex-start,flex-start,nowrap,"") ;
+        .logos{
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+            display: flex;
+            @include flex(row,flex-start,flex-start,wrap,flex-start) ;
+            a{
+                width: auto;
+                height: auto;
+                margin: $dist2;
+                img{
+                    width: 9em;
+                    height: 9em;
+                }
+            }
+        }
+        .desc{
+            width: 100%;
+            height: auto;
+            font-size: $fontM;
+            color: $textGrey;
+            line-height: $dist2 + .5em;
+        }
+    }
+}
+@include resizeTablet('footer') ;
+@include resizeMobile('footer') ;
+@include mediaQ(550px){
+    footer{
+        .top{
+            padding: $dist1;
+            .row{
+                width: 100%;
+                @include flex(row,flex-start,center,nowrap,"") ;
+                h6{white-space: nowrap;}
+                .infos{
+                    margin-right: $dist2;
+                    display: flex;
+                    @include flex(row,flex-start,center,wrap,flex-start) ;
+                    .info{
+                        margin: $dist1;
+                    }
+                    .social{
+                        margin: $dist1;                
+                        i{
+                            width: 4.5em;
+                            height: 4.5em;
+                            border: 1px solid white ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include mediaQ(1200px){
+    footer{    
+        .middle{
+            padding: $dist2;
+            .right{
+                .col{
+                    width: 12em;
+                    &:not(:first-child){margin-right: $dist3;}
+                }
+            }
+            .mid{
+                .feature{
+                    width: calc((100% - (3 * 3.5em)) / 3);
+                    height: 10em;
+                    margin: $dist1 $dist2;
+                    img{
+                        width: 50%;
+                        height: 6em;
+                    }
+                }
+            }
+        }
+    }
+}
+@include mediaQ(780px){
+    footer{    
+        .middle{
+            padding: $dist1;
+            .right{
+                .col{
+                    width: 12em;
+                    &:not(:first-child){margin-right: $dist2;}
+                }
+            }
+            .mid{
+                .feature{
+                    width: calc((100% - (3 * 3.5em)) / 3);
+                    height: 10em;
+                    margin: $dist1 $dist2;
+                    img{
+                        width: 55%;
+                        height: 6em;
+                    }
+                }
+            }
+        }
+    }
+}
+@include mediaQ(550px){
+    footer{    
+        .middle{
+            @include flex(row,flex-start,flex-start,wrap,flex-start) ;
+            .mid{
+                margin-right: 0;
+                margin-top: $dist1;
+                .feature{
+                    width: calc((100% - (4 * 3.5em)) / 4);
+                    height: 10em;
+                    margin: $dist1 $dist2;
+                    img{
+                        width: 55%;
+                        height: 6em;
+                    }
+                }
+            }
+            .left{
+                width: 100%;
+                @include flex(row,center,center,nowrap,"") ;
+                margin-top: $dist2;
+                margin-right: 0;
+            }
+        }
+    }
+}
+@include mediaQ(450px){
+    footer{    
+        .middle{
+            .mid{
+                .feature{width: calc((100% - (3 * 3.5em)) / 3);}
+            }
+        }
+    }
+}
+@include mediaQ(330px){
+    footer{    
+        .middle{
+            @include flex(row,flex-start,flex-start,wrap,flex-start) ;
+            .mid{
+                .feature{
+                    width: calc((100% - (3 * 3.5em)) / 3);
+                }
+            }
+        }
+    }
+}
+@include mediaQ(450px){
+    footer{
+        .bottom{
+            padding: 0 $dist2 $dist2 $dist2;
+            .logos{
+                a{
+                    margin: $dist1;
+                    img{
+                        width: 7em;
+                        height: 7em;
+                    }
+                }
+            }
+        }
+    }
+}

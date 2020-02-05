@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <meta name='description' content='سایت زیبایی' />
+    <meta name='keywords' content='beauty,discount,زیبایی,تخفیف' />
+    <meta name='author' content='rad7 devs' />
+    <title>سایت زیبایی</title>
+    <link rel='icon' href='./assets/icons/logo.png' type='image/png' />
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='زیبایی' />
+    <meta property='og:description' content='سایت زیبایی' />
+    <meta property='og:site_name' content='beauty' />
+    <meta property='og:url' content='https://something.com/' />
+    <meta property='og:image' content='./assets/icons/logo.png' type='image/png' />
+    <meta property='og:locale' content='fa_IR' />
+    <meta name='twitter:card' content='summery' />
+    <meta name='twitter:title' content='زیبایی' />
+    <meta name='twitter:description' content='سایت زیبایی' />
+    <meta name='twitter:image' content='./assets/icons/logo.png' type='image/png' />
+    <link rel="stylesheet" href="./libraries/fontawesome/all.min.css">
+    <link rel="stylesheet" href="./libraries/select2.min.css">
+    <link rel="stylesheet" href="./libraries/nouislider.min.css">
+    <link rel="stylesheet" href="./init.css">
+    <link rel="stylesheet" href="./framework.css">
+    <link rel="stylesheet" href="./utilities/styles/form.css">
+    <link rel="stylesheet" href="./index/styles/header.css">
+    <link rel="stylesheet" href="./index/styles/menu.css">
+    <link rel="stylesheet" href="./index/styles/leftFix.css">
+    <link rel="stylesheet" href="./index/styles/smooth.css">
+    <link rel="stylesheet" href="./index/styles/footer.css">
+    <link rel="stylesheet" href="./medics/styles/medics.css">
+</head>
+<body class="bg">
+    <header>
+        <div id="topMenu">
+            <div class="right">
+                <a class="logo" href="index.html">
+                    <img src="./assets/icons/logo.png" alt="logoAlt">
+                    <h1>اسم سایت</h1>
+                </a>
+            </div>
+            <div class="left">
+                <a id="login" href="login.html">
+                    <i class="fas fa-user"></i>
+                    <p>ورود به حساب کاربری</p>
+                </a>
+                <div id="lang">
+                    <div class="title">
+                        <p>فارسی</p>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul class="fadeIn">
+                        <li><a href="#!">فارسی</a></li>
+                        <li><a href="#!">عربی</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <form novalidate id="searchForm" name="searchForm" method="GET" action="#!" enctype="text/plain">
+            <div class="inputWrapper text">
+                <input type="text" id="search" name="search" class="style2 labelHandler validate" required>
+                <label for="search">
+                    <i class="fas fa-search icon"></i>
+                    <p>جست و جوی مکان</p>
+                </label>
+                <span class="line"></span>
+                <div class="msg">
+                    <p>مقداری را وارد کنید</p>
+                    <i class="fas fa-caret-up"></i>
+                </div>
+            </div>
+            <select class="select2 validate" id="categorySelect" name="categorySelect">
+                <option></option>
+                <option value="cat1">نام دسته بندی</option>
+                <option value="cat2">نام دسته بندی</option>
+                <option value="cat3">نام دسته بندی</option>
+                <option value="cat4">نام دسته بندی</option>
+                <option value="cat5">نام دسته بندی</option>
+                <option value="cat6">نام دسته بندی</option>
+                <option value="cat7">نام دسته بندی</option>    
+            </select>
+            <select class="select2 validate" id="citySelect" name="citySelect">
+                <option></option>
+                <option value="city1">نام شهر</option>
+                <option value="city2">نام شهر</option>
+                <option value="city3">نام شهر</option>
+                <option value="city4">نام شهر</option>
+                <option value="city5">نام شهر</option>
+                <option value="city6">نام شهر</option>
+                <option value="city7">نام شهر</option>     
+            </select>
+            <button type="submit" class="btn mid pulse">جست و جو</button>
+        </form>
+    </header>
+    <i class="fas fa-bars" id="menuTrigger"></i>
+    <div id="menu">
+        <div class="top">
+            <img src="./assets/icons/profile.png" alt="profileAlt">
+            <p>نام حساب کاربری</p>
+            <a href="#!" id="signOut">
+                <p>خروج</p>
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
+        </div>
+        <ul>
+            <li>
+                <a href="login.html">
+                    <i class="fas fa-user"></i>
+                    <p>ورود / ثبت نام</p>
+                </a>
+            </li>
+            <li class="withCollapse">
+                <div class="collapseTrigger">
+                    <p>انتخاب دسته بندی</p>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="collapse">
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام دسته بندی</p>
+                    </a>
+                </div>
+            </li>
+            <li class="withCollapse">
+                <div class="collapseTrigger">
+                    <p>انتخاب  شهر</p>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="collapse">
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                    <a href="medics.html">
+                        <p>نام شهر</p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="editProfile.html">
+                    <i class="fas fa-edit"></i>
+                    <p> ویرایش حساب کاربری </p>
+                </a>
+            </li>
+            <li>
+                <a href="changePassword.html">
+                    <i class="fas fa-lock"></i>
+                    <p>تغییر رمز ورود</p>
+                </a>
+            </li>
+            <li>
+                <a href="info.html">
+                    <i class="fas fa-info"></i>
+                    <p>وارد کردن اطلاعات ظاهری</p>
+                </a>
+            </li>
+            <li>
+                <a href="bookmarks.html">
+                    <i class="fas fa-bookmark"></i>
+                    <p>مورد علاقه ها</p>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <i class="fas fa-comment-medical"></i>
+                    <p>درباره ما</p>
+                </a>
+            </li>
+            <li>
+                <a href="rules.html">
+                    <i class="fas fa-address-book"></i>
+                    <p>قوانین</p>
+                </a>
+            </li>
+            <li>
+                <a href="report.html">
+                    <i class="fas fa-user-shield"></i>
+                    <p> ثبت شکایت </p>
+                </a>
+            </li>
+        </ul>
+        <div class="bottom">
+            <h6>ارتباط با فانوس زیبایی</h6>
+            <div class="icons">
+                <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>آدرس دفتر فانوس زیبایی</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                    <p>051-38670000</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                    <p>something@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="blackFilter"></div>
+    <ul id="leftFix">
+        <li id="homeFix">
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+            </a>
+        </li>
+        <li id="basketFix">
+            <a href="basket.html">
+                <i class="fas fa-shopping-basket"></i>
+                <div class="badge"></div>
+            </a>
+        </li>
+    </ul>
+    <i class="fas fa-angle-double-up" id="smooth"></i>
+    <main>
+        <form novalidate id="filters" name="filters" class="col" method="GET" action="#!" enctype="text/plain">
+            <div class="row containerStyle" id="sortWrapper">
+                <div class="inputWrapper select">
+                    <input type="hidden" id="sortHidden" name="sortHidden">
+                    <input type="text" id="sort" name="sort" class="style1 validate" required readonly>
+                    <label for="sort">
+                        <i class="fas fa-sort icon"></i>
+                        <p>مرتب سازی بر اساس</p>
+                    </label>
+                    <i class="fas fa-angle-down arrow center-y"></i>
+                    <span class="line"></span>
+                    <ul>
+                        <li data-value="discount">بیشترین تخفیف</li>
+                        <li data-value="lowestPrice">کمترین قیمت</li>
+                        <li data-value="highestPrice">بیشترین قیمت</li>
+                        <li data-value="highestScore">بیشترین امتیاز</li>
+                    </ul>
+                </div>
+            </div>     
+            <div class="row containerStyle" id="filterWrapper">
+                <div class="mobileFixFlexFixer">
+                    <div class="filtersWrapper" id="currFilters">
+                        <div class="top">
+                            <h4>فیلتر های انتخابی</h4>
+                            <button id="clearFilters" type="button" class="btn small pulse">پاک کردن همه</button>
+                        </div>
+                        <div class="bottom"></div>
+                    </div>
+                    <div class="filtersWrapper inputWrapper range" id="priceRanger">
+                        <input type="hidden" class="min">
+                        <input type="hidden" class="max">
+                        <h4>بازه ی قیمت</h4>
+                        <div class="ranger" data-min="50000" data-max="5000000" data-step="100000"></div>
+                        <p class="text"></p>
+                    </div>
+                    <div class="filtersWrapper" id="cityFilter">
+                        <div class="withCollapse">
+                            <div class="mainCategory">
+                                <div class="inputWrapper checkboxes">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="allCities" name="allCities" class="style2" value="allCities">
+                                        <label for="allCities">
+                                            <span class="rect">
+                                                <i class="fas fa-check center-xy"></i>
+                                            </span>
+                                            <div class="content" data-currFilter="تمام  شهر ها">
+                                                <p>تمام شهرها</p>
+                                            </div>       
+                                        </label>
+                                    </div>
+                                </div>
+                                <i class="fas fa-angle-down collapseTrigger"></i>
+                            </div>
+                            <div class="collapse">
+                                <div class="inputWrapper checkboxes">
+                                    <div class="checkbox subCategory">
+                                        <input type="checkbox" id="city1" name="city1" class="style2" value="city1">
+                                        <label for="city1">
+                                            <span class="rect">
+                                                <i class="fas fa-check center-xy"></i>
+                                            </span>
+                                            <div class="content" data-currFilter="نام شهر ۱">
+                                                <p>نام شهر ۱</p>
+                                            </div>
+                                        </label>
+                                    </div>                                                                                  
+                                    <div class="checkbox subCategory">
+                                        <input type="checkbox" id="city2" name="city2" class="style2" value="city2">
+                                        <label for="city2">
+                                            <span class="rect">
+                                                <i class="fas fa-check center-xy"></i>
+                                            </span>
+                                            <div class="content" data-currFilter="نام شهر 2">
+                                                <p>نام شهر 2</p>
+                                            </div>
+                                        </label>
+                                    </div>                                                                                  
+                                    <div class="checkbox subCategory">
+                                        <input type="checkbox" id="city3" name="city3" class="style2" value="city3">
+                                        <label for="city3">
+                                            <span class="rect">
+                                                <i class="fas fa-check center-xy"></i>
+                                            </span>
+                                            <div class="content" data-currFilter="نام شهر 3">
+                                                <p>نام شهر 3</p>
+                                            </div>
+                                        </label>
+                                    </div>                                                                                  
+                                    <div class="checkbox subCategory">
+                                        <input type="checkbox" id="city4" name="city4" class="style2" value="city4">
+                                        <label for="city4">
+                                            <span class="rect">
+                                                <i class="fas fa-check center-xy"></i>
+                                            </span>
+                                            <div class="content" data-currFilter="نام شهر 4">
+                                                <p>نام شهر 4</p>
+                                            </div>
+                                        </label>
+                                    </div>                                                                                  
+                                    <div class="checkbox subCategory">
+                                        <input type="checkbox" id="city5" name="city5" class="style2" value="city5">
+                                        <label for="city5">
+                                            <span class="rect">
+                                                <i class="fas fa-check center-xy"></i>
+                                            </span>
+                                            <div class="content" data-currFilter="نام شهر 5">
+                                                <p>نام شهر 5</p>
+                                            </div>
+                                        </label>
+                                    </div>                                                                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>                 
+                    <div class="filtersWrapper" id="typeFilter">
+                        <div class="withCollapse">
+                            <div class="mainCategory">
+                                <div class="inputWrapper checkboxes">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="allTypes" name="allTypes" class="style2" value="allTypes">
+                                        <label for="allTypes">
+                                            <span class="rect">
+                                                <i class="fas fa-check center-xy"></i>
+                                            </span>
+                                            <div class="content" data-currFilter="تمام  کلینیک ها">
+                                                <p>تمام کلینیک ها</p>
+                                            </div>       
+                                        </label>
+                                    </div>
+                                </div>
+                                <i class="fas fa-angle-down collapseTrigger"></i>
+                            </div>
+                            <div class="collapse">
+                                <div class="inputWrapper checkboxes">
+                                    <div class="checkbox subCategory">
+                                        <input type="checkbox" id="type1" name="type1" class="style2" value="type1">
+                                        <label for="type1">
+                                            <span class="rect">
+                                                <i class="fas fa-check center-xy"></i>
+                                            </span>
+                                            <div class="content" data-currFilter="نوع کلینیک ۱">
+                                                <p>نوع کلینیک ۱</p>
+                                            </div>
+                                        </label>
+                                    </div>                                                                                                                                                                  
+                                    <div class="checkbox subCategory">
+                                        <input type="checkbox" id="type2" name="type2" class="style2" value="type2">
+                                        <label for="type2">
+                                            <span class="rect">
+                                                <i class="fas fa-check center-xy"></i>
+                                            </span>
+                                            <div class="content" data-currFilter="نوع کلینیک 2">
+                                                <p>نوع کلینیک 2</p>
+                                            </div>
+                                        </label>
+                                    </div>                                                                                                                                                                  
+                                    <div class="checkbox subCategory">
+                                        <input type="checkbox" id="type3" name="type3" class="style2" value="type3">
+                                        <label for="type3">
+                                            <span class="rect">
+                                                <i class="fas fa-check center-xy"></i>
+                                            </span>
+                                            <div class="content" data-currFilter="نوع کلینیک 3">
+                                                <p>نوع کلینیک 3</p>
+                                            </div>
+                                        </label>
+                                    </div>                                                                                                                                                                  
+                                    <div class="checkbox subCategory">
+                                        <input type="checkbox" id="type4" name="type4" class="style2" value="type4">
+                                        <label for="type4">
+                                            <span class="rect">
+                                                <i class="fas fa-check center-xy"></i>
+                                            </span>
+                                            <div class="content" data-currFilter="نوع کلینیک 4">
+                                                <p>نوع کلینیک 4</p>
+                                            </div>
+                                        </label>
+                                    </div>                                                                                                                                                                  
+                                    <div class="checkbox subCategory">
+                                        <input type="checkbox" id="type5" name="type5" class="style2" value="type5">
+                                        <label for="type5">
+                                            <span class="rect">
+                                                <i class="fas fa-check center-xy"></i>
+                                            </span>
+                                            <div class="content" data-currFilter="نوع کلینیک 5">
+                                                <p>نوع کلینیک 5</p>
+                                            </div>
+                                        </label>
+                                    </div>                                                                                                                                                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>                 
+                </div>
+            </div>
+        </form>
+        <div class="col">
+            <div class="row containerStyle" id="medics">
+                <div class="medicsWrapper">
+                    <a href="medic.html" class="medic">
+                        <div class="img">
+                            <img src="./assets/imgs/slide1.jpg" alt="slideAlt">
+                            <div class="info">
+                                <div class="icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <p>۱۰۰خرید</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-heart"></i>
+                                    <p>50 لایک</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="icons">
+                                <div class="icon">
+                                    <i class="fas fa-briefcase-medical"></i>
+                                    <p>نام دسته بندی</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>نام شهر</p>
+                                </div>
+                            </div>
+                            <div class="score">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star notActive"></i>
+                                <p>(۱۰۰نفر)</p>
+                            </div>
+                            <h4>عنوان</h4>
+                            <div class="price">
+                                <div class="col">
+                                    <p>1000000تومان</p>
+                                    <p>500000تومان</p>
+                                </div>
+                                <span class="discount">50%</span>
+                            </div>
+                        </div>
+                    </a>                                            
+                    <a href="medic.html" class="medic">
+                        <div class="img">
+                            <img src="./assets/imgs/slide2.jpg" alt="slideAlt">
+                            <div class="info">
+                                <div class="icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <p>۱۰۰خرید</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-heart"></i>
+                                    <p>50 لایک</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="icons">
+                                <div class="icon">
+                                    <i class="fas fa-briefcase-medical"></i>
+                                    <p>نام دسته بندی</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>نام شهر</p>
+                                </div>
+                            </div>
+                            <div class="score">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star notActive"></i>
+                                <p>(۱۰۰نفر)</p>
+                            </div>
+                            <h4>عنوان</h4>
+                            <div class="price">
+                                <div class="col">
+                                    <p>1000000تومان</p>
+                                    <p>500000تومان</p>
+                                </div>
+                                <span class="discount">50%</span>
+                            </div>
+                        </div>
+                    </a>                                            
+                    <a href="medic.html" class="medic">
+                        <div class="img">
+                            <img src="./assets/imgs/slide7.jpg" alt="slideAlt">
+                            <div class="info">
+                                <div class="icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <p>۱۰۰خرید</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-heart"></i>
+                                    <p>50 لایک</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="icons">
+                                <div class="icon">
+                                    <i class="fas fa-briefcase-medical"></i>
+                                    <p>نام دسته بندی</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>نام شهر</p>
+                                </div>
+                            </div>
+                            <div class="score">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star notActive"></i>
+                                <p>(۱۰۰نفر)</p>
+                            </div>
+                            <h4>عنوان</h4>
+                            <div class="price">
+                                <div class="col">
+                                    <p>1000000تومان</p>
+                                    <p>500000تومان</p>
+                                </div>
+                                <span class="discount">50%</span>
+                            </div>
+                        </div>
+                    </a>                                            
+                    <a href="medic.html" class="medic">
+                        <div class="img">
+                            <img src="./assets/imgs/slide3.jpg" alt="slideAlt">
+                            <div class="info">
+                                <div class="icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <p>۱۰۰خرید</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-heart"></i>
+                                    <p>50 لایک</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="icons">
+                                <div class="icon">
+                                    <i class="fas fa-briefcase-medical"></i>
+                                    <p>نام دسته بندی</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>نام شهر</p>
+                                </div>
+                            </div>
+                            <div class="score">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star notActive"></i>
+                                <p>(۱۰۰نفر)</p>
+                            </div>
+                            <h4>عنوان</h4>
+                            <div class="price">
+                                <div class="col">
+                                    <p>1000000تومان</p>
+                                    <p>500000تومان</p>
+                                </div>
+                                <span class="discount">50%</span>
+                            </div>
+                        </div>
+                    </a>                                            
+                    <a href="medic.html" class="medic">
+                        <div class="img">
+                            <img src="./assets/imgs/slide6.jpg" alt="slideAlt">
+                            <div class="info">
+                                <div class="icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <p>۱۰۰خرید</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-heart"></i>
+                                    <p>50 لایک</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="icons">
+                                <div class="icon">
+                                    <i class="fas fa-briefcase-medical"></i>
+                                    <p>نام دسته بندی</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>نام شهر</p>
+                                </div>
+                            </div>
+                            <div class="score">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star notActive"></i>
+                                <p>(۱۰۰نفر)</p>
+                            </div>
+                            <h4>عنوان</h4>
+                            <div class="price">
+                                <div class="col">
+                                    <p>1000000تومان</p>
+                                    <p>500000تومان</p>
+                                </div>
+                                <span class="discount">50%</span>
+                            </div>
+                        </div>
+                    </a>                                            
+                    <a href="medic.html" class="medic">
+                        <div class="img">
+                            <img src="./assets/imgs/slide1.jpg" alt="slideAlt">
+                            <div class="info">
+                                <div class="icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <p>۱۰۰خرید</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-heart"></i>
+                                    <p>50 لایک</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="icons">
+                                <div class="icon">
+                                    <i class="fas fa-briefcase-medical"></i>
+                                    <p>نام دسته بندی</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>نام شهر</p>
+                                </div>
+                            </div>
+                            <div class="score">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star notActive"></i>
+                                <p>(۱۰۰نفر)</p>
+                            </div>
+                            <h4>عنوان</h4>
+                            <div class="price">
+                                <div class="col">
+                                    <p>1000000تومان</p>
+                                    <p>500000تومان</p>
+                                </div>
+                                <span class="discount">50%</span>
+                            </div>
+                        </div>
+                    </a>                                            
+                    <a href="medic.html" class="medic">
+                        <div class="img">
+                            <img src="./assets/imgs/slide2.jpg" alt="slideAlt">
+                            <div class="info">
+                                <div class="icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <p>۱۰۰خرید</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-heart"></i>
+                                    <p>50 لایک</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="icons">
+                                <div class="icon">
+                                    <i class="fas fa-briefcase-medical"></i>
+                                    <p>نام دسته بندی</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>نام شهر</p>
+                                </div>
+                            </div>
+                            <div class="score">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star notActive"></i>
+                                <p>(۱۰۰نفر)</p>
+                            </div>
+                            <h4>عنوان</h4>
+                            <div class="price">
+                                <div class="col">
+                                    <p>1000000تومان</p>
+                                    <p>500000تومان</p>
+                                </div>
+                                <span class="discount">50%</span>
+                            </div>
+                        </div>
+                    </a>                                            
+                    <a href="medic.html" class="medic">
+                        <div class="img">
+                            <img src="./assets/imgs/slide7.jpg" alt="slideAlt">
+                            <div class="info">
+                                <div class="icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <p>۱۰۰خرید</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-heart"></i>
+                                    <p>50 لایک</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="icons">
+                                <div class="icon">
+                                    <i class="fas fa-briefcase-medical"></i>
+                                    <p>نام دسته بندی</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>نام شهر</p>
+                                </div>
+                            </div>
+                            <div class="score">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star notActive"></i>
+                                <p>(۱۰۰نفر)</p>
+                            </div>
+                            <h4>عنوان</h4>
+                            <div class="price">
+                                <div class="col">
+                                    <p>1000000تومان</p>
+                                    <p>500000تومان</p>
+                                </div>
+                                <span class="discount">50%</span>
+                            </div>
+                        </div>
+                    </a>                                            
+                </div>
+                <button class="showMore">نمایش بیشتر</button>
+            </div>
+        </div>
+    </main>
+    <div id="blackFilter"></div>
+    <div id="mobileFilterSort">
+        <div id="mobileFilter">
+            <i class="fas fa-filter"></i>
+            <p>فیلترها</p>
+        </div>
+        <div id="mobileSort">
+            <i class="fas fa-sort-amount-up-alt"></i>
+            <p>مرتب سازی</p>
+        </div>
+    </div>
+    <footer>
+        <div class="top">
+            <div class="row">
+                <h6>ارتباط با ما</h6>
+                <div class="infos">
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>صیاد شیرازی ۲۵ - ساختمان پزشکان</p>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-phone"></i>
+                        <p>051-38670000</p>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-envelope"></i>
+                        <p>something@gmail.com</p>
+                    </div>
+                </div>           
+            </div>
+            <div class="row">
+                <h6>ما را در شبکه های اجتماعی دنبال کنید</h6>
+                <div class="infos">
+                    <a href="#!" class="social">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="#!" class="social">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#!" class="social">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#!" class="social">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+               
+            </div>
+        </div>
+        <div class="middle">
+            <div class="right">
+                <div class="col">
+                    <h6>نام سایت</h6>
+                    <a href="about.html">درباره ما</a>
+                    <a href="rules.html">قوانین</a>
+                    <a href="report.html">ثبت شکایت</a>
+                </div>
+                <div class="col">
+                    <h6>راهنما سایت</h6>
+                    <a href="faq.html">سوالات متداول</a>
+                    <a href="guide.html">راهنما خرید</a>
+                </div>
+            </div>
+            <div class="mid">
+                <div class="feature">
+                    <img src="./assets/icons/feature1.png" alt="featureAlt">
+                    <p>مجموعه ای از بهترین ها</p>
+                </div>
+                <div class="feature">
+                    <img src="./assets/icons/feature2.png" alt="featureAlt">
+                    <p>اطلاع از آخرین تخفیف ها</p>
+                </div>
+                <div class="feature">
+                    <img src="./assets/icons/feature3.png" alt="featureAlt">
+                    <p>پشتیبانی ۲۴ساعته</p>
+                </div>
+            </div>
+            <div class="left">
+                <a href="#!" class="logo">
+                    <img src="./assets/icons/namad.png" alt="logoAlt">
+                </a>
+                <a href="#!" class="logo">
+                    <img src="./assets/icons/namad.png" alt="logoAlt">
+                </a>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="logos">
+                <a href="#!">
+                    <img src="./assets/icons/spons.png" alt="sponserAlt">
+                </a>
+                <a href="#!">
+                    <img src="./assets/icons/spons.png" alt="sponserAlt">
+                </a>
+                <a href="#!">
+                    <img src="./assets/icons/spons.png" alt="sponserAlt">
+                </a>
+                <a href="#!">
+                    <img src="./assets/icons/spons.png" alt="sponserAlt">
+                </a>
+                <a href="#!">
+                    <img src="./assets/icons/spons.png" alt="sponserAlt">
+                </a>
+            </div>
+            <p class="desc">
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+                متن در باره سایت
+            </p>
+        </div>
+    </footer>
+    <script src="./utilities/utilities.js"></script>
+    <script src="./libraries/jquery.min.js"></script>
+    <script src="./libraries/select2.min.js"></script>
+    <script src="./libraries/wNumb.min.js"></script>
+    <script src="./libraries/nouislider.min.js"></script>
+    <script src="./libraries/fontfaceobserver.js"></script>
+    <script src="./utilities/scripts/collapse.js"></script>
+    <script src="./utilities/scripts/form.js"></script>
+    <script src="./utilities/scripts/filters.js"></script>
+    <script src="./index/scripts/topMenu.js"></script>
+    <script src="./index/scripts/search.js"></script>
+    <script src="./index/scripts/menu.js"></script>
+    <script src="./index/scripts/smooth.js"></script>
+    <script src="./medics/scripts/medics.js"></script>
+</body>
+</html>

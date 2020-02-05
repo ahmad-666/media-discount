@@ -1,0 +1,1906 @@
+.productSlider {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 35em;
+  height: auto;
+  margin-right: 1.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  overflow: hidden;
+}
+
+.productSlider .curr_wrapper {
+  cursor: pointer;
+  width: 80%;
+  height: 25em;
+  position: relative;
+}
+
+.productSlider .curr_wrapper .curr {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+  border-radius: 1.5em;
+}
+
+.productSlider .curr_wrapper .curr img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+}
+
+.productSlider .curr_wrapper .curr.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.productSlider .slider_wrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 1.5em auto 0 auto;
+}
+
+.productSlider .slider_wrapper .arrow {
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  background-color: #00897b;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.productSlider .slider_wrapper .arrow::before {
+  color: white;
+  font-size: 2.4em;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+     -moz-transform: translate(50%, -50%);
+      -ms-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.productSlider .slider_wrapper .arrow.prev {
+  right: 0.75em;
+}
+
+.productSlider .slider_wrapper .arrow.next {
+  left: 0.75em;
+}
+
+.productSlider .slider_wrapper .slider {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  position: relative;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.productSlider .slider_wrapper .slider .slide {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: -webkit-calc((100% - (3 * 1.4em)) / 3);
+  width: -moz-calc((100% - (3 * 1.4em)) / 3);
+  width: calc((100% - (3 * 1.4em)) / 3);
+  height: 10em;
+  margin: 0 0.75em;
+  cursor: pointer;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+  position: relative;
+}
+
+.productSlider .slider_wrapper .slider .slide::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: rgba(30, 30, 30, 0.8);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.productSlider .slider_wrapper .slider .slide:hover {
+  -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.productSlider .slider_wrapper .slider .slide:hover::before {
+  background-color: transparent;
+}
+
+.productSlider .slider_wrapper .slider .slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.productSlider .slider_wrapper .slider .slide.active {
+  -webkit-transform: scale(1);
+     -moz-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.productSlider .slider_wrapper .slider .slide.active::before {
+  background-color: transparent;
+}
+
+.fix_productSlider {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  transition: all .5s linear;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 11;
+  overflow: hidden;
+}
+
+.fix_productSlider .arrow {
+  padding: .25em;
+  font-size: 4em;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.fix_productSlider .arrow:hover {
+  -webkit-transform: translateY(-50%) scale(1.3);
+     -moz-transform: translateY(-50%) scale(1.3);
+      -ms-transform: translateY(-50%) scale(1.3);
+          transform: translateY(-50%) scale(1.3);
+}
+
+.fix_productSlider .arrow.prev {
+  right: 0;
+}
+
+.fix_productSlider .arrow.next {
+  left: 0;
+}
+
+.fix_productSlider .close {
+  padding: .25em;
+  font-size: 3em;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+  position: absolute;
+  top: .5em;
+  right: .5em;
+}
+
+.fix_productSlider .close:hover {
+  -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.fix_productSlider .slider {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  position: relative;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+  z-index: -1;
+}
+
+.fix_productSlider .slider .slide {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fix_productSlider .slider .slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.fix_productSlider.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+#medicInfo {
+  width: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+     -moz-box-orient: vertical;
+     -moz-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#medicInfo .right {
+  width: 100%;
+  height: auto;
+  padding: 1.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#medicInfo .right .title {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#medicInfo .right .title h4 {
+  height: auto;
+  max-width: 65%;
+  font-size: 2em;
+  font-weight: 700;
+  color: #00897b;
+}
+
+#medicInfo .right .icons {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+  margin-top: 0.75em;
+  margin-right: -1.5em;
+}
+
+#medicInfo .right .icons .icon {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  margin: 0.75em 1.5em;
+}
+
+#medicInfo .right .icons .icon i {
+  font-size: 1.3em;
+  color: #00897b;
+}
+
+#medicInfo .right .icons .icon p {
+  margin-right: .3em;
+  color: #90909b;
+  font-size: 1.4em;
+}
+
+#medicInfo .right .score {
+  width: auto;
+  height: auto;
+  margin-top: 1.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#medicInfo .right .score i {
+  font-size: 1.4em;
+  color: #ff8f00;
+}
+
+#medicInfo .right .score i.notActive {
+  color: #b8b8bf;
+}
+
+#medicInfo .right .score p {
+  margin-right: .2em;
+  font-size: 1.4em;
+  color: #90909b;
+}
+
+#medicInfo .right .emojis {
+  width: auto;
+  height: auto;
+  margin-top: 1.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#medicInfo .right .emojis .emoji {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#medicInfo .right .emojis .emoji:not(:first-child) {
+  margin-right: 2em;
+}
+
+#medicInfo .right .emojis .emoji i {
+  font-size: 4em;
+  color: #90909b;
+}
+
+#medicInfo .right .emojis .emoji p {
+  font-weight: 700;
+  margin-top: .2em;
+  font-size: 1.6em;
+}
+
+#medicInfo .right .emojis .emoji:nth-child(1) p {
+  color: #00897b;
+}
+
+#medicInfo .right .emojis .emoji:nth-child(2) p {
+  color: #FF805B;
+}
+
+#medicInfo .right .emojis .emoji:nth-child(3) p {
+  color: #ea6161;
+}
+
+#medicInfo .right .bookmark {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: auto;
+  height: auto;
+  margin-top: 1.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  cursor: pointer;
+  color: #90909b;
+  position: relative;
+}
+
+#medicInfo .right .bookmark p {
+  font-size: 1.4em;
+}
+
+#medicInfo .right .bookmark:hover {
+  color: #f08e8e;
+}
+
+#medicInfo .right .bookmark .likeIcon {
+  margin-right: .3em;
+  font-size: 2em;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+#medicInfo .right .bookmark .toast {
+  opacity: 0;
+  visibility: hidden;
+  width: 118%;
+  height: auto;
+  border-radius: 1.5em;
+  padding: 0.3em 1.05em;
+  background-color: #00897b;
+  color: white;
+  font-size: 1.2em;
+  position: absolute;
+  top: 105%;
+  right: 0;
+}
+
+#medicInfo .right .bookmark .toast.show {
+  -webkit-animation: toast 1.5s linear 0s 1 forwards;
+     -moz-animation: toast 1.5s linear 0s 1 forwards;
+          animation: toast 1.5s linear 0s 1 forwards;
+}
+
+@-webkit-keyframes toast {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  15% {
+    opacity: 1;
+    visibility: visible;
+  }
+  85% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-moz-keyframes toast {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  15% {
+    opacity: 1;
+    visibility: visible;
+  }
+  85% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes toast {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  15% {
+    opacity: 1;
+    visibility: visible;
+  }
+  85% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#medicInfo .right .bookmark.trigger {
+  z-index: 2;
+  color: #ea6161;
+}
+
+#medicInfo .right .share {
+  width: auto;
+  height: auto;
+  margin-top: 1.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#medicInfo .right .share .title {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  cursor: pointer;
+}
+
+#medicInfo .right .share .title i {
+  width: 5.5em;
+  height: 5.5em;
+  border-radius: 50%;
+  position: relative;
+  background-color: #00897b;
+}
+
+#medicInfo .right .share .title i::before {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+     -moz-transform: translate(50%, -50%);
+      -ms-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  font-size: 2em;
+  color: white;
+}
+
+#medicInfo .right .share .title p {
+  font-size: 1.4em;
+  color: #90909b;
+  margin-top: .2em;
+}
+
+#medicInfo .right .share .socials {
+  -webkit-transition: all .45s linear;
+  -moz-transition: all .45s linear;
+  transition: all .45s linear;
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#medicInfo .right .share .socials a {
+  width: 3.5em;
+  height: 3.5em;
+  margin-right: 3em;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#medicInfo .right .share .socials a:nth-child(1) i {
+  background-color: #007FE8;
+}
+
+#medicInfo .right .share .socials a:nth-child(2) i {
+  background-color: #003DBB;
+}
+
+#medicInfo .right .share .socials a:nth-child(3) {
+  background-color: #00897b;
+}
+
+#medicInfo .right .share .socials a i {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#medicInfo .right .share .socials a i::before {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+     -moz-transform: translate(50%, -50%);
+      -ms-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  color: white;
+  font-size: 1.8em;
+}
+
+#medicInfo .right .desc {
+  width: 100%;
+  max-height: 23em;
+  overflow: auto;
+  font-size: 1.6em;
+  line-height: 1.7em;
+  color: #90909b;
+  margin-top: 1.5em;
+}
+
+#medicInfo .right #features {
+  width: 100%;
+  height: auto;
+  margin-top: 1.5em;
+  padding: 1.5em 0;
+  border-bottom: 1px solid #b8b8bf;
+  border-top: 1px solid #b8b8bf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#medicInfo .right #features .right, #medicInfo .right #features .left, #medicInfo .right #features .last {
+  width: 100%;
+  height: auto;
+  padding: 0 1.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#medicInfo .right #features .right .collapseTrigger, #medicInfo .right #features .left .collapseTrigger, #medicInfo .right #features .last .collapseTrigger {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#medicInfo .right #features .right .collapseTrigger h4, #medicInfo .right #features .left .collapseTrigger h4, #medicInfo .right #features .last .collapseTrigger h4 {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+#medicInfo .right #features .right .collapseTrigger i, #medicInfo .right #features .left .collapseTrigger i, #medicInfo .right #features .last .collapseTrigger i {
+  font-size: 1.8em;
+  margin-right: .3em;
+}
+
+#medicInfo .right #features .right ul, #medicInfo .right #features .left ul, #medicInfo .right #features .last ul {
+  width: 100%;
+  margin-top: 0.75em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#medicInfo .right #features .right ul li, #medicInfo .right #features .left ul li, #medicInfo .right #features .last ul li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#medicInfo .right #features .right ul li:not(:first-child), #medicInfo .right #features .left ul li:not(:first-child), #medicInfo .right #features .last ul li:not(:first-child) {
+  margin-top: 0.75em;
+}
+
+#medicInfo .right #features .right ul li i, #medicInfo .right #features .left ul li i, #medicInfo .right #features .last ul li i {
+  font-size: 1.6em;
+}
+
+#medicInfo .right #features .right ul li p, #medicInfo .right #features .left ul li p, #medicInfo .right #features .last ul li p {
+  width: 100%;
+  height: auto;
+  line-height: 1.8em;
+  color: #90909b;
+  font-size: 1.6em;
+  margin-right: .4em;
+}
+
+#medicInfo .right #features .right .collapseTrigger h4, #medicInfo .right #features .right .collapseTrigger i {
+  color: #ea6161;
+}
+
+#medicInfo .right #features .right ul li i {
+  color: #ea6161;
+}
+
+#medicInfo .right #features .left {
+  margin-top: 1.5em;
+}
+
+#medicInfo .right #features .left .collapseTrigger h4, #medicInfo .right #features .left .collapseTrigger i {
+  color: #00897b;
+}
+
+#medicInfo .right #features .left ul li i {
+  color: #00897b;
+}
+
+#medicInfo .right #features .last {
+  margin-top: 1.5em;
+}
+
+#medicInfo .right #features .last .collapseTrigger h4, #medicInfo .right #features .last .collapseTrigger i {
+  color: #FF805B;
+}
+
+#medicInfo .right #features .last ul li i {
+  color: #FF805B;
+}
+
+#medicInfo .right #map {
+  width: 100%;
+  height: auto;
+  margin-top: 1.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#medicInfo .right #map h4 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #00897b;
+  margin-right: 0.75em;
+}
+
+#medicInfo .right #map img {
+  margin: 1.5em auto 0 auto;
+  width: 75%;
+  height: 35em;
+}
+
+#medicInfo .left {
+  width: 100%;
+  padding: 1.5em;
+}
+
+#medicInfo .left .productSlider {
+  -webkit-flex-shrink: none;
+      -ms-flex-negative: none;
+          flex-shrink: none;
+  width: 75%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#medicInfo .left .productSlider .curr_wrapper {
+  width: 100%;
+  height: 40em;
+}
+
+#medicInfo .left .productSlider .slider_wrapper .slider .slide {
+  width: -webkit-calc((100% - (7 * 1.4em)) / 7);
+  width: -moz-calc((100% - (7 * 1.4em)) / 7);
+  width: calc((100% - (7 * 1.4em)) / 7);
+  height: 10em;
+}
+
+@media screen and (max-width: 1200px) {
+  #medicInfo .left .productSlider {
+    width: 75%;
+  }
+  #medicInfo .left .productSlider .curr_wrapper {
+    height: 40em;
+  }
+  #medicInfo .left .productSlider .slider_wrapper .slider .slide {
+    width: -webkit-calc((100% - (6 * 1.4em)) / 6);
+    width: -moz-calc((100% - (6 * 1.4em)) / 6);
+    width: calc((100% - (6 * 1.4em)) / 6);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #medicInfo .left .productSlider {
+    width: 85%;
+  }
+  #medicInfo .left .productSlider .curr_wrapper {
+    height: 40em;
+  }
+  #medicInfo .left .productSlider .slider_wrapper .slider .slide {
+    width: -webkit-calc((100% - (5 * 1.4em)) / 5);
+    width: -moz-calc((100% - (5 * 1.4em)) / 5);
+    width: calc((100% - (5 * 1.4em)) / 5);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #medicInfo .left .productSlider {
+    width: 95%;
+  }
+  #medicInfo .left .productSlider .curr_wrapper {
+    height: 40em;
+  }
+  #medicInfo .left .productSlider .slider_wrapper .slider .slide {
+    width: -webkit-calc((100% - (4 * 1.4em)) / 4);
+    width: -moz-calc((100% - (4 * 1.4em)) / 4);
+    width: calc((100% - (4 * 1.4em)) / 4);
+  }
+  #medicInfo .right #features {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-align-content: "";
+        -ms-flex-line-pack: "";
+            align-content: "";
+  }
+  #medicInfo .right #features .right, #medicInfo .right #features .left {
+    width: 100%;
+  }
+  #medicInfo .right #map img {
+    width: 95%;
+    height: 35em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #medicInfo .left .productSlider {
+    width: 95%;
+  }
+  #medicInfo .left .productSlider .curr_wrapper {
+    height: 40em;
+  }
+  #medicInfo .left .productSlider .slider_wrapper .slider .slide {
+    width: -webkit-calc((100% - (3 * 1.4em)) / 3);
+    width: -moz-calc((100% - (3 * 1.4em)) / 3);
+    width: calc((100% - (3 * 1.4em)) / 3);
+  }
+}
+
+#sidebar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  padding: 0.75em;
+}
+
+#sidebar #timer {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#sidebar #timer .section {
+  width: auto;
+  height: auto;
+  padding: 0 3em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#sidebar #timer .section:first-child {
+  padding-left: 3em;
+}
+
+#sidebar #timer .section:last-child {
+  padding-right: 3em;
+}
+
+#sidebar #timer .section:not(:last-child) {
+  border-left: 1px solid #b8b8bf;
+}
+
+#sidebar #timer .section p:nth-child(1) {
+  font-size: 2.4em;
+  color: #00897b;
+}
+
+#sidebar #timer .section p:nth-child(2) {
+  font-size: 1.4em;
+  color: #90909b;
+  margin-top: 0;
+}
+
+#sidebar .price {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  margin-top: 1.5em;
+}
+
+#sidebar .price .col {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#sidebar .price .col p:nth-child(1) {
+  font-size: 1.4em;
+  color: #b8b8bf;
+  text-decoration: line-through;
+}
+
+#sidebar .price .col p:nth-child(2) {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #00897b;
+  margin-top: 0;
+}
+
+#sidebar .price .discount {
+  width: auto;
+  height: auto;
+  padding: 0.1em 0.75em;
+  font-size: 1.4em;
+  color: white;
+  background-color: #00897b;
+  border-radius: .4em;
+  margin-right: 0.75em;
+}
+
+.tabs_wrapper {
+  width: 90%;
+  height: auto;
+  padding: 0;
+  margin: 2em auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+.tabs_wrapper .tabs {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  position: relative;
+  overflow: auto;
+  padding-bottom: .5em;
+}
+
+.tabs_wrapper .tabs .tab {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: auto;
+  height: auto;
+  padding: 0.75em 1.5em;
+  cursor: pointer;
+  font-size: 1.4em;
+  color: #00897b;
+  background-color: white;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+  border-left: 1.2px solid #e0e0e4;
+}
+
+.tabs_wrapper .tabs .tab:last-child {
+  border-left: none;
+}
+
+.tabs_wrapper .tabs .tab:hover {
+  background-color: #00897b;
+  color: #fbfbfb;
+}
+
+.tabs_wrapper .tabs .tab.active {
+  background-color: #00897b;
+  color: #fbfbfb;
+}
+
+.tabs_wrapper .contents {
+  width: 100%;
+  height: auto;
+  margin: 0.75em auto;
+}
+
+.tabs_wrapper .contents .content {
+  width: 100%;
+  height: auto;
+  display: none;
+  color: #2d2d31;
+  padding: 0.75em;
+}
+
+.tabs_wrapper .contents .content.active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: fadeIn .3s linear forwards;
+     -moz-animation: fadeIn .3s linear forwards;
+          animation: fadeIn .3s linear forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#medicMore {
+  width: 100%;
+  margin-top: 2em;
+}
+
+#medicMore #comments {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+@media screen and (max-width: 450px) {
+  #medicMore .tabs_wrapper .contents #tab1 #features {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-align-content: "";
+        -ms-flex-line-pack: "";
+            align-content: "";
+  }
+  #medicMore .tabs_wrapper .contents #tab1 #features .left {
+    margin-top: 1.5em;
+    margin-right: 0;
+  }
+}
+
+#medicWrapper {
+  width: 90%;
+  height: auto;
+  margin: 1.5em auto 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#medicWrapper #medic {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+@media screen and (max-width: 1000px) {
+  #medicWrapper {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #medicWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+       -moz-box-orient: vertical;
+       -moz-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-align-content: "";
+        -ms-flex-line-pack: "";
+            align-content: "";
+  }
+  #medicWrapper #medic {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-align-content: "";
+        -ms-flex-line-pack: "";
+            align-content: "";
+  }
+  #medicWrapper #sidebar {
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    width: 35em;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=medic.css.map */

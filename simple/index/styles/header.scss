@@ -1,0 +1,10 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+@import './topMenu.scss' ;
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    @include flex(column,flex-start,flex-start,nowrap,"") ;
+}

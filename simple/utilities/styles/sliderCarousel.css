@@ -1,0 +1,161 @@
+.sliderCarousel {
+  width: 90%;
+  height: auto;
+  padding: 1.5em 0;
+  margin: 2em auto 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  position: relative;
+}
+
+.sliderCarousel h4 {
+  font-size: 2em;
+  color: #2d2d31;
+  font-weight: 700;
+  margin-right: 0.75em;
+}
+
+.sliderCarousel .helper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 0.75em;
+  position: relative;
+}
+
+.sliderCarousel .helper .btn {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 3;
+  cursor: pointer;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+  color: white;
+  background-color: #00897b;
+  border: 1.2px solid transparent;
+}
+
+.sliderCarousel .helper .btn:hover {
+  color: #00897b;
+  background-color: white;
+  border: 1.2px solid #00897b;
+}
+
+.sliderCarousel .helper .btn i {
+  font-size: 1.6em;
+}
+
+.sliderCarousel .helper .btn.prev {
+  right: 0.75em;
+}
+
+.sliderCarousel .helper .btn.next {
+  left: 0.75em;
+}
+
+.sliderCarousel .helper .slides {
+  width: 100%;
+  height: auto;
+  margin-top: 0.75em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+  position: relative;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.sliderCarousel .helper .slides .slide {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: -webkit-calc((100% - (4 * 1.5em)) / 4);
+  width: -moz-calc((100% - (4 * 1.5em)) / 4);
+  width: calc((100% - (4 * 1.5em)) / 4);
+  height: 25em;
+  margin: 0 0.75em;
+}
+
+.sliderCarousel .show_more {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-top: 0.75em;
+  font-size: 1.6em;
+  color: #90909b;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.sliderCarousel .show_more:hover {
+  color: #00897b;
+}
+
+.sliderCarousel .show_more i {
+  font-size: 1.2em;
+  -webkit-transform: translate(-0.3em, 15%);
+     -moz-transform: translate(-0.3em, 15%);
+      -ms-transform: translate(-0.3em, 15%);
+          transform: translate(-0.3em, 15%);
+}
+/*# sourceMappingURL=sliderCarousel.css.map */

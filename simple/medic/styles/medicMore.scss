@@ -1,0 +1,33 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+@import '../../utilities/styles/tabs.scss' ;
+#medicMore{
+    width: 100%;
+    margin-top: $sectionsDist;
+    #comments{
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+@include mediaQ(450px){
+    #medicMore{
+        .tabs_wrapper{
+            .contents{
+                #tab1{
+                    #features{
+                        @include flex(column,flex-start,flex-start,nowrap,"") ;
+                        .left{
+                           margin-top: $dist2;
+                           margin-right: 0;
+                        }
+    
+                    }  
+                        
+                }
+              
+            }
+        
+        }
+    }
+}

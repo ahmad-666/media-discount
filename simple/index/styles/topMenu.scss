@@ -1,0 +1,345 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+#topMenu{
+    width: 100%;
+    height: auto;
+    background-color: #263238 ;
+    padding: .5em;
+    display: flex;
+    @include flex(row-reverse,space-between,center,nowrap,"") ;
+    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    .right{
+        width: auto;
+        height: auto;
+        display: flex;
+        @include flex(row,flex-start,center,nowrap,"") ;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%,-50%);
+        .logo{
+            width: auto;
+            height: auto;
+            display: flex;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            margin-right: $dist2;
+            img{
+                width: 6em;
+                height: 5em;
+            }
+            h1{
+                margin-right: .3em;
+                font-size: $fontL;
+                color: $textWhite;
+                font-weight: 700;
+            }
+        }
+        .city{
+            width: auto;
+            height: auto;
+            position: relative;
+            margin-right: $dist3;
+            .title{
+                width: auto;
+                height: auto;
+                margin-right: $dist2;
+                display: flex;
+                @include flex(row,flex-start,center,nowrap,"") ;
+                cursor: pointer;
+                color: $textWhite;
+                p,i{font-size: $fontM;}
+                i{margin-right: .3em;}
+            }
+            ul{
+                width: 25em;
+                height: auto;
+                position: absolute;
+                right: 0;
+                top: calc(100% + 1.1em);
+                background-color: white;
+                box-shadow: -.5em .5em 1.5em .1em $shadowColor;
+                display: flex;
+                @include flex(column,flex-start,flex-start,nowrap,"") ;
+                li{
+                    width: 100%;
+                    height: auto;
+                    padding: $dist1;
+                    transition: all .2s linear;
+                    background-color: transparent;
+                    color: $textDark;
+                    &:not(:last-child){border-bottom: 1px solid lighten($textGrey,20%);}
+                    &:hover{
+                        background-color: $primaryColor;
+                        color: $textWhite;
+                    }
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        font-size: $fontM;
+                        color: inherit;
+                    }
+                }
+            }
+            ul.show{
+                z-index: 1;
+            }
+        }
+    }
+    .left{
+        width: auto;
+        height: auto;
+        display: flex;
+        @include flex(row,flex-start,center,nowrap,"") ;
+        margin-right: $dist2;
+        #login{
+            width: auto;
+            height: auto;
+            padding: .5em .8em;
+            border-radius: .6em;
+            @include changeColor(white,$primaryColor,$primaryColor,white) ;
+            display: flex;
+            @include flex(row,flex-start,center,nowrap,"") ;
+            i,p{
+                font-size: $fontM;
+            }
+            p{
+                margin-right: .3em;
+            }
+        }
+        #lang{
+            width: auto;
+            height: auto;
+            position: relative;
+            margin-right: $dist3;
+            margin-left: $dist2;
+            .title{
+                cursor: pointer;
+                width: auto;
+                height: auto;
+                display: flex;
+                @include flex(row,flex-start,center,nowrap,"") ;
+                img{
+                    width: 2em;
+                    height: 1.5em;
+                }
+                p,i{
+                    font-size: $fontM;
+                    color: $textWhite;
+                    margin-right: .2em;
+                }
+            }
+            ul{
+                width: 12em;
+                height: auto;
+                display: flex;
+                @include flex(column,flex-start,flex-start,nowrap,"") ;
+                box-shadow: .5em .5em 1em .3em $shadowColor;
+                position: absolute;
+                top: calc(100% + 1.1em);
+                right: 50%;
+                transform: translateX(50%);
+                background-color: white;
+                li{
+                    width: 100%;
+                    height: auto;
+                    transition: all .2s linear;
+                    color: $textDark;
+                    background-color: transparent;
+                    padding: $dist1;
+                    &:not(:last-child){border-bottom: 1px solid lighten($textGrey,20%);}
+                    &:hover{
+                        color: $textWhite;
+                        background-color: $primaryColor;
+                    }
+                    a{
+                        display: flex;
+                        @include flex(row,flex-start,center,nowrap,"") ;
+                        width: 100%;
+                        height: 100%;
+                        color: inherit;
+                        img{
+                            width: 2em;
+                            height: 1.5em;
+                        }
+                        p{
+                            font-size: $fontM ;
+                            color: inherit;
+                            margin-right: .2em;
+                        }
+                    }
+                }
+            }
+            ul.show{
+                z-index: 1;
+            }
+        }
+        #more{
+            width: auto;
+            height: auto;
+            position: relative;
+            margin-right: $dist3;
+            margin-left: $dist2;
+            .title{
+                cursor: pointer;
+                width: auto;
+                height: auto;
+                display: flex;
+                @include flex(row,flex-start,center,nowrap,"") ;
+                p,i{
+                    font-size: $fontM;
+                    color: $textWhite;
+                }
+                i{margin-right: .3em;}
+            }
+            ul{
+                width: 25em;
+                height: auto;
+                display: flex;
+                @include flex(column,flex-start,flex-start,nowrap,"") ;
+                box-shadow: .5em .5em 1em .3em $shadowColor;
+                position: absolute;
+                top: calc(100% + 1.1em);
+                left: 0;
+                background-color: white;
+                li:not(.top){
+                    width: 100%;
+                    height: auto;
+                    transition: all .2s linear;
+                    color: $textDark;
+                    background-color: transparent;
+                    padding: $dist1;
+                    &:not(:last-child){border-bottom: 1px solid lighten($textGrey,20%);}
+                    &:hover{
+                        color: $textWhite;
+                        background-color: $primaryColor;
+                    }
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        color: inherit;
+                        font-size: $fontM - .2em;
+                    }
+                }
+                li.top{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    @include flex(row,flex-start,flex-start,wrap,flex-start) ;
+                    border-bottom: 1px solid lighten($textGrey,20%);
+                    a{
+                        width: auto;
+                        height: auto;
+                        margin: $dist1 + .3em;
+                        i{
+                            display: inline-block;
+                            width: 4.1em;
+                            height: 4.1em;
+                            border-radius: 50%;
+                            position: relative;
+                            @include swapColor(white,$primaryColor) ;
+                            &:hover{
+                                transform: scale(1.2);
+                            }
+                            &::before{
+                                position: absolute;
+                                top: 50%;
+                                right: 50%;
+                                transform: translate(50%,-50%);
+                                font-size: $fontL;
+                            }
+                        }
+                    }
+                }
+            }
+            ul.show{
+                z-index: 1;
+            }
+        }
+    }
+}
+@include resizeTablet('#topMenu') ;
+// @include resizeMobile('#topMenu') ;
+@include mediaQ(500px){
+    #topMenu{
+        .right{
+            .logo{
+                margin-right: $dist1;
+                h1{
+                    margin-right: .15em;
+                }
+            }
+            .city{
+                margin-right: $dist2;
+                .title{
+                    margin-right: $dist1;
+                    i{margin-right: .15em;}
+                }
+                ul{
+                    width: 20em;
+                }       
+            }
+        }
+        .left{
+            margin-right: $dist1;
+            #login{
+                padding: .5em .8em;
+                border-radius: .6em;
+                p{
+                    margin-right: .15em;
+                }
+            }
+            #lang{
+                margin-right: $dist2;
+                margin-left: $dist1;
+                .title{
+                    i{margin-right: .15em;}
+                }
+            }
+            #more{
+                margin-right: $dist2;
+                margin-left: $dist1;
+                .title{
+                    i{margin-right: .15em;}
+                }
+                ul{
+                    width: 25em;
+                }
+            }
+        }
+    }
+}
+@include mediaQ(650px){
+    #topMenu{
+        @include flex(row,space-between,center,nowrap,"") ;
+        .right{
+            width: auto;
+            position: relative;
+            top: 0%;
+            right: 0%;
+            transform: translate(0%,-0%);
+        }
+  
+    }
+}
+@include mediaQ(400px){
+    #topMenu{
+        font-size: 6.5px;
+  
+    }
+    #topMenu{
+        .left{
+            #lang{
+                padding-left: $dist1 ;
+                padding-right: $dist1;
+                font-size: 8px;
+            }
+        }
+    }
+}

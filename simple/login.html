@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <meta name='description' content='سایت زیبایی' />
+    <meta name='keywords' content='beauty,discount,زیبایی,تخفیف' />
+    <meta name='author' content='rad7 devs' />
+    <title>سایت زیبایی</title>
+    <link rel='icon' href='./assets/icons/logo.png' type='image/png' />
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='زیبایی' />
+    <meta property='og:description' content='سایت زیبایی' />
+    <meta property='og:site_name' content='beauty' />
+    <meta property='og:url' content='https://something.com/' />
+    <meta property='og:image' content='./assets/icons/logo.png' type='image/png' />
+    <meta property='og:locale' content='fa_IR' />
+    <meta name='twitter:card' content='summery' />
+    <meta name='twitter:title' content='زیبایی' />
+    <meta name='twitter:description' content='سایت زیبایی' />
+    <meta name='twitter:image' content='./assets/icons/logo.png' type='image/png' />
+    <link rel="stylesheet" href="./libraries/fontawesome/all.min.css">
+    <link rel="stylesheet" href="./libraries/select2.min.css">
+    <link rel="stylesheet" href="./init.css">
+    <link rel="stylesheet" href="./framework.css">
+    <link rel="stylesheet" href="./utilities/styles/form.css">
+    <link rel="stylesheet" href="./login/styles/login.css">
+</head>
+<body>
+    <div id="loginWrapper">
+        <div class="tabs_wrapper">
+            <ul class="tabs">
+                <li class="tab active" data-target="userTab">ورود کاربر</li>
+                <li class="tab" data-target="adminTab">ورود کلینیک</li>
+            </ul>
+            <div class="contents">
+                <div class="content active" id="userTab">
+                    <a class="logo" href="./index.html">
+                        <img src="./assets/icons/logo.png" alt="logoAlt">
+                        <h4>فانوس زیبایی</h4>
+                    </a> 
+                    <p>
+                        توضیح کوتاه توضیح کوتاه توضیح کوتاه
+                        توضیح کوتاه توضیح کوتاه توضیح کوتاه
+                    </p>
+                    <form novalidate id="loginUser" name="loginUser" method="GEt" action="#!" enctype="text/plain">
+                        <div class="inputWrapper text">
+                            <input type="text" id="username" name="username" class="style2 labelHandler validate" required>
+                            <label for="username">
+                                <i class="fas fa-user icon"></i>
+                                <p>ایمیل یا شماره همراه</p>
+                            </label>
+                            <div class="msg">
+                                <p>مقدار صحیح وارد نمایید</p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                        </div>
+                        <div class="inputWrapper text">
+                            <input type="password" id="userPassword" name="userPassword" class="style2 labelHandler validate" required pattern=".{6,}">
+                            <label for="userPassword">
+                                <i class="fas fa-lock icon"></i>
+                                <p>رمز ورود</p>
+                            </label>
+                            <div class="msg">
+                                <p>رمز ورود را وارد کنید(حداقل ۶رقم)</p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                            <a href="./forgetPass.html" class="forgetPass">رمز ورود خود را فراموش کرده اید؟</a>
+                        </div>
+                        <button type="submit" class="btn mid pulse">ورود</button>
+                        <div class="inputWrapper checkboxes">
+                            <div class="checkbox">
+                                <input type="checkbox" id="userRememberCheck" name="userRememberCheck" class="style1" value="userRememberCheck">
+                                <label for="userRememberCheck">
+                                    <span class="rect">
+                                        <i class="fas fa-check center-xy"></i>
+                                    </span>
+                                    <p class="ellipse">مرا بخاطر بسپار</p>
+                                </label>
+                            </div>
+                        </div>
+                        <a class="loginRoute" href="./signup.html">عضو فانوس زیبایی نیستید؟</a>
+                    </form>          
+                </div>
+                <div class="content" id="adminTab">
+                    <a class="logo" href="./index.html">
+                        <img src="./assets/icons/logo.png" alt="logoAlt">
+                        <h4>فانوس زیبایی</h4>
+                    </a> 
+                    <p>
+                        توضیح کوتاه توضیح کوتاه توضیح کوتاه
+                        توضیح کوتاه توضیح کوتاه توضیح کوتاه
+                    </p>
+                    <form novalidate id="loginAdmin" name="loginAdmin" method="GEt" action="#!" enctype="text/plain">
+                        <div class="inputWrapper text">
+                            <input type="text" id="AdminUsername" name="AdminUsername" class="style2 labelHandler validate" required>
+                            <label for="AdminUsername">
+                                <i class="fas fa-user icon"></i>
+                                <p>نام کاربری</p>
+                            </label>
+                            <div class="msg">
+                                <p>نام کاربری را صحیح وارد نکرده اید</p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                        </div>
+                        <div class="inputWrapper text">
+                            <input type="password" id="adminPassword" name="adminPassword" class="style2 labelHandler validate" required pattern=".{6,}">
+                            <label for="adminPassword">
+                                <i class="fas fa-lock icon"></i>
+                                <p>رمز ورود</p>
+                            </label>
+                            <div class="msg">
+                                <p>رمز ورود را وارد کنید(حداقل ۶رقم)</p>
+                                <i class="fas fa-caret-up"></i>
+                            </div>
+                            <a href="./forgetPass.html" class="forgetPass">رمز ورود خود را فراموش کرده اید؟</a>
+                        </div>
+                        <button type="submit" class="btn mid pulse">ورود</button>
+                        <div class="inputWrapper checkboxes">
+                            <div class="checkbox">
+                                <input type="checkbox" id="adminRememberCheck" name="adminRememberCheck" class="style1" value="userRememberCheck">
+                                <label for="adminRememberCheck">
+                                    <span class="rect">
+                                        <i class="fas fa-check center-xy"></i>
+                                    </span>
+                                    <p class="ellipse">مرا بخاطر بسپار</p>
+                                </label>
+                            </div>
+                        </div>
+                        <a class="loginRoute" href="./signup.html">عضو فانوس زیبایی نیستید؟</a>
+                    </form>  
+                </div>
+            </div>
+        </div>
+        <img src="./assets/imgs/slide6.jpg" alt="loginAlt">
+    </div>
+
+    <script src="./utilities/utilities.js"></script>
+    <script src="./utilities/scripts/form.js"></script>
+    <script src="./utilities/scripts/tabs.js"></script>
+    <script src="./login/scripts/login.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

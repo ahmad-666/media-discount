@@ -1,0 +1,312 @@
+#loginWrapper, #signupWrapper, #forgetPasswordWrapper {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#loginWrapper > img, #signupWrapper > img, #forgetPasswordWrapper > img {
+  width: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#loginWrapper .tabs_wrapper, #signupWrapper .tabs_wrapper, #forgetPasswordWrapper .tabs_wrapper {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#loginWrapper .tabs_wrapper .tabs, #signupWrapper .tabs_wrapper .tabs, #forgetPasswordWrapper .tabs_wrapper .tabs {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#loginWrapper .tabs_wrapper .tabs .tab, #signupWrapper .tabs_wrapper .tabs .tab, #forgetPasswordWrapper .tabs_wrapper .tabs .tab {
+  width: 50%;
+  height: auto;
+  padding: 0.75em;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.6em;
+  -webkit-box-shadow: 0 0.3em 0.5em -0.2em rgba(70, 69, 85, 0.3);
+          box-shadow: 0 0.3em 0.5em -0.2em rgba(70, 69, 85, 0.3);
+  color: #00897b;
+  background-color: white;
+}
+
+#loginWrapper .tabs_wrapper .tabs .tab:hover, #signupWrapper .tabs_wrapper .tabs .tab:hover, #forgetPasswordWrapper .tabs_wrapper .tabs .tab:hover {
+  color: white;
+  background-color: #00897b;
+}
+
+#loginWrapper .tabs_wrapper .tabs .tab.active, #signupWrapper .tabs_wrapper .tabs .tab.active, #forgetPasswordWrapper .tabs_wrapper .tabs .tab.active {
+  color: white;
+  background-color: #00897b;
+}
+
+#loginWrapper .tabs_wrapper .contents, #signupWrapper .tabs_wrapper .contents, #forgetPasswordWrapper .tabs_wrapper .contents {
+  width: 100%;
+  height: auto;
+  margin-top: 0.75em;
+}
+
+#loginWrapper .tabs_wrapper .contents .content, #signupWrapper .tabs_wrapper .contents .content, #forgetPasswordWrapper .tabs_wrapper .contents .content {
+  padding-top: 0.75em;
+  width: 100%;
+  height: auto;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#loginWrapper .tabs_wrapper .contents .content .logo, #signupWrapper .tabs_wrapper .contents .content .logo, #forgetPasswordWrapper .tabs_wrapper .contents .content .logo {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: "";
+      -ms-flex-line-pack: "";
+          align-content: "";
+}
+
+#loginWrapper .tabs_wrapper .contents .content .logo h4, #signupWrapper .tabs_wrapper .contents .content .logo h4, #forgetPasswordWrapper .tabs_wrapper .contents .content .logo h4 {
+  font-size: 2em;
+  color: #00897b;
+  font-weight: 700;
+}
+
+#loginWrapper .tabs_wrapper .contents .content .logo img, #signupWrapper .tabs_wrapper .contents .content .logo img, #forgetPasswordWrapper .tabs_wrapper .contents .content .logo img {
+  width: 7em;
+  height: 7em;
+}
+
+#loginWrapper .tabs_wrapper .contents .content > p, #signupWrapper .tabs_wrapper .contents .content > p, #forgetPasswordWrapper .tabs_wrapper .contents .content > p {
+  font-size: 1.5em;
+  margin-top: 0;
+  color: #ababb3;
+}
+
+#loginWrapper .tabs_wrapper .contents .content.active, #signupWrapper .tabs_wrapper .contents .content.active, #forgetPasswordWrapper .tabs_wrapper .contents .content.active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: fadeIn .3s linear forwards;
+     -moz-animation: fadeIn .3s linear forwards;
+          animation: fadeIn .3s linear forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #loginWrapper, #signupWrapper, #forgetPasswordWrapper {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #loginWrapper, #signupWrapper, #forgetPasswordWrapper {
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-align-content: "";
+        -ms-flex-line-pack: "";
+            align-content: "";
+  }
+  #loginWrapper > img, #signupWrapper > img, #forgetPasswordWrapper > img {
+    width: 100%;
+    height: 50vh;
+  }
+  #loginWrapper .tabs_wrapper, #signupWrapper .tabs_wrapper, #forgetPasswordWrapper .tabs_wrapper {
+    padding-bottom: 1.5em;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #loginWrapper, #signupWrapper, #forgetPasswordWrapper {
+    font-size: 7px;
+  }
+}
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,33 @@
+@import '../../colors.scss';
+@import '../../variables.scss';
+@import '../../mixins.scss';
+main {
+    width: 90%;
+    height: auto;
+    margin: $dist3 auto 0 auto;
+    display: flex;
+    @include flex(row, flex-start, flex-start, nowrap, "");
+    .wrapper {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    aside.sideBar{
+        flex-shrink: 0 ;
+        width: 30em ;
+        height: auto;
+        margin: 0 $dist2 0 0 ;
+    }
+}
+@include mediaQ(1200px){
+    main {
+        width: 95%;
+    }
+}
+@include resizeTablet('main');
+@include mediaQ(750px){
+    main {
+        @include flex(column, flex-start, flex-start, nowrap, "");
+    }
+}
+// @include resizeMobile('main');

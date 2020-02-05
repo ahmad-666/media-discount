@@ -1,0 +1,48 @@
+@import '../../variables.scss' ;
+@import '../../mixins.scss' ;
+@import '../../colors.scss' ;
+#leftFix{
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 1.5em;
+    transform: translate(-25%,-50%);
+    background-color: #263238 ;
+    display: flex;
+    @include flex(column,flex-start,center,nowrap,"") ;
+    box-shadow: 0 0 .5em .1em $shadowColor;
+    z-index: 9;
+    border-radius: $dist3;
+    overflow: hidden;
+    li{
+        width: 100%;
+        height: 6em;
+        &:not(:last-child){border-bottom: 1px solid white;}
+        a{
+            display: inline-block;
+            width: 5em;
+            height: 100%;
+            padding: $dist1;
+            position: relative;
+            i{
+                font-size: $fontXL;
+                color: white;
+                position: absolute;
+                top: 50%;
+                right: 50%;
+                transform: translate(50%,-50%);
+            }
+        }
+        &:hover{
+            a{
+                background-color: $primaryColor;
+            }
+        }
+    }
+}
+@include resizeTablet('#leftFix') ;
+@include resizeMobile('#leftFix') ;
+@include mediaQ(550px){
+    #leftFix{font-size: 6px;}
+}

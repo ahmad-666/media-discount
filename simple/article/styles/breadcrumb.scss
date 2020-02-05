@@ -1,0 +1,35 @@
+@import '../../variables.scss' ;
+@import '../../colors.scss' ;
+@import '../../mixins.scss' ;
+#breadcrumb{
+    width: auto;
+    display: inline-flex;
+    @include flex(row,flex-start,center,wrap,flex-start) ;
+    padding: $dist1 0;
+    margin-left: 0;
+    margin-right: 5vw;
+    margin-top: $dist2;
+    a{
+        width: auto;
+        height: auto;
+        margin: $dist1 ;
+        display: flex;
+        @include flex(row,flex-start,center,nowrap,"") ;
+        color: $textGrey;
+        &:hover{color: $primaryColor;}
+        i{
+            font-size: $fontM;
+        }
+        p{
+            font-size: $fontM;
+            margin-right: .5em;
+        }
+    }
+    .arrow{
+        margin: $dist1;
+        font-size: $fontM;
+        color: $textGrey;
+    }
+}
+@include resizeTablet('#breadcrumb') ;
+// @include resizeMobile('#breadcrumb') ;

@@ -1,0 +1,43 @@
+@import '../../colors.scss' ;
+@import '../../variables.scss' ;
+@import '../../mixins.scss' ;
+.pagination{
+    width: auto;
+    height: auto;
+    margin: $dist3 auto 0 auto;
+    display: flex;
+    @include flex(row,flex-start,center,wrap,flex-start) ;
+    .page-item{
+        width: auto;
+        height: auto;
+        @include swapColor($primaryColor,white) ;
+        border: 1px solid $primaryColor;
+        margin: $dist2 - .5em;
+        border-radius: $dist1;
+        a{
+            display: inline-block; ;
+            width: 100%;
+            height: 100%;
+            padding: $dist1 / 2 $dist1;
+            font-size: $fontM;
+            color: inherit;
+            i{
+                font-size: $fontS;
+                color: inherit;
+                transform: translateY(.2em);
+            }
+        }
+    }
+    .page-item.disabled{
+        background-color: darken(white,12%);
+        color: $textGrey;
+        border: none ;
+        a{
+            cursor: default;
+        }
+    }
+    .page-item.active{
+        color: white;
+        background-color: $primaryColor;
+    }
+}
