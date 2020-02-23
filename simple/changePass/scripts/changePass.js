@@ -9,6 +9,6 @@ let changePassFormData = {
     send: true,
     modal:null
 }
-new FormValidate(changePassFormData.elm,changePassFormData.submit,
-    changePassFormData.inputs,changePassFormData.send,changePassFormData.modal) ;
+// new FormValidate(changePassFormData.elm,changePassFormData.submit,
+//     changePassFormData.inputs,changePassFormData.send,changePassFormData.modal) ;
 changePassElm.querySelectorAll('.labelHandler').forEach(label=> new LabelHandler(label)) ;

@@ -16,7 +16,7 @@ let editInfoFormData = {
     send: true,
     modal:null
 }
-new FormValidate(editInfoFormData.elm,editInfoFormData.submit,
-    editInfoFormData.inputs,editInfoFormData.send,editInfoFormData.modal) ;
+// new FormValidate(editInfoFormData.elm,editInfoFormData.submit,
+//     editInfoFormData.inputs,editInfoFormData.send,editInfoFormData.modal) ;
 editInfoElm.querySelectorAll('.labelHandler').forEach(label=> new LabelHandler(label)) ;
 editInfoElm.querySelectorAll('.inputWrapper.toggle').forEach(toggle=>new Toggle(toggle))

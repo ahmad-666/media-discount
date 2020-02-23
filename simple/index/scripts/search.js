@@ -17,6 +17,6 @@ let searchFormData = {
     send: true,
     modal:null
 }
-new FormValidate(searchFormData.elm,searchFormData.submit,
-    searchFormData.inputs,searchFormData.send,searchFormData.modal) ;
+// new FormValidate(searchFormData.elm,searchFormData.submit,
+//     searchFormData.inputs,searchFormData.send,searchFormData.modal) ;
 searchFormElm.querySelectorAll('.labelHandler').forEach(label=> new LabelHandler(label)) ;

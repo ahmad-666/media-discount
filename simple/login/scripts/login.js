@@ -18,9 +18,9 @@ let adminLoginForm = {
     send: true ,
     modal: null 
 }
-new FormValidate(userLoginForm.elm,userLoginForm.submit,
-    userLoginForm.inputs,userLoginForm.send,userLoginForm.modal) ;
-new FormValidate(adminLoginForm.elm,adminLoginForm.submit,
-    adminLoginForm.inputs,adminLoginForm.send,adminLoginForm.modal) ;
+// new FormValidate(userLoginForm.elm,userLoginForm.submit,
+//     userLoginForm.inputs,userLoginForm.send,userLoginForm.modal) ;
+// new FormValidate(adminLoginForm.elm,adminLoginForm.submit,
+//     adminLoginForm.inputs,adminLoginForm.send,adminLoginForm.modal) ;
 userLoginFormElm.querySelectorAll('.labelHandler').forEach(label=>new LabelHandler(label)) ;
 adminLoginFormElm.querySelectorAll('.labelHandler').forEach(label=>new LabelHandler(label)) ;

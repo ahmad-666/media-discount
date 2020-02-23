@@ -11,7 +11,7 @@ commentsWrapper.querySelectorAll('.labelHandler').forEach(labelHandler => {
 commentsWrapper.querySelectorAll('form.validate').forEach(myForm => {
     let submit = myForm.querySelector('button[type="submit"]') ;
     let inputs = myForm.querySelectorAll('input.validate,textarea.validate') ;
-    new FormValidate(myForm,submit,inputs,false,adminApproveModal) ;
+    // new FormValidate(myForm,submit,inputs,false,adminApproveModal) ;
 })
 commentsWrapper.querySelectorAll('textarea.autoExpand').forEach(textarea => {
     new AutoExpand(textarea,'2.7em','15em') ;

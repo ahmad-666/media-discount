@@ -23,10 +23,10 @@ let adminSignupForm = {
     send: true ,
     modal: null 
 }
-new FormValidate(userSignupForm.elm,userSignupForm.submit,
-    userSignupForm.inputs,userSignupForm.send,userSignupForm.modal) ;
-new FormValidate(adminSignupForm.elm,adminSignupForm.submit,
-    adminSignupForm.inputs,adminSignupForm.send,adminSignupForm.modal) ;
+// new FormValidate(userSignupForm.elm,userSignupForm.submit,
+//     userSignupForm.inputs,userSignupForm.send,userSignupForm.modal) ;
+// new FormValidate(adminSignupForm.elm,adminSignupForm.submit,
+//     adminSignupForm.inputs,adminSignupForm.send,adminSignupForm.modal) ;
 userSignupFormElm.querySelectorAll('.labelHandler').forEach(label=>new LabelHandler(label)) ;
 adminSignupFormElm.querySelectorAll('.labelHandler').forEach(label=>new LabelHandler(label)) ;
 tabsWrapper.querySelectorAll('.inputWrapper.file').forEach(file=>new FileHandler(file)) ;

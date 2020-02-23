@@ -7,6 +7,6 @@ let reportForm = {
     send: true,
     modal: null 
 }
-new FormValidate(reportForm.elm,reportForm.submit,
-    reportForm.inputs,reportForm.send,reportForm.modal) ;
+// new FormValidate(reportForm.elm,reportForm.submit,
+//     reportForm.inputs,reportForm.send,reportForm.modal) ;
 reportFormElm.querySelectorAll('.labelHandler').forEach(label=>new LabelHandler(label)) ;
